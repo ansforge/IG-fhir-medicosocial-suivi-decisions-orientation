@@ -1,0 +1,40 @@
+{
+	"resourceType": "StructureDefinition",
+	"id" : "esms-bundle-resultat-recherche-decision-evaluation",
+	"url": "http://esante.gouv.fr/fhir/ms/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation",
+	"version": "2.0",
+	"name": "ESMSBundleResultatRechercheDecisionEvaluation",
+	"status": "active",
+	"date": "2023-03-06T09:51:35+02:00",
+	"publisher": "ANS",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Bundle",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Bundle.type",
+				"path": "Bundle.type",
+				"fixedCode": "searchset"
+			},
+			{
+				"id": "Bundle.entry.resource",
+				"path": "Bundle.entry.resource",
+				"short": "A Document to be retrieved",
+				"definition": "A Document to be retrieved (either a Decision or an Evaluation)",
+				"min": 1,
+				"type": [
+					{
+						"code": "Resource",
+						"profile": [
+							"http://esante.gouv.fr/fhir/ms/StructureDefinition/esms-document-reference"
+						]
+					}
+				]
+			}
+		]
+	}
+}

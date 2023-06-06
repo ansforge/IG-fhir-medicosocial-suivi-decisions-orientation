@@ -2,8 +2,8 @@
 
 id: ans.fhir.fr.[code]
 canonical: https://interop.esante.gouv.fr/ig/fhir/[code] # the last part of canonical and id must be the same
-name: ExampleIG
-title: ANS IG Example
+name: SuiviDecisionOrientation
+title: IG du suivi des decisions d'orientation
 publisher:
   name: ANS
   url: https://esante.gouv.fr
@@ -15,7 +15,8 @@ releaseLabel: ci-build
 
 parameters:
     shownav: 'true'
-
+    path-resource:
+        - input/FHIR
 
 
 pages:

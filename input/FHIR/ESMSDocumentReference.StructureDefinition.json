@@ -1,0 +1,31 @@
+{
+	"resourceType": "StructureDefinition",
+	"id" : "esms-document-reference",
+	"url": "http://esante.gouv.fr/fhir/ms/StructureDefinition/esms-document-reference",
+	"version": "1.0",
+	"name": "ESMSDocumentReference",
+	"status": "active",
+	"date": "2023-03-17T09:51:35+02:00",
+	"publisher": "ANS",
+	"description": "Suivi des orientations - pendant ESMS",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "DocumentReference",
+	"baseDefinition": "http://esante.gouv.fr/fhir/ms/StructureDefinition/sdo-document-reference",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "DocumentReference.identifier",
+				"path": "DocumentReference.identifier",
+				"min": 2
+			},
+			{
+				"id": "DocumentReference.type",
+				"path": "DocumentReference.type",
+				"min": 1
+			}
+		]
+	}
+}

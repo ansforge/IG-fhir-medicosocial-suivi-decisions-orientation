@@ -1,0 +1,31 @@
+{
+	"resourceType": "StructureDefinition",
+	"id" : "sdo-document-reference",
+	"url": "http://esante.gouv.fr/fhir/ms/StructureDefinition/sdo-document-reference",
+	"version": "2.0",
+	"name": "SDODocumentReference",
+	"status": "active",
+	"date": "2023-03-06T09:51:35+02:00",
+	"publisher": "ANS",
+	"description": "Suivi des orientations",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "DocumentReference",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "DocumentReference.identifier",
+				"path": "DocumentReference.identifier",
+				"min": 1
+			},
+			{
+				"id": "DocumentReference.content",
+				"path": "DocumentReference.content",
+				"max": "1"
+			}
+		]
+	}
+}
