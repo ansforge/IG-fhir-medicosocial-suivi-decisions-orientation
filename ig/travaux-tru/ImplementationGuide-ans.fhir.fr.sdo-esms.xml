@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ans.fhir.fr.[code]"/>
+  <id value="ans.fhir.fr.sdo-esms"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SuiviDecisionOrientation</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code]</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SuiviDecisionOrientation</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/sdo-esms/ImplementationGuide/ans.fhir.fr.sdo-esms</pre></div>
   </text>
-  <url value="https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code]"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/sdo-esms/ImplementationGuide/ans.fhir.fr.sdo-esms"/>
   <version value="0.1.0"/>
   <name value="SuiviDecisionOrientation"/>
   <title value="IG du suivi des decisions d'orientation"/>
   <status value="draft"/>
-  <date value="2023-06-06T12:54:41+00:00"/>
+  <date value="2023-06-06T15:07:48+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -19,7 +19,7 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <packageId value="ans.fhir.fr.[code]"/>
+  <packageId value="ans.fhir.fr.sdo-esms"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
@@ -124,7 +124,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/sdo-esms/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -327,7 +327,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/sdo-esms/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -444,23 +444,13 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/competence-code-system"/>
-      </reference>
-      <name value="Compétences CodeSystem"/>
-      <description value="Compétences des professionnels de santé."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"/>
       </reference>
       <name value="ESMSBundleResultatRechercheDecisionEvaluation"/>
+      <description value="Profil pour la définition du Bundle de réponse à la recherche d'une décision d'évaluation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -471,6 +461,7 @@
         <reference value="StructureDefinition/esms-consent"/>
       </reference>
       <name value="ESMSConsent"/>
+      <description value="Profil pour la définition de l'accord"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -481,73 +472,7 @@
         <reference value="StructureDefinition/esms-document-reference"/>
       </reference>
       <name value="ESMSDocumentReference"/>
-      <description value="Suivi des orientations - pendant ESMS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/EyeColor"/>
-      </reference>
-      <name value="EyeColor"/>
-      <description value="Eye color extension"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EyeColorVS"/>
-      </reference>
-      <name value="EyeColor Value Set"/>
-      <description value="Different eye colors."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/frpatient-exemple"/>
-      </reference>
-      <name value="frpatient-exemple"/>
-      <description value="Exemple d'un patient français"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/fr-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MeltingPotVS"/>
-      </reference>
-      <name value="Melting Pot Value Set"/>
-      <description value="Melting Pot Value Set."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ModifiedAdministrativeGender"/>
-      </reference>
-      <name value="ModifiedAdministrativeGender"/>
-      <description value="AdministrativeGender without unknown code"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-patient"/>
-      </reference>
-      <name value="Patient français"/>
-      <description value="Description du patient français"/>
+      <description value="Profil pour définir le dossier ESMS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -558,6 +483,7 @@
         <reference value="StructureDefinition/esms-bundle-resultat-recherche-notification-esms"/>
       </reference>
       <name value="SDOBundleResultatRechercheNotificationESMS"/>
+      <description value="Profil pour la définition du Bundle de réponse à la recherche d'une notification"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -568,7 +494,7 @@
         <reference value="StructureDefinition/sdo-document-reference"/>
       </reference>
       <name value="SDODocumentReference"/>
-      <description value="Suivi des orientations"/>
+      <description value="Profil pour définir le dossier SDO"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -579,28 +505,7 @@
         <reference value="StructureDefinition/sdo-task"/>
       </reference>
       <name value="SDOTask"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/TypeCarteVS"/>
-      </reference>
-      <name value="Type Carte Value Set"/>
-      <description value="Type Carte Value Set."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/type-carte-code-system"/>
-      </reference>
-      <name value="Type de carte"/>
-      <description value="Type de carte professionnelle et personnelle."/>
+      <description value="Profil pour définir le informations d'entrées et de sortie en unité"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

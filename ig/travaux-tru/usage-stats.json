@@ -1,45 +1,31 @@
 {
-  "package": "ans.fhir.fr.[code]",
+  "package": "ans.fhir.fr.sdo-esms",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [
-    {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/EyeColor",
-      "title": "EyeColor",
-      "types": [
-        "CodeableConcept"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
     "Bundle": [
       {
-        "url": "http://esante.gouv.fr/fhir/ms/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/sdo-bundle-resultat-recherche-notification-esms",
         "title": "SDOBundleResultatRechercheNotificationESMS"
       }
     ],
     "Consent": [
       {
-        "url": "http://esante.gouv.fr/fhir/ms/StructureDefinition/esms-consent",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/esms-consent",
         "title": "ESMSConsent"
       }
     ],
     "DocumentReference": [
       {
-        "url": "http://esante.gouv.fr/fhir/ms/StructureDefinition/sdo-document-reference",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/sdo-document-reference",
         "title": "SDODocumentReference"
       }
     ],
     "Task": [
       {
-        "url": "http://esante.gouv.fr/fhir/ms/StructureDefinition/sdo-task",
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/sdo-task",
         "title": "SDOTask"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/fr-patient",
-        "title": "Patient français"
       }
     ]
   },
@@ -68,9 +54,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.snapshot.element.type"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
       "StructureDefinition.snapshot.element"
     ],
@@ -93,9 +76,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/EyeColor": [
-      "Patient"
     ]
   }
 }
