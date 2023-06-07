@@ -1,9 +1,9 @@
 {
 	"resourceType": "StructureDefinition",
-	"id" : "esms-bundle-resultat-recherche-notification-esms",
-	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-notification-esms",
+	"id" : "sdo-bundle-resultat-recherche-notification-esms",
+	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms",
 	"version": "2.0",
-	"name": "ESMSBundleResultatRechercheNotificationESMS",
+	"name": "SDOBundleResultatRechercheNotificationESMS",
 	"status": "active",
 	"date": "2023-03-06T09:51:35+02:00",
 	"publisher": "ANS",
@@ -29,7 +29,7 @@
 					{
 						"code": "Resource",
 						"profile": [
-							"https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
+							" "
 						]
 					}
 				]
