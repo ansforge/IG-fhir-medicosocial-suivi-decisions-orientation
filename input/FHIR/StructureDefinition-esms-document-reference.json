@@ -1,7 +1,7 @@
 {
 	"resourceType": "StructureDefinition",
 	"id" : "esms-document-reference",
-	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/esms-document-reference",
+	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference",
 	"version": "1.0",
 	"name": "ESMSDocumentReference",
 	"status": "active",
@@ -12,7 +12,7 @@
 	"kind": "resource",
 	"abstract": false,
 	"type": "DocumentReference",
-	"baseDefinition": "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/sdo-document-reference",
+	"baseDefinition": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
 	"derivation": "constraint",
 	"differential": {
 		"element": [
