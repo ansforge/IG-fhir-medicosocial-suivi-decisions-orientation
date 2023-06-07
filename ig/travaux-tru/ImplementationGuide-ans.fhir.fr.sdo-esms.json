@@ -3,14 +3,14 @@
   "id" : "ans.fhir.fr.sdo-esms",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SuiviDecisionOrientation</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/sdo-esms/ImplementationGuide/ans.fhir.fr.sdo-esms</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SuiviDecisionOrientation</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo-esms</pre></div>"
   },
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/ImplementationGuide/ans.fhir.fr.sdo-esms",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo-esms",
   "version" : "0.1.0",
   "name" : "SuiviDecisionOrientation",
   "title" : "IG du suivi des decisions d'orientation",
   "status" : "draft",
-  "date" : "2023-06-06T15:07:48+00:00",
+  "date" : "2023-06-07T09:36:45+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -160,7 +160,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/sdo/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -439,7 +439,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/sdo-esms/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/sdo/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -615,6 +615,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/esms-bundle-resultat-recherche-notification-esms"
+      },
+      "name" : "ESMSBundleResultatRechercheNotificationESMS",
+      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une notification",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/esms-consent"
       },
       "name" : "ESMSConsent",
@@ -631,18 +643,6 @@
       },
       "name" : "ESMSDocumentReference",
       "description" : "Profil pour définir le dossier ESMS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/esms-bundle-resultat-recherche-notification-esms"
-      },
-      "name" : "SDOBundleResultatRechercheNotificationESMS",
-      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une notification",
       "exampleBoolean" : false
     },
     {

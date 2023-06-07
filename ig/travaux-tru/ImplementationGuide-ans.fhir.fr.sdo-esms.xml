@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.sdo-esms"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SuiviDecisionOrientation</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/sdo-esms/ImplementationGuide/ans.fhir.fr.sdo-esms</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SuiviDecisionOrientation</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo-esms</pre></div>
   </text>
-  <url value="https://interop.esante.gouv.fr/ig/fhir/sdo-esms/ImplementationGuide/ans.fhir.fr.sdo-esms"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo-esms"/>
   <version value="0.1.0"/>
   <name value="SuiviDecisionOrientation"/>
   <title value="IG du suivi des decisions d'orientation"/>
   <status value="draft"/>
-  <date value="2023-06-06T15:07:48+00:00"/>
+  <date value="2023-06-07T09:36:45+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -124,7 +124,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://interop.esante.gouv.fr/ig/fhir/sdo-esms/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -327,7 +327,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://interop.esante.gouv.fr/ig/fhir/sdo-esms/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -458,6 +458,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/esms-bundle-resultat-recherche-notification-esms"/>
+      </reference>
+      <name value="ESMSBundleResultatRechercheNotificationESMS"/>
+      <description value="Profil pour la définition du Bundle de réponse à la recherche d'une notification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/esms-consent"/>
       </reference>
       <name value="ESMSConsent"/>
@@ -473,17 +484,6 @@
       </reference>
       <name value="ESMSDocumentReference"/>
       <description value="Profil pour définir le dossier ESMS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/esms-bundle-resultat-recherche-notification-esms"/>
-      </reference>
-      <name value="SDOBundleResultatRechercheNotificationESMS"/>
-      <description value="Profil pour la définition du Bundle de réponse à la recherche d'une notification"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
