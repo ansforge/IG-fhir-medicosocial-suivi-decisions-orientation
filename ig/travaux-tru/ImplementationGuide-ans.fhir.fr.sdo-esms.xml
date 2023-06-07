@@ -10,7 +10,7 @@
   <name value="SuiviDecisionOrientation"/>
   <title value="IG du suivi des decisions d'orientation"/>
   <status value="draft"/>
-  <date value="2023-06-07T09:36:45+00:00"/>
+  <date value="2023-06-07T10:04:19+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -458,17 +458,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/esms-bundle-resultat-recherche-notification-esms"/>
-      </reference>
-      <name value="ESMSBundleResultatRechercheNotificationESMS"/>
-      <description value="Profil pour la définition du Bundle de réponse à la recherche d'une notification"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/esms-consent"/>
       </reference>
       <name value="ESMSConsent"/>
@@ -484,6 +473,17 @@
       </reference>
       <name value="ESMSDocumentReference"/>
       <description value="Profil pour définir le dossier ESMS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"/>
+      </reference>
+      <name value="SDOBundleResultatRechercheNotificationESMS"/>
+      <description value="Profil pour la définition du Bundle de réponse à la recherche d'une notification"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

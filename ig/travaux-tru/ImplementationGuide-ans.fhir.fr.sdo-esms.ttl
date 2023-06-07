@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionOrientation"] ; # 
   fhir:title [ fhir:v "IG du suivi des decisions d'orientation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-07T09:36:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-07T10:04:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -527,18 +527,6 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-notification-esms> ;
-         fhir:reference [ fhir:v "StructureDefinition/esms-bundle-resultat-recherche-notification-esms" ]
-       ] ;
-       fhir:name [ fhir:v "ESMSBundleResultatRechercheNotificationESMS" ] ;
-       fhir:description [ fhir:v "Profil pour la définition du Bundle de réponse à la recherche d'une notification" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent> ;
          fhir:reference [ fhir:v "StructureDefinition/esms-consent" ]
        ] ;
@@ -556,6 +544,18 @@
        ] ;
        fhir:name [ fhir:v "ESMSDocumentReference" ] ;
        fhir:description [ fhir:v "Profil pour définir le dossier ESMS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms> ;
+         fhir:reference [ fhir:v "StructureDefinition/sdo-bundle-resultat-recherche-notification-esms" ]
+       ] ;
+       fhir:name [ fhir:v "SDOBundleResultatRechercheNotificationESMS" ] ;
+       fhir:description [ fhir:v "Profil pour la définition du Bundle de réponse à la recherche d'une notification" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

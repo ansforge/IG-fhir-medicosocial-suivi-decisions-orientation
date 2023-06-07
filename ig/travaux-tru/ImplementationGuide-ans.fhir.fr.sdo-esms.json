@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionOrientation",
   "title" : "IG du suivi des decisions d'orientation",
   "status" : "draft",
-  "date" : "2023-06-07T09:36:45+00:00",
+  "date" : "2023-06-07T10:04:19+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -615,18 +615,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/esms-bundle-resultat-recherche-notification-esms"
-      },
-      "name" : "ESMSBundleResultatRechercheNotificationESMS",
-      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une notification",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/esms-consent"
       },
       "name" : "ESMSConsent",
@@ -643,6 +631,18 @@
       },
       "name" : "ESMSDocumentReference",
       "description" : "Profil pour définir le dossier ESMS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"
+      },
+      "name" : "SDOBundleResultatRechercheNotificationESMS",
+      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une notification",
       "exampleBoolean" : false
     },
     {
