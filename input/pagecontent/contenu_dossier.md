@@ -1,4 +1,4 @@
-#Document CDA
+<!-- #Document CDA
 ##Standard utilisé
 
 Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur la plateforme ART-DECOR de l’ANS3. 
@@ -48,4 +48,4 @@ Les éléments de type "CV", "CE" ou "CD" doivent respecter les contraintes suiv
     o	codeSystem, OID de la terminologie source du code et du libellé associé,
 •	si aucun concept codé n’a été trouvé pour répondre à la situation, l’élément fils originalText doit alors être renseigné sous la forme d'un texte libre
 •	si l’information répondant à l’élément n’est pas connue ou n’est pas divulgable et si cette situation est admise pour cet élément, renseigner alors l’attribut nullFlavor avec le motif approprié
-•	l'élément qualifier n'est pas utilisé car non supporté par la version ultérieure des types de données HL7 V3
+•	l'élément qualifier n'est pas utilisé car non supporté par la version ultérieure des types de données HL7 V3 -->
