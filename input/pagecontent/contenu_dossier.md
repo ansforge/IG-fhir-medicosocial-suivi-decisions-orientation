@@ -14,6 +14,11 @@ Les éléments en italique soulignés correspondent aux cardinalités de base de
 ### Structure des documents CDA
 Cette section présente la structure générale des données structurées du dossier de l’individu. Elle met en correspondance les éléments du CDA avec les éléments présentés dans la SFE-ESMS. 
 Les éléments imposés par CDA sont indiqués par « X » dans la colonne « Elément de la spécification Fonctionnelle SI-ESMS ».
+
+Ce volet décrit le contenu de 2 documents CDA différent :
+- Le document CDA portant les données de l'individu et la décision
+- Le document CDA portant l'évaluation
+  
 [Lien vers le PDF spécifiant la structure des documents CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v2.4.pdf)
 
 ### En-tête du document
@@ -31,6 +36,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 - Section représentant l'évaluation d'un individu.
 
 [Lien vers le PDF spécifiant le corps du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v2.4.pdf)
+
 
 ## Types de données essentiels
 ### Type de donnée "II" possède la structure suivante :

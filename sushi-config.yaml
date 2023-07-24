@@ -23,9 +23,13 @@ pages:
     index.md:
         title: Accueil     
     liste_profils.md:
-        title: Liste des profils   
-    construction_des_flux.md:
+        title: Liste des profils  
+    correspondance_objet.md:
+        title: Correspondance entre objets métier et ressources du standard HL7 FHIR 
+    specification_fonctionnelle.md:
         title: Specification fonctionelle
+    specification_technique.md:
+        title: Specfication technique
     contenu_dossier.md:
         title: Contenu du dossier
     st_flux1.1.md:
@@ -66,8 +70,10 @@ pages:
 
 menu:
     Accueil: index.html
+    Specification Fonctionnelle: specification_fonctionnelle.html
+    Specification Technique: specification_technique.html
     Description des flux:
-        Construction des flux: construction_des_flux.html
+        Correspondance entre objets métier et ressources du standard HL7 FHIR: correspondance_objet.html
         Contenu du dossier : contenu_dossier.html
         Flux 1.1 RecherchePersonneOrienteeDecision: st_flux1.1.html
         Flux 1.2 ResultatRecherchePersonneOrienteeDecision: st_flux1.2.html

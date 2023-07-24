@@ -2,9 +2,11 @@
 
 | Profil  | description |
 | --- | --- |
-| [SDOBundleResultatRechercheNotification](StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html) | Profil générique créé dans le contexte du suivi des orientations. |
-| [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | Profil générique créé à partir de « FrPractitionerRoleExercice » dans le contexte de l’Annuaire Santé pour décrire l’activité exercée par le PS. |
-| [SDOTask](StructureDefinition-sdo-task.html) | Profil générique créé à partir de « FrOrganization » dans le contexte de l’Annuaire Santé pour décrire les structures d'exercice. |
+| [SDOBundleResultatRechercheNotification](StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html) | Profil générique créé dans le contexte du suivi des orientations pour transporter les résultats d'une recherche de notification. |
+| [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | Profil générique créé dans le contexte du suivi des orientations pour véhiculer les données de l’individu, la 
+décision et l’évaluation contenus dans le document CDA. |
+| [SDOTask](StructureDefinition-sdo-task.html) | Profil générique créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et 
+des unités opérationnelles vis-à-vis de la prestation. |
 
 
 ### Liste des profils applicatifs - Suivi des orientations
