@@ -3,6 +3,11 @@
 
 L’ESMS transmet au SI-SDO le statut de la personne orientée en fonction de son avancée dans le processus d'orientation
 
+### Diagramme 
+
+<div style="text-align:center;"> {%include flux4.svg%} </div>
+
+
 ### Construction du flux
 
 S’il s’agit du premier statut transmis pour cette décision d’orientation, le SI-ESMS envoi une requête HTTPS HTTP POST contenant une ressource Task :

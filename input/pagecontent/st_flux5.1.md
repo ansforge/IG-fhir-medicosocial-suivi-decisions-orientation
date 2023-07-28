@@ -4,6 +4,11 @@
 Ce flux permet à un ESMS de savoir si le statut de décision des personnes orientées en cours d’instruction est passé à « Période d’essai en cours » (code 185) ou « Usager pris en charge » (code 186) dans un autre ESMS. Il permet également de rechercher si un statut de décision, de l’ESMS émettant la recherche, est passé à « Admission impossible entérinée » (code 46).  
 Cette recherche est ainsi formulée par le SI-ESMS auprès du SI-SDO. 
 
+### Diagramme 
+
+<div style="text-align:center;"> {%include flux5.svg%} </div>
+
+
 ### Construction du flux
 
 Le flux 5.1 est basé sur l’opération « search » de l’API REST FHIR. La recherche s’effectue sur la ressource de type Task et est constituée des paramètres de recherche obligatoire listés dans le tableau ci-dessous : 

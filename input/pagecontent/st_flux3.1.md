@@ -3,6 +3,9 @@
 
 Ce flux permet à l’ESMS de rechercher les informations d’évaluation d’une personne orientée. Cette recherche est ainsi formulée par le SI-ESMS auprès du SI-SDO sur une décision précise précédemment reçue via le flux 1.4. 
 
+### Diagramme 
+
+<div style="text-align:center;"> {%include flux3.svg%} </div>
 
 ### Construction du flux
 

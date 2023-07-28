@@ -5,6 +5,10 @@ Ce flux contient le résultat de la recherche des informations d’évaluation d
 Il s’agit d’un flux qui permet de retourner la ressource « DocumentReference » répondant aux critères de recherche. La ressource est retournée uniquement si l’ESMS ayant effectué la requête est autorisé à accéder à ces informations. Le SI-SDO s’appuie sur les informations du token d’authentification pour effectuer cette vérification.
 
 
+### Diagramme 
+
+<div style="text-align:center;"> {%include flux3.svg%} </div>
+
 
 ### Construction du flux
 

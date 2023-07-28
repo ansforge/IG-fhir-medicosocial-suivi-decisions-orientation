@@ -1,7 +1,7 @@
 # Document CDA
 ## Standard utilisé
 
-Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur la plateforme ART-DECOR de l’ANS3. 
+Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur la plateforme ART-DECOR de l’ANS3 <sup>1</sup>. 
 Dans cette section, une mise en correspondance est faite entre : 
 -   Les éléments XML proposés par CDA,
 -   Les données structurées décrites dans les SFE SI-ESMS.
@@ -127,3 +127,5 @@ Les éléments de type "CV", "CE" ou "CD" doivent respecter les contraintes suiv
 -	si aucun concept codé n’a été trouvé pour répondre à la situation, l’élément fils originalText doit alors être renseigné sous la forme d'un texte libre
 -	si l’information répondant à l’élément n’est pas connue ou n’est pas divulgable et si cette situation est admise pour cet élément, renseigner alors l’attribut nullFlavor avec le motif approprié
 -	l'élément qualifier n'est pas utilisé car non supporté par la version ultérieure des types de données HL7 V3
+
+<sup>1</sup> [https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates](https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates)

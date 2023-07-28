@@ -1,7 +1,14 @@
 ### Flux 2 - Accord    
 
 Ce flux contient le consentement de la personne orientée permettant à l’ESMS de récupérer les données de l’évaluation concernant une décision précédemment reçu via le flux 1.4.
+
+### Diagramme 
+
+<div style="text-align:center;"> {%include flux2.svg%} </div>
+
+
 ### Construction du flux
+
 L’ESMS envoi cet accord à travers une ressource Consent, conforme au profil « ESMS-Consent ». Cette dernière sera envoyée dans le corps de la requête HTTPS POST suivante : 
 
 `POST [base]/Consent`

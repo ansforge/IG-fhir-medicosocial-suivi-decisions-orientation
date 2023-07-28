@@ -7,6 +7,10 @@ Le SI-SDO filtre également les ressources des décisions concernant l’ESMS po
 -	Le statut « Période d’essai en cours » (code 185) ou « Usager pris en charge » (code 186) lié à un autre ESMS,
 -	Le statut « Admission impossible entérinée » (code 46)  d’un dossier de l’ESMS ayant émis la recherche
 
+### Diagramme 
+
+<div style="text-align:center;"> {%include flux5.svg%} </div>
+
 
 ### Construction du flux
 

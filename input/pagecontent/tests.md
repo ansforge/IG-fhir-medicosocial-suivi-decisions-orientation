@@ -15,6 +15,7 @@ Il est accessible en ligne :
 
 Il est notamment utilisé lors des Projectathons organisés par l’ANS pour les éditeurs.
 
+La liste des validateurs créés dans le cadre de ce volet sont disponibles [ici](20230706_Prod_ESMS_RecapValidateurs.xlsx)
 
 #### HAPI FHIR
 

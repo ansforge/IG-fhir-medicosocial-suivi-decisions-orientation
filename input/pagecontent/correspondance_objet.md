@@ -198,7 +198,7 @@ Le flux 2 contient l'accord de la personne orientée pour un examen approfondi d
     </div>
 </div>
 
-### Flux 3 : Accord
+### Flux 3 : Evaluation
 
 Les données à véhiculer dans ce flux sont spécifiées dans le document CDA portant l’évaluation décrit en partie 2.1.1.2. Il n’y a donc pas de correspondance à faire entre les objets métiers et des ressources du standard HL7 FHIR. 
 Pour transporter ce document entre le SI-SDO et le SI-ESMS, une ressource « DocumentReference » et plus particulièrement le profil ESMSDocumentReference sera utilisée. 
@@ -248,7 +248,7 @@ Ci-dessous les éléments qui seront à renseigner dans chaque ressource Documen
         </tr>
         <tr>
             <td rowspan="2" style="width: 141.5pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision</p>
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision </p>
             </td>
             <td style="width: 106.35pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idDecision&nbsp;: [1..1] Identifiant</p>

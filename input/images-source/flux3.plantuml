@@ -1,0 +1,34 @@
+@startuml flux3
+hide footbox
+
+skinparam sequence {
+ arrowColor black
+ ParticipantBorderColor RoyalBlue
+ ParticipantBackgroundColor white
+ LifeLineBorderColor RoyalBlue
+ LifeLineBackgroundColor RoyalBlue
+ ParticipantFontSize 14
+ ParticipantFontName arial
+ ParticipantPadding 20
+}
+skinparam  roundcorner 20
+
+
+participant "SI-SDO" as SDO
+participant "SI-ESMS" as ESMS
+activate SDO
+activate ESMS
+
+
+ESMS-[#black]> SDO : Flux 3.1 **RechercheEvaluation** \n <color #FireBrick>GET [base]/DocumentReference?identifier=[idNat-Decision]&type=51848-0&elements=id</color>
+SDO-[#black]-> ESMS: Flux 3.2 **ResultatEvaluation** \n <color #FireBrick>OK 200 (+ ressource "Bundle")</color>
+
+note left
+Liste des identifiants des ressources 
+DocumentReference répondant à la recherche.
+end note
+
+
+deactivate SDO
+deactivate ESMS
+@enduml

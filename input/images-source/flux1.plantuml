@@ -1,0 +1,49 @@
+@startuml flux1
+hide footbox
+
+skinparam sequence {
+ arrowColor black
+ ParticipantBorderColor RoyalBlue
+ ParticipantBackgroundColor white
+ LifeLineBorderColor RoyalBlue
+ LifeLineBackgroundColor RoyalBlue
+ ParticipantFontSize 14
+ ParticipantFontName arial
+ ParticipantPadding 20
+}
+skinparam  roundcorner 20
+
+
+participant "SI-SDO" as SDO
+participant "SI-ESMS" as ESMS
+activate SDO
+activate ESMS
+
+
+ESMS-[#black]> SDO : Flux 1.1 **RecherchePersonneOrienteeDecision** \n <color #FireBrick>GET [base]/DocumentReference?type=57830-2&_lastUpdated=gt[dateDernièreRecherche]&_elements=id</color>
+SDO-[#black]-> ESMS: Flux 1.2 **ResultatRecherchePersonneOrienteeDecision** \n <color #FireBrick>OK 200 (+ ressource "Bundle")</color>
+
+note left
+Liste des identifiants des ressources 
+DocumentReference répondant à la recherche.
+end note
+
+loop
+
+ESMS-[#black]> SDO : Flux 1.3 **ConsultationPersonneOrienteeDecision** \n <color #FireBrick>GET [base]/DocumentReference/id</color>
+SDO-[#black]-> ESMS: Flux 1.4 **ResultatConsultationPersonneOrienteeDecision** \n <color #FireBrick>OK 200 (+ ressource "DocumentReference")</color>
+
+note left
+La ressource DocumentReference contient 
+un document CDA portant les données de 
+l’individu et la décision (cf 2.1.1.1), 
+l'identifiant unique de la décision au sein de la MDPH 
+et l'identifiant technique national généré par le SI-SDO.
+end note
+
+end loop
+
+
+deactivate SDO
+deactivate ESMS
+@enduml

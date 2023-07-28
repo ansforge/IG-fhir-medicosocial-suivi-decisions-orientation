@@ -138,18 +138,17 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
 </table>
 
 ### Ressources profilées 
-
 <table style="width:559.95pt;margin-left:-14.6pt;border-collapse:collapse;border: none;">
     <tbody>
         <tr>
             <td style="width:102.8pt;border:solid gray 1.0pt;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong>Nom de la ressource</strong></p>
+                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong><span style="color: rgb(0, 0, 0);">Nom de la ressource</span></strong></p>
             </td>
             <td style="width:216.2pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong>Modifications apport&eacute;es</strong></p>
+                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong><span style="color: rgb(0, 0, 0);">Modifications apport&eacute;es</span></strong></p>
             </td>
             <td style="width:240.95pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong>Profil</strong></p>
+                <p style='margin:0cm;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;color:red;font-style:italic;'><strong><span style="color: rgb(0, 0, 0);">Profil</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -191,7 +190,7 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: undefined;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Modification de certaines cardinalit&eacute;es</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="line-height:115%;font-family:Calibri;font-size:10.0pt;color:black;">Modification de certaines cardinalit&eacute;es</span></li>
                     </ul>
                 </div>
             </td>
@@ -235,7 +234,6 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
         </tr>
     </tbody>
 </table>
-
 ### Intéractions FHIR :
 Les interactions possibles entre les systèmes pour échanger et agir sur les ressources sont décrites en termes d’API REST.
 Différents niveaux d’interactions sont possibles :
