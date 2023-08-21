@@ -1,0 +1,41 @@
+{
+    "resourceType":"DocumentReference",
+    "id": "id-exemple-esms-document-reference-np",
+    "meta": {
+		"profile": [
+			"https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"
+		]
+    },
+	"identifier": [
+		{
+		"use" : "usual",
+		"value": "idDecision"
+		}
+	],
+    "status":"current",
+	"type": {
+		"coding": [
+			{
+			"system": "http://loinc.org",
+			"code": "57830-2",
+			"display": "Admission request Document"
+			}
+		]
+	},
+    "author":[
+        {
+            "reference":"Practitioner/testReference",
+            "display":"Practitioner/Dr Test"
+        }
+    ],
+    "content":[
+        {
+            "attachment":{
+                "contentType":"text/plain",
+                "language":"fr",
+                "title":"Suivie des orientations de Michel Test",
+                "data":"SGVsbG8gd29ybGQ="
+            }
+        }
+    ]
+}

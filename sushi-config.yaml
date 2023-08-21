@@ -32,66 +32,51 @@ pages:
     #    title: Specfication technique
     contenu_dossier.md:
         title: Contenu du dossier
-    st_flux1.1.md:
-        title: Flux 1.1
-    st_flux1.2.md:
-        title: Flux 1.2
-    st_flux1.3.md:
-        title: Flux 1.3
-    st_flux1.4.md:
-        title: Flux 1.4
+    synthese_flux.md:
+        title: Synthèse des flux
+    st_flux1.md:
+        title: Flux 1.1/1.2/1.3/1.4 - Recherche et consultation de personne orientee et decision
     st_flux2.md:
-        title: Flux 2
-    st_flux3.1.md:
-        title: Flux 3.1
-    st_flux3.2.md:
-        title: Flux 3.2
+        title: Flux 2 - Accord
+    st_flux3.md:
+        title: Flux 3.1/3.2 - Recherche et résultat évaluation
     st_flux4.md:
-        title: Flux 4
-    st_flux5.1.md:
-        title: Flux 5.1
-    st_flux5.2.md:
-        title: Flux 5.2
-    st_flux5.3.md:
-        title: Flux 5.3
-    st_flux5.4.md:
-        title: Flux 5.4
-    #autres_ressources.md:
-        #title: Autres Ressources
-        securite.md:
-            title: Sécurité
-        downloads.md:
-            title: Téléchargements et usages
-    
+        title: Flux 4 - StatutPersonneOrientee
+    st_flux5.md:
+        title: Flux 5.1/5.2/5.3/5.4 - Recherche et consultation de statut
+    ressource_cda.md: Ressource CDA 
+    securite.md:
+        title: Sécurité
+    downloads.md:
+        title: Téléchargements et usages
     tests.md:
         title: Tests      
     about.md:
         title: A propos de ce guide
+    autres_ressources.md:
+        title: Autres ressources associées à la specification
 
 menu:
     Accueil: index.html
     #Specification Fonctionnelle: specification_fonctionnelle.html
     #Specification Technique: specification_technique.html
+    Contenu du dossier : contenu_dossier.html
     Description des flux:
         Correspondance entre objets métier et ressources du standard HL7 FHIR: correspondance_objet.html
-        Contenu du dossier : contenu_dossier.html
-        Flux 1.1 RecherchePersonneOrienteeDecision: st_flux1.1.html
-        Flux 1.2 ResultatRecherchePersonneOrienteeDecision: st_flux1.2.html
-        Flux 1.3 ConsultationPersonneOrienteeDecision: st_flux1.3.html
-        Flux 1.4 RésultatConsultationPersonneOrienteeDecision: st_flux1.4.html
-        Flux 2 Accord: st_flux2.html
-        Flux 3.1 Recherche évaluation: st_flux3.1.html
-        Flux 3.2 RésultatEvaluation: st_flux3.2.html
-        Flux 4 StatutPersonneOrientee: st_flux4.html
-        Flux 5.1 RechercheStatut: st_flux5.1.html
-        Flux 5.2 ResultatStatut: st_flux5.2.html
-        Flux 5.3 ConsultationStatut: st_flux5.3.html
-        Flux 5.4 RésultatConsultationStatut: st_flux5.4.html 
-    Ressources de conformité: liste_profils.html
+        Synthèse des flux: synthese_flux.html
+        Flux 1.1/1.2/1.3/1.4 - Recherche et consultation de personne orientee et decision: st_flux1.html
+        Flux 2 - Accord: st_flux2.html
+        Flux 3.1/3.2 - Recherche et résultat évaluation: st_flux3.html
+        Flux 4 - StatutPersonneOrientee: st_flux4.html
+        Flux 5.1/5.2/5.3/5.4 - Recherche et consultation de statut: st_flux5.html
+    Ressources de conformité:
+        Ressource FHIR : liste_profils.html
+        Ressource CDA : ressource_cda.html
     Tests:   tests.html
     Autres ressources:
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
+        Autres ressources: autres_ressources.html
         "Documentation sur les IG": new-tab https://interop.esante.gouv.fr/ig/documentation/
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/

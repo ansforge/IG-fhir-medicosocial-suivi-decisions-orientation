@@ -3,7 +3,7 @@
 
 Ce flux contient le résultat de la demande de consultation d’un statut d’une décision d’orientation (flux 5.3). Cette réponse est retournée par le SI-SDO au SI-ESMS.
 
-### Diagramme 
+### diagramme de séquence 
 
 <div style="text-align:center;"> {%include flux5.svg%} </div>
 

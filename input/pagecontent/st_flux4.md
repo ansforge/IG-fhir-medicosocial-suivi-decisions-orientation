@@ -3,15 +3,17 @@
 
 L’ESMS transmet au SI-SDO le statut de la personne orientée en fonction de son avancée dans le processus d'orientation
 
-### Diagramme 
+### diagramme de séquence 
 
 <div style="text-align:center;"> {%include flux4.svg%} </div>
 
 
 ### Construction du flux
 
-S’il s’agit du premier statut transmis pour cette décision d’orientation, le SI-ESMS envoi une requête HTTPS HTTP POST contenant une ressource Task :
+Le SI-ESMS envoi une requête HTTPS POST contenant une ressource Task :
+
 `POST [base]/Task`
+
 Où [base] est le point de contact FHIR.
-Si la création de la ressource Task est correctement effectuée, le SI-SDO doit retourner un code HTTPS HTTP 201 « created ». 
-En cas d’erreur, le SI-SDO doit répondre avec les codes HTTPS HTTP appropriés tels que définis par l’API REST FHIR.
+Si la création de la ressource Task est correctement effectuée, le SI-SDO doit retourner un code HTTPS 201 « created ». 
+En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/operationoutcome.html).

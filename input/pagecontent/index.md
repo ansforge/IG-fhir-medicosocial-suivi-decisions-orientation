@@ -7,9 +7,9 @@ TODO : ajouter description du projet en anglais en qq lignes
 
 Ce document présente les spécifications techniques du volet « SI-ESMS » (ST SI-ESMS). Ces dernières spécifient les échanges d’information entre le Système d’Information de Suivi des Orientations (SI-SdO) et le Système d'Information des Etablissements et Services Médico-Sociaux (SI-ESMS) suite à une notification de décision d’orientation prise par la Commission des Droits et de l’Autonomie des Personnes Handicapées (CDAPH). 
 La production de ce document est basée sur : 
--	Les Spécifications Fonctionnelles des Echanges du volet « SI-ESMS » (SFE SI-ESMS), 
--	Le standard Clinical Document Architecture R2  (CDA) porté par HL7 pour représenter les données présentées dans les SFE SI-ESMS,
--	Le standard HL7 FHIR v4.0.1  pour le transport. 
+-	[Les Spécifications Fonctionnelles des Echanges du volet « SI-ESMS » (SFE SI-ESMS)](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.4.pdf), 
+-	[Le standard Clinical Document Architecture R2  (CDA) porté par HL7 pour représenter les données présentées dans les SFE SI-ESMS,](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7)
+-	[Le standard HL7 FHIR v4.0.1  pour le transport.](https://www.hl7.org/fhir/)
 
 Le tableau ci dessous rappelle les flux décrits dans la SFE :
 
@@ -28,9 +28,6 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             <td style="width:95.25pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">R&eacute;cepteur</span></p>
             </td>
-            <td style="width:78.3pt;border:solid gray 1.0pt;border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#A5A5A5;">P&eacute;rim&egrave;tre</span></strong></p>
-            </td>
         </tr>
         <tr>
             <td style="width:160.9pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
@@ -44,9 +41,6 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:95.25pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">SI-ESMS Consommateur</span></p>
-            </td>
-            <td style="width:78.3pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Oui</span></p>
             </td>
         </tr>
         <tr>
@@ -62,9 +56,6 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             <td style="width:95.25pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">SI-SdO Gestionnaire</span></p>
             </td>
-            <td style="width:78.3pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Oui</span></p>
-            </td>
         </tr>
         <tr>
             <td style="width:160.9pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
@@ -78,9 +69,6 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:95.25pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">SI-ESMS Producteur</span></p>
-            </td>
-            <td style="width:78.3pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Oui</span></p>
             </td>
         </tr>
         <tr>
@@ -96,9 +84,6 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             <td style="width:95.25pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">SI-SdO Gestionnaire</span></p>
             </td>
-            <td style="width:78.3pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Oui</span></p>
-            </td>
         </tr>
         <tr>
             <td style="width:160.9pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
@@ -112,9 +97,6 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:95.25pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">SI-ESMS Consommateur</span></p>
-            </td>
-            <td style="width:78.3pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Oui</span></p>
             </td>
         </tr>
         <tr>
@@ -130,12 +112,16 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             <td style="width:95.25pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">SI-ESMS Producteur</span></p>
             </td>
-            <td style="width:78.3pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Oui</span></p>
-            </td>
         </tr>
     </tbody>
 </table>
+
+#### Lectorat cible
+Ce document s'adresse aux développeurs des interfaces interopérables des systèmes implémentant le volet « SI-ESMS » ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces. 
+L’hypothèse est faite que le lecteur est familier du standard CDA et du standard FHIR. 
+
+#### Utilisation
+Les spécifications d'interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d'un système d'information partagé. Il appartient à tout responsable de traitement de s'assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex.: cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité ...). 
 
 ### Ressources profilées 
 <table style="width:559.95pt;margin-left:-14.6pt;border-collapse:collapse;border: none;">
@@ -157,9 +143,8 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Modification de certaines cardinalit&eacute;es</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contraintes sur les r&eacute;f&eacute;rences</span></li>
+                    <ul>
+                        <li>Pas de modification par rapport au profil utilisé</li>
                     </ul>
                 </div>
             </td>
@@ -173,9 +158,8 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur le type searchset</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur la ressource (task)</span></li>
+                    <ul>
+                        <li>Pas de modification par rapport au profil utilisé</li>
                     </ul>
                 </div>
             </td>
@@ -189,8 +173,8 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="line-height:115%;font-family:Calibri;font-size:10.0pt;color:black;">Modification de certaines cardinalit&eacute;es</span></li>
+                    <ul>
+                        <li>Modification de certaines cardinalit&eacute;es</li>
                     </ul>
                 </div>
             </td>
@@ -204,9 +188,9 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur le type searchset</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur la ressource (documentReference)</span></li>
+                    <ul>
+                        <li>Contrainte sur le type searchset</li>
+                        <li>Contrainte sur la ressource (documentReference)</li>
                     </ul>
                 </div>
             </td>
@@ -220,11 +204,11 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
             </td>
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur certaine cardinalit&eacute;s</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur le scope</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur la category</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:10.0pt;">Contrainte sur meaning et reference des data</span></li>
+                    <ul>
+                        <li>Contrainte sur certaine cardinalit&eacute;s</li>
+                        <li>Contrainte sur le scope</li>
+                        <li>Contrainte sur la category</li>
+                        <li>Contrainte sur meaning et reference des data</li>
                     </ul>
                 </div>
             </td>
@@ -234,6 +218,7 @@ Le tableau ci dessous rappelle les flux décrits dans la SFE :
         </tr>
     </tbody>
 </table>
+
 ### Intéractions FHIR :
 Les interactions possibles entre les systèmes pour échanger et agir sur les ressources sont décrites en termes d’API REST.
 Différents niveaux d’interactions sont possibles :
@@ -251,9 +236,9 @@ Enfin, le corps des requêtes HTTP est une ressource FHIR qui peut être format�
 
 ### Liens utiles :
 
-- [Spécification fonctionnelle ESMS](https://esante.gouv.fr/sites/default/files/media_entity/documents/cisis-specifications_fonctionnelles_si-esms_v2.2.pdf)
+- [Spécification fonctionnelle ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.4.pdf)
 - [Etude des normes et standards ESMS](https://esante.gouv.fr/sites/default/files/media_entity/documents/cisis-normesstandards_si-esms_v1.0.pdf)
-- [Spécification technique ESMS](https://esante.gouv.fr/sites/default/files/media_entity/documents/cisis-tec_specifications_techniques_si-esms_v2.4.pdf)
+- [Spécification technique ESMS](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1.pdf)
 
 
 ### Auteurs et contributeurs

@@ -2,7 +2,7 @@
 
 Ce flux contient le résultat de la demande de consultation d’une nouvelle décision d’orientation ou de dossiers mis à jour (flux 1.3). Cette réponse est retournée par le SI-SDO au SI-ESMS.
 
-### Diagramme 
+### diagramme de séquence 
 
 <div style="text-align:center;"> {%include flux1.svg%} </div>
 

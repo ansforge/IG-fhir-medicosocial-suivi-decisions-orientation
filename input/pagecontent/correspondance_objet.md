@@ -1,4 +1,3 @@
-## Correspondance entre objets métier et ressources du standard HL7 FHIR
 Dans cette section, la mise en correspondance est faite entre :
 -	Les objets métier identifiés à l’issue des spécifications fonctionnelles des échanges,
 -	Les ressources du standard HL7 FHIR.
@@ -39,17 +38,14 @@ Pour transporter ce document entre le SI-SDO et le SI-ESMS, une ressource « Doc
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Individu, Decision, DroitPrestation, DetailPrestation, PriseCharge, Parent, MesuredeProtection, Identite, Quantification, Caracterisation</p>
             </td>
             <td style="width: 106.35pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Document CDA portant les donn&eacute;es de l&rsquo;individu et la d&eacute;cision (cf <a href="#_Flux_1.4_%3A">2.1.1.1</a>)</p>
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>[1..1]</p>
+                <a href= "contenu_dossier.html">Document CDA portant les donn&eacute;es de l&rsquo;individu et la d&eacute;cision [1..1]</a>   
             </td>
             <td rowspan="3" style="width: 99.2pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>DocumentReference</p>
             </td>
             <td style="width: 162.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>content[1..*].attachment[1..1].data : [0..1] base64Binary&nbsp;</li>
-                    </ul>
+                    <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>content[1..*].attachment[1..1].data : [0..1] base64Binary&nbsp;</p>
                 </div>
             </td>
         </tr>
@@ -63,8 +59,8 @@ Pour transporter ce document entre le SI-SDO et le SI-ESMS, une ressource « Doc
             <td style="width: 162.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>identifier : [0..*] Identifier&nbsp;</p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>identifier.use = usual&nbsp;</li>
+                    <ul>
+                        <li>identifier.use = usual&nbsp;</li>
                     </ul>
                 </div>
             </td>
@@ -76,8 +72,8 @@ Pour transporter ce document entre le SI-SDO et le SI-ESMS, une ressource « Doc
             <td style="width: 162.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>identifier&nbsp;: [0..*] Identifier</p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>identifier.use = official</li>
+                    <ul>
+                        <li>identifier.use = official</li>
                     </ul>
                 </div>
             </td>
@@ -90,113 +86,70 @@ L’information portant la MDPH d’origine du document est portée par le token
 ### Flux 2 : Accord
 
 Le flux 2 contient l'accord de la personne orientée pour un examen approfondi de son dossier par un ESMS :
-
 <table style="width:509.5pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
-            <td colspan="2" style="width: 221pt;border: 1pt solid rgb(191, 191, 191);background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td colspan="2" style="width: 214.95pt;border: 1pt solid rgb(191, 191, 191);background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ments m&eacute;tier</span></strong></p>
             </td>
-            <td colspan="2" style="width: 288.5pt;border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td colspan="2" style="width: 294.55pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-image: none;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ments FHIR</span></strong></p>
             </td>
         </tr>
         <tr>
-            <td style="width: 92.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 87.3pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Classe</span></strong></p>
             </td>
-            <td style="width: 128.95pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 127.65pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Attribut</span></strong></p>
             </td>
-            <td style="width: 81.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 93.35pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Ressource</span></strong></p>
             </td>
-            <td style="width: 207.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 201.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ment</span></strong></p>
             </td>
         </tr>
         <tr>
-            <td rowspan="4" style="width: 92.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
+            <td rowspan="4" style="width: 87.3pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Accord</p>
             </td>
-            <td style="width: 128.95pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 127.65pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>accordPersonneOrientee&nbsp;: [1..1] Indicateur</p>
             </td>
-            <td rowspan="4" style="width: 81.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td rowspan="4" style="width: 93.35pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Consent</p>
             </td>
-            <td style="width: 207.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 201.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>status&nbsp;: [1..1] code</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 128.95pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 127.65pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>dateRecueilAccord&nbsp;: [1..1] Date</p>
             </td>
-            <td style="width: 207.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 201.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>dateTime&nbsp;: [0..1] dateTime</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 128.95pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 127.65pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idNat_Struct&nbsp;: [1..1] Identifiant</p>
             </td>
-            <td style="width: 207.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 201.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>meta[0..1].source : [0..1] uri</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 128.95pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision<a href="#_ftn1" name="_ftnref1" title=""><span style="vertical-align:super;"><span style="vertical-align:super;"><span style='font-size:12px;line-height:115%;font-family:"Arial",sans-serif;'>[1]</span></span></span></a></p>
-            </td>
-            <td style="width: 207.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>provision[0..1].data[0..*].reference : [1..1]&nbsp;<a href="http://hl7.org/fhir/R4/references.html#Reference"><span style="color:windowtext;text-decoration:  none;">Reference</span></a>(<a href="http://hl7.org/fhir/R4/resourcelist.html"><span style="color:windowtext;text-decoration:none;">Any</span></a>)</p>
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>R&eacute;f&eacute;rence &agrave; la ressource DocumentReference</li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="width: 92.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision</p>
-            </td>
-            <td style="width: 128.95pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idDecision&nbsp;: [1..1] Identifiant</p>
-            </td>
-            <td rowspan="2" style="width: 81.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>DocumentReference</p>
-            </td>
-            <td style="width: 207.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>identifier : [0..*] Identifier&nbsp;</p>
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>identifier.use = usual&nbsp;</li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 128.95pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 127.65pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idNat_Decision&nbsp;: [1..1] Identifiant</p>
             </td>
-            <td style="width: 207.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>identifier&nbsp;: [0..*] Identifier</p>
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>identifier.use = official</li>
-                    </ul>
-                </div>
+            <td style="width: 201.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>provision[0..1].data[0..*].reference : [1..1].identifier&nbsp;</p>
             </td>
         </tr>
     </tbody>
 </table>
-<div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><br>
-    <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;' id="ftn1">
-        <p style='margin:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#_ftnref1" name="_ftn1" title=""><span style="vertical-align:super;"><span style="font-size:12px;line-height:107%;"><span style="vertical-align:super;"><span style='font-size:12px;line-height:115%;font-family:"Calibri",sans-serif;'>[1]</span></span></span></span></a><span style="font-size:12px;line-height:107%;">&nbsp;L&rsquo;objet m&eacute;tier &laquo; D&eacute;cision &raquo; regroupe les attributs d&eacute;taill&eacute;s ci-dessous.</span></p>
-    </div>
-</div>
 
 ### Flux 3 : Evaluation
 
@@ -210,67 +163,65 @@ Ci-dessous les éléments qui seront à renseigner dans chaque ressource Documen
             <td colspan="2" style="width: 247.85pt;border: 1pt solid rgb(191, 191, 191);background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ments m&eacute;tier</span></strong></p>
             </td>
-            <td colspan="2" style="width: 261.65pt;border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td colspan="2" style="width: 261.65pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-image: none;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ments FHIR</span></strong></p>
             </td>
         </tr>
         <tr>
-            <td style="width: 141.5pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 141.5pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Classe</span></strong></p>
             </td>
-            <td style="width: 106.35pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 106.35pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Attribut</span></strong></p>
             </td>
-            <td style="width: 99.2pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 99.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Ressource</span></strong></p>
             </td>
-            <td style="width: 162.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.45pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ment</span></strong></p>
             </td>
         </tr>
         <tr>
-            <td style="width: 141.5pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 141.5pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Individu, Evaluation, ElementsMedicaux, ElementsEnvironnementaux, EvolutionBesoin, ElementsScolairesProfessionnels</p>
             </td>
-            <td style="width: 106.35pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Document CDA portant l&rsquo;&eacute;valuation (cf <a href="#_Flux_3_%3A">2.1.1.2</a>) [1..1]</p>
+            <td style="width: 106.35pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <a href="contenu_dossier.html">Document CDA portant l&rsquo;&eacute;valuation [1..1]</a>
             </td>
-            <td rowspan="3" style="width: 99.2pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td rowspan="3" style="width: 99.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>DocumentReference</p>
             </td>
-            <td style="width: 162.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.45pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>content[1..*].attachment[1..1].data : [0..1] base64Binary&nbsp;</li>
-                    </ul>
+                    <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>content[1..*].attachment[1..1].data : [0..1] base64Binary&nbsp;</p>
                 </div>
             </td>
         </tr>
         <tr>
-            <td rowspan="2" style="width: 141.5pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision </p>
+            <td rowspan="2" style="width: 141.5pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision</p>
             </td>
-            <td style="width: 106.35pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 106.35pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idDecision&nbsp;: [1..1] Identifiant</p>
             </td>
-            <td style="width: 162.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.45pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>identifier : [0..*] Identifier&nbsp;</p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>identifier.use = usual&nbsp;</li>
+                    <ul>
+                        <li>identifier.use = usual&nbsp;</li>
                     </ul>
                 </div>
             </td>
         </tr>
         <tr>
-            <td style="width: 106.35pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 106.35pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idNat_Decision&nbsp;: [1..1] Identifiant</p>
             </td>
-            <td style="width: 162.45pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.45pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>identifier&nbsp;: [0..*] Identifier</p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: undefined;margin-left:26px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>identifier.use = official</li>
+                    <ul>
+                        <li>identifier.use = official</li>
                     </ul>
                 </div>
             </td>
@@ -287,172 +238,172 @@ Pour chaque objet métier, le tableau ci-dessous reprend l’ensemble des élém
             <td colspan="2" style="width: 304.55pt;border: 1pt solid rgb(191, 191, 191);background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ments m&eacute;tier</span></strong></p>
             </td>
-            <td colspan="2" style="width: 8cm;border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td colspan="2" style="width: 8cm;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: rgb(191, 191, 191) rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-image: none;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ments FHIR</span></strong></p>
             </td>
         </tr>
         <tr>
-            <td style="width: 142.4pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 142.4pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Classe</span></strong></p>
             </td>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Attribut</span></strong></p>
             </td>
-            <td style="width: 63.75pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 63.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">Ressource</span></strong></p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;background: rgb(217, 217, 217);padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="font-size:12px;line-height:115%;color:black;">El&eacute;ment</span></strong></p>
             </td>
         </tr>
         <tr>
-            <td rowspan="5" style="width: 142.4pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
+            <td rowspan="5" style="width: 142.4pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>ReponsePrestationESMS</p>
             </td>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idNat_Struct&nbsp;: [1..1] Identifiant</p>
             </td>
-            <td rowspan="17" style="width: 63.75pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td rowspan="17" style="width: 63.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>&nbsp;</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>nom&nbsp;: [1..1] Texte</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>statut&nbsp;: [0..1] Code</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>motif&nbsp;: [0..1] Texte</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>dateStatut : [0..1] DateHeure</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td rowspan="9" style="width: 142.4pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
+            <td rowspan="9" style="width: 142.4pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>ReponsePrestationUnite</p>
             </td>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idUnite&nbsp;: [1..1] Identifiant</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>nom&nbsp;: [1..1] Texte</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>categorieOrganisation&nbsp;: [1..1] Code</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>temporaliteAccueil&nbsp;: [0..1] Code</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>accueilSequentiel : [0..1] Code</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>modePriseCharge&nbsp;: [1..1] Code</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>statut&nbsp;: [1..1] Code</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>dateStatut&nbsp;: [1..1] DateHeure</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>motif&nbsp;: [0..1] Texte</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
             </td>
         </tr>
         <tr>
-            <td style="width: 142.4pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 142.4pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>DroitPrestation</p>
             </td>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idDecision&nbsp;: [1..1] Identifiant</p>
-            </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="width: 142.4pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision</p>
-            </td>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idNat_Decision&nbsp;: [1..1] Identifiant</p>
-            </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 162.15pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>typeDroitPrestation&nbsp;: [1..1] Code</p>
             </td>
-            <td style="width: 163.05pt;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0cm 5.4pt;vertical-align: top;">
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 142.4pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision</p>
+            </td>
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idDecision&nbsp;: [1..1] Identifiant</p>
+            </td>
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>idNat_Decision&nbsp;: [1..1] Identifiant</p>
+            </td>
+            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*] : BackboneElement</p>
             </td>
         </tr>

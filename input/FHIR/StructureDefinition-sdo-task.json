@@ -1,13 +1,13 @@
 {
 	"resourceType": "StructureDefinition",
-	"id" : "sdo-task",
+	"id": "sdo-task",
 	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task",
-	"version": "2.0",
+	"version": "2.2",
 	"name": "SDOTask",
 	"status": "active",
-	"date": "2023-03-06T09:51:35+02:00",
+	"date": "2023-07-06T09:51:35+02:00",
+	"description": "Profil utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation",
 	"fhirVersion": "4.0.1",
-	"description": "Profil pour définir le informations d'entrées et de sortie en unité",
 	"kind": "resource",
 	"abstract": false,
 	"type": "Task",
@@ -46,7 +46,7 @@
 					],
 					"rules": "open"
 				},
-				"min": 11
+				"min": 5
 			},
 			{
 				"id": "Task.input:idNat_Struct",
@@ -108,7 +108,11 @@
 					{
 						"code": "CodeableConcept"
 					}
-				]
+				],
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/"
+				}
 			},
 			{
 				"id": "Task.input:motifESMS",
@@ -128,7 +132,11 @@
 					{
 						"code": "CodeableConcept"
 					}
-				]
+				],
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J251-MotifStatutPersonnePriseChargeESMS/"
+				}
 			},
 			{
 				"id": "Task.input:dateStatutESMS",
@@ -154,7 +162,6 @@
 				"id": "Task.input:idUnite",
 				"path": "Task.input",
 				"sliceName": "idUnite",
-				"min": 1,
 				"max": "1"
 			},
 			{
@@ -175,7 +182,6 @@
 				"id": "Task.input:nomUnite",
 				"path": "Task.input",
 				"sliceName": "nomUnite",
-				"min": 1,
 				"max": "1"
 			},
 			{
@@ -196,7 +202,6 @@
 				"id": "Task.input:categorieOrganisation",
 				"path": "Task.input",
 				"sliceName": "categorieOrganisation",
-				"min": 1,
 				"max": "1"
 			},
 			{
@@ -265,7 +270,6 @@
 				"id": "Task.input:modePriseCharge",
 				"path": "Task.input",
 				"sliceName": "modePriseCharge",
-				"min": 1,
 				"max": "1"
 			},
 			{
@@ -290,7 +294,6 @@
 				"id": "Task.input:statutUnite",
 				"path": "Task.input",
 				"sliceName": "statutUnite",
-				"min": 1,
 				"max": "1"
 			},
 			{
@@ -305,13 +308,16 @@
 					{
 						"code": "CodeableConcept"
 					}
-				]
+				],
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite/"
+				}
 			},
 			{
 				"id": "Task.input:dateStatutUnite",
 				"path": "Task.input",
 				"sliceName": "dateStatutUnite",
-				"min": 1,
 				"max": "1"
 			},
 			{
@@ -346,7 +352,11 @@
 					{
 						"code": "CodeableConcept"
 					}
-				]
+				],
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/"
+				}
 			},
 			{
 				"id": "Task.input:typeDroitPrestation",

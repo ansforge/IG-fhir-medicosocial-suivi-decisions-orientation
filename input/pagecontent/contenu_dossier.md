@@ -1,10 +1,8 @@
-# Document CDA
 ## Standard utilisé
-
-Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur la plateforme ART-DECOR de l’ANS3 <sup>1</sup>. 
+Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur [la plateforme ART-DECOR de l’ANS3](https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates). 
 Dans cette section, une mise en correspondance est faite entre : 
 -   Les éléments XML proposés par CDA,
--   Les données structurées décrites dans les SFE SI-ESMS.
+-   Les données structurées décrites dans les [SFE SI-ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.4.pdf).
 
 
 Les éléments apparaissant en gras de couleur bleu correspondent à des extensions définies dans le cadre de cette spécifique technique afin de couvrir le besoin.
@@ -15,11 +13,11 @@ Les éléments en italique soulignés correspondent aux cardinalités de base de
 Cette section présente la structure générale des données structurées du dossier de l’individu. Elle met en correspondance les éléments du CDA avec les éléments présentés dans la SFE-ESMS. 
 Les éléments imposés par CDA sont indiqués par « X » dans la colonne « Elément de la spécification Fonctionnelle SI-ESMS ».
 
-Ce volet décrit le contenu de 2 documents CDA différent :
-- Le document CDA portant les données de l'individu et la décision
-- Le document CDA portant l'évaluation
+Ce volet décrit le contenu de 2 documents CDA différents :
+- Flux 1 : Le document CDA portant les données de l'individu et la décision
+- Flux 3 : Le document CDA portant l'évaluation
   
-[Lien vers le PDF spécifiant la structure des documents CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v2.4.pdf)
+[Lien vers le PDF spécifiant la structure des documents CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1.pdf)
 
 ### En-tête du document
 Cette section présente le contenu de l'en-tête du document CDA. On y retrouve différentes parties : 
@@ -28,18 +26,18 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
 - RecordTarget,
 - Informant.
 
-[Lien vers le PDF spécifiant l'entête du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v2.4.pdf)
+[Lien vers le PDF spécifiant l'entête du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1.pdf)
 ### Corps du document
 Cette section présente le contenu du corps du document CDA. On y retrouve différentes sections : 
 - Section représentant les informations sur le décès d'un individu,
 - Extension représentant les informations sur la décision de l'individu,
 - Section représentant l'évaluation d'un individu.
 
-[Lien vers le PDF spécifiant le corps du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v2.4.pdf)
+[Lien vers le PDF spécifiant le corps du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1.pdf)
 
 
 ## Types de données essentiels
-### Type de donnée "II" possède la structure suivante :
+### Type de donnée "II",Instance Identifier, possède la structure suivante :
 <table style="width:538.4pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -116,7 +114,15 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
     </tbody>
 </table>
 
+L’identifiant est dans tous les cas un identifiant globalement unique. Il est composé a minima d’une combinaison des attributs root et extension
+
 ### Type de données Codées "CS", "CV", "CE", "CD" :
+
+
+<div style="text-align:center;"> 
+<img src="type_donnee.png" alt="Type de données"/>
+</div>
+
 Un élément codé représente un concept. Quatre types de données sont disponibles pour coder les concepts, avec une richesse d’expression progressive.
 Les éléments du standard qui sont de type "CS" sont renseignés avec un simple code.
 Les éléments de type "CV", "CE" ou "CD" doivent respecter les contraintes suivantes :
@@ -127,5 +133,3 @@ Les éléments de type "CV", "CE" ou "CD" doivent respecter les contraintes suiv
 -	si aucun concept codé n’a été trouvé pour répondre à la situation, l’élément fils originalText doit alors être renseigné sous la forme d'un texte libre
 -	si l’information répondant à l’élément n’est pas connue ou n’est pas divulgable et si cette situation est admise pour cet élément, renseigner alors l’attribut nullFlavor avec le motif approprié
 -	l'élément qualifier n'est pas utilisé car non supporté par la version ultérieure des types de données HL7 V3
-
-<sup>1</sup> [https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates](https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates)
