@@ -75,24 +75,23 @@ Le flux 1.1 est basé sur l’opération « search » de l’API REST FHIR. La r
     </table>
 </div>
 
-Cette recherche sera envoyée au SI-SDO en utilisant la requête HTTPS GET suivante : 
+Cette recherche sera envoyée au SI-SDO en utilisant la requête HTTPS GET suivante :
 
 `GET [base]/DocumentReference?type=57830-2&_lastUpdated=gt[dateDernièreRecherche]&_elements=id`
 
-Où 
+Où :
 
-- [base] est le point de contact FHIR 
-- [dateDernièreRecherche] est au format Année-Mois-Jour
+* [base] est le point de contact FHIR 
+* [dateDernièreRecherche] est au format Année-Mois-Jour
 
-### Flux 1.2 - ResultatRecherchePersonneOrienteeDecision 
+### Flux 1.2 - ResultatRecherchePersonneOrienteeDecision
 
 Ce flux contient le résultat de la recherche de dossiers de nouvelles personnes ayant été orientées vers un ESMS ou de dossiers mis à jour les concernant. Cette réponse est retournée par le SI-SDO au SI-ESMS.
-Il s’agit d’un flux qui permet de lister les nouveaux dossiers ou les mises à jour qui concerne uniquement l’ESMS à l’origine de la requête. Le SI-SDO s’appuie sur les informations du token d’authentification pour filtrer les dossier. 
+Il s’agit d’un flux qui permet de lister les nouveaux dossiers ou les mises à jour qui concerne uniquement l’ESMS à l’origine de la requête. Le SI-SDO s’appuie sur les informations du token d’authentification pour filtrer les dossier.
 
-### diagramme de séquence 
+### diagramme de séquence
 
 <div style="text-align:center;"> {%include flux1.svg%} </div>
-
 
 ### Construction du flux
 
@@ -100,11 +99,11 @@ Le flux 1.2 se compose d’un code HTTPS 200 ok et d’un contenu. Le contenu es
 
 En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/operationoutcome.html).
 
-### Flux 1.3 - ConsultationPersonneOrienteeDecision     
+### Flux 1.3 - ConsultationPersonneOrienteeDecision
 
 Ce flux contient une demande de consultation d’une nouvelle décision d’orientation ou de dossiers mis à jour dont l’identifiant technique connu a été remonté par le flux 1.2. Cette demande de consultation est formulée par le SI-ESMS auprès du SI-SDO et fait suite à la recherche de dossiers personnes ayant été orientées vers un ESMS.
 
-### diagramme de séquence 
+### diagramme de séquence
 
 <div style="text-align:center;"> {%include flux1.svg%} </div>
 
@@ -114,11 +113,12 @@ Le flux 1.3 est basé sur l’opération « read » de l’API REST FHIR. La dem
 
 `GET [base]/DocumentReference/id`
 
-Où 
-- [base] est le point de contact FHIR ;
-- [id] est l’identifiant technique de la ressource DocumentReference tel que reçu dans le flux 1.2.
+Où :
 
-### Flux 1.4 - RésultatConsultationPersonneOrienteeDecision     
+* [base] est le point de contact FHIR ;
+* [id] est l’identifiant technique de la ressource DocumentReference tel que reçu dans le flux 1.2.
+
+### Flux 1.4 - RésultatConsultationPersonneOrienteeDecision
 
 Ce flux contient le résultat de la demande de consultation d’une nouvelle décision d’orientation ou de dossiers mis à jour (flux 1.3). Cette réponse est retournée par le SI-SDO au SI-ESMS.
 
@@ -129,10 +129,9 @@ Ce flux contient le résultat de la demande de consultation d’une nouvelle dé
 ### Construction du flux
 
 Le flux 1.4 se compose d’un code HTTPS 200 ok et contient la ressource DocumentReference. Le SI-ESMS récupère ainsi :
--	Le document CDA portant les données de l’individu et la décision décrit dans la partie [Flux 1 : Structure du document CDA portant les données de l’individu et la décision (élément content.attachment.data)](ressource_cda.html) ,
--	L’identifiant de la décision unique au sein de la MDPH (élément identifier avec identifier.use = usual),
--	L’identifiant technique national de la décision généré par le SI-SDO (élément identifier avec identifier.use = official).
+
+* Le document CDA portant les données de l’individu et la décision décrit dans la partie [Flux 1 : Structure du document CDA portant les données de l’individu et la décision (élément content.attachment.data)](ressource_cda.html) ,
+* L’identifiant de la décision unique au sein de la MDPH (élément identifier avec identifier.use = usual),
+* L’identifiant technique national de la décision généré par le SI-SDO (élément identifier avec identifier.use = official).
 
 En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/operationoutcome.html).
-
- 

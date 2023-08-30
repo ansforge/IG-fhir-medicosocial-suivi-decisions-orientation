@@ -2,6 +2,7 @@
 Dans le cadre de ce volet il y a 2 types de ressources CDA :
 * Les schématrons Art-Decor,
 * Les schémas XSD.
+
 #### Schématrons
 
 | Nom  | description |
