@@ -88,7 +88,7 @@ Le SI-SDO filtre également les ressources des décisions concernant l’ESMS po
 #### Construction du flux
 
 Le flux 5.2 se compose d’un code HTTPS 200 ok et d’un contenu. Le contenu est une ressource « Bundle » de type « searchset » encapsulant zéro, une ou plusieurs ressources « Task » répondant aux critères de recherche. Comme la recherche contient le paramètre _elements=id, les ressources « Task » ne contiendront pas l’ensemble des données connues du SI-SDO mais uniquement l’identifiant technique de la ressource permettant au SI-ESMS d’aller les consulter (cf flux 5.3). 
-En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/operationoutcome.html). 
+En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.0.1 (hl7.org))](https://hl7.org/fhir/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.0.1 (hl7.org))](https://hl7.org/fhir/operationoutcome.html). 
 
 
 ### Flux 5.3 - ConsultationStatut
@@ -123,4 +123,4 @@ Ce flux contient le résultat de la demande de consultation d’un statut d’un
 #### Construction du flux
 
 Le flux 1.4 se compose d’un code HTTP 200 ok et contient la ressource Task souhaitée.
-En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.3.0 (hl7.org))](https://hl7.org/fhir/operationoutcome.html).
+En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel que défini par l’API REST FHIR [(Http - FHIR v4.0.1 (hl7.org))](https://hl7.org/fhir/http.html). Une ressource OperationOutcome doit également y être associé pour véhiculer les messages d’erreurs détaillant la raison de l’erreur [(OperationOutcome - FHIR v4.0.1 (hl7.org))](https://hl7.org/fhir/operationoutcome.html).

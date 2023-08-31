@@ -1,4 +1,4 @@
-<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; max-width: 790px">
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Brief description of this Implementation Guide</b><br>
 
 This document presents the technical specifications of the “SI-ESMS” section. which specify the exchanges of information between the Orientation Monitoring Information System (SI-SdO) and the Information System for Medical-Social Establishments and Services (SI-ESMS) following notification of an orientation decision
@@ -225,7 +225,7 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
     </tbody>
 </table>
 
-### Intéractions FHIR
+### Intéraction FHIR
 
 Les interactions possibles entre les systèmes pour échanger et agir sur les ressources sont décrites en termes d’API REST.
 Différents niveaux d’interactions sont possibles :
@@ -252,4 +252,3 @@ Enfin, le corps des requêtes HTTP est une ressource FHIR qui peut être format�
 
 | Role  | Nom | Organisation | Contact |
 | --- | --- | --- | --- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | <prenom.nom@address.email> |

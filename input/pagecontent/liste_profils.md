@@ -1,5 +1,5 @@
 ### Liste des profils génériques
-
+Liste des profils définis dans le cadre du volet suivi des orientations (SDO).
 | Profil  | description |
 | --- | --- |
 | [SDOBundleResultatRechercheNotification](StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html) | Profil générique créé dans le contexte du suivi des orientations pour transporter les résultats d'une recherche de notification. |
@@ -9,7 +9,7 @@
 
 ### Liste des profils applicatifs - Suivi des orientations
 
-Liste des profils applicatifs héritant des profils génériques pour détailler les ressources utilisées dans le cadre du suivi des orientations ESMS.
+Liste des profils applicatifs, héritant des profils génériques issues de la spécification SDO, utilisés dans le cadre du suivi des orientations ESMS.
 
 | Profil  | description |
 | --- | --- |
