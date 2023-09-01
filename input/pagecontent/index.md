@@ -6,6 +6,8 @@ This document presents the technical specifications of the “SI-ESMS” section
 
 ### Introduction
 
+Accompagner et faciliter le parcours des personnes en situation de handicap est un enjeu majeur pour le secteur médico-social. L’objectif du volet « SI-SdO - SI-ESMS (suivi des décisions d'orientation) » qui s’inscrit dans le programme des ESMS numériques, est de permettre l’interopérabilité entre le SI-SdO et les solutions métiers des ESMS (Dossier Usager Informatisé – DUI). Ce volet permet aux professionnels des ESMS du champ PH de réaliser, depuis leur DUI, le suivi des notifications envoyées par la CDAPH, la mise à jour des statuts et de leur liste d’attente en fonction de l’état d’avancement de l’admission de l’usager dans les autres ESMS et la récupération des données qui permettent la création du dossier de l’usager et enfin d’informer le SI-SdO des suites données aux décisions par les ESMS.
+
 Ce document présente les spécifications techniques du volet « SI-ESMS » (ST SI-ESMS). Ces dernières spécifient les échanges d’information entre le Système d’Information de Suivi des Orientations (SI-SdO) et le Système d'Information des Etablissements et Services Médico-Sociaux (SI-ESMS) suite à une notification de décision d’orientation prise par la Commission des Droits et de l’Autonomie des Personnes Handicapées (CDAPH).
 
 La production de ce document est basée sur :
@@ -211,7 +213,7 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul>
-                        <li>Contrainte sur certaine cardinalit&eacute;s</li>
+                        <li>Contrainte sur certaines cardinalit&eacute;s</li>
                         <li>Contrainte sur le scope</li>
                         <li>Contrainte sur la category</li>
                         <li>Contrainte sur meaning et reference des data</li>
@@ -236,6 +238,7 @@ Différents niveaux d’interactions sont possibles :
 
 Les interactions qui pourront s’appliquer dans le cas du volet ESMS sont les suivantes :
 
+* Search pour rechercher une ou plusieurs ressources via des paramètres de recherche. Utilise la méthode HTTP GET.
 * Read pour accéder à l’état courant de la ressource. Utilise la méthode HTTP GET.
 * Create pour l’ajout d’une nouvelle ressource sur le serveur. Utilise la méthode HTTP POST.
 * Update pour la mise à jour d’une ressource existante. Utilise la méthode HTTP PUT.

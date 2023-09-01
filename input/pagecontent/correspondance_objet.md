@@ -81,11 +81,9 @@ Pour transporter ce document entre le SI-SDO et le SI-ESMS, une ressource « Doc
     </tbody>
 </table>
 
-L’information portant la MDPH d’origine du document est portée par le token d’authentification. 
-
 ### Flux 2 : Accord
 
-Le flux 2 contient l'accord de la personne orientée pour un examen approfondi de son dossier par un ESMS :
+Dans le flux 2, la personne orientée donne ou non son consentement pour un examen plus approfondi de son dossier. Cela permet à l'ESMS de récupérer les données de l'évaluation associée à la décision de la personne orientée :
 <table style="width:509.5pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -230,7 +228,7 @@ Ci-dessous les éléments qui seront à renseigner dans chaque ressource Documen
 </table>
 
 ### Flux 4 : StatutPersonneOrientee / Flux 5 : StatutEntreeESMS / Flux 6 : StatutAdmissionImpossibleEnterinee
-Pour chaque objet métier, le tableau ci-dessous reprend l’ensemble des éléments métier identifiés dans les flux 4, 5 et 6 véhiculant le statut d’une décision de manière identique. Pour chaque attribut de chaque classe métier, la ressource FHIR, et plus particulièrement l’élément de cette ressource qui sera utilisé pour véhiculer l’information, est identifiée.
+Pour chaque objet métier, le tableau ci-dessous reprend l’ensemble des éléments métier identifiés dans les flux 4, 5 et 6 véhiculant le statut d’une décision de manière identique. Pour chaque attribut de chaque classe métier, la ressource FHIR, et plus particulièrement l’élément de cette ressource qui sera utilisée pour véhiculer l’information, est identifiée
 
 <table style="width:531.35pt;border-collapse:collapse;border:none;">
     <tbody>
