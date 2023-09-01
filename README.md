@@ -133,7 +133,6 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 
 * IG : Implementation Guide
 * FHIR : Fast Healthcare Interoperability Resources
-* FIG : FHIR Implementation Guide
 * HL7 : Health Level Seven
 * CDA : Clinical Document Architecture
 * ESMS : Établissement ou service social ou médico-social
