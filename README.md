@@ -1,3 +1,5 @@
+[![Workflow Init](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/ansforge/IG-fhir-partage-de-documents-de-sante/actions/workflows/fhir-workflows.yml)
+
 # Contexte
 
 ## Contexte métier du projet
@@ -116,7 +118,8 @@ Les ressources FHIR utilisées sont :
 
 # CI/CD
 
-Les workflows associés à ce repository (.github/workflows) permettent : 
+Les workflows associés à ce repository (.github/workflows) permettent :
+
 * D'executer Sushi pour vérifier la grammaire
 * De faire les tests avec le validator_cli
 * De publier les pages : https://ansforge.github.io/{nom du repo}/ig/{nom de la branche}
@@ -131,7 +134,6 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 
 * IG : Implementation Guide
 * FHIR : Fast Healthcare Interoperability Resources
-* FIG : FHIR Implementation Guide
 * HL7 : Health Level Seven
 * CDA : Clinical Document Architecture
 * ESMS : Établissement ou service social ou médico-social
