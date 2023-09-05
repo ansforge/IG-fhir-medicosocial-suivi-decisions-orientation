@@ -19,5 +19,6 @@ L'onglet de [téléchargement](downloads.html) vous permettra de télécharger :
 Ce guide a été généré à partir de ce [repository GitHub](https://github.com/ansforge/FIG_ans-ig-PDSm), qui contient également l'historique des commits.
 
 Liens utiles :
-- [Documentation ANS sur les IGs](https://interop.esante.gouv.fr/ig/documentation)
-- [Documentation IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation)
+
+* [Documentation ANS sur les IGs](https://interop.esante.gouv.fr/ig/documentation)
+* [Documentation IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation)

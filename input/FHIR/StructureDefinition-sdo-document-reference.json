@@ -1,0 +1,31 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "sdo-document-reference",
+	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
+	"version": "2.1",
+	"name": "SDODocumentReference",
+	"status": "active",
+	"date": "2023-06-27T09:51:35+02:00",
+	"publisher": "ANS",
+	"description": "Profil pour définir le dossier SDO",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "DocumentReference",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "DocumentReference.identifier",
+				"path": "DocumentReference.identifier",
+				"min": 1
+			},
+			{
+				"id": "DocumentReference.content",
+				"path": "DocumentReference.content",
+				"max": "1"
+			}
+		]
+	}
+}

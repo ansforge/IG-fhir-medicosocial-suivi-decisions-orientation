@@ -1,0 +1,110 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "esms-consent",
+	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent",
+	"version": "2.2",
+	"name": "ESMSConsent",
+	"status": "active",
+	"date": "2023-08-10T09:51:35+02:00",
+	"description": "Profil pour la définition de l'accord",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Consent",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Consent.meta",
+				"path": "Consent.meta",
+				"min": 1
+			},
+			{
+				"id": "Consent.meta.source",
+				"path": "Consent.meta.source",
+				"min": 1
+			},
+			{
+				"id": "Consent.status",
+				"path": "Consent.status",
+				"fixedCode": "active"
+			},
+			{
+				"id": "Consent.scope",
+				"path": "Consent.scope",
+				"fixedCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/consentscope",
+							"code": "patient-privacy",
+							"display": "Privacy Consent"
+						}
+					]
+				}
+			},
+			{
+				"id": "Consent.category",
+				"path": "Consent.category",
+				"fixedCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "59284-0",
+							"display": "Consent"
+						}
+					]
+				}
+			},
+			{
+				"id": "Consent.dateTime",
+				"path": "Consent.dateTime",
+				"min": 1
+			},
+			{
+				"id": "Consent.provision",
+				"path": "Consent.provision",
+				"min": 1
+			},
+			{
+				"id": "Consent.provision.data",
+				"path": "Consent.provision.data",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Consent.provision.data.meaning",
+				"path": "Consent.provision.data.meaning",
+				"fixedCode": "related"
+			},
+			{
+				"id": "Consent.provision.data.reference",
+				"path": "Consent.provision.data.reference",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://interop.esante.gouv.fr/ig/fhir/sdo/sdo-task"
+						]
+					}
+				]
+			},
+			{
+				"id": "Consent.provision.data.reference.identifier",
+				"path": "Consent.provision.data.reference.identifier",
+				"min": 1
+			},
+			{
+				"id": "Consent.provision.data.reference.identifier.use",
+				"path": "Consent.provision.data.reference.identifier.use",
+				"min": 1,
+				"fixedCode": "official"
+			},
+			{
+				"id": "Consent.provision.data.reference.identifier.value",
+				"path": "Consent.provision.data.reference.identifier.value",
+				"min": 1
+			}
+		]
+	}
+}
