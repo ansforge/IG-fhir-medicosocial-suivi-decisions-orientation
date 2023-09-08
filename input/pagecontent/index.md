@@ -226,7 +226,7 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
     </tbody>
 </table>
 
-### Intéraction FHIR
+### Interaction FHIR
 
 Les interactions possibles entre les systèmes pour échanger et agir sur les ressources sont décrites en termes d’API REST.
 Différents niveaux d’interactions sont possibles :
