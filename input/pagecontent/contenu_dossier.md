@@ -1,4 +1,4 @@
-## Standard utilisé
+### Standard utilisé
 Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur [la plateforme ART-DECOR de l’ANS3](https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates). 
 Dans cette section, une mise en correspondance est faite entre :
 
@@ -9,7 +9,7 @@ Les éléments apparaissant en gras de couleur bleu correspondent à des extensi
 Les éléments apparaissant en rouge correspondent aux règles spécifiques à mettre en place. 
 Les éléments en italique soulignés correspondent aux cardinalités de base de CDA contraintes pour ce volet.
 
-### Structure des documents CDA
+#### Structure des documents CDA
 
 Cette section présente la structure générale des données structurées du dossier de l’individu. Elle met en correspondance les éléments du CDA avec les éléments présentés dans la SFE-ESMS. 
 Les éléments imposés par CDA sont indiqués par « X » dans la colonne « Elément de la spécification Fonctionnelle SI-ESMS ».
@@ -21,7 +21,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
   
 [Lien vers le PDF spécifiant la structure des documents CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
 
-### En-tête du document
+#### En-tête du document
 
 Cette section présente le contenu de l'en-tête du document CDA. On y retrouve différentes parties :
 
@@ -32,7 +32,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
 
 [Lien vers le PDF spécifiant l'entête du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
 
-### Corps du document
+#### Corps du document
 
 Cette section présente le contenu du corps du document CDA. On y retrouve différentes sections :
 
@@ -42,9 +42,9 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 
 [Lien vers le PDF spécifiant le corps du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
 
-## Types de données essentiels
+### Types de données essentiels
 
-### Type de donnée "II",Instance Identifier, possède la structure suivante
+#### Type de donnée "II",Instance Identifier, possède la structure suivante
 
 <table style="width:538.4pt;border-collapse:collapse;border:none;">
     <tbody>
@@ -124,7 +124,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 
 L’identifiant est dans tous les cas un identifiant globalement unique. Il est composé a minima d’une combinaison des attributs root et extension
 
-### Type de données Codées "CS", "CV", "CE", "CD"
+#### Type de données Codées "CS", "CV", "CE", "CD"
 
 <div style="text-align:center;"> 
 <img src="type_donnee.png" alt="Type de données"/>
