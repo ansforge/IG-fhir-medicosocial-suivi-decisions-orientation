@@ -249,8 +249,3 @@ Enfin, le corps des requêtes HTTP est une ressource FHIR qui peut être format�
 * [Spécification fonctionnelle ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.4.pdf)
 * [Etude des normes et standards ESMS](https://esante.gouv.fr/sites/default/files/media_entity/documents/cisis-normesstandards_si-esms_v1.0.pdf)
 * [Spécification CDA ESMS](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
-
-### Auteurs et contributeurs
-
-| Role  | Nom | Organisation | Contact |
-| --- | --- | --- | --- |
