@@ -1,4 +1,4 @@
-[![Workflow Init](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/ansforge/IG-fhir-partage-de-documents-de-sante/actions/workflows/fhir-workflows.yml)
+[![Workflow Init](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/actions/workflows/fhir-workflows.yml/badge.svg)](IG-fhir-medicosocial-suivi-decisions-orientation/actions/workflows/fhir-workflows.yml)
 
 # Contexte
 
