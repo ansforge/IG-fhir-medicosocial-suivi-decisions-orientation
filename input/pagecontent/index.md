@@ -244,6 +244,9 @@ Les interactions qui pourront s’appliquer dans le cas du volet ESMS sont les s
 
 Enfin, le corps des requêtes HTTP est une ressource FHIR qui peut être formatée en XML, JSON ou RDF (seul le format TURTLE est supporté).
 
+### Dépendances
+{% include dependency-table.xhtml %}
+
 ### Liens utiles
 
 * [Spécification fonctionnelle ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.4.pdf)
