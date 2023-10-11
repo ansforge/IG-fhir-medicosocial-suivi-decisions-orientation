@@ -3,6 +3,14 @@
 This document presents the technical specifications of the “SI-ESMS” section. which specify the exchanges of information between the Orientation Monitoring Information System (SI-SdO) and the Information System for Medical-Social Establishments and Services (SI-ESMS) following notification of an orientation decision
 </p>
 
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b>
+  <br>
+ Cet Implementation Guide est actuellement en concertation.
+</p>
+</blockquote>
+
 ### Introduction
 
 Accompagner et faciliter le parcours des personnes en situation de handicap est un enjeu majeur pour le secteur médico-social. L’objectif du volet « SI-SdO - SI-ESMS (suivi des décisions d'orientation) » qui s’inscrit dans le programme des ESMS numériques, est de permettre l’interopérabilité entre le SI-SdO et les solutions métiers des ESMS (Dossier Usager Informatisé – DUI). Ce volet permet aux professionnels des ESMS du champ PH de réaliser, depuis leur DUI, le suivi des notifications envoyées par la CDAPH, la mise à jour des statuts et de leur liste d’attente en fonction de l’état d’avancement de l’admission de l’usager dans les autres ESMS et la récupération des données qui permettent la création du dossier de l’usager et enfin d’informer le SI-SdO des suites données aux décisions par les ESMS.
