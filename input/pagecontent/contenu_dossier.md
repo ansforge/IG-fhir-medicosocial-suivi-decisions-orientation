@@ -30,7 +30,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
 * RecordTarget,
 * Informant.
 
-[Lien vers le PDF spécifiant l'entête du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
+[Lien vers le PDF spécifiant l'entête du document CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
 
 #### Corps du document
 
@@ -40,7 +40,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 * Extension représentant les informations sur la décision de l'individu,
 * Section représentant l'évaluation d'un individu.
 
-[Lien vers le PDF spécifiant le corps du document CDA)](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
+[Lien vers le PDF spécifiant le corps du document CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
 
 ### Types de données essentiels
 

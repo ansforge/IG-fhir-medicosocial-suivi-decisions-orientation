@@ -24,7 +24,7 @@ La liste des validateurs créés dans le cadre de ce volet sont disponibles [ici
 Cette methode est particulièrement utile lors de la phase de modélisation de nouveaux profils, ou lors de la création d'exemples.
 
 Vous pouvez retouver une description complète via le lien ci-dessous : 
--   [https://github.com/ansforge/FIG_ans-ig-sample/wiki/Valider-une-ressource-contre-un-profil](https://github.com/ansforge/FIG_ans-ig-sample/wiki/Valider-une-ressource-contre-un-profil)
+-   [https://interop.esante.gouv.fr/ig/documentation/](https://interop.esante.gouv.fr/ig/documentation/)
 
 ### Projectathon
 
