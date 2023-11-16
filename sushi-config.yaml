@@ -49,9 +49,17 @@ pages:
         title: Tests      
     about.md:
         title: A propos de ce guide
-    autres_ressources.md:
-        title: Autres ressources associées à la spécification
-
+    annexes_Glossaire.md:
+        title: Glossaire associé à la spécification
+    annexes_Nomenclature.md:
+        title: Nomenclatures associées à la spécification
+    annexes_OID_MDPH.md:
+        title: OID MDPH associés à la spécification
+    annexes_Nomenclatures_precision.md:
+        title: Nomenclature précisions de l'orientation
+    annexes_Diagramme.md:
+        title: Diagramme de Séquence SI-MDPH / SI-SDO / SI-ESMS
+    
 menu:
     Accueil: index.html
     Contenu du dossier : contenu_dossier.html
@@ -67,10 +75,15 @@ menu:
         Ressource FHIR : liste_profils.html
         Ressource CDA : ressource_cda.html
     Tests:   tests.html
+    Annexes: 
+        Glossaire: annexes_Glossaire.html
+        Nomenclature:  annexes_Nomenclature.html
+        OID MDPH : annexes_OID_MDPH.html
+        Nomenclature précision de l'orientation: annexes_Nomenclatures_precision.html
+        Diagramme de séquence SI-MDPH/SI-SDO/-SI-ESMS: annexes_Diagramme.html
     Autres ressources:
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
-        Annexes: autres_ressources.html
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
