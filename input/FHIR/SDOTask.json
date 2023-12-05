@@ -63,17 +63,7 @@
       },
         "valueDate": "2012-10-25"               
     },
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "idUnite" 
-          }
-        ],
-        "text":"idUnite"
-      },
-      "valueId": "idUnite1"               
-    },
+    
     {
       "type": {
         "coding": [
@@ -146,7 +136,8 @@
         "coding":[
           {
             "system":"https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/",
-            "display":"Mode de prise en charge"
+            "display":"Mode de prise en charge",
+            "code":"47"
           }  
         ]  
       } 
@@ -238,7 +229,22 @@
         "text":"idNat_Decision"
       },
       "valueString":"IdNat_Decision"
-    }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "display": "idUnite" 
+          }
+        ],
+        "text": "idUnite"
+      },
+      "valueIdentifier":
+        {
+          "value": "IdNat_Decision"
+        }
+      
+      }
   ]  
         
 }
