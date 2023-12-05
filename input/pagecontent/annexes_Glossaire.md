@@ -1,4 +1,4 @@
-### Glossaire
+
 <table style="width:100.0%;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
