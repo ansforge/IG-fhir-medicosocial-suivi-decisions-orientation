@@ -1,31 +1,49 @@
 {
-	"resourceType": "StructureDefinition",
-	"id": "esms-document-reference",
-	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference",
-	"version": "1.1",
-	"name": "ESMSDocumentReference",
-	"status": "active",
-	"date": "2023-06-27T09:51:35+02:00",
-	"publisher": "ANS",
-	"description": "Profil pour définir le dossier ESMS",
-	"fhirVersion": "4.0.1",
-	"kind": "resource",
-	"abstract": false,
-	"type": "DocumentReference",
-	"baseDefinition": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
-	"derivation": "constraint",
-	"differential": {
-		"element": [
-			{
-				"id": "DocumentReference.identifier",
-				"path": "DocumentReference.identifier",
-				"min": 2
-			},
-			{
-				"id": "DocumentReference.type",
-				"path": "DocumentReference.type",
-				"min": 1
-			}
-		]
-	}
+  "resourceType": "StructureDefinition",
+  "id": "esms-document-reference",
+  "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference",
+  "version": "1.1",
+  "name": "ESMSDocumentReference",
+  "status": "active",
+  "date": "2023-06-27T09:51:35+02:00",
+  "publisher": "ANS",
+  "description": "Profil pour définir le dossier ESMS",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference",
+        "path": "DocumentReference",
+        "constraint": [
+          {
+            "key": "regle-NomPieceJointe", 
+            "severity": "warning",
+            "human": "Le nom de la pièce jointe doit être  : \"Document CDA portant les données de l'individu et la décisision\" ou \"Document CDA portant l'évaluation\"",
+            "expression": "content.attachment.title='Document CDA portant les données de l individu et la décisision' or content.attachment.title='Document CDA portant l évaluation'"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier",
+        "path": "DocumentReference.identifier",
+        "min": 2
+      },
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "min": 1
+      },
+      {
+        "id": "titreDocu",
+        "path": "DocumentReference.content.attachment.title",
+        "min": 1,
+        "short": "Le titre doit être soit 'Document CDA portant les données de l'individu et la décisision' ou 'Document CDA portant l'évaluation'"
+      }
+    ]
+  }
 }
