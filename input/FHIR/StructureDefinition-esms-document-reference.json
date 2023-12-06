@@ -23,9 +23,16 @@
           {
             "key": "regle-NomPieceJointe", 
             "severity": "warning",
-            "human": "Le nom de la pièce jointe doit être  : \"Document CDA portant les données de l'individu et la décisision\" ou \"Document CDA portant l'évaluation\"",
-            "expression": "content.attachment.title='Document CDA portant les données de l individu et la décisision' or content.attachment.title='Document CDA portant l évaluation'"
-          }
+            "human": "Le nom de la pièce jointe doit être  : \"Document Individu et décision\" ou \"Document évaluation\"",
+            "expression": "content.attachment.title='Document Individu et décision' or content.attachment.title='Document évaluation'"
+          },
+          {
+              "key": "regle-Contenu", 
+              "severity": "error",
+              "human": "Le transport des données est obligatoire, le champ data doit être rempli",
+              "expression": "content.attachment.data.exists()"
+            }
+          
         ]
       },
       {
