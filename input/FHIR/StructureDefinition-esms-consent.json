@@ -23,7 +23,8 @@
 			{
 				"id": "Consent.meta.source",
 				"path": "Consent.meta.source",
-				"min": 1
+				"min": 1,
+				"short": "Identifiant de l’ESMS créant la ressource (=idNat_Struct). Il s’agit de la structure bénéficiant de l’accord."
 			},
 			{
 				"id": "Consent.status",
@@ -59,7 +60,8 @@
 			{
 				"id": "Consent.dateTime",
 				"path": "Consent.dateTime",
-				"min": 1
+				"min": 1,
+				"short": "Date de recueil de l'accord de la personne orientée par l’ESMS."
 			},
 			{
 				"id": "Consent.provision",
@@ -80,6 +82,7 @@
 			{
 				"id": "Consent.provision.data.reference",
 				"path": "Consent.provision.data.reference",
+				"short": "Référence à la ressource DocumentReference (dossier de décisions d’orientation) concernée par l’accord.",
 				"type": [
 					{
 						"code": "Reference",
@@ -92,7 +95,9 @@
 			{
 				"id": "Consent.provision.data.reference.identifier",
 				"path": "Consent.provision.data.reference.identifier",
-				"min": 1
+				"min": 1,
+				"short":"Référence logique vers la ressource (dossier de décisions d’orientation) pour laquelle s’applique cet accord"
+
 			},
 			{
 				"id": "Consent.provision.data.reference.identifier.use",
@@ -103,7 +108,8 @@
 			{
 				"id": "Consent.provision.data.reference.identifier.value",
 				"path": "Consent.provision.data.reference.identifier.value",
-				"min": 1
+				"min": 1,
+				"short": "Valeur de l’identifier vers lequel la ressource Consent doit pointer (identifier officiel du documentReference = idNatDecision)"
 			}
 		]
 	}

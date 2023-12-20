@@ -19,12 +19,18 @@
 			{
 				"id": "DocumentReference.identifier",
 				"path": "DocumentReference.identifier",
-				"min": 1
+				"min": 1,
+				"short": "La première occurence : identifiant de la décision unique au sein de la MDPH ayant créé la décision (idDecision) Identifier.use = « usual ». Deuxième occurence :  identifiant technique national de la décision, généré par le SI-SDO (idNat_Decision) Identifier.use = « official »"
 			},
 			{
 				"id": "DocumentReference.content",
 				"path": "DocumentReference.content",
 				"max": "1"
+			},
+			{
+				"id": "DocumentReference.type",
+				"path": "DocumentReference.type",
+				"short": "Si la ressource contient le document CDA portant les données de individu et la décision : Code =  « 57830-2 » de la nomenclature LOINC docTypeCodes, Display = Admission request Document. Si la ressource contient le document CDA portant l'évaluation : Code = « 51848-0 » de la nomenclature LOINC docTypeCodes, Display = « Evaluation note »"
 			}
 			
 		]
