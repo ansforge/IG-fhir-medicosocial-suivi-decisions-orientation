@@ -13,9 +13,9 @@ Dans le cadre de ce volet il y a 2 types de ressources CDA :
 
 | Nom  | description |
 | --- | --- |
-| [Ensemble des xsd](20230630_MS_XSD.zip) | Ensemble des XSD définissant le document CDA. |
+| [Ensemble des xsd](XSD_MS_20231207.zip) | Ensemble des XSD définissant le document CDA. |
 
 ### Exemples CDA
 | Nom  | description |
 | --- | --- |
-| [Exemples CDA](20230810_Schematron_SDO_ESMS.zip) | Ensemble des fichiers d'exemples CDA. |
+| [Exemples CDA](20230705_Exemples_CDA_ESMS.zip) | Ensemble des fichiers d'exemples CDA. |
