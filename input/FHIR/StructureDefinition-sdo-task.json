@@ -63,13 +63,6 @@
 			  "human": "Si statut unite alors pein de trucs",
 			  "expression": "input.type.where(text='idUnite').exists() and input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() or input.type.where(text='statutUnite').exists().not()"
 			},
-			{
-				"key": "regle-PresenceInput",
-				"severity": "error",
-				"human": "Les éléments suivants doivent être présent",
-				"expression": "input.type.where(text='idNat_Decision').exists() and input.type.where(text='idDecision').exists() and input.type.where(text='nomESMS').exists() and input.type.where(text='idNat_Struct').exists()"
-			  }
-			  ,
 			  {
 				  "key": "regle-ModePriseEnCharge",
 				  "severity": "error",
@@ -115,6 +108,7 @@
 		  "id": "Task.input:idNat_Struct",
 		  "path": "Task.input",
 		  "sliceName": "idNat_Struct",
+		  "min": "1", 
 		  "max": "1"
 		},
 		{
@@ -135,6 +129,7 @@
 		  "id": "Task.input:nomESMS",
 		  "path": "Task.input",
 		  "sliceName": "nomESMS",
+		  "min": "1",  
 		  "max": "1"
 		},
 		{
@@ -155,6 +150,7 @@
 		  "id": "Task.input:statutESMS",
 		  "path": "Task.input",
 		  "sliceName": "statutESMS",
+		  "min": "1",  
 		  "max": "1"
 		},
 		{
@@ -447,6 +443,7 @@
 		  "id": "Task.input:idDecision",
 		  "path": "Task.input",
 		  "sliceName": "idDecision",
+		  "min": "1",  
 		  "max": "1"
 		},
 		{
@@ -467,6 +464,7 @@
 		  "id": "Task.input:idNat_Decision",
 		  "path": "Task.input",
 		  "sliceName": "idNat_Decision",
+		  "min": "1",  
 		  "max": "1"
 		},
 		{

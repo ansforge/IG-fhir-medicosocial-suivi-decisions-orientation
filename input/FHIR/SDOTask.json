@@ -22,17 +22,7 @@
       },
       "valueString": "value idNat_Struct" 
     },                                       
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "nomESMS" 
-          }
-        ],
-        "text":"nomESMS"
-      },
-      "valueString": "value nomESMS"              
-    },
+   
     {
       "type": {
         "coding": [
@@ -107,7 +97,7 @@
         "coding":[
           {
             "system":"https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
-            "value": "01",
+            "code": "01",
             "display": "Temporaire"
           }                    
         ]                    
@@ -206,7 +196,7 @@
           {
 
             "system": "https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation",
-            "value": "01",
+            "code": "01",
             "display":"type de Droit et Prestation"
           }    
         ]
