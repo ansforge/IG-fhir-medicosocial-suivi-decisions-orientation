@@ -60,7 +60,7 @@
 			{
 			  "key": "regle-StatutUnite",
 			  "severity": "error",
-			  "human": "Si statut unite alors pein de trucs",
+			  "human": "Si statut unite est rempli alors les éléments suivants sont attendus :idUnite,nomUnite, categorieOrganisation, modePriseCharge, dateStatutUnite",
 			  "expression": "input.type.where(text='idUnite').exists() and input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() or input.type.where(text='statutUnite').exists().not()"
 			},
 			  {
