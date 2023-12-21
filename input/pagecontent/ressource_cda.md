@@ -18,4 +18,4 @@ Dans le cadre de ce volet il y a 2 types de ressources CDA :
 ### Exemples CDA
 | Nom  | description |
 | --- | --- |
-| [Exemples CDA](20230705_Exemples_CDA_ESMS.zip) | Ensemble des fichiers d'exemples CDA. |
+| [Exemples CDA](20231219_CDA_ESMS.zip) | Ensemble des fichiers d'exemples CDA. |
