@@ -83,7 +83,9 @@
               ],
               "text": "idUnite"
             },
-            "valueId": "idUnite1"
+            "valueIdentifier": {
+              "value": "IdNat_Decision"
+            }
           },
           {
             "type": {
@@ -149,6 +151,7 @@
               "coding": [
                 {
                   "display": "modePriseCharge"
+                  
                 }
               ],
               "text": "modePriseCharge"
@@ -157,7 +160,8 @@
               "coding": [
                 {
                   "system": "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/",
-                  "display": "Mode de prise en charge"
+                  "display": "Mode de prise en charge",
+                  "code": "46"
                 }
               ]
             }
