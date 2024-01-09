@@ -145,7 +145,7 @@
                   "display": "accueilSequentiel"
                 }
               ],
-              "text": "acceuilSequentiel"
+              "text": "accueilSequentiel"
             },
             "valueBoolean": true
           },
@@ -346,8 +346,11 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "display": "type de Droit et Prestation"
-                }
+
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation",
+                  "code": "1.1",
+                  "display":"AAH L.821-1"
+                }    
               ]
             }
           },
