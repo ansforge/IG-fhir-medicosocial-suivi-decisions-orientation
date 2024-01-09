@@ -32,7 +32,7 @@
                 <p style='margin:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">JDV_J*</span></p>
             </td>
             <td style="width: 276.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;"><a href="https://mos.esante.gouv.fr/NOS/](https://mos.esante.gouv.fr/NOS/">https://mos.esante.gouv.fr/NOS/](https://mos.esante.gouv.fr/NOS/</a></span></p>
+                <p style='margin:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;"><a href="https://mos.esante.gouv.fr/NOS/">https://mos.esante.gouv.fr/NOS/</a></span></p>
             </td>
         </tr>
     </tbody>
