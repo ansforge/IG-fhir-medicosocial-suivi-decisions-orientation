@@ -132,9 +132,10 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil",
-                  "display": "Temporalite Accueil"
-                }
+                  "system":"https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
+                  "code": "01",
+                  "display": "Temporaire"
+                      }
               ]
             }
           },
@@ -163,7 +164,7 @@
               "coding": [
                 {
                   "system": "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge",
-                  "display": "Mode de prise en charge",
+                  "display": "Hébergement (accueil jour et nuit)",
                   "code": "46"
                 }
               ]
