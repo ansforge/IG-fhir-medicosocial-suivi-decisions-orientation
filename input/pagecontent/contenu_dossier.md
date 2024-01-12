@@ -63,7 +63,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
             </td>
         </tr>
         <tr>
-            <td rowspan="17" style="width:49.65pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
+            <td rowspan="14" style="width:49.65pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">En-t&ecirc;te du document CDA</span></p>
             </td>
             <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
@@ -303,7 +303,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Classe Parent</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Informant">2.1.2.4.&nbsp; &nbsp;Informant</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Informant">2.1.2.4 Informant</a></span></p>
             </td>
         </tr>
         <tr>
@@ -337,68 +337,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Document de r&eacute;f&eacute;rence</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">2</span></p>
-            </td>
-            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">..typeCode</span></p>
-            </td>
-            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
-            </td>
-            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
-            </td>
-            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">Valeur fix&eacute;e &agrave; &laquo; RPLC &raquo;&nbsp; pour remplacement.</span></li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">2</span></p>
-            </td>
-            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">..parentDocument</span></p>
-            </td>
-            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
-            </td>
-            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
-            </td>
-            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Document de r&eacute;f&eacute;rence</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">3</span></p>
-            </td>
-            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">...id</span></p>
-            </td>
-            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
-            </td>
-            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
-            </td>
-            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Identifiant unique du document de r&eacute;f&eacute;rence</span></p>
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur de l&rsquo;identifiant unique du document de r&eacute;f&eacute;rence remplac&eacute; par la nouvelle version.</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice. Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a></li>
-                    </ul>
-                </div>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
             </td>
         </tr>
         <tr>
@@ -470,448 +409,362 @@ Ce volet décrit le contenu de 2 documents CDA différents :
     </tbody>
 
 * Flux 3 : Le document CDA portant l'évaluation :
-<table border="1" cellspacing="0" cellpadding="0" width="757">
+  <table style="width: 5.7e+2pt;margin-left:-21.3pt;border-collapse:collapse;border:none;">
     <thead>
         <tr>
-            <td valign="top">
-                <p align="center">
-                    <strong></strong>
-                </p>
+            <td style="width: 49.65pt;border-width: medium 1pt medium medium;border-style: none solid none none;border-color: currentcolor windowtext currentcolor currentcolor;border-image: none;background: white;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">&nbsp;</span></strong></p>
             </td>
-            <td width="49" valign="top">
-                <p align="center">
-                    <strong>Niv.</strong>
-                </p>
+            <td style="width: 35.45pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;border-image: none;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">Niv.</span></strong></p>
             </td>
-            <td width="131" valign="top">
-                <p align="center">
-                    <strong>Elément XML</strong>
-                </p>
+            <td style="width: 99.25pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;border-image: none;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">El&eacute;ment XML</span></strong></p>
             </td>
-            <td width="53" valign="top">
-                <p align="center">
-                    <strong>Cardi-nalité</strong>
-                </p>
+            <td style="width: 41.9pt;border-width: 1pt 1.5pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">Cardi-nalit&eacute;</span></strong></p>
             </td>
-            <td width="214" valign="top">
-                <p align="center">
-                    <strong>Elément de la</strong>
-                </p>
-                <p align="center">
-                    <strong>SFE SI-ESMS</strong>
-                </p>
+            <td style="width: 156.55pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;border-image: none;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:2.35pt;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">El&eacute;ment de la&nbsp;</span></strong></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">SFE SI-ESMS&nbsp;</span></strong></p>
             </td>
-            <td width="237" valign="top">
-                <p align="center">
-                    <strong>Contenu de l’élément</strong>
-                </p>
+            <td style="width: 184.25pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;border-image: none;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">Contenu de l&rsquo;&eacute;l&eacute;ment</span></strong></p>
             </td>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>
+            <td style="width:49.65pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">&nbsp;</span></p>
             </td>
-            <td width="49">
-                <p align="center">
-                    0
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">0</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    clinicalDocument
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">ClinicalDocument</span></p>
             </td>
-            <td width="53" valign="top">
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">&nbsp;</span></p>
             </td>
-            <td width="214" valign="top">
-                <p align="center">
-                    X
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">&nbsp;</span></p>
             </td>
         </tr>
         <tr>
-            <td rowspan="10">
-                <p align="center">
-                    En-tête du document CDA
-                </p>
+            <td rowspan="13" style="width:49.65pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">En-t&ecirc;te du document CDA</span></p>
             </td>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    typeID
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">typeID</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    1
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
             </td>
-            <td width="214">
-                <p align="center">
-                    X
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
-                <ul>
-                    <li align="left">
-                        @root  = 2.16.840.1.113883.1.3
-                    </li>
-                </ul>
-                <p>
-                    ·       @extension =    « POCD_HD000040 »
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:4.449999999999999px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root &nbsp;= 2.16.840.1.113883.1.3</span></li>
+                    </ul>
+                    <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                        <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.050000000000001px;">
+                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = &laquo;&nbsp;POCD_HD000040&nbsp;&raquo;</span></li>
+                        </ul>
+                    </div>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="49" rowspan="2">
-                <p align="center">
-                    1
-                </p>
+            <td rowspan="2" style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" rowspan="2" valign="top">
-                <p>
-                    templateID
-                </p>
+            <td rowspan="2" style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">templateID</span></p>
             </td>
-            <td width="53" rowspan="2" valign="top">
-                <p>
-                    <em>[2..2]</em>
-                </p>
+            <td rowspan="2" style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><em><span style="color:black;">[2..2]</span></em></p>
             </td>
-            <td width="214" rowspan="2">
+            <td rowspan="2" style="width:156.55pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">&nbsp;</span></p>
             </td>
-            <td width="237" valign="top">
-                <p>
-                    Identifiant unique du template    Evaluation créé pour le
-                    volet SI-ESMS
-                </p>
-                <p>
-                    @root  =    1.2.250.1.213.1.1.1.4.9
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Identifiant unique du template Evaluation cr&eacute;&eacute; pour le volet SI-ESMS</span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-1.0500000000000007px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root &nbsp;= 1.2.250.1.213.1.1.1.4.9</span></li>
+                    </ul>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="237" valign="top">
-                <p>
-                    Identifiant unique du template à    partir duquel est dérivé
-                    le template Evaluation
-                </p>
-                <p>
-                    @root  =    2.16.840.1.113883.10.12.2
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute; le template Evaluation</span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-1.0500000000000007px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root &nbsp;= 2.16.840.1.113883.10.12.2</span></li>
+                    </ul>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .id
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.id</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1]
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
             </td>
-            <td width="214">
-                <p align="left">
-                    Decision.idDecision
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Decision.idDecision</span></p>
             </td>
-            <td width="237" valign="top">
-                <p>
-                    Identifiant de l’individu au    sein de la MDPH
-                </p>
-                <p>
-                    ·          @extension = valeur    de l’identifiant de la
-                    décision
-                </p>
-                <p>
-                    ·          @root = OID du    document
-                    (1.2.250.1.213.1.1.1.4.9)
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Identifiant unique du document</span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur d&rsquo;un identifiant unique attribu&eacute; par le syst&egrave;me d&rsquo;information &eacute;metteur. Il permet d&rsquo;identifier chaque instance et version des documents.</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice. Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a></li>
+                    </ul>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .code
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.code</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1]
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
             </td>
-            <td width="214">
-                <p align="center">
-                    X
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
-                <p>
-                    Type de document
-                </p>
-                <p align="left">
-                    ·        Valeur fixée à    « Medical social services
-                    attachment »
-                </p>
-                <p align="left">
-                    ·        Code    18825-0 de la nomenclature LOINC
-                    <a href="http://build.fhir.org/valueset-doc-typecodes.html">
-                        FHIRDocumentTypeCodes
-                    </a>
-                </p>
-                <ul>
-                    <li align="left">
-                        CodeSystem : 2.16.840.1.113883.4.642.3.240
-                    </li>
-                </ul>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Type de document</span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">Valeur fix&eacute;e &agrave; &laquo; Medical social services attachment &raquo;&nbsp;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">Code 18825-0 de la nomenclature LOINC&nbsp;</span><span style="color:black;"><a href="http://build.fhir.org/valueset-doc-typecodes.html"><span style="color:#00B0F0;">FHIRDocumentTypeCodes</span></a></span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:blue;text-decoration:underline;"><span style="color:#C00000;">CodeSystem&nbsp;: 2.16.840.1.113883.4.642.3.240</span></span></li>
+                    </ul>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .effectiveTime
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.effectiveTime</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1]
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
             </td>
-            <td width="214">
-                <p align="center">
-                    X
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
-                <p>
-                    Date de création du document
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Date de cr&eacute;ation du document</span></p>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .confidentialityCode
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.confidentialityCode</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1]
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
             </td>
-            <td width="214">
-                <p align="center">
-                    X
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
-                <p>
-                    Niveau de confidentialité du    document
-                </p>
-                <p align="left">
-                    ·         Valeur fixée    à : N (normal)
-                </p>
-                <p align="left">
-                    ·         codeSystem    2.16.840.1.113883.5.25
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Niveau de confidentialit&eacute; du document&nbsp;</span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">Valeur fix&eacute;e &agrave; : N (normal)&nbsp;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">codeSystem 2.16.840.1.113883.5.25</span></li>
+                    </ul>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    . <a href="#_RecordTarget">recordTarget</a>
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.setId</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1] <em><u></u></em>
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[0..1]</span></p>
             </td>
-            <td width="214" valign="top">
-                <p align="center">
-                    Classe Individu, Identité
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
-                <p align="left">
-                    Le contenu de l’élément est décrit dans la partie
-                    <a href="#_RecordTarget_1">
-                        2.1.2.3    RecordTarget
-                    </a>
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Identifiant du lot de versions</span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur de l&rsquo;identifiant commun &agrave; toutes les version d&rsquo;un même document. Il permet d&rsquo;identifier le lot de versions du même document.  </span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice. Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a></li>
+                    </ul>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .author
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.versionNumber</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    <em><u>[1..1]</u></em>
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[0..1]</span></p>
             </td>
-            <td width="214">
-                <p align="center">
-                    X
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
-                <p align="left">
-                    Le contenu de l’élément est décrit dans la partie
-                    <a href="#_Author">2.1.2.1 Author</a>
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Num&eacute;ro de version du document</span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@value = Entier incr&eacute;ment&eacute; &agrave; partir de 1 par pas de 1 &agrave; chaque nouvelle version du document.</span></li>
+                    </ul>
+                </div>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .custodian
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>.<span style="color:black;"><a href="#_RecordTarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1] <em><u></u></em>
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
             </td>
-            <td width="214">
-                <p align="center">
-                    X
-                </p>
+            <td style="width: 156.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Classe Individu et Identit&eacute;</span></p>
             </td>
-            <td width="237" valign="top">
-                <p align="left">
-                    Le contenu de l’élément est décrit dans la partie
-                    <a href="#_Custodian">2.1.2.2 Custodian</a>
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RecordTarget_1">2.1.2.3 RecordTarget</a></span></p>
             </td>
         </tr>
         <tr>
-            <td rowspan="3">
-                <p align="center">
-                    Corps du document CDA
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="49">
-                <p align="center">
-                    1
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.author</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .component
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><em><u><span style="color:black;">[1..1]</span></u></em></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1]
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="214" rowspan="2" valign="top">
-            </td>
-            <td width="237" rowspan="2">
-                <p align="left">
-                    Représente le corps du document    CDA
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Author">2.1.2.1 Author</a></span></p>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    2
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131" valign="top">
-                <p>
-                    .. <a href="#_Component">structuredBody</a>
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.custodian</span></p>
             </td>
-            <td width="53" valign="top">
-                <p>
-                    [1..1]
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
+            </td>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
+            </td>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Custodian">2.1.2.2 Custodian</a></span></p>
             </td>
         </tr>
         <tr>
-            <td width="49">
-                <p align="center">
-                    3
-                </p>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td width="131">
-                <p>
-                    …component
-                </p>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.relatedDocument</span></p>
             </td>
-            <td width="53">
-                <p>
-                    [1..1]
-                </p>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[0..1]</span></p>
             </td>
-            <td width="214" valign="top">
-                <p align="left">
-                    Classes Evaluation, ElementsEnvironnementaux,
-                    ElementMedicaux,    ElementsScolairesProfessionnels et
-                    EvolutionBesoin
-                </p>
+            <td style="width:156.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
-            <td width="237" valign="top">
-                <p>
-                    Le contenu    de l’élément est décrit dans la partie
-                    <a href="#_Section_représentant_l’évaluation_1">
-                        2.1.3.3 Section représentant    l'évaluation de
-                        l'individu
-                    </a>
-                </p>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4" style="width:49.65pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Corps du document CDA</span></p>
+            </td>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
+            </td>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">.component</span></p>
+            </td>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
+            </td>
+            <td rowspan="2" style="width: 156.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">&nbsp;</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">&nbsp;</span></p>
+            </td>
+            <td rowspan="2" style="width:184.25pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">&nbsp;Repr&eacute;sente le corps du document CDA</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">2</span></p>
+            </td>
+            <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>..<span style="color:black;"><a href="#_Component"><span style="color:windowtext;">structuredBody</span></a></span></p>
+            </td>
+            <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>3</p>
+            </td>
+            <td style="width:99.25pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">&hellip;component</span></p>
+            </td>
+            <td style="width:41.9pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;padding:  0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>[1..1]</p>
+            </td>
+            <td style="width: 156.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Classes Evaluation, ElementsEnvironnementaux, ElementMedicaux, ElementsScolairesProfessionnels et EvolutionBesoin</span></p>
+            </td>
+            <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Section_repr%C3%A9sentant_l%E2%80%99organisme">2.1.3.3 Section repr&eacute;sentant l&apos;&eacute;valuation de l&apos;individu</a></span></p>
             </td>
         </tr>
     </tbody>
-</table>
 
 #### En-tête du document
 
@@ -2318,6 +2171,106 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
+* RelatedDocument : 
+<table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
+    <tbody>
+        <tr>
+            <td style="width:43.6pt;border:solid windowtext 1.0pt;background:#7B7B7B;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">Niveau</span></strong></p>
+            </td>
+            <td style="width:171.6pt;border:solid windowtext 1.0pt;border-left:  none;background:#7B7B7B;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">El&eacute;ment XML</span></strong></p>
+            </td>
+            <td style="width: 39.7pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;border-image: none;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">Cardi-nalit&eacute;</span></strong></p>
+            </td>
+            <td style="width: 70.9pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;border-image: none;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">El&eacute;ment de la SFE SI-ESMS&nbsp;</span></strong></p>
+            </td>
+            <td style="width:219.7pt;border:solid windowtext 1.0pt;border-left:  none;background:#7B7B7B;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:white;">Contenu de l&rsquo;&eacute;l&eacute;ment</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:43.6pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">0</span></p>
+            </td>
+            <td style="width:171.6pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">relatedDocument</span></p>
+            </td>
+            <td style="width:39.7pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[0..1]</span></p>
+            </td>
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
+            </td>
+            <td style="width:219.7pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Document de r&eacute;f&eacute;rence</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:43.6pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
+            </td>
+            <td style="width:171.6pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">.typeCode</span></p>
+            </td>
+            <td style="width:39.7pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
+            </td>
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
+            </td>
+            <td style="width:219.7pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;"></span></p>
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.8000000000000007px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">Valeur fix&eacute;e &agrave; &laquo; RPLC &raquo;&nbsp; pour remplacement.</span></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:43.6pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
+            </td>
+            <td style="width:171.6pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">..parentDocument</span></p>
+            </td>
+            <td style="width:39.7pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
+            </td>
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
+            </td>
+            <td style="width:219.7pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Document de r&eacute;f&eacute;rence</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:43.6pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">2</span></p>
+            </td>
+            <td style="width:171.6pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">...id</span></p>
+            </td>
+            <td style="width: 39.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><em><span style="color:black;">[1..1]</span></em></p>
+            </td>
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
+            </td>
+            <td style="width:219.7pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.9499999999999993px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur de l&rsquo;identifiant unique du document de r&eacute;f&eacute;rence remplac&eacute; par la nouvelle version.</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice. Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 [Lien vers le PDF spécifiant l'entête du document CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
 
@@ -3185,8 +3138,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">DetailPrestation.&eacute;l&eacute;ment accueilSequentiel</span></p>
             </td>
             <td style="width: 185.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;height: 19.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">Obligatoire si temporaliteAccueil est renseign&eacute;</span></p>
-                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'></div>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">&nbsp;</span></p>
             </td>
         </tr>
         <tr>
@@ -3435,6 +3387,1287 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 </table>
 
 * Section représentant l'évaluation d'un individu : 
+
+<div>
+	<table>
+		<tbody>
+			<tr>
+				<td>Niv.</td>
+				<td>Elément XML</td>
+				<td>Cardina-lité</td>
+				<td>Elément de la spécification fonctionnelle SI-ESMS</td>
+				<td>Contenu de l'élément</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>component</td>
+				<td>[0..*]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>.section</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Evaluation d'un individu</td>
+			</tr>
+			<tr>
+				<td rowspan="2">2</td>
+				<td rowspan="2">..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.229</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>..text</td>
+				<td>[1..1]</td>
+				<td>dateMAJ</td>
+				<td>Date de dernière mise à jour de l'évaluation de l'usager au format aaaammjj</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>..component</td>
+				<td>[0..*]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>…section</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Eléments environnementaux</td>
+			</tr>
+			<tr>
+				<td rowspan="2">4</td>
+				<td rowspan="2">….templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.2.230</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>Composition du foyer</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.177</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>……. originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «CompositionFoyer»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Elément environnementaux.composition du foyer</td>
+				<td>No_Composition_foyer (1.2.250.1.213.3.3.106)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>type d'hébergement</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.178</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>……. originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «TypeHebergement»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Elément environnementaux.type d'hébergement</td>
+				<td>No_Type_hebergement (1.2.250.1.213.3.3.207)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>Caractristiques du logement</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.179</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «CaracteristiqueLogement»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Elément environnementaux.caractéristiques du logement</td>
+				<td>No_Caracteristique_logement (1.2.250.1.213.3.3.99)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>Ressources propres de la personne</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.180</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>……. originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «RessourceProprePersonne»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Elément environnementaux.ressources propres de la personne</td>
+				<td>No_Ressource_propre (1.2.250.1.213.3.3.174)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>Caractéristiques transport</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.181</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «CaracteristiqueTransport»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Elément environnementaux.caractéristiques transport</td>
+				<td>No_Transport (1.2.250.1.213.3.3.201)</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>..component</td>
+				<td>[0..*]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>…section</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Eléments personnels</td>
+			</tr>
+			<tr>
+				<td rowspan="2">4</td>
+				<td rowspan="2">….templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2"/>
+				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.231</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Pathologie principale</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.182</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «PathologiePrincipale»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.pathologie principale</td>
+				<td>No_Pathologie (1.2.250.1.213.3.3.162)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>
+					<a href="#Pathologie">Pathologie secondaire</a>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.183</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «PathologieSecondaire»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.pathologie secondaire</td>
+				<td>No_Pathologie (1.2.250.1.213.3.3.162)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>
+					<a href="#MaladieRare">Maladie rare</a>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.184</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «MaladieRare»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.maladie rare</td>
+				<td>No_Maladie_rare (1.2.250.1.213.3.3.224)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>
+					<a href="#HandicapRare">Handicap rare</a>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.185</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «HandicapRare»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.handicap rare</td>
+				<td>No_Handicap_rare (1.2.250.1.213.3.3.225)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>
+					<a href="#Déficience">Déficience principale</a>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.186</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «DeficiencePrincipale»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.déficience principale</td>
+				<td>No_Deficience (1.2.250.1.213.3.3.108)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>
+					<a href="#Déficience">Déficience secondaire</a>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.187</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «DeficienceSecondaire»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.déficience secondaire</td>
+				<td>No_Deficience (1.2.250.1.213.3.3.108)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>Prise en charge</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.188</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «PriseEnCharge»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.prise en charge</td>
+				<td>No_Prise_en_charge (1.2.250.1.213.3.3.170)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>Difficulté rencontrée</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.189</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «DifficulteRencontree»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments personnels.difficulté rencontrée</td>
+				<td>No_Activite (1.2.250.1.213.3.3.86)</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>..component</td>
+				<td>[0..*]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>…section</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Eléments Scolaires ou Professionnels</td>
+			</tr>
+			<tr>
+				<td rowspan="2">4</td>
+				<td rowspan="2">….templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2"/>
+				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.232</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Situation par rapport à la scolarité</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.190</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «SituationScolarite»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments Scolaires ou Professionnels.situation par rapport à la scolarité</td>
+				<td>No_Situation_scolaire (1.2.250.1.213.3.3.178)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Temps de scolarisation</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.191</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «TempsScolarisation»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments Scolaires ou Professionnels.temps de scolarisation</td>
+				<td>No_Temps_scolarisation (1.2.250.1.213.3.3.198)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Evaluation scolarité</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.192</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «EvaluationScolarite»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments Scolaires ou Professionnels.evaluation scolarité</td>
+				<td>No_Evaluation_scolarite (1.2.250.1.213.3.3.122)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Niveau de formation professionnelle</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.193</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «NiveauFormationProfessionnelle»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments Scolaires ou Professionnels.niveau de formation professionnelle</td>
+				<td>No_Niveau_formation_pro (1.2.250.1.213.3.3.152)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Situation par rapport au travail</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.194</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «SituationProfessionnelle»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments Scolaires ou Professionnels.situation par rapport au travail</td>
+				<td>No_Situation_travail (1.2.250.1.213.3.3.179)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Aptitude actuelle au poste</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.195</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «AptitudePoste»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments Scolaires ou Professionnels.aptitude actuelle au poste</td>
+				<td>No_Aptitude_poste (1.2.250.1.213.3.3.89)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Perspectives professionnelles</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.196</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «PerspectiveProfessionnelle»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Eléments Scolaires ou Professionnels.perspectives professionnelles</td>
+				<td>No_Perspective_pro (1.2.250.1.213.3.3.164)</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>..component</td>
+				<td>[0..*]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>…section</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Evolution et Besoins</td>
+			</tr>
+			<tr>
+				<td rowspan="2">4</td>
+				<td rowspan="2">….templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2"/>
+				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.233</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Evolution envisagée</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.197</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «EvolutionEnvisagee»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Evolution et Besoins.evolution envisagée</td>
+				<td>No_Evolution_envisagee (1.2.250.1.213.3.3.124)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..1]</td>
+				<td/>
+				<td>Evolution constatée</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.198</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «EvolutionConstatee»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Evolution et Besoins.evolution constatée</td>
+				<td>No_Evolution_constatee (1.2.250.1.213.3.3.123)</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>….entry</td>
+				<td>[0..*]</td>
+				<td/>
+				<td>
+					<a href="#BesoinIdentifié">Besoins de compensation identifiés</a>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>…..observation</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>
+					<strong>@classCode = </strong>«OBS»
+
+<strong>@moodCode = «EVN»</strong>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">6</td>
+				<td rowspan="2">…..templateId</td>
+				<td rowspan="2">[2..2]</td>
+				<td rowspan="2">X</td>
+				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.199</td>
+			</tr>
+			<tr>
+				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……code</td>
+				<td>[1..1]</td>
+				<td/>
+				<td/>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>…….originalText</td>
+				<td>[1..1]</td>
+				<td/>
+				<td>Valeur fixée à «BesoinCompensation»</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>……value</td>
+				<td>[1..1]</td>
+				<td>Evolution et Besoins.<a href="#BesoinIdentifié">besoins de compensation identifiés</a>
+				</td>
+				<td>No_Besoin_compensation (1.2.250.1.213.3.3.94)</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
 [Lien vers le PDF spécifiant le corps du document CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
 

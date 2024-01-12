@@ -16,6 +16,7 @@ Dans le cadre de ce volet il y a 2 types de ressources CDA :
 | [Ensemble des xsd](XSD_MS_20231207.zip) | Ensemble des XSD définissant le document CDA. |
 
 ### Exemples CDA
+
 | Nom  | description |
 | --- | --- |
 | [Exemples CDA](20231219_CDA_ESMS.zip) | Ensemble des fichiers d'exemples CDA. |

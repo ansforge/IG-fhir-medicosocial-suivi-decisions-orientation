@@ -41,7 +41,8 @@ Le flux 5.1 est basé sur l’opération « search » de l’API REST FHIR. La r
                     <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">date</span></p>
                 </td>
                 <td style="width:175.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                    <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Utilisation du pr&eacute;fix &laquo; gt &raquo; (greater than) pour permettre au SI-ESMS de ne r&eacute;cup&eacute;rer que les nouvelles ressources Task cr&eacute;&eacute;es depuis la derni&egrave;re interrogation. &nbsp;</span></p>
+                    <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Utilisation du pr&eacute;fix &laquo; gt &raquo; (greater than) pour permettre au SI-ESMS de ne r&eacute;cup&eacute;rer que les nouvelles ressources Task cr&eacute;&eacute;es depuis la derni&egrave;re interrogation. 
+                    A noter que pour un cas nominal, la fr&eacute;quence de recherche est J-1. Pour un cas exceptionnel (premi&egrave;re connexion au SI-SDO d&rsquo;un DUI), la limite temporelle est de 30 jours avant la date du jour. &nbsp;</span></p>
                 </td>
             </tr>
             <tr>
