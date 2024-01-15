@@ -1,3 +1,11 @@
+<blockquote class="stu-note">
+<p>
+  <b>Information</b>
+  <br>
+ Le formatage de cette page est en cours de construction
+</p>
+</blockquote>
+
 ### Standard utilisé
 Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur [la plateforme ART-DECOR de l’ANS3](https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates). 
 Dans cette section, une mise en correspondance est faite entre :
