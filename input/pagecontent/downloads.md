@@ -12,5 +12,4 @@ Ensemble des ressources téléchargeables :
 * [JSON Définitions (zip)](definitions.json.zip)
 * [JSON Exemples (zip)](examples.json.zip)
 * [XML Definitions (zip)](definitions.xml.zip)
-* [XML Exemples (zip)](examples.ttl.zip)
-* [Turtle Définitions](definitions.ttl.zip)
+* [XML Exemples (zip)](examples.xml.zip)
