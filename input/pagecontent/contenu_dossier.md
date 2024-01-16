@@ -11,20 +11,21 @@ Cette section présente les informations à transférer entre le SI-ESMS et le S
 Dans cette section, une mise en correspondance est faite entre :
 
 * Les éléments XML proposés par CDA,
-* Les données structurées décrites dans les [SFE SI-ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.4.pdf).
+* Les données structurées décrites dans les [SFE SI-ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf).
 
 Les éléments apparaissant en gras de couleur bleu correspondent à des extensions définies dans le cadre de cette spécifique technique afin de couvrir le besoin.
 Les éléments apparaissant en rouge correspondent aux règles spécifiques à mettre en place. 
 Les éléments en italique soulignés correspondent aux cardinalités de base de CDA contraintes pour ce volet.
 
-#### Structure des documents CDA
+### Structure des documents CDA
 
 Cette section présente la structure générale des données structurées du dossier de l’individu. Elle met en correspondance les éléments du CDA avec les éléments présentés dans la SFE-ESMS. 
 Les éléments imposés par CDA sont indiqués par « X » dans la colonne « Elément de la spécification Fonctionnelle SI-ESMS ».
 
 Ce volet décrit le contenu de 2 documents CDA différents :
 
-* Flux 1 : Le document CDA portant les données de l'individu et la décision :
+#### Flux 1 : Le document CDA portant les données de l'individu et la décision
+
   <table style="width: 5.7e+2pt;margin-left:-21.3pt;border-collapse:collapse;border:none;">
     <thead>
         <tr>
@@ -415,8 +416,10 @@ Ce volet décrit le contenu de 2 documents CDA différents :
             </td>
         </tr>
     </tbody>
+   </table>
 
-* Flux 3 : Le document CDA portant l'évaluation :
+#### Flux 3 : Le document CDA portant l'évaluation
+
   <table style="width: 5.7e+2pt;margin-left:-21.3pt;border-collapse:collapse;border:none;">
     <thead>
         <tr>
@@ -773,12 +776,13 @@ Ce volet décrit le contenu de 2 documents CDA différents :
             </td>
         </tr>
     </tbody>
+   </table>
 
-#### En-tête du document
+### En-tête du document
 
 Cette section présente le contenu de l'en-tête du document CDA. On y retrouve différentes parties :
 
-* Author :
+#### Author
 <table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -884,7 +888,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-* Custodian : 
+#### Custodian
 <table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -990,7 +994,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-* RecordTarget :
+#### RecordTarget
 <table style="width: 5.6e+2pt;margin-left:-14.45pt;border-collapse:collapse;border:none;">
     <thead>
         <tr>
@@ -1912,7 +1916,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-* Informant :
+#### Informant
 <table style="width:545.5pt;border-collapse:collapse;border:none;">
     <thead>
         <tr>
@@ -2179,7 +2183,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-* RelatedDocument : 
+#### RelatedDocument
 <table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -2280,13 +2284,11 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-[Lien vers le PDF spécifiant l'entête du document CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
-
-#### Corps du document
+### Corps du document
 
 Cette section présente le contenu du corps du document CDA. On y retrouve différentes sections :
 
-* Section représentant les informations sur le décès d'un individu :
+#### Section représentant les informations sur le décès d'un individu :
 <table style="width:548.15pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -2516,7 +2518,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
     </tbody>
 </table>
 
-* Extension représentant les informations sur la décision de l'individu :
+#### Extension représentant les informations sur la décision de l'individu :
 <table style="width: 5.6e+2pt;margin-left:-14.45pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -3394,1290 +3396,2972 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
     </tbody>
 </table>
 
-* Section représentant l'évaluation d'un individu : 
+#### Section représentant l'évaluation d'un individu : 
 
-<div>
-	<table>
-		<tbody>
-			<tr>
-				<td>Niv.</td>
-				<td>Elément XML</td>
-				<td>Cardina-lité</td>
-				<td>Elément de la spécification fonctionnelle SI-ESMS</td>
-				<td>Contenu de l'élément</td>
-			</tr>
-			<tr>
-				<td>0</td>
-				<td>component</td>
-				<td>[0..*]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>.section</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Evaluation d'un individu</td>
-			</tr>
-			<tr>
-				<td rowspan="2">2</td>
-				<td rowspan="2">..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.229</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>..text</td>
-				<td>[1..1]</td>
-				<td>dateMAJ</td>
-				<td>Date de dernière mise à jour de l'évaluation de l'usager au format aaaammjj</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>..component</td>
-				<td>[0..*]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>…section</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Eléments environnementaux</td>
-			</tr>
-			<tr>
-				<td rowspan="2">4</td>
-				<td rowspan="2">….templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.2.230</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>Composition du foyer</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.177</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>……. originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «CompositionFoyer»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Elément environnementaux.composition du foyer</td>
-				<td>No_Composition_foyer (1.2.250.1.213.3.3.106)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>type d'hébergement</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.178</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>……. originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «TypeHebergement»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Elément environnementaux.type d'hébergement</td>
-				<td>No_Type_hebergement (1.2.250.1.213.3.3.207)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>Caractristiques du logement</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.179</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «CaracteristiqueLogement»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Elément environnementaux.caractéristiques du logement</td>
-				<td>No_Caracteristique_logement (1.2.250.1.213.3.3.99)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>Ressources propres de la personne</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.180</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>……. originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «RessourceProprePersonne»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Elément environnementaux.ressources propres de la personne</td>
-				<td>No_Ressource_propre (1.2.250.1.213.3.3.174)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>Caractéristiques transport</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.181</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «CaracteristiqueTransport»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Elément environnementaux.caractéristiques transport</td>
-				<td>No_Transport (1.2.250.1.213.3.3.201)</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>..component</td>
-				<td>[0..*]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>…section</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Eléments personnels</td>
-			</tr>
-			<tr>
-				<td rowspan="2">4</td>
-				<td rowspan="2">….templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2"/>
-				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.231</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Pathologie principale</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.182</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «PathologiePrincipale»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.pathologie principale</td>
-				<td>No_Pathologie (1.2.250.1.213.3.3.162)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>
-					<a href="#Pathologie">Pathologie secondaire</a>
-				</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.183</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «PathologieSecondaire»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.pathologie secondaire</td>
-				<td>No_Pathologie (1.2.250.1.213.3.3.162)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>
-					<a href="#MaladieRare">Maladie rare</a>
-				</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.184</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «MaladieRare»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.maladie rare</td>
-				<td>No_Maladie_rare (1.2.250.1.213.3.3.224)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>
-					<a href="#HandicapRare">Handicap rare</a>
-				</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.185</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «HandicapRare»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.handicap rare</td>
-				<td>No_Handicap_rare (1.2.250.1.213.3.3.225)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>
-					<a href="#Déficience">Déficience principale</a>
-				</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.186</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «DeficiencePrincipale»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.déficience principale</td>
-				<td>No_Deficience (1.2.250.1.213.3.3.108)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>
-					<a href="#Déficience">Déficience secondaire</a>
-				</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.187</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «DeficienceSecondaire»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.déficience secondaire</td>
-				<td>No_Deficience (1.2.250.1.213.3.3.108)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>Prise en charge</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.188</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «PriseEnCharge»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.prise en charge</td>
-				<td>No_Prise_en_charge (1.2.250.1.213.3.3.170)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>Difficulté rencontrée</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.189</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «DifficulteRencontree»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments personnels.difficulté rencontrée</td>
-				<td>No_Activite (1.2.250.1.213.3.3.86)</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>..component</td>
-				<td>[0..*]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>…section</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Eléments Scolaires ou Professionnels</td>
-			</tr>
-			<tr>
-				<td rowspan="2">4</td>
-				<td rowspan="2">….templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2"/>
-				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.232</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Situation par rapport à la scolarité</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.190</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «SituationScolarite»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments Scolaires ou Professionnels.situation par rapport à la scolarité</td>
-				<td>No_Situation_scolaire (1.2.250.1.213.3.3.178)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Temps de scolarisation</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.191</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «TempsScolarisation»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments Scolaires ou Professionnels.temps de scolarisation</td>
-				<td>No_Temps_scolarisation (1.2.250.1.213.3.3.198)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Evaluation scolarité</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.192</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «EvaluationScolarite»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments Scolaires ou Professionnels.evaluation scolarité</td>
-				<td>No_Evaluation_scolarite (1.2.250.1.213.3.3.122)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Niveau de formation professionnelle</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.193</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «NiveauFormationProfessionnelle»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments Scolaires ou Professionnels.niveau de formation professionnelle</td>
-				<td>No_Niveau_formation_pro (1.2.250.1.213.3.3.152)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Situation par rapport au travail</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.194</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «SituationProfessionnelle»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments Scolaires ou Professionnels.situation par rapport au travail</td>
-				<td>No_Situation_travail (1.2.250.1.213.3.3.179)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Aptitude actuelle au poste</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.195</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «AptitudePoste»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments Scolaires ou Professionnels.aptitude actuelle au poste</td>
-				<td>No_Aptitude_poste (1.2.250.1.213.3.3.89)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Perspectives professionnelles</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.196</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «PerspectiveProfessionnelle»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Eléments Scolaires ou Professionnels.perspectives professionnelles</td>
-				<td>No_Perspective_pro (1.2.250.1.213.3.3.164)</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>..component</td>
-				<td>[0..*]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>…section</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Evolution et Besoins</td>
-			</tr>
-			<tr>
-				<td rowspan="2">4</td>
-				<td rowspan="2">….templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2"/>
-				<td>Identifiant unique de la section @root = 1.2.250.1.213.1.1.2.233</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée la section @root = 2.16.840.1.113883.10.12.201</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Evolution envisagée</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.197</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «EvolutionEnvisagee»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Evolution et Besoins.evolution envisagée</td>
-				<td>No_Evolution_envisagee (1.2.250.1.213.3.3.124)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..1]</td>
-				<td/>
-				<td>Evolution constatée</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.198</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «EvolutionConstatee»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Evolution et Besoins.evolution constatée</td>
-				<td>No_Evolution_constatee (1.2.250.1.213.3.3.123)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>….entry</td>
-				<td>[0..*]</td>
-				<td/>
-				<td>
-					<a href="#BesoinIdentifié">Besoins de compensation identifiés</a>
-				</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>…..observation</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>
-					<strong>@classCode = </strong>«OBS»
-
-<strong>@moodCode = «EVN»</strong>
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="2">6</td>
-				<td rowspan="2">…..templateId</td>
-				<td rowspan="2">[2..2]</td>
-				<td rowspan="2">X</td>
-				<td>Identifiant unique de l'entrée @root = 1.2.250.1.213.1.1.3.199</td>
-			</tr>
-			<tr>
-				<td>Identifiant unique du template à partir duquel est dérivée l'entrée @root = 2.16.840.1.113883.10.12.303</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……code</td>
-				<td>[1..1]</td>
-				<td/>
-				<td/>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>…….originalText</td>
-				<td>[1..1]</td>
-				<td/>
-				<td>Valeur fixée à «BesoinCompensation»</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>……value</td>
-				<td>[1..1]</td>
-				<td>Evolution et Besoins.<a href="#BesoinIdentifié">besoins de compensation identifiés</a>
-				</td>
-				<td>No_Besoin_compensation (1.2.250.1.213.3.3.94)</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-[Lien vers le PDF spécifiant le corps du document CDA](CISIS-TEC_SPECIFICATIONS_TECHNIQUES_SI-ESMS_v3.1_CDA.pdf)
+<p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="background:white;">L&rsquo;&eacute;valuation d&rsquo;un individu est identique &agrave; la section &laquo; Evaluation d&rsquo;un individu &raquo;, d&rsquo;identifiant&nbsp;</span><span style="line-height:115%;">1.2.250.1.213.7.1.3,</span><span style="background:white;">&nbsp;mise en place dans le cadre du volet &laquo; Transfert de dossiers entre MDPH &raquo;. Elle se divise en 4 sous-sections repr&eacute;sentant les &eacute;l&eacute;ments environnementaux, les &eacute;l&eacute;ments personnels, les &eacute;l&eacute;ments scolaires ou professionnels et les &eacute;volutions/besoins.&nbsp;</span></p>
+<p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="background:white;">&nbsp;</span></p>
+<table style="width:559.95pt;margin-left:-14.45pt;border-collapse:collapse;border:none;">
+    <tbody>
+        <tr>
+            <td style="width: 29.15pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><strong><span style="line-height:115%;">Niv.</span></strong></p>
+            </td>
+            <td style="width: 88.05pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><strong><span style="line-height:115%;">El&eacute;ment XML</span></strong></p>
+            </td>
+            <td style="width: 51.4pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><strong><span style="line-height:115%;">Cardina-lit&eacute;</span></strong></p>
+            </td>
+            <td style="width: 165.9pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><strong><span style="line-height:115%;">El&eacute;ment de la sp&eacute;cification fonctionnelle SI-ESMS</span></strong></p>
+            </td>
+            <td style="width: 225.45pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><strong><span style="line-height:115%;">Contenu de l&rsquo;&eacute;l&eacute;ment</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">0</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">component</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">1</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">.section</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><strong><em><span style="line-height:  115%;color:#1F3864;">&nbsp;</span></em></strong></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evaluation d&rsquo;un individu</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">2</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.2.229</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.201</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">2</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">..text</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">dateMAJ</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Date de derni&egrave;re mise &agrave; jour&nbsp;</span><span style="line-height:115%;">de l&rsquo;&eacute;valuation de l&rsquo;usager<span style="color:#C00000;">&nbsp;au format aaaammjj</span></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 25.55pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">2</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 25.55pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">..component</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 25.55pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 25.55pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;height: 25.55pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">3</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;section</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments environnementaux</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[2..2]</span></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.2.230</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.201</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Composition du foyer</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.177</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;. originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;CompositionFoyer&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ment environnementaux.composition du foyer</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Composition_foyer&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.106</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">type d&rsquo;h&eacute;bergement</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.178</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;. originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;TypeHebergement&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ment environnementaux.type d&rsquo;h&eacute;bergement</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Type_hebergement&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.207</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Caractristiques du logement</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.179</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;CaracteristiqueLogement&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ment environnementaux.caract&eacute;ristiques du logement</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Caracteristique_logement&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.99</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Ressources propres de la personne</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.180</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;. originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave;</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;&laquo; RessourceProprePersonne &raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ment environnementaux.ressources propres de la personne</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Ressource_propre&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.174</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Caract&eacute;ristiques transport</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.181</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;CaracteristiqueTransport&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ment environnementaux.caract&eacute;ristiques transport</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Transport&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.201</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">2</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">..component</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">3</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;section</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.2.231</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.201</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Pathologie principale</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.182</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;PathologiePrincipale&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.pathologie principale</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Pathologie&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.162</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.183</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;PathologieSecondaire&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.pathologie secondaire</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Pathologie&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.162</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.184</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;MaladieRare&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.maladie rare</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Maladie_rare&nbsp;</span><span style="line-height:115%;">(</span><span style='font-size:15px;line-height:115%;font-family:"Calibri",sans-serif;color:black;'>1.2.250.1.213.3.3.224)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.185</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;HandicapRare&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.handicap rare</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Handicap_rare&nbsp;</span><span style="line-height:115%;">(</span><span style='font-size:15px;line-height:115%;font-family:"Calibri",sans-serif;color:black;'>1.2.250.1.213.3.3.225</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">D&eacute;ficience principale</span></a></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.186</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;DeficiencePrincipale&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.d&eacute;ficience principale</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Deficience&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.108</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien veres le glossaire"><span style="color:black;text-decoration:  none;">D&eacute;ficience secondaire</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.187</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;DeficienceSecondaire&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.d&eacute;ficience secondaire</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Deficience&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.108</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Prise en charge</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 1.2.250.1.213.1.1.3.188</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;PriseEnCharge&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.prise en charge</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Prise_en_charge (</span><span style="line-height:115%;">1.2.250.1.213.3.3.170</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Difficult&eacute; rencontr&eacute;e</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.189</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;DifficulteRencontree&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments personnels.difficult&eacute; rencontr&eacute;e</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Activite&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.86</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">2</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">..component</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">3</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;section</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.2.232</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.201</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Situation par rapport &agrave; la scolarit&eacute;</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.190</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;SituationScolarite&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels.situation par rapport &agrave; la scolarit&eacute;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Situation_scolaire&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.178)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Temps de scolarisation</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.191</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;TempsScolarisation&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels.temps de scolarisation</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Temps_scolarisation&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.198</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evaluation scolarit&eacute;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.192</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;EvaluationScolarite&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels.evaluation scolarit&eacute;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Evaluation_scolarite&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.122</span><span style="line-height:115%;">)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Niveau de formation professionnelle</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.193</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;NiveauFormationProfessionnelle&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels.niveau de formation professionnelle</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Niveau_formation_pro&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.152)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Situation par rapport au travail</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.194</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;SituationProfessionnelle&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels.situation par rapport au travail</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Situation_travail&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.179)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Aptitude actuelle au poste</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.195</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;AptitudePoste&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels.aptitude actuelle au poste</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Aptitude_poste&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.89)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Perspectives professionnelles</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.196</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;PerspectiveProfessionnelle&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">El&eacute;ments Scolaires ou Professionnels.perspectives professionnelles</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Perspective_pro&nbsp;</span><span style="line-height:115%;">(1.2.250.1.213.3.3.164)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">2</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">..component</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">3</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;section</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.2.233</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e la section</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.201</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution envisag&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.197</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;EvolutionEnvisagee&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins.evolution envisag&eacute;e</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Evolution_envisagee&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.124)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:0cm;text-align:justify;line-height:normal;'><span style="color:black;">Evolution constat&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.198</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;EvolutionConstatee&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins.evolution constat&eacute;e</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Evolution_constatee&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.123)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">4</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;.entry</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[0..*]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Besoins de compensation identifi&eacute;s</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">5</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..observation</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
+                    <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:1.8499999999999996px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@classCode =&nbsp;</span></strong><span style="line-height:115%;color:black;">&laquo;&nbsp;OBS&nbsp;&raquo;</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="line-height:115%;color:black;">@moodCode = &laquo;&nbsp;EVN&nbsp;&raquo;</span></strong></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td rowspan="2" style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;..templateId</span></p>
+            </td>
+            <td rowspan="2" style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[2..2]</span></u></em></p>
+            </td>
+            <td rowspan="2" style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">X</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique de l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root =&nbsp;</span><span style="line-height:  115%;color:black;">1.2.250.1.213.1.1.3.199</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Identifiant unique du template &agrave; partir duquel est d&eacute;riv&eacute;e l&rsquo;entr&eacute;e</span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">@root = 2.16.840.1.113883.10.12.303</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;code</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">7</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;.originalText&nbsp;</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">[1..1]</span></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Valeur fix&eacute;e &agrave; &laquo;&nbsp;BesoinCompensation&nbsp;&raquo;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 29.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><span style="line-height:115%;color:black;">6</span></p>
+            </td>
+            <td style="width: 88.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:left;line-height:115%;'><span style="line-height:115%;color:black;">&hellip;&hellip;value</span></p>
+            </td>
+            <td style="width: 51.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
+            </td>
+            <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins.<a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">besoins de compensation identifi&eacute;s</span></a></span></p>
+            </td>
+            <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Besoin_compensation&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.94)</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style='margin-right:0cm;margin-left:72.0pt;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="background:white;">&nbsp;</span></p>
+<p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'>&nbsp;</p>
 
 ### Types de données essentiels
 
