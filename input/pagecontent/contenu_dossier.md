@@ -6500,6 +6500,11 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 L’identifiant est dans tous les cas un identifiant globalement unique. Il est composé a minima d’une combinaison des attributs root et extension
 
 #### Type de données Codées "CS", "CV", "CE", "CD"
+
+<div style="text-align:center;"> 
+<img src="type_donnee.png" alt="Type de données"/>
+</div>
+
 Un élément codé représente un concept. Quatre types de données sont disponibles pour coder les concepts, avec une richesse d’expression progressive.
 Les éléments du standard qui sont de type "CS" sont renseignés avec un simple code.
 Les éléments de type "CV", "CE" ou "CD" doivent respecter les contraintes suivantes :
