@@ -19,7 +19,7 @@ Ce document présente les spécifications techniques du volet « SI-SdO - SI-ESM
 
 La production de ce guide d'implémentation est basée sur :
 
-* Les [Spécifications Fonctionnelles des Echanges](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf) du volet « SI-SdO - SI-ESMS » (SFE SI-ESMS);
+* Les [Spécifications Fonctionnelles des Echanges](CISIS-SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf) du volet « SI-SdO - SI-ESMS » (SFE SI-ESMS);
 * L'[étude des normes et standards](https://esante.gouv.fr/sites/default/files/media_entity/documents/cisis-normesstandards_si-esms_v1.0.pdf) du volet SI-SdO - SI-ESMS ;
 * Le standard [Clinical Document Architecture R2  (CDA) ](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7), porté par HL7, pour représenter les données décrites dans les SFE SI-ESMS;
 * Le standard [HL7 FHIR v4.0.1](https://www.hl7.org/fhir/) pour le transport.
