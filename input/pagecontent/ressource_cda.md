@@ -1,15 +1,6 @@
-### Liste des ressources CDA
-Dans le cadre de ce volet il y a 2 types de ressources CDA :
-* Les schématrons Art-Decor,
-* Les schémas XSD.
+### Schémas XSD
 
-#### Schématrons
-
-| Nom  | description |
-| --- | --- |
-| [Schematrons](20230810_Schematron_SDO_ESMS.zip) | Schématron généré par Art-Decor |
-
-#### Schémas XSD
+Ces schémas permettent de vérifier la conformité d'un document aux spécifications CDA. Elles incluent des extensions spécifiques au volet SI-ESMS
 
 | Nom  | description |
 | --- | --- |
@@ -19,4 +10,5 @@ Dans le cadre de ce volet il y a 2 types de ressources CDA :
 
 | Nom  | description |
 | --- | --- |
-| [Exemples CDA](20231219_CDA_ESMS.zip) | Ensemble des fichiers d'exemples CDA. |
+| [CDA Evaluation](20240123_CDA_SI-ESMS_Evaluation.xml) | Exemple de document CDA portant les informations de l'individu et la décision d'orientation|
+| [CDA Decision](20240123_CDA_SI-ESMS_Decision.xml) | Exemple de document CDA portant l'évaluation de l'individu
