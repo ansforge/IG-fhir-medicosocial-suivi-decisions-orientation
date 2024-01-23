@@ -3,9 +3,7 @@
 
 Ce flux contient le résultat de la recherche de mise à jour des statuts des décisions d’orientation. Cette réponse est retournée par le SI-SDO au SI-ESMS.
 Il s’agit d’un flux qui permet de retourner la liste des ressources « Task » répondant aux critères de recherche. Le SI-SDO s’appuie sur les informations du token d’authentification pour ne retourner que les statuts des décisions concernant l’ESMS ayant effectué la requête.  
-Le SI-SDO filtre également les ressources des décisions concernant l’ESMS pour ne retourner que :
--	Le statut « Période d’essai en cours » (code 185) ou « Usager pris en charge » (code 186) lié à un autre ESMS,
--	Le statut « Admission impossible entérinée » (code 46)  d’un dossier de l’ESMS ayant émis la recherche
+
 
 ### diagramme de séquence 
 

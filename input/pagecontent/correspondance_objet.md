@@ -227,7 +227,7 @@ Ci-dessous les éléments qui seront à renseigner dans chaque ressource Documen
     </tbody>
 </table>
 
-### Flux 4 : StatutPersonneOrientee / Flux 5 : StatutEntreeESMS / Flux 6 : StatutAdmissionImpossibleEnterinee
+### Flux 4 : StatutPersonneOrientee / Flux 5 : StatutVersESMS
 Pour chaque objet métier, le tableau ci-dessous reprend l’ensemble des éléments métier identifiés dans les flux 4, 5 et 6 véhiculant le statut d’une décision de manière identique. Pour chaque attribut de chaque classe métier, la ressource FHIR, et plus particulièrement l’élément de cette ressource qui sera utilisée pour véhiculer l’information, est identifiée
 
 <table style="width:531.35pt;border-collapse:collapse;border:none;">
