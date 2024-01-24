@@ -1,6 +1,6 @@
 ### Schémas XSD
 
-Ces schémas permettent de vérifier la conformité d'un document aux spécifications CDA. Elles incluent des extensions spécifiques au volet SI-ESMS
+Ces schémas permettent de vérifier la conformité d'un document aux spécifications CDA. Ils incluent des extensions spécifiques au volet SI-ESMS
 
 | Nom  | description |
 | --- | --- |
