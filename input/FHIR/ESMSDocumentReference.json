@@ -1,39 +1,39 @@
 {
-    "resourceType":"DocumentReference",
-    "id": "id-exemple-esms-document-reference",
-    "meta": {
+	"resourceType": "DocumentReference",
+	"id": "id-exemple-esms-document-reference",
+	"meta": {
 		"profile": [
 			"https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"
 		]
-    },
+	},
 	"identifier": [
 		{
-		"use" : "usual",
-		"value": "idDecision"
+			"use": "usual",
+			"value": "idDecision"
 		},
 		{
-		"use" : "official",
-		"value": "idNat_Decision"
+			"use": "official",
+			"value": "idNat_Decision"
 		}
 	],
-    "status":"current",
+	"status": "current",
 	"type": {
 		"coding": [
 			{
-			"system": "http://loinc.org",
-			"code": "57830-2",
-			"display": "Admission request Document"
+				"system": "http://loinc.org",
+				"code": "57830-2",
+				"display": "Admission request Document"
 			}
 		]
 	},
-    "content":[
-        {
-            "attachment":{
-                "contentType":"text/plain",
-                "language":"fr",
-                "title":"Document Individu et décision",
-                "data":"SGVsbG8gd29ybGQ="
-            }
-        }
-    ]
+	"content": [
+		{
+			"attachment": {
+				"contentType": "text/plain",
+				"language": "fr",
+				"title": "Document Individu et décision",
+				"data": "SGVsbG8gd29ybGQ="
+			}
+		}
+	]
 }
