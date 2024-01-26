@@ -12,11 +12,6 @@
   "input": [
     {
       "type": {
-        "coding": [
-          {
-            "display": "idNat_Struct"
-          }
-        ],
         "text": "idNat_Struct"
       },
       "valueIdentifier": {
@@ -25,22 +20,12 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "nomESMS"
-          }
-        ],
         "text": "nomESMS"
       },
       "valueString": "value nomESMS"
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "statutESMS"
-          }
-        ],
         "text": "statutESMS"
       },
       "valueCodeableConcept": {
@@ -55,22 +40,12 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "dateStatutESMS"
-          }
-        ],
         "text": "dateStatutESMS"
       },
       "valueDate": "2012-10-25"
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "idUnite"
-          }
-        ],
         "text": "idUnite"
       },
       "valueIdentifier": {
@@ -79,28 +54,18 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "nomUnite"
-          }
-        ],
         "text": "nomUnite"
       },
       "valueString": "test NomUnite"
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "categorieOrganisation"
-          }
-        ],
         "text": "categorieOrganisation"
       },
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/",
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation",
             "code": "01",
             "display": "Categorie organisation"
           }
@@ -109,11 +74,6 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "temporaliteAccueil"
-          }
-        ],
         "text": "temporaliteAccueil"
       },
       "valueCodeableConcept": {
@@ -128,22 +88,12 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "accueilSequentiel"
-          }
-        ],
         "text": "accueilSequentiel"
       },
       "valueBoolean": true
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "modePriseCharge"
-          }
-        ],
         "text": "modePriseCharge"
       },
       "valueCodeableConcept": {
@@ -158,11 +108,6 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "statutUnite"
-          }
-        ],
         "text": "statutUnite"
       },
       "valueCodeableConcept": {
@@ -177,22 +122,12 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "dateStatutUnite"
-          }
-        ],
         "text": "dateStatutUnite"
       },
       "valueDate": "2021-10-25"
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "motifUnite"
-          }
-        ],
         "text": "motifUnite"
       },
       "valueCodeableConcept": {
@@ -207,11 +142,6 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "typeDroitPrestation"
-          }
-        ],
         "text": "typeDroitPrestation"
       },
       "valueCodeableConcept": {
@@ -226,11 +156,6 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "IdDecision"
-          }
-        ],
         "text": "idDecision"
       },
       "valueIdentifier": {
@@ -239,11 +164,6 @@
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "IdNat_Decision"
-          }
-        ],
         "text": "idNat_Decision"
       },
       "valueIdentifier": {
