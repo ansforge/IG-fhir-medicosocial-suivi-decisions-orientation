@@ -22,7 +22,7 @@
 				"constraint": [
 				  {
 					"key": "regle-Contenu",
-					"severity": "error",
+					"severity": "warning",
 					"human": "Le transport des données est obligatoire, le champ data doit être rempli",
 					"expression": "content.attachment.data.exists()"
 				  }
