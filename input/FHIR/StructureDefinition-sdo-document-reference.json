@@ -17,6 +17,18 @@
 	"differential": {
 		"element": [
 			{
+				"id": "DocumentReference",
+				"path": "DocumentReference",
+				"constraint": [
+				  {
+					"key": "regle-Contenu",
+					"severity": "error",
+					"human": "Le transport des données est obligatoire, le champ data doit être rempli",
+					"expression": "content.attachment.data.exists()"
+				  }
+				]
+			  },
+			{
 				"id": "DocumentReference.identifier",
 				"path": "DocumentReference.identifier",
 				"min": 1,
@@ -26,12 +38,8 @@
 				"id": "DocumentReference.content",
 				"path": "DocumentReference.content",
 				"max": "1"
-			},
-			{
-				"id": "DocumentReference.type",
-				"path": "DocumentReference.type",
-				"short": "Si la ressource contient le document CDA portant les données de individu et la décision : Code =  « 57830-2 » de la nomenclature LOINC docTypeCodes, Display = Admission request Document. Si la ressource contient le document CDA portant l'évaluation : Code = « 51848-0 » de la nomenclature LOINC docTypeCodes, Display = « Evaluation note »"
 			}
+	
 		]
 	}
 }
