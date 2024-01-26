@@ -23,7 +23,7 @@
 				  {
 					"key": "regle-Contenu",
 					"severity": "warning",
-					"human": "Le transport des données est obligatoire, le champ data doit être rempli",
+					"human": "Le transport des données devient obligatoire lorsque la ressource complète est transportée, le champs data doit alors être rempli",
 					"expression": "content.attachment.data.exists()"
 				  }
 				]
