@@ -108,7 +108,7 @@
 				"sliceName": "idNat_Struct",
 				"min": "1",
 				"max": "1",
-				"short": "Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET "
+				"short": "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET "
 			},
 			{
 				"id": "Task.input:idNat_Struct.type.text",
@@ -177,7 +177,7 @@
 				"path": "Task.input",
 				"sliceName": "motifESMS",
 				"max": "1",
-				"short": "Permet de définir le motif associé au statut de l’usager dans l’ESMS"
+				"short": "Permet de définir le motif associé au statut de l’usager dans l’ESMS. Motifs obligatoires pour certains statuts suivant la table : ASS_A32-StatutMotifPersonnePriseCharge"
 			},
 			{
 				"id": "Task.input:motifESMS.type.text",
