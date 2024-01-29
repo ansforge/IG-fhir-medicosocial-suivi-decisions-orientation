@@ -85,10 +85,6 @@
                                 <ul>
                                     <li>Op&eacute;ration &laquo;&nbsp;search&nbsp;&raquo; de l&rsquo;API FHIR assur&eacute;e par une requ&ecirc;te HTTPS GET adressant la ressource Task.</li>
                                 </ul>
-                        <li>Flux 5.3 &ndash; ConsultationStatut / Flux 5.4 &ndash; ResultatConsultationStatut</li>
-                                <ul>
-                                    <li>Op&eacute;ration &laquo;&nbsp;read&nbsp;&raquo; de l&rsquo;API FHIR assur&eacute;e par une requ&ecirc;te HTTPS GET.</li>
-                                </ul> 
                     </ul>
                     <div style="text-align:center;"> {%include flux5.svg%} </div>
             </td>
