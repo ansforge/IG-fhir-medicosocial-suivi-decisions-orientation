@@ -106,7 +106,7 @@
 				"id": "Task.input:idNat_Struct",
 				"path": "Task.input",
 				"sliceName": "idNat_Struct",
-				"min": "1",
+				"min": 1,
 				"max": "1",
 				"short": "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET "
 			},
@@ -128,7 +128,7 @@
 				"id": "Task.input:nomESMS",
 				"path": "Task.input",
 				"sliceName": "nomESMS",
-				"min": "1",
+				"min": 1,
 				"max": "1",
 				"short": "Permet de définir le nom de l’ESMS"
 			},
@@ -150,7 +150,7 @@
 				"id": "Task.input:statutESMS",
 				"path": "Task.input",
 				"sliceName": "statutESMS",
-				"min": "1",
+				"min": 1,
 				"max": "1",
 				"short": "Statut de l’usager dans l'ESMS"
 			},
@@ -457,7 +457,7 @@
 				"id": "Task.input:idDecision",
 				"path": "Task.input",
 				"sliceName": "idDecision",
-				"min": "1",
+				"min": 1,
 				"max": "1",
 				"short": "Permet de définir l’identifiant de la décision unique au sein de la MDPH"
 			},
@@ -479,7 +479,7 @@
 				"id": "Task.input:idNat_Decision",
 				"path": "Task.input",
 				"sliceName": "idNat_Decision",
-				"min": "1",
+				"min": 1,
 				"max": "1",
 				"short": "Identifiant technique national de la décision, généré par ViaTrajectoire. Cet identifiant unique est retourné dans le Flux 1 par ViaTrajectoire à la MDPH lorsque la décision est créée dans le SI-SdO."
 			},
