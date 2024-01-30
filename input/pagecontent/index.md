@@ -62,7 +62,7 @@ Les templates de document CDA créés dans le cadre de ce guide d’implémentat
 
 #### Ressources FHIR profilées
 
-Ce guide d'implémentation repose sur l'utilisation de profils génériquesdéfinis dans le cadre des volets de suivi des orientations (SDO et ESMS), mais également de profils applicatifs, héritant des profils génériques. La liste des profils utilisés est la suivante : 
+Ce guide d'implémentation repose sur l'utilisation de profils génériques définis dans le cadre des volets de suivi des orientations (SDO et ESMS), mais également de profils applicatifs, héritant des profils génériques. La liste des profils utilisés est la suivante : 
 
 | Ressources de base | Profil | Volet utilisant ce profil | Description |
 | ----- | ----- | ----- | ----- |
