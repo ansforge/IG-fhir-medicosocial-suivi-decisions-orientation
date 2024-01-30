@@ -63,22 +63,17 @@ Les templates de document CDA créés dans le cadre de ce guide d’implémentat
 
 #### Ressources FHIR profilées
 
-Ce guide d'implémentation s'appuie sur des profils génériques définis dans le cadre du volet SI-MDPH - SI-SdO - Suivi des orientations
+Ce guide d'implémentation repose sur l'utilisation de profils génériques définis dans le cadre des volets de suivi des orientations (SDO et ESMS), mais également de profils applicatifs, héritant des profils génériques. La liste des profils utilisés est la suivante : 
 
-| Ressources de base | Profil générique | Description |
-| ----- | ----- | ----- |
-| <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> | [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | Profil générique créé dans le contexte du suivi des orientations pour véhiculer les données de l’individu, la décision et l’évaluation contenus dans un document CDA |
-| <a href="https://hl7.org/fhir/R4/task.html">Task</a> | [SDOTask](StructureDefinition-sdo-task.html) | Profil générique créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation |
-| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [SDOBundleResultatRechercheNotificationESMS](StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html) | Profil générique créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification |
+| Ressources de base | Profil | Volet utilisant ce profil | Description |
+| ----- | ----- | ----- | ----- |
+| <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> | [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | SDO | Profil générique créé dans le contexte du suivi des orientations pour véhiculer les données de l’individu, la décision et l’évaluation contenus dans un document CDA |
+| <a href="https://hl7.org/fhir/R4/task.html">Task</a> | [SDOTask](StructureDefinition-sdo-task.html) | SDO, ESMS|Profil générique créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation |
+| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [SDOBundleResultatRechercheNotificationESMS](StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html) | SDO, ESMS | Profil générique créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification |
+| <a href="https://hl7.org/fhir/R4/consent.html">Consent</a> | [ESMSConsent](StructureDefinition-esms-consent.html) | ESMS | Profil applicatif créé dans le contexte du suivi des orientations pour transporter la définition de l’accord |
+| [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | [ESMSDocumentReference](StructureDefinition-esms-document-reference.html) | ESMS | Profil applicatif créé à partir du profil générique SDODocumentReference pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluaton dauns un document CDA |
+| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [ESMSBundleResultatRechercheDecisionEvaluation	](StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html) | ESMS | Profil applicatif créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d'évaluation. Il repose sur le profil applicatif ESMSDocumentReference |
 
-
-Les profils applicatifs, utilisés dans le cadre du volet SI-SdO - SI-ESMS - Suivi des orientations, sont les suivants :
-
-| Ressource ou profil générique de base| Profil applicatif | Description |
-| ----- | ----- | ----- |
-| [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | [ESMSDocumentReference](StructureDefinition-esms-document-reference.html) | Profil applicatif créé dans le contexte du suivi des orientations pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluaton dauns un document CDA |
-| <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> | [ESMSBundleResultatRechercheDecisionEvaluation	](StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html) | Profil applicatif créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de decision ou d’évaluation |
-| <a href="https://hl7.org/fhir/R4/consent.html">Consent</a> | [ESMSConsent](StructureDefinition-esms-consent.html) | Profil applicatif créé dans le contexte du suivi des orientations pour transporter la définition de l’accord |
 
 ### Interactions FHIR
 
