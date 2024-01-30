@@ -1,31 +1,50 @@
 {
-	"resourceType": "StructureDefinition",
-	"id": "esms-document-reference",
-	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference",
-	"version": "1.1",
-	"name": "ESMSDocumentReference",
-	"status": "active",
-	"date": "2023-06-27T09:51:35+02:00",
-	"publisher": "ANS",
-	"description": "Profil pour définir le dossier ESMS",
-	"fhirVersion": "4.0.1",
-	"kind": "resource",
-	"abstract": false,
-	"type": "DocumentReference",
-	"baseDefinition": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
-	"derivation": "constraint",
-	"differential": {
-		"element": [
-			{
-				"id": "DocumentReference.identifier",
-				"path": "DocumentReference.identifier",
-				"min": 2
-			},
-			{
-				"id": "DocumentReference.type",
-				"path": "DocumentReference.type",
-				"min": 1
-			}
-		]
-	}
+  "resourceType": "StructureDefinition",
+  "id": "esms-document-reference",
+  "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference",
+  "version": "1.2",
+  "name": "ESMSDocumentReference",
+  "status": "active",
+  "date": "2024-01-19T09:51:35+02:00",
+  "publisher": "ANS",
+  "description": "Profil pour définir le dossier ESMS",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference",
+        "path": "DocumentReference",
+        "constraint": [
+          {
+            "key": "regle-NomPieceJointe",
+            "severity": "warning",
+            "human": "Le nom de la pièce jointe doit être  : \"Document Individu et décision\" ou \"Document évaluation\"",
+            "expression": "content.attachment.title='Document Individu et décision' or content.attachment.title='Document évaluation'"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier",
+        "path": "DocumentReference.identifier",
+        "min": 2
+      },
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "min": 1,
+        "short" :"Si la ressource contient le document CDA portant les données de individu et la décision : Code =  « 57830-2 » de la nomenclature LOINC docTypeCodes, Display = Admission request Document. Si la ressource contient le document CDA portant l'évaluation : Code = « 51848-0 » de la nomenclature LOINC docTypeCodes, Display = « Evaluation note"
+      },
+      {
+        "id": "DocumentReference.content.attachment.title",
+        "path": "DocumentReference.content.attachment.title",
+        "min": 1,
+        "short": "Titre identifiant le contenu du document transporté. Le titre doit être soit 'Document Individu et décision', soit 'Document évaluation'"
+      }
+    ]
+  }
 }

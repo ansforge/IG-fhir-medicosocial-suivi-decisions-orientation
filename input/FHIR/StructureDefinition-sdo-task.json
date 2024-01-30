@@ -1,13 +1,50 @@
 {
 	"resourceType": "StructureDefinition",
 	"id": "sdo-task",
+	"text": {
+		"status": "extensions"
+	},
 	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task",
-	"version": "2.2",
+	"version": "2.3",
 	"name": "SDOTask",
 	"status": "active",
-	"date": "2023-07-06T09:51:35+02:00",
+	"date": "2024-01-19T09:51:35+02:00",
+	"publisher": "ANS",
+	"contact": [
+		{
+			"name": "ANS",
+			"telecom": [
+				{
+					"system": "url",
+					"value": "https://esante.gouv.fr"
+				}
+			]
+		}
+	],
 	"description": "Profil utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation",
 	"fhirVersion": "4.0.1",
+	"mapping": [
+		{
+			"identity": "workflow",
+			"uri": "http://hl7.org/fhir/workflow",
+			"name": "Workflow Pattern"
+		},
+		{
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		},
+		{
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		},
+		{
+			"identity": "v2",
+			"uri": "http://hl7.org/v2",
+			"name": "HL7 v2 Mapping"
+		}
+	],
 	"kind": "resource",
 	"abstract": false,
 	"type": "Task",
@@ -15,6 +52,24 @@
 	"derivation": "constraint",
 	"differential": {
 		"element": [
+			{
+				"id": "Task",
+				"path": "Task",
+				"constraint": [
+					{
+						"key": "regle-StatutUnite",
+						"severity": "error",
+						"human": "Si statut unite est rempli alors les éléments suivants sont attendus :idUnite,nomUnite, categorieOrganisation, modePriseCharge, dateStatutUnite",
+						"expression": "input.type.where(text='idUnite').exists() and input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() or input.type.where(text='statutUnite').exists().not()"
+					},
+					{
+						"key": "regle-ModePriseEnCharge",
+						"severity": "error",
+						"human": "Les codes possibles pour le mode de prise en charge sont : Code 46 « Hébergement (accueil jour et nuit) » = Internat (1),Code 47 « Accueil de jour » = externat (2), semi-internat (3) ou accueil de jour (6),Code 48 Accueil de nuit » = Accueil de nuit (4)",
+						"expression": "input.where(type.text='modePriseCharge').value.coding.code='48' or input.where(type.text='modePriseCharge').value.coding.code='47'  or input.where(type.text='modePriseCharge').value.coding.code='46' or input.where(type.text='modePriseCharge').exists().not() "
+					}
+				]
+			},
 			{
 				"id": "Task.meta",
 				"path": "Task.meta"
@@ -45,15 +100,15 @@
 						}
 					],
 					"rules": "open"
-				},
-				"min": 5
+				}
 			},
 			{
 				"id": "Task.input:idNat_Struct",
 				"path": "Task.input",
 				"sliceName": "idNat_Struct",
 				"min": 1,
-				"max": "1"
+				"max": "1",
+				"short": "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET "
 			},
 			{
 				"id": "Task.input:idNat_Struct.type.text",
@@ -65,7 +120,7 @@
 				"path": "Task.input.value[x]",
 				"type": [
 					{
-						"code": "string"
+						"code": "Identifier"
 					}
 				]
 			},
@@ -74,7 +129,8 @@
 				"path": "Task.input",
 				"sliceName": "nomESMS",
 				"min": 1,
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir le nom de l’ESMS"
 			},
 			{
 				"id": "Task.input:nomESMS.type.text",
@@ -94,7 +150,9 @@
 				"id": "Task.input:statutESMS",
 				"path": "Task.input",
 				"sliceName": "statutESMS",
-				"max": "1"
+				"min": 1,
+				"max": "1",
+				"short": "Statut de l’usager dans l'ESMS"
 			},
 			{
 				"id": "Task.input:statutESMS.type.text",
@@ -111,14 +169,15 @@
 				],
 				"binding": {
 					"strength": "required",
-					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/"
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/FHIR/JDV-J252-StatutPersonnePriseChargeESMS"
 				}
 			},
 			{
 				"id": "Task.input:motifESMS",
 				"path": "Task.input",
 				"sliceName": "motifESMS",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir le motif associé au statut de l’usager dans l’ESMS. Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
 			},
 			{
 				"id": "Task.input:motifESMS.type.text",
@@ -135,14 +194,15 @@
 				],
 				"binding": {
 					"strength": "required",
-					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J251-MotifStatutPersonnePriseChargeESMS/"
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J251-MotifStatutPersonnePriseChargeESMS/FHIR/JDV-J251-MotifStatutPersonnePriseChargeESMS"
 				}
 			},
 			{
 				"id": "Task.input:dateStatutESMS",
 				"path": "Task.input",
 				"sliceName": "dateStatutESMS",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir la date d'entrée dans le statut"
 			},
 			{
 				"id": "Task.input:dateStatutESMS.type.text",
@@ -162,7 +222,8 @@
 				"id": "Task.input:idUnite",
 				"path": "Task.input",
 				"sliceName": "idUnite",
-				"max": "1"
+				"max": "1",
+				"short": "Identifiant de l'unité qui correspond à l’identifiant de l'organisation interne, unique et persistant au niveau national, et généré par une instance régionale du ROR (pour plus de précision, voir la spécification « ANS ROR - Modèle Exposition"
 			},
 			{
 				"id": "Task.input:idUnite.type.text",
@@ -174,7 +235,7 @@
 				"path": "Task.input.value[x]",
 				"type": [
 					{
-						"code": "id"
+						"code": "Identifier"
 					}
 				]
 			},
@@ -182,7 +243,8 @@
 				"id": "Task.input:nomUnite",
 				"path": "Task.input",
 				"sliceName": "nomUnite",
-				"max": "1"
+				"max": "1",
+				"short": "Nom de l'unité"
 			},
 			{
 				"id": "Task.input:nomUnite.type.text",
@@ -202,7 +264,8 @@
 				"id": "Task.input:categorieOrganisation",
 				"path": "Task.input",
 				"sliceName": "categorieOrganisation",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir la catégorie d’organisation qui caractérise la nature particulière de l’offre de santé portée par l'unité"
 			},
 			{
 				"id": "Task.input:categorieOrganisation.type.text",
@@ -219,14 +282,15 @@
 				],
 				"binding": {
 					"strength": "required",
-					"valueSet": "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/"
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR/FHIR/JDV-J34-CategorieOrganisation-ROR"
 				}
 			},
 			{
 				"id": "Task.input:temporaliteAcceuil",
 				"path": "Task.input",
 				"sliceName": "temporaliteAcceuil",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir la fréquence d'accueil lors d'une prise en charge en ESMS"
 			},
 			{
 				"id": "Task.input:temporaliteAcceuil.type.text",
@@ -243,14 +307,15 @@
 				],
 				"binding": {
 					"strength": "required",
-					"valueSet": "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/"
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR"
 				}
 			},
 			{
 				"id": "Task.input:accueilSequentiel",
 				"path": "Task.input",
 				"sliceName": "accueilSequentiel",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir l’accueil séquentiel"
 			},
 			{
 				"id": "Task.input:accueilSequentiel.type.text",
@@ -270,7 +335,8 @@
 				"id": "Task.input:modePriseCharge",
 				"path": "Task.input",
 				"sliceName": "modePriseCharge",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir le mode de prise en charge"
 			},
 			{
 				"id": "Task.input:modePriseCharge.type.text",
@@ -287,14 +353,15 @@
 				],
 				"binding": {
 					"strength": "required",
-					"valueSet": "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/"
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_JXX-ModePriseEnCharge/FHIR/JDV_JXX-ModePriseEnCharge/"
 				}
 			},
 			{
 				"id": "Task.input:statutUnite",
 				"path": "Task.input",
 				"sliceName": "statutUnite",
-				"max": "1"
+				"max": "1",
+				"short": "Statut de la personne orientée au niveau de l’unité, définis dans le cadre fonctionnel du système d'information de suivi des orientations de la CNSA"
 			},
 			{
 				"id": "Task.input:statutUnite.type.text",
@@ -311,14 +378,15 @@
 				],
 				"binding": {
 					"strength": "required",
-					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite/"
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite/FHIR/JDV-J253-StatutPersonnePriseChargeUnite"
 				}
 			},
 			{
 				"id": "Task.input:dateStatutUnite",
 				"path": "Task.input",
 				"sliceName": "dateStatutUnite",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir la date d'entrée renseignée par l'utilisateur pour les statuts"
 			},
 			{
 				"id": "Task.input:dateStatutUnite.type.text",
@@ -338,7 +406,8 @@
 				"id": "Task.input:motifUnite",
 				"path": "Task.input",
 				"sliceName": "motifUnite",
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir le motif de sortie ou d’admission impossible"
 			},
 			{
 				"id": "Task.input:motifUnite.type.text",
@@ -355,15 +424,16 @@
 				],
 				"binding": {
 					"strength": "required",
-					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/"
-				}
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/FHIR/JDV-J250-MotifStatutPersonnePriseChargeUnite"
+				},
+				"short": "Motifs obligatoires pour certains statut suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
 			},
 			{
 				"id": "Task.input:typeDroitPrestation",
 				"path": "Task.input",
 				"sliceName": "typeDroitPrestation",
-				"min": 1,
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir le type de droit et prestation caractérisant la décision d'orientation. "
 			},
 			{
 				"id": "Task.input:typeDroitPrestation.type.text",
@@ -377,14 +447,19 @@
 					{
 						"code": "CodeableConcept"
 					}
-				]
+				],
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation"
+				}
 			},
 			{
 				"id": "Task.input:idDecision",
 				"path": "Task.input",
 				"sliceName": "idDecision",
 				"min": 1,
-				"max": "1"
+				"max": "1",
+				"short": "Permet de définir l’identifiant de la décision unique au sein de la MDPH"
 			},
 			{
 				"id": "Task.input:idDecision.type.text",
@@ -396,7 +471,7 @@
 				"path": "Task.input.value[x]",
 				"type": [
 					{
-						"code": "string"
+						"code": "Identifier"
 					}
 				]
 			},
@@ -405,7 +480,8 @@
 				"path": "Task.input",
 				"sliceName": "idNat_Decision",
 				"min": 1,
-				"max": "1"
+				"max": "1",
+				"short": "Identifiant technique national de la décision, généré par ViaTrajectoire. Cet identifiant unique est retourné dans le Flux 1 par ViaTrajectoire à la MDPH lorsque la décision est créée dans le SI-SdO."
 			},
 			{
 				"id": "Task.input:idNat_Decision.type.text",
@@ -417,7 +493,7 @@
 				"path": "Task.input.value[x]",
 				"type": [
 					{
-						"code": "string"
+						"code": "Identifier"
 					}
 				]
 			}

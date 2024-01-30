@@ -76,9 +76,8 @@
         </tr>
         <tr>
             <td style="width:70.9pt;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:12px;line-height:115%;color:black;">Flux 5 &ndash; StatutEntreeESMS</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:12px;line-height:115%;color:black;">Flux 5 &ndash; StatutVersESMS</span></p>
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:12px;line-height:115%;color:black;">&nbsp;</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="font-size:12px;line-height:115%;color:black;">Flux 6 - StatutAdmissionImpossibleEnterinee</span></p>
             </td>
             <td style="width:489.05pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                     <ul>
@@ -86,10 +85,6 @@
                                 <ul>
                                     <li>Op&eacute;ration &laquo;&nbsp;search&nbsp;&raquo; de l&rsquo;API FHIR assur&eacute;e par une requ&ecirc;te HTTPS GET adressant la ressource Task.</li>
                                 </ul>
-                        <li>Flux 5.3 &ndash; ConsultationStatut / Flux 5.4 &ndash; ResultatConsultationStatut</li>
-                                <ul>
-                                    <li>Op&eacute;ration &laquo;&nbsp;read&nbsp;&raquo; de l&rsquo;API FHIR assur&eacute;e par une requ&ecirc;te HTTPS GET.</li>
-                                </ul> 
                     </ul>
                     <div style="text-align:center;"> {%include flux5.svg%} </div>
             </td>

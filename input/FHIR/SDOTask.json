@@ -1,245 +1,174 @@
 {
-  "resourceType":"Task",
-  "id": "id-exemple-sdo-tak",
+  "resourceType": "Task",
+  "id": "id-exemple-sdo-task",
   "meta": {
     "profile": [
       "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
     ],
-    "lastUpdated":"2017-01-01T00:00:00.000Z"
+    "lastUpdated": "2017-01-01T00:00:00.000Z"
   },
-  "status":"completed",
-  "intent":"plan",
-  
-  "input":[
+  "status": "completed",
+  "intent": "plan",
+  "input": [
     {
       "type": {
-        "coding": [
-          {
-            "display": "idNat_Struct"                          
-          }
-        ],
-        "text":"idNat_Struct"
+        "text": "idNat_Struct"
       },
-      "valueString": "value idNat_Struct" 
-    },                                       
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "nomESMS" 
-          }
-        ],
-        "text":"nomESMS"
-      },
-      "valueString": "value nomESMS"              
+      "valueIdentifier": {
+        "value": "value idNat_Struct"
+      }
     },
     {
       "type": {
+        "text": "nomESMS"
+      },
+      "valueString": "value nomESMS"
+    },
+    {
+      "type": {
+        "text": "statutESMS"
+      },
+      "valueCodeableConcept": {
         "coding": [
           {
-            "display": "statutESMS" 
-          }
-        ],
-        "text":"statutESMS"
-      },
-      "valueCodeableConcept":{
-        "coding":[
-          {                        
-            "system":"https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/",
-            "code":"48",
-            "display":"Usager sorti"
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_R357-StatutPersonnePriseCharge/FHIR/TRE-R357-StatutPersonnePriseCharge",
+            "code": "48",
+            "display": "Usager sorti"
           }
         ]
-      }               
+      }
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "dateStatutESMS" 
-          }
-        ],
-        "text":"dateStatutESMS"
+        "text": "dateStatutESMS"
       },
-        "valueDate": "2012-10-25"               
+      "valueDate": "2012-10-25"
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "idUnite" 
-          }
-        ],
-        "text":"idUnite"
+        "text": "idUnite"
       },
-      "valueId": "idUnite1"               
+      "valueIdentifier": {
+        "value": "idUnite"
+      }
     },
     {
       "type": {
-        "coding": [
-          {
-            "display": "nomUnite" 
-          }
-        ],
-        "text":"nomUnite"
+        "text": "nomUnite"
       },
-      "valueString": "test NomUnite"               
+      "valueString": "test NomUnite"
     },
     {
       "type": {
+        "text": "categorieOrganisation"
+      },
+      "valueCodeableConcept": {
         "coding": [
           {
-            "display": "categorieOrganisation" 
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation",
+            "code": "01",
+            "display": "Categorie organisation"
           }
-        ],
-        "text":"categorieOrganisation"
-      },
-      "valueCodeableConcept":{
-        "coding":[
-          {
-            "system":"https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/",
-            "code":"01",
-            "display":"Categorie organisation"
-          }                    
         ]
-      }               
+      }
     },
     {
       "type": {
+        "text": "temporaliteAccueil"
+      },
+      "valueCodeableConcept": {
         "coding": [
           {
-            "display": "temporaliteAccueil" 
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
+            "code": "01",
+            "display": "Temporaire"
           }
-        ],
-        "text":"temporaliteAccueil"
-      },
-      "valueCodeableConcept":{
-        "coding":[
-          {
-            "system":"https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/",
-            "display":"Temporalite Accueil"
-          }                    
-        ]                    
-      }             
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "accueilSequentiel" 
-          }
-        ],
-        "text":"acceuilSequentiel"
-      },
-      "valueBoolean":true
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "modePriseCharge" 
-          }
-        ],
-        "text":"modePriseCharge"
-      },
-      "valueCodeableConcept":{
-        "coding":[
-          {
-            "system":"https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/",
-            "display":"Mode de prise en charge"
-          }  
-        ]  
-      } 
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "statutUnite" 
-          }
-        ],
-        "text":"statutUnite"
-      },
-      "valueCodeableConcept":{
-        "coding":[
-          {
-            "system":"https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite",
-            "code":"188",
-            "display":"Fin de prise en charge"
-          } 
-        ]   
-      }   
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "dateStatutUnite" 
-          }
-        ],
-        "text":"dateStatutUnite"
-      },
-      "valueDate": "2021-10-25"           
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "display": "motifUnite" 
-          }
-        ],
-        "text":"motifUnite"
-      },
-      "valueCodeableConcept":{
-        "coding":[
-          {
-            "system":"https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/",
-            "code":"89",
-            "display":"L’usager ne souhaite plus être pris en charge par l’ESMS"
-          }    
         ]
-      }   
+      }
     },
     {
       "type": {
+        "text": "accueilSequentiel"
+      },
+      "valueBoolean": true
+    },
+    {
+      "type": {
+        "text": "modePriseCharge"
+      },
+      "valueCodeableConcept": {
         "coding": [
           {
-            "display": "typeDroitPrestation" 
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge",
+            "display": "Accueil de jour",
+            "code": "47"
           }
-        ],
-        "text":"typeDroitPrestation"
-      },
-      "valueCodeableConcept":{
-        "coding":[
-          {
-            "display":"type de Droit et Prestation"
-          }    
         ]
-      }   
+      }
     },
     {
       "type": {
+        "text": "statutUnite"
+      },
+      "valueCodeableConcept": {
         "coding": [
           {
-            "display": "IdDecision" 
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_R357-StatutPersonnePriseCharge/FHIR/TRE-R357-StatutPersonnePriseCharge",
+            "code": "188",
+            "display": "Fin de prise en charge"
           }
-        ],
-        "text":"idDecision"
-      },
-      "valueString":"IdDecision"
+        ]
+      }
     },
     {
       "type": {
+        "text": "dateStatutUnite"
+      },
+      "valueDate": "2021-10-25"
+    },
+    {
+      "type": {
+        "text": "motifUnite"
+      },
+      "valueCodeableConcept": {
         "coding": [
           {
-            "display": "IdNat_Decision" 
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_R358-MotifStatutPersonnePriseCharge/FHIR/TRE-R358-MotifStatutPersonnePriseCharge",
+            "code": "89",
+            "display": "L’usager ne souhaite plus être pris en charge par l’ESMS"
           }
-        ],
-        "text":"idNat_Decision"
+        ]
+      }
+    },
+    {
+      "type": {
+        "text": "typeDroitPrestation"
       },
-      "valueString":"IdNat_Decision"
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation",
+            "code": "1.1",
+            "display": "AAH L.821-1"
+          }
+        ]
+      }
+    },
+    {
+      "type": {
+        "text": "idDecision"
+      },
+      "valueIdentifier": {
+        "value": "IdDecision"
+      }
+    },
+    {
+      "type": {
+        "text": "idNat_Decision"
+      },
+      "valueIdentifier": {
+        "value": "IdNat_Decision"
+      }
     }
-  ]  
-        
+  ]
 }
-

@@ -20,23 +20,13 @@ activate SDO
 activate ESMS
 
 
-ESMS-[#black]> SDO : Flux 5.1 **RechercheStatut** \n <color #FireBrick>GET [base]/Task?_lastUpdated=gt[dateDernièreRecherche]&_elements=id</color>
+ESMS-[#black]> SDO : Flux 5.1 **RechercheStatut** \n <color #FireBrick>GET [base]/Task?_lastUpdated=gt[dateDernièreRecherche]</color>
 SDO-[#black]-> ESMS: Flux 5.2 **ResultatStatut** \n <color #FireBrick>OK 200 (+ ressource "Bundle")</color>
 
 note left
-Liste des identifiants des ressources 
-Task répondant à la recherche.
+Liste des ressources Task répondant 
+à la recherche.
 end note
-
-loop 
-ESMS-[#black]> SDO : Flux 5.3 **ConsultationStatut** \n <color #FireBrick>GET [base]/Task/id</color>
-SDO-[#black]-> ESMS: Flux 5.4 **ResultatConsultationStatut** \n <color #FireBrick>OK 200 (+ ressource "Task")</color>
-note left
-La ressource Task véhiculant un statut
-"Usager prise en charge" ou 
-"Admission impossible entérinée".
-end note
-end loop
 
 
 

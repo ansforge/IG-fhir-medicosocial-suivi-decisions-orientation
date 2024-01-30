@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id" : "id-exemple-sdo-bundle",
+  "id": "id-exemple-sdo-bundle-resultat-recherche-notifications-esms",
   "meta": {
     "profile": [
       "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"
@@ -24,91 +24,60 @@
         "input": [
           {
             "type": {
-              "coding": [
-                {
-                  "display": "idNat_Struct"
-                }
-              ],
               "text": "idNat_Struct"
             },
-            "valueString": "value idNat_Struct"
+            "valueIdentifier": {
+              "value": "idNat_Struct"
+            }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "nomESMS"
-                }
-              ],
               "text": "nomESMS"
             },
             "valueString": "value nomESMS"
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "statutESMS"
-                }
-              ],
               "text": "statutESMS"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system":"https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/",
-                  "code":"48",
-                  "display":"Usager sorti"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R357-StatutPersonnePriseCharge/FHIR/TRE-R357-StatutPersonnePriseCharge",
+                  "code": "48",
+                  "display": "Usager sorti"
                 }
               ]
             }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "dateStatutESMS"
-                }
-              ],
               "text": "dateStatutESMS"
             },
             "valueDate": "2012-10-25"
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "idUnite"
-                }
-              ],
               "text": "idUnite"
             },
-            "valueId": "idUnite1"
+            "valueIdentifier": {
+              "value": "idUnite"
+            }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "nomUnite"
-                }
-              ],
               "text": "nomUnite"
             },
             "valueString": "test NomUnite"
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "categorieOrganisation"
-                }
-              ],
               "text": "categorieOrganisation"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/",
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation",
                   "code": "01",
                   "display": "Categorie organisation"
                 }
@@ -117,138 +86,101 @@
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "temporaliteAccueil"
-                }
-              ],
               "text": "temporaliteAccueil"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/",
-                  "display": "Temporalite Accueil"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
+                  "code": "01",
+                  "display": "Temporaire"
                 }
               ]
             }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "accueilSequentiel"
-                }
-              ],
-              "text": "acceuilSequentiel"
+              "text": "accueilSequentiel"
             },
             "valueBoolean": true
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "modePriseCharge"
-                }
-              ],
               "text": "modePriseCharge"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/",
-                  "display": "Mode de prise en charge"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge",
+                  "display": "Accueil de jour",
+                  "code": "47"
                 }
               ]
             }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "statutUnite"
-                }
-              ],
               "text": "statutUnite"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system":"https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite",
-                  "code":"188",
-                  "display":"Fin de prise en charge"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R357-StatutPersonnePriseCharge/FHIR/TRE-R357-StatutPersonnePriseCharge",
+                  "code": "188",
+                  "display": "Fin de prise en charge"
                 }
               ]
             }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "dateStatutUnite"
-                }
-              ],
               "text": "dateStatutUnite"
             },
             "valueDate": "2021-10-25"
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "motifUnite"
-                }
-              ],
               "text": "motifUnite"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system":"https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/",
-                  "code":"89",
-                  "display":"L’usager ne souhaite plus être pris en charge par l’ESMS"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R358-MotifStatutPersonnePriseCharge/FHIR/TRE-R358-MotifStatutPersonnePriseCharge",
+                  "code": "89",
+                  "display": "L’usager ne souhaite plus être pris en charge par l’ESMS"
                 }
               ]
             }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "typeDroitPrestation"
-                }
-              ],
               "text": "typeDroitPrestation"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "display": "type de Droit et Prestation"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation",
+                  "code": "1.1",
+                  "display": "AAH L.821-1"
                 }
               ]
             }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "IdDecision"
-                }
-              ],
               "text": "idDecision"
             },
-            "valueString": "IdDecision"
+            "valueIdentifier": {
+              "value": "idDecision"
+            }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "IdNat_Decision"
-                }
-              ],
               "text": "idNat_Decision"
             },
-            "valueString": "IdNat_Decision"
+            "valueIdentifier": {
+              "value": "idNat_Decision"
+            }
           }
         ]
       }
@@ -269,102 +201,75 @@
         "input": [
           {
             "type": {
-              "coding": [
-                {
-                  "display": "idNat_Struct"
-                }
-              ],
               "text": "idNat_Struct"
             },
-            "valueString": "value idNat_Struct"
+            "valueIdentifier": {
+              "value": "value idNat_Struct"
+            }
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "nomESMS"
-                }
-              ],
               "text": "nomESMS"
             },
             "valueString": "value nomESMS"
           },
           {
             "type": {
-              "coding": [
-                {
-                  "display": "statutESMS" 
-                }
-              ],
-              "text":"statutESMS"
-            },
-            "valueCodeableConcept":{
-              "coding":[
-                {                        
-                  "system":"https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/",
-                  "code":"41",
-                  "display":"Contact effectué"
-                }
-              ]
-            }               
-          },
-          {
-            "type": {
-              "coding": [
-                {
-                  "display": "motifESMS" 
-                }
-              ],
-              "text":"motifESMS"
-            },
-            "valueCodeableConcept":{
-              "coding":[
-                {                        
-                  "system":"https://mos.esante.gouv.fr/NOS/JDV_J251-MotifStatutPersonnePriseChargeESMS/",
-                  "code":"152",
-                  "display":"L’usager a visité l’ESMS"
-                }
-              ]
-            }               
-          },
-          {
-            "type": {
-              "coding": [
-                {
-                  "display": "typeDroitPrestation"
-                }
-              ],
-              "text": "typeDroitPrestation"
+              "text": "statutESMS"
             },
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "display": "type de Droit et Prestation"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R357-StatutPersonnePriseCharge/FHIR/TRE-R357-StatutPersonnePriseCharge",
+                  "code": "41",
+                  "display": "Contact effectué"
                 }
               ]
             }
           },
           {
             "type": {
+              "text": "motifESMS"
+            },
+            "valueCodeableConcept": {
               "coding": [
                 {
-                  "display": "IdDecision"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_R358-MotifStatutPersonnePriseCharge/FHIR/TRE-R358-MotifStatutPersonnePriseCharge",
+                  "code": "152",
+                  "display": "L’usager a visité l’ESMS"
                 }
-              ],
-              "text": "idDecision"
-            },
-            "valueString": "IdDecision"
+              ]
+            }
           },
           {
             "type": {
+              "text": "typeDroitPrestation"
+            },
+            "valueCodeableConcept": {
               "coding": [
                 {
-                  "display": "IdNat_Decision"
+                  "system": "https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation",
+                  "code": "1.1",
+                  "display": "AAH L.821-1"
                 }
-              ],
+              ]
+            }
+          },
+          {
+            "type": {
+              "text": "idDecision"
+            },
+            "valueIdentifier": {
+              "value": "idDecision"
+            }
+          },
+          {
+            "type": {
               "text": "idNat_Decision"
             },
-            "valueString": "IdNat_Decision"
+            "valueIdentifier": {
+              "value": "idNat_Decision"
+            }
           }
         ]
       }

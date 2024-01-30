@@ -1,38 +1,26 @@
 {
-    "resourceType":"DocumentReference",
+    "resourceType": "DocumentReference",
     "id": "id-exemple-sdo-document-reference",
     "meta": {
-      "profile": [
-        "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
-      ]
+        "profile": [
+            "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
+        ]
     },
     "identifier": [
-		{
-		"use" : "usual",
-		"value": "idDecision"
-		}
-	],
-	"status":"current",
-    "author":[
         {
-            "reference":"Practitioner/testReference",
-            "display":"Practitioner/Dr Test"
+            "use": "usual",
+            "value": "idDecision"
         }
     ],
-    "content":[
+    "status": "current",
+    "content": [
         {
-            "attachment":{
-                "contentType":"text/plain",
-                "language":"fr",
-                "title":"Suivie des orientations de Michel Test",
-                "data":"SGVsbG8gd29ybGQ="
+            "attachment": {
+                "contentType": "text/plain",
+                "language": "fr",
+                "title": "Suivie des orientations de Michel Test",
+                "data": "SGVsbG8gd29ybGQ="
             }
         }
-    ],
-    "subject":{
-        "reference":"testReferencePatient",
-        "display":"Michel Test"
-    }
-
-
+    ]
 }

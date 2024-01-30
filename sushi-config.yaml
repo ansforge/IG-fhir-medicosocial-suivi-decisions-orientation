@@ -37,24 +37,30 @@ pages:
     st_flux2.md:
         title: Flux 2 - Accord
     st_flux3.md:
-        title: Flux 3 - Recherche et résultat évaluation
+        title: Flux 3 - Recherche et résultats d'évaluation
     st_flux4.md:
         title: Flux 4 - StatutPersonneOrientee
     st_flux5.md:
-        title: Flux 5 - Recherche et consultation de statut
+        title: Flux 5 - Recherche et résultats de statuts
     ressource_cda.md: 
         title: Ressources CDA
     securite.md:
         title: Sécurité
     downloads.md:
-        title: Téléchargements et usages
-    tests.md:
-        title: Tests      
+        title: Téléchargements et usages  
     about.md:
         title: A propos de ce guide
-    autres_ressources.md:
-        title: Autres ressources associées à la spécification
-
+    annexes_Glossaire.md:
+        title: Glossaire associé à la spécification
+    annexes_Nomenclature.md:
+        title: Nomenclatures de référence associées aux spécifications
+    annexes_Nomenclatures_precision.md:
+        title: Nomenclature précisions de l'orientation
+    annexes_OID_MDPH.md:
+        title: OID MDPH associés à la spécification
+    annexes_Diagramme.md:
+        title: Diagramme de Séquence SI-MDPH / SI-SDO / SI-ESMS
+    
 menu:
     Accueil: index.html
     Contenu du dossier : contenu_dossier.html
@@ -63,17 +69,21 @@ menu:
         Synthèse des flux: synthese_flux.html
         Flux 1 - Recherche et consultation de personne orientée et décision: st_flux1.html
         Flux 2 - Accord: st_flux2.html
-        Flux 3 - Recherche et résultat évaluation: st_flux3.html
+        Flux 3 - Recherche et résultats d'évaluation: st_flux3.html
         Flux 4 - StatutPersonneOrientee: st_flux4.html
-        Flux 5 - Recherche et consultation de statut: st_flux5.html
+        Flux 5 - Recherche et résultats de statut: st_flux5.html
     Ressources de conformité:
         Ressource FHIR : liste_profils.html
         Ressource CDA : ressource_cda.html
-    Tests:   tests.html
+    Annexes: 
+        Glossaire: annexes_Glossaire.html
+        Nomenclatures de référence:  annexes_Nomenclature.html
+        Nomenclature précision de l'orientation: annexes_Nomenclatures_precision.html
+        OID MDPH : annexes_OID_MDPH.html        
+        Diagramme de séquence SI-MDPH/SI-SDO/-SI-ESMS: annexes_Diagramme.html
     Autres ressources:
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
-        Annexes: autres_ressources.html
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/

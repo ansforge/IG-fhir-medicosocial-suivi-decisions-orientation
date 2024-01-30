@@ -1,6 +1,6 @@
 {
 	"resourceType": "Bundle",
-	"id" : "id-exemple-bundle-2",
+	"id": "id-exemple-bundle-resultat-recherche-decision-evaluation",
 	"meta": {
 		"profile": [
 			"https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
@@ -22,11 +22,11 @@
 				"identifier": [
 					{
 						"use": "usual",
-						"value": "idDecision"
+						"value": "idDecision1"
 					},
 					{
 						"use": "official",
-						"value": "idNat_Decision"
+						"value": "idNat_Decision1"
 					}
 				],
 				"status": "current",
@@ -39,18 +39,12 @@
 						}
 					]
 				},
-				"author": [
-					{
-						"reference": "Practitioner/testReference",
-						"display": "Practitioner/Dr Test"
-					}
-				],
 				"content": [
 					{
 						"attachment": {
 							"contentType": "text/plain",
 							"language": "fr",
-							"title": "Suivie des orientations de Michel Test",
+							"title": "Document Individu et décision",
 							"data": "SGVsbG8gd29ybGQ="
 						}
 					}
@@ -71,11 +65,11 @@
 				"identifier": [
 					{
 						"use": "usual",
-						"value": "idDecision"
+						"value": "idDecision2"
 					},
 					{
 						"use": "official",
-						"value": "idNat_Decision"
+						"value": "idNat_Decision2"
 					}
 				],
 				"status": "current",
@@ -88,18 +82,12 @@
 						}
 					]
 				},
-				"author": [
-					{
-						"reference": "Practitioner/testReference",
-						"display": "Practitioner/Dr Test"
-					}
-				],
 				"content": [
 					{
 						"attachment": {
 							"contentType": "text/plain",
 							"language": "fr",
-							"title": "Suivie des orientations de Michel Test",
+							"title": "Document Individu et décision",
 							"data": "SGVsbG8gd29ybGQ="
 						}
 					}

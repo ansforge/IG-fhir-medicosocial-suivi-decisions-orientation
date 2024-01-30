@@ -2,10 +2,10 @@
 	"resourceType": "StructureDefinition",
 	"id": "sdo-document-reference",
 	"url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
-	"version": "2.1",
+	"version": "2.2",
 	"name": "SDODocumentReference",
 	"status": "active",
-	"date": "2023-06-27T09:51:35+02:00",
+	"date": "2024-01-19T09:51:35+02:00",
 	"publisher": "ANS",
 	"description": "Profil pour définir le dossier SDO",
 	"fhirVersion": "4.0.1",
@@ -17,15 +17,29 @@
 	"differential": {
 		"element": [
 			{
+				"id": "DocumentReference",
+				"path": "DocumentReference",
+				"constraint": [
+				  {
+					"key": "regle-Contenu",
+					"severity": "warning",
+					"human": "Le transport des données devient obligatoire lorsque la ressource complète est transportée, le champs data doit alors être rempli",
+					"expression": "content.attachment.data.exists()"
+				  }
+				]
+			  },
+			{
 				"id": "DocumentReference.identifier",
 				"path": "DocumentReference.identifier",
-				"min": 1
+				"min": 1,
+				"short": "Première occurence : identifiant de la décision unique au sein de la MDPH ayant créé la décision (idDecision) Identifier.use = « usual ». Deuxième occurence :  identifiant technique national de la décision, généré par le SI-SDO (idNat_Decision) Identifier.use = « official »"
 			},
 			{
 				"id": "DocumentReference.content",
 				"path": "DocumentReference.content",
 				"max": "1"
 			}
+	
 		]
 	}
 }
