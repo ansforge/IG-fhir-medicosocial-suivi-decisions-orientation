@@ -24,6 +24,7 @@ La production de ce guide d'implémentation est basée sur :
 * Le standard [Clinical Document Architecture R2  (CDA) ](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7), porté par HL7, pour représenter les données décrites dans les SFE SI-ESMS;
 * Le standard [HL7 FHIR v4.0.1](https://www.hl7.org/fhir/) pour le transport.
 
+
 Le tableau ci dessous rappelle les flux décrits dans la SFE :
 
 
