@@ -7,7 +7,7 @@
 </blockquote>
 
 ### Standard utilisé
-Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Les modèles proposés sont disponibles sur [la plateforme ART-DECOR de l’ANS3](https://o3sis.esante.gouv.fr/art-decor/decor-templates--SI-ESMS-?section=templates). 
+Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. 
 Dans cette section, une mise en correspondance est faite entre :
 
 * Les éléments XML proposés par CDA,
