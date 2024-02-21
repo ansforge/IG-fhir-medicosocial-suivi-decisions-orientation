@@ -1,0 +1,614 @@
+{
+  "date" : "Wed, 21 Feb, 2024 15:32:40 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo.json",
+      "size" : 7472,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 66
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 89
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 474
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 128
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 163
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 184,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 194,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/ESMSBundleResultatRechercheDecisionEvaluation.json",
+      "size" : 2146,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 20
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 24
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 26
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 112
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/ESMSConsent.json",
+      "size" : 1060,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 183
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 2580
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/ESMSDocumentReference.json",
+      "size" : 693,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/SDOBundleResultatRechercheNotificationESMS.json",
+      "size" : 7802,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 28
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 24
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 130
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 59
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 31
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/SDODocumentReference.json",
+      "size" : 651,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/SDOTask.json",
+      "size" : 3895,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 21
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.json",
+      "size" : 1223,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 14
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 14
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 20,
+          "length" : 202
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 187
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2032
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 32,
+          "length" : 331
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 1634
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 184,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/StructureDefinition-esms-consent.json",
+      "size" : 3093,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 20
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 20,
+          "length" : 243
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 243
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 706
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 571
+        },
+        {
+          "activity" : "generate2",
+          "start" : 41,
+          "length" : 763
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 48,
+          "length" : 2
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 184,
+          "length" : 13
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 194,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/StructureDefinition-esms-document-reference.json",
+      "size" : 2056,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 21,
+          "length" : 273
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 180
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 419
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 407
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 540
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 184,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 194,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.json",
+      "size" : 1060,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 21,
+          "length" : 194
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 130
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 231
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 280
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 412
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 184,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/StructureDefinition-sdo-document-reference.json",
+      "size" : 1647,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 164
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 325
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 29,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 392
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 373
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 184,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 194,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/FHIR/StructureDefinition-sdo-task.json",
+      "size" : 13957,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 44
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 45
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 21,
+          "length" : 490
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 713
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 1314
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 29,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 29,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 1463
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 1414
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 184,
+          "length" : 35
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 194,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 194,
+          "length" : 2
+        }
+      ]
+    }
+  ]
+}
