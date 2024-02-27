@@ -1,8 +1,7 @@
 Instance: MDPHConsommateur
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/sdo-consommateur"
-* version = "2.1"
+
 * name = "MDPHConsommateur"
 * title = "MDPH Consommateur"
 * status = #active

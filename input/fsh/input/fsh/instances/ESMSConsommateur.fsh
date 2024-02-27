@@ -1,8 +1,6 @@
 Instance: ESMSConsommateur
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/esms-consommateur"
-* version = "1.1"
 * name = "ESMSConsommateur"
 * title = "ESMS Consommateur"
 * status = #active

@@ -1,8 +1,6 @@
 Instance: gestionnaire-esms
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/esms-gestionnaire"
-* version = "1.1"
 * name = "gestionnaire-esms"
 * title = "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-ESMS"
 * status = #active
@@ -10,7 +8,7 @@ Usage: #definition
 * date = "2023-06-27T15:51:35+02:00"
 * publisher = "ANS"
 * description = "Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.\n   Il correspond au SI-SDO."
-* kind = #capability
+* kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
@@ -25,7 +23,7 @@ Usage: #definition
 * rest.resource[=].interaction.code = #create
 * rest.resource[+].type = #DocumentReference
 * rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"
-* rest.resource[+].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
+* rest.resource[=].supportedProfile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #create

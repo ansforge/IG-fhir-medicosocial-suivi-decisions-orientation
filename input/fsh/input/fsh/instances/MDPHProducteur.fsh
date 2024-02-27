@@ -1,8 +1,7 @@
 Instance: MDPHProducteur
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/sdo-producteur"
-* version = "2.1"
+
 * name = "MDPHProducteur"
 * title = "MDPH Producteur"
 * status = #active
