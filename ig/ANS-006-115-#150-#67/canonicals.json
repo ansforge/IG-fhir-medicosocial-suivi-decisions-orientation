@@ -1,5 +1,40 @@
 [
   {
+    "id" : "gestionnaire-esms",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/gestionnaire-esms",
+    "version" : "4.0.2-ballot-2",
+    "name" : "gestionnaire-esms"
+  },
+  {
+    "id" : "ESMSConsommateur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/esms-consommateur",
+    "version" : "4.0.2-ballot-2",
+    "name" : "ESMSConsommateur"
+  },
+  {
+    "id" : "ESMSProducteur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/esms-producteur",
+    "version" : "4.0.2-ballot-2",
+    "name" : "ESMSProducteur"
+  },
+  {
+    "id" : "MDPHConsommateur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/sdo-consommateur",
+    "version" : "4.0.2-ballot-2",
+    "name" : "MDPHConsommateur"
+  },
+  {
+    "id" : "MDPHProducteur",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/sdo-producteur",
+    "version" : "4.0.2-ballot-2",
+    "name" : "MDPHProducteur"
+  },
+  {
     "id" : "ans.fhir.fr.sdo",
     "type" : "ImplementationGuide",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo",

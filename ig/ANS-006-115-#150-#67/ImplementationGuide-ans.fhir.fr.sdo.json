@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2024-02-21T15:32:40+00:00",
+  "date" : "2024-03-14T16:16:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -635,6 +635,42 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/ESMSProducteur"
+      },
+      "name" : "CI-SIS - Suivi-Des-Orientations - Producteur - SI-ESMS",
+      "description" : "Le rôle du producteur est de créer et transmettre l'accord de la personne en situation de handicap pour pouvoir accéder à son évaluation. Le producteur transmets également les statuts de la personne orientée en fonction de son avancée dans le processus d’orientations. \n   Il correspond au SI-ESMS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/gestionnaire-esms"
+      },
+      "name" : "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-ESMS",
+      "description" : "Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.\n   Il correspond au SI-SDO.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/ESMSConsommateur"
+      },
+      "name" : "ESMS Consommateur",
+      "description" : "Le rôle du consommateur est de recueillir le dossier d'une personne orientée pour l'examiner, ainsi que son évaluation par la CDAPH. \n   Le consommateur suit également les entrées des personnes orientées dans d'autres structures ainsi que la prise en compte d'une admission impossible par la MDPH.\n   Il correspond au SI-ESMS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -732,6 +768,30 @@
         "reference" : "Task/id-exemple-sdo-task"
       },
       "name" : "id-exemple-sdo-task",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/MDPHConsommateur"
+      },
+      "name" : "MDPH Consommateur",
+      "description" : "Le rôle de consommateur est de recueillir et suivre les informations sur les entrées et sorties des personnes orientées.\n   Il correspond au SI-MDPH.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/MDPHProducteur"
+      },
+      "name" : "MDPH Producteur",
+      "description" : "Le rôle de producteur est de créer et transmettre les décisions d’orientations des personnes en situation de handicap.Il peut également modifier et transmettre des informations concernant des personnes orientées. \n   Il correspond au SI-MDPH.",
       "exampleBoolean" : false
     },
     {
