@@ -2,10 +2,7 @@ Profile: SDODocumentReference
 Parent: DocumentReference
 Id: sdo-document-reference
 Description: "Profil pour définir le dossier SDO"
-* ^version = "2.2"
-* ^status = #active
-* ^date = "2024-01-19T09:51:35+02:00"
-* ^publisher = "ANS"
+
 * obeys regle-Contenu
 * identifier 1..2
 * identifier ^short = "identifiant métier (idDecision) et technique (idNat_decision) de la décision d'orientation"

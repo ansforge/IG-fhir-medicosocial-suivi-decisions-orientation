@@ -1,7 +1,7 @@
-Instance: Inline-Instance-for-id-exemple-sdo-bundle-resultat-recherche-notifications-esms-2
+Instance: id-exemple-sdo-task-2-in-bundle
 InstanceOf: SDOTask
 Usage: #inline
-* id = "exemple2"
+* id = "sdo-task-exemple2"
 * meta.lastUpdated = "2019-12-08T10:07:46.748+00:00"
 * status = #completed
 * intent = #plan

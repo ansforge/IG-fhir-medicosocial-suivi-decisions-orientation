@@ -2,13 +2,7 @@ Profile: SDOTask
 Parent: Task
 Id: sdo-task
 Description: "Profil utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation"
-* ^version = "2.3"
-* ^status = #active
-* ^date = "2024-01-19T09:51:35+02:00"
-* ^publisher = "ANS"
-* ^contact.name = "ANS"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://esante.gouv.fr"
+
 * obeys regle-StatutUnite and regle-ModePriseEnCharge
 * meta.lastUpdated 1..
 * status = #completed (exactly)
