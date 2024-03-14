@@ -10,5 +10,5 @@ Ces schémas permettent de vérifier la conformité d'un document aux spécifica
 
 | Nom  | description |
 | --- | --- |
-| [CDA Evaluation](20240123_CDA_SI-ESMS_Evaluation.xml) | Exemple de document CDA portant les informations de l'individu et la décision d'orientation|
-| [CDA Decision](20240123_CDA_SI-ESMS_Decision.xml) | Exemple de document CDA portant l'évaluation de l'individu
+| [CDA Evaluation](CDA_SI-ESMS_Evaluation.xml) | Exemple de document CDA portant les informations de l'individu et la décision d'orientation|
+| [CDA Decision](CDA_SI-ESMS_Decision.xml) | Exemple de document CDA portant l'évaluation de l'individu
