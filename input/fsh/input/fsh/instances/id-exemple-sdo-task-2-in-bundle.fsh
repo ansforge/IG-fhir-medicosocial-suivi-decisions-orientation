@@ -1,4 +1,4 @@
-Instance: Inline-Instance-for-id-exemple-sdo-bundle-resultat-recherche-notifications-esms-2
+Instance: id-exemple-sdo-task-2-in-bundle
 InstanceOf: SDOTask
 Usage: #inline
 * id = "exemple2"
