@@ -1,7 +1,6 @@
 Instance: id-exemple-sdo-task-1-in-bundle
 InstanceOf: SDOTask
 Usage: #inline
-* id = "exemple1"
 * meta.lastUpdated = "2019-09-26T16:46:48.054+00:00"
 * status = #completed
 * intent = #plan

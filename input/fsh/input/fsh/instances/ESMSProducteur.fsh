@@ -1,8 +1,6 @@
 Instance: ESMSProducteur
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatements/esms-producteur"
-* version = "1.1"
 * name = "ESMSProducteur"
 * title = "CI-SIS - Suivi-Des-Orientations - Producteur - SI-ESMS"
 * status = #active
