@@ -80,27 +80,27 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier","CX / EI (occasionally, more often EI maps to a resource id or a URL)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".id","FiveWs.identifier"
 "Consent.status","Consent.status","","","",1,1,"","Y","Y","code {[]} {[]}
-","draft | proposed | active | rejected | inactive | entered-in-error","Indicates the current state of this consent.","This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the Consent as not currently valid.","The Consent Directive that is pointed to might be in various lifecycle states, e.g., a revoked Consent Directive.","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""active""/>","","","","",,"required","Indicates the state of the consent.","http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1","",,,,"Consent.status",1,1,"ele-1
+","draft | proposed | active | rejected | inactive | entered-in-error","Indicates the current state of this consent.","This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the Consent as not currently valid.","The Consent Directive that is pointed to might be in various lifecycle states, e.g., a revoked Consent Directive.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""active""/>","","","",,"required","Indicates the state of the consent.","http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1","",,,,"Consent.status",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","HL7 Table 0498 - Consent Status","n/a",".statusCode","FiveWs.status"
 "Consent.scope","Consent.scope","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
-","Which of the four areas this resource covers (extensible)","A selector of the type of consent being presented: ADR, Privacy, Treatment, Research.  This list is now extensible.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Which of the four areas this resource covers (extensible)","A selector of the type of consent being presented: ADR, Privacy, Treatment, Research.  This list is now extensible.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/consentscope""/>
     <code value=""patient-privacy""/>
     <display value=""Privacy Consent""/>
   </coding>
-</valueCodeableConcept>","","","","",,"extensible","The four anticipated uses for the Consent Resource.","http://hl7.org/fhir/ValueSet/consent-scope","",,,,"Consent.scope",1,1,"ele-1
+</valueCodeableConcept>","","","",,"extensible","The four anticipated uses for the Consent Resource.","http://hl7.org/fhir/ValueSet/consent-scope","",,,,"Consent.scope",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE","n/a","CD"
 "Consent.category","Consent.category","","","",1,*,"","","Y","CodeableConcept {[]} {[]}
-","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
     <code value=""59284-0""/>
     <display value=""Consent""/>
   </coding>
-</valueCodeableConcept>","","","","",,"extensible","A classification of the type of consents found in a consent statement.","http://hl7.org/fhir/ValueSet/consent-category","",,,,"Consent.category",1,*,"ele-1
+</valueCodeableConcept>","","","",,"extensible","A classification of the type of consents found in a consent statement.","http://hl7.org/fhir/ValueSet/consent-category","",,,,"Consent.category",1,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","CE/CNE/CWE","HL7 Table 0497 - Consent Type","n/a","CD","CNTRCT","FiveWs.class"
 "Consent.patient","Consent.patient","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
@@ -287,7 +287,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Consent.provision.data.meaning","Consent.provision.data.meaning","","","",1,1,"","","Y","code {[]} {[]}
-","instance | related | dependents | authoredby","How the resource reference is interpreted when testing consent restrictions.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""related""/>","","","","",,"required","How a resource reference is interpreted when testing consent restrictions.","http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1","",,,,"Consent.provision.data.meaning",1,1,"ele-1
+","instance | related | dependents | authoredby","How the resource reference is interpreted when testing consent restrictions.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""related""/>","","","",,"required","How a resource reference is interpreted when testing consent restrictions.","http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1","",,,,"Consent.provision.data.meaning",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "Consent.provision.data.reference","Consent.provision.data.reference","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/DocumentReference]]}
@@ -331,7 +331,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Consent.provision.data.reference.identifier.use","Consent.provision.data.reference.identifier.use","","","",1,1,"","Y","Y","code {[]} {[]}
-","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"ele-1
+","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A","n/a","Role.code or implied by context"
 "Consent.provision.data.reference.identifier.type","Consent.provision.data.reference.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
