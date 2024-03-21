@@ -1,17 +1,18 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 4, warn = 34, info = 14
+err = 0, warn = 37, info = 14
 IG Publisher Version: 1.6.3
-Generated Thu Mar 21 09:42:36 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+Generated Thu Mar 21 14:09:23 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 29 / 9 / 0
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/Bundle-id-exemple-bundle-resultat-recherche-decision-evaluation : 2 / 4 / 3
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/Bundle-id-exemple-sdo-bundle-resultat-recherche-notifications-esms : 2 / 5 / 5
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/Bundle-id-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 4 / 3
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/Bundle-id-exemple-sdo-bundle-resultat-recherche-notifications-esms : 0 / 5 / 5
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/CapabilityStatement-ESMSConsommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/CapabilityStatement-MDPHConsommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/CapabilityStatement-MDPHProducteur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/CapabilityStatement-gestionnaire-esms : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/CodeSystem-input-task-sdo-codesystem : 0 / 3 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/Consent-id-exemple-consent : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/DocumentReference-id-exemple-esms-document-reference : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/fsh-generated/resources/DocumentReference-id-exemple-sdo-document-reference : 0 / 1 / 1
@@ -68,8 +69,6 @@ WARNING: Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation: Bundle
 WARNING: Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[1].resource/*DocumentReference/id-exemple-esms-documentreference-2-in-bundle*/.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
 WARNING: Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation: Bundle: SearchSet bundles should have search modes on the entries
-ERROR: Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[0]: The fullUrl 'https://example.com/base/DocumentReference/exemple1' looks like a RESTful server URL, so it must end with the correct type and id (/DocumentReference/id-exemple-esms-documentreference-1-in-bundle)
-ERROR: Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[0]: The fullUrl 'https://example.com/base/DocumentReference/exemple2' looks like a RESTful server URL, so it must end with the correct type and id (/DocumentReference/id-exemple-esms-documentreference-2-in-bundle)
 == fsh-generated/resources/Bundle-id-exemple-sdo-bundle-resultat-recherche-notifications-esms.json ==
 WARNING: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0].resource/*Task/id-exemple-sdo-task-1-in-bundle*/.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
 INFORMATION: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0].resource/*Task/id-exemple-sdo-task-1-in-bundle*/.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
@@ -78,14 +77,16 @@ WARNING: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bun
 INFORMATION: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[1].resource/*Task/id-exemple-sdo-task-2-in-bundle*/.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
 WARNING: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet bundles should have search modes on the entries
-ERROR: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0]: The fullUrl 'https://example.com/base/Task/exemple1' looks like a RESTful server URL, so it must end with the correct type and id (/Task/id-exemple-sdo-task-1-in-bundle)
-ERROR: Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0]: The fullUrl 'https://example.com/base/Task/exemple2' looks like a RESTful server URL, so it must end with the correct type and id (/Task/id-exemple-sdo-task-2-in-bundle)
 == fsh-generated/resources/CapabilityStatement-ESMSConsommateur.json ==
 == fsh-generated/resources/CapabilityStatement-ESMSProducteur.json ==
 == fsh-generated/resources/CapabilityStatement-MDPHConsommateur.json ==
 == fsh-generated/resources/CapabilityStatement-MDPHProducteur.json ==
 == fsh-generated/resources/CapabilityStatement-gestionnaire-esms.json ==
 WARNING: CapabilityStatement/gestionnaire-esms: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+== fsh-generated/resources/CodeSystem-input-task-sdo-codesystem.json ==
+WARNING: CodeSystem/input-task-sdo-codesystem: CodeSystem.concept[0].definition: value should not start or finish with whitespace 'Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET '
+WARNING: CodeSystem/input-task-sdo-codesystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.title is mandatory, but it is not present
+WARNING: CodeSystem/input-task-sdo-codesystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 == fsh-generated/resources/Consent-id-exemple-consent.json ==
 INFORMATION: Consent/id-exemple-consent: Consent.scope: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|4.0.1
 == fsh-generated/resources/DocumentReference-id-exemple-esms-document-reference.json ==
@@ -113,7 +114,7 @@ WARNING: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[0].c
 INFORMATION: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[33].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[50].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[58].short: value should not start or finish with whitespace 'Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET '
-WARNING: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[198].short: value should not start or finish with whitespace 'Permet de définir le type de droit et prestation caractérisant la décision d'orientation. '
+WARNING: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[142].short: value should not start or finish with whitespace 'Permet de définir le type de droit et prestation caractérisant la décision d'orientation. '
 WARNING: StructureDefinition/sdo-task: StructureDefinition.differential.element[0].constraint[1].expression: value should not start or finish with whitespace 'input.where(type.text='modePriseCharge').value.coding.code='48' or input.where(type.text='modePriseCharge').value.coding.code='47'  or input.where(type.text='modePriseCharge').value.coding.code='46' or input.where(type.text='modePriseCharge').exists().not() '
 WARNING: StructureDefinition/sdo-task: StructureDefinition.differential.element[5].short: value should not start or finish with whitespace 'Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET '
 WARNING: StructureDefinition/sdo-task: StructureDefinition.differential.element[47].short: value should not start or finish with whitespace 'Permet de définir le type de droit et prestation caractérisant la décision d'orientation. '

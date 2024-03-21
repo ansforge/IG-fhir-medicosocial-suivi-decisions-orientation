@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2024-03-21T09:39:33+00:00",
+  "date" : "2024-03-21T14:06:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -768,6 +768,18 @@
         "reference" : "Task/id-exemple-sdo-task"
       },
       "name" : "id-exemple-sdo-task",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/input-task-sdo-codesystem"
+      },
+      "name" : "InputTaskSDOCodeSystem",
+      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask",
       "exampleBoolean" : false
     },
     {

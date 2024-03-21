@@ -17,14 +17,14 @@
   ] ; # 
   fhir:type [ fhir:v "searchset"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "https://example.com/base/DocumentReference/exemple1"^^xsd:anyURI ] ;
-     fhir:resource ( <https://example.com/base/DocumentReference/exemple1> )
+     fhir:fullUrl [ fhir:v "https://example.com/base/DocumentReference/id-exemple-esms-documentreference-1-in-bundle"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/DocumentReference/id-exemple-esms-documentreference-1-in-bundle> )
   ] [
-     fhir:fullUrl [ fhir:v "https://example.com/base/DocumentReference/exemple2"^^xsd:anyURI ] ;
-     fhir:resource ( <https://example.com/base/DocumentReference/exemple2> )
+     fhir:fullUrl [ fhir:v "https://example.com/base/DocumentReference/id-exemple-esms-documentreference-2-in-bundle"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/DocumentReference/id-exemple-esms-documentreference-2-in-bundle> )
   ] ) . # 
 
-<https://example.com/base/DocumentReference/exemple1> a fhir:DocumentReference ;
+<https://example.com/base/DocumentReference/id-exemple-esms-documentreference-1-in-bundle> a fhir:DocumentReference ;
   fhir:id [ fhir:v "id-exemple-esms-documentreference-1-in-bundle"] ; # 
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2023-01-26T16:46:48.054+00:00"^^xsd:dateTime ] ;
@@ -62,7 +62,7 @@
      ]
   ] ) . # 
 
-<https://example.com/base/DocumentReference/exemple2> a fhir:DocumentReference ;
+<https://example.com/base/DocumentReference/id-exemple-esms-documentreference-2-in-bundle> a fhir:DocumentReference ;
   fhir:id [ fhir:v "id-exemple-esms-documentreference-2-in-bundle"] ; # 
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2019-12-08T10:07:46.748+00:00"^^xsd:dateTime ] ;

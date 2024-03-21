@@ -17,13 +17,16 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"id-exemple-sdo-task\"> </a><a name=\"hcid-exemple-sdo-task\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;id-exemple-sdo-task&quot; Updated &quot;2017-01-01 00:00:00+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sdo-task.html\">SDOTask</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: plan</p><blockquote><p><b>input</b></p><p><b>type</b>: idNat_Struct <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: value idNat_Struct</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: nomESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: value nomESMS</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: typeDroitPrestation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: AAH L.821-1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (TRE-RXXX-typeDroitPrestation#1.1)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: idDecision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: IdDecision</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: idNat_Decision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: IdNat_Decision</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: statutESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: Usager sorti <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R357-StatutPersonnePriseCharge.html\">TRE_R357-StatutPersonnePriseCharge</a>#48)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: dateStatutESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: 2012-10-25</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: idUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: idUnite</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: nomUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: test NomUnite</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: categorieOrganisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: Appartement thérapeutique <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R244-CategorieOrganisation.html\">TRE_R244-CategorieOrganisation</a>#01)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: temporaliteAccueil <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: Temporaire <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R240-TemporaliteAccueil.html\">TRE_R240-TemporaliteAccueil</a>#01)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: accueilSequentiel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: modePriseCharge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: Accueil de jour <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R213-ModePriseEnCharge.html\">TRE_R213-ModePriseEnCharge</a>#47)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: statutUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: Fin de prise en charge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R357-StatutPersonnePriseCharge.html\">TRE_R357-StatutPersonnePriseCharge</a>#188)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: dateStatutUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: 2021-10-25</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: motifUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: L'usager ne souhaite plus être pris en charge par l'ESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R358-MotifStatutPersonnePriseCharge.html\">TRE_R358-MotifStatutPersonnePriseCharge</a>#89)</span></p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"id-exemple-sdo-task\"> </a><a name=\"hcid-exemple-sdo-task\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;id-exemple-sdo-task&quot; Updated &quot;2017-01-01 00:00:00+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sdo-task.html\">SDOTask</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: plan</p><blockquote><p><b>input</b></p><p><b>type</b>: idNat_Struct <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#idNat_Struct)</span></p><p><b>value</b>: value idNat_Struct</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: nomESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#nomESMS)</span></p><p><b>value</b>: value nomESMS</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: typeDroitPrestation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#typeDroitPrestation)</span></p><p><b>value</b>: AAH L.821-1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (TRE-RXXX-typeDroitPrestation#1.1)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: idDecision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#idDecision)</span></p><p><b>value</b>: IdDecision</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: idNat_Decision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#idNat_Decision)</span></p><p><b>value</b>: IdNat_Decision</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: statutESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#statutESMS)</span></p><p><b>value</b>: Usager sorti <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R357-StatutPersonnePriseCharge.html\">TRE_R357-StatutPersonnePriseCharge</a>#48)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: dateStatutESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#dateStatutESMS)</span></p><p><b>value</b>: 2012-10-25</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: idUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#idUnite)</span></p><p><b>value</b>: idUnite</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: nomUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#nomUnite)</span></p><p><b>value</b>: test NomUnite</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: categorieOrganisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#categorieOrganisation)</span></p><p><b>value</b>: Appartement thérapeutique <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R244-CategorieOrganisation.html\">TRE_R244-CategorieOrganisation</a>#01)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: temporaliteAccueil <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#temporaliteAccueil)</span></p><p><b>value</b>: Temporaire <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R240-TemporaliteAccueil.html\">TRE_R240-TemporaliteAccueil</a>#01)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: accueilSequentiel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#accueilSequentiel)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: modePriseCharge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#modePriseCharge)</span></p><p><b>value</b>: Accueil de jour <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R213-ModePriseEnCharge.html\">TRE_R213-ModePriseEnCharge</a>#47)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: statutUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#statutUnite)</span></p><p><b>value</b>: Fin de prise en charge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R357-StatutPersonnePriseCharge.html\">TRE_R357-StatutPersonnePriseCharge</a>#188)</span></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: dateStatutUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#dateStatutUnite)</span></p><p><b>value</b>: 2021-10-25</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: motifUnite <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-input-task-sdo-codesystem.html\">InputTaskSDOCodeSystem</a>#motifUnite)</span></p><p><b>value</b>: L'usager ne souhaite plus être pris en charge par l'ESMS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R358-MotifStatutPersonnePriseCharge.html\">TRE_R358-MotifStatutPersonnePriseCharge</a>#89)</span></p></blockquote></div>"
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
   fhir:input ( [
      fhir:type [
-       fhir:text [ fhir:v "idNat_Struct" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "idNat_Struct" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:Identifier ;
@@ -31,12 +34,18 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "nomESMS" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "nomESMS" ]
+       ] )
      ] ;
      fhir:value [ fhir:v "value nomESMS" ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "typeDroitPrestation" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "typeDroitPrestation" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
@@ -48,7 +57,10 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "idDecision" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "idDecision" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:Identifier ;
@@ -56,7 +68,10 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "idNat_Decision" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "idNat_Decision" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:Identifier ;
@@ -64,7 +79,10 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "statutESMS" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "statutESMS" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
@@ -76,12 +94,18 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "dateStatutESMS" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "dateStatutESMS" ]
+       ] )
      ] ;
      fhir:value [ fhir:v "2012-10-25"^^xsd:date ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "idUnite" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "idUnite" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:Identifier ;
@@ -89,12 +113,18 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "nomUnite" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "nomUnite" ]
+       ] )
      ] ;
      fhir:value [ fhir:v "test NomUnite" ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "categorieOrganisation" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "categorieOrganisation" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
@@ -106,7 +136,10 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "temporaliteAccueil" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "temporaliteAccueil" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
@@ -118,12 +151,18 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "accueilSequentiel" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "accueilSequentiel" ]
+       ] )
      ] ;
      fhir:value [ fhir:v "true"^^xsd:boolean ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "modePriseCharge" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "modePriseCharge" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
@@ -135,7 +174,10 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "statutUnite" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "statutUnite" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
@@ -147,12 +189,18 @@
      ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "dateStatutUnite" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "dateStatutUnite" ]
+       ] )
      ] ;
      fhir:value [ fhir:v "2021-10-25"^^xsd:date ]
   ] [
      fhir:type [
-       fhir:text [ fhir:v "motifUnite" ]
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "motifUnite" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
