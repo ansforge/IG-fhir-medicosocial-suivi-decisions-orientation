@@ -196,7 +196,7 @@
         <key value="regle-StatutUnite"/>
         <severity value="error"/>
         <human value="Si statut unite est rempli alors les éléments suivants sont attendus :idUnite,nomUnite, categorieOrganisation, modePriseCharge, dateStatutUnite"/>
-        <expression value="input.type.where(text='idUnite').exists() and input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() or input.type.where(text='statutUnite').exists().not()"/>
+        <expression value="(input.type.where(text='idUnite').exists()) implies (input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() and input.type.where(text='statutUnite').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"/>
       </constraint>
       <constraint>
@@ -10752,7 +10752,7 @@
         <key value="regle-StatutUnite"/>
         <severity value="error"/>
         <human value="Si statut unite est rempli alors les éléments suivants sont attendus :idUnite,nomUnite, categorieOrganisation, modePriseCharge, dateStatutUnite"/>
-        <expression value="input.type.where(text='idUnite').exists() and input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() or input.type.where(text='statutUnite').exists().not()"/>
+        <expression value="(input.type.where(text='idUnite').exists()) implies (input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() and input.type.where(text='statutUnite').exists())"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"/>
       </constraint>
       <constraint>
