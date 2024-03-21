@@ -7,7 +7,6 @@ Alias: $TRE-R240-TemporaliteAccueil = https://mos.esante.gouv.fr/NOS/TRE_R240-Te
 Alias: $TRE-R213-ModePriseEnCharge = https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge
 Alias: $TRE-R358-MotifStatutPersonnePriseCharge = https://mos.esante.gouv.fr/NOS/TRE_R358-MotifStatutPersonnePriseCharge/FHIR/TRE-R358-MotifStatutPersonnePriseCharge
 Alias: $TRE-RXXX-typeDroitPrestation = https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation
-Alias: $documentreference.html = https://hl7.org/fhir/R4/documentreference.html
 Alias: $JDV-J252-StatutPersonnePriseChargeESMS = https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/FHIR/JDV-J252-StatutPersonnePriseChargeESMS
 Alias: $JDV-J251-MotifStatutPersonnePriseChargeESMS = https://mos.esante.gouv.fr/NOS/JDV_J251-MotifStatutPersonnePriseChargeESMS/FHIR/JDV-J251-MotifStatutPersonnePriseChargeESMS
 Alias: $JDV-J34-CategorieOrganisation-ROR = https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR/FHIR/JDV-J34-CategorieOrganisation-ROR
