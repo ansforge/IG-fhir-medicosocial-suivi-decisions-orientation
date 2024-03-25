@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-03-21T14:06:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-25T16:25:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -560,10 +560,10 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/gestionnaire-esms> ;
-         fhir:reference [ fhir:v "CapabilityStatement/gestionnaire-esms" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/gestionnaire-sdo> ;
+         fhir:reference [ fhir:v "CapabilityStatement/gestionnaire-sdo" ]
        ] ;
-       fhir:name [ fhir:v "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-ESMS" ] ;
+       fhir:name [ fhir:v "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO" ] ;
        fhir:description [ fhir:v "Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.\n   Il correspond au SI-SDO." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -588,7 +588,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation" ]
        ] ;
        fhir:name [ fhir:v "ESMSBundleResultatRechercheDecisionEvaluation" ] ;
-       fhir:description [ fhir:v "Profil pour la définition du Bundle de réponse à la recherche d'une décision d'évaluation" ] ;
+       fhir:description [ fhir:v "Profil pour la définition du Bundle de réponse à la recherche d'une décision d'orientation ou d'une évaluation" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -620,66 +620,84 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation> ;
-         fhir:reference [ fhir:v "Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Bundle/exemple-bundle-resultat-recherche-decision-evaluation> ;
+         fhir:reference [ fhir:v "Bundle/exemple-bundle-resultat-recherche-decision-evaluation" ]
        ] ;
-       fhir:name [ fhir:v "id-exemple-bundle-resultat-recherche-decision-evaluation" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "exemple-bundle-resultat-recherche-decision-evaluation" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Consent" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Consent/id-exemple-consent> ;
-         fhir:reference [ fhir:v "Consent/id-exemple-consent" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Consent/exemple-consent> ;
+         fhir:reference [ fhir:v "Consent/exemple-consent" ]
        ] ;
-       fhir:name [ fhir:v "id-exemple-consent" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "exemple-consent" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "DocumentReference" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/DocumentReference/id-exemple-esms-document-reference> ;
-         fhir:reference [ fhir:v "DocumentReference/id-exemple-esms-document-reference" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/DocumentReference/exemple-esms-document-reference> ;
+         fhir:reference [ fhir:v "DocumentReference/exemple-esms-document-reference" ]
        ] ;
-       fhir:name [ fhir:v "id-exemple-esms-document-reference" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "exemple-esms-document-reference" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms> ;
-         fhir:reference [ fhir:v "Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms> ;
+         fhir:reference [ fhir:v "Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms" ]
        ] ;
-       fhir:name [ fhir:v "id-exemple-sdo-bundle-resultat-recherche-notifications-esms" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "exemple-sdo-bundle-resultat-recherche-notifications-esms" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "DocumentReference" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/DocumentReference/id-exemple-sdo-document-reference> ;
-         fhir:reference [ fhir:v "DocumentReference/id-exemple-sdo-document-reference" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/DocumentReference/exemple-sdo-document-reference> ;
+         fhir:reference [ fhir:v "DocumentReference/exemple-sdo-document-reference" ]
        ] ;
-       fhir:name [ fhir:v "id-exemple-sdo-document-reference" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "exemple-sdo-document-reference" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Task" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Task/id-exemple-sdo-task> ;
-         fhir:reference [ fhir:v "Task/id-exemple-sdo-task" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/Task/exemple-sdo-task> ;
+         fhir:reference [ fhir:v "Task/exemple-sdo-task" ]
        ] ;
-       fhir:name [ fhir:v "id-exemple-sdo-task" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "exemple-sdo-task" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -691,30 +709,6 @@
        ] ;
        fhir:name [ fhir:v "InputTaskSDOCodeSystem" ] ;
        fhir:description [ fhir:v "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/MDPHConsommateur> ;
-         fhir:reference [ fhir:v "CapabilityStatement/MDPHConsommateur" ]
-       ] ;
-       fhir:name [ fhir:v "MDPH Consommateur" ] ;
-       fhir:description [ fhir:v "Le rôle de consommateur est de recueillir et suivre les informations sur les entrées et sorties des personnes orientées.\n   Il correspond au SI-MDPH." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/MDPHProducteur> ;
-         fhir:reference [ fhir:v "CapabilityStatement/MDPHProducteur" ]
-       ] ;
-       fhir:name [ fhir:v "MDPH Producteur" ] ;
-       fhir:description [ fhir:v "Le rôle de producteur est de créer et transmettre les décisions d’orientations des personnes en situation de handicap.Il peut également modifier et transmettre des informations concernant des personnes orientées. \n   Il correspond au SI-MDPH." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

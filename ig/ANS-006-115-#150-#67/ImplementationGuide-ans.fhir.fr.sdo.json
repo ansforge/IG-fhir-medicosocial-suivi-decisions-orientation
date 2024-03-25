@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2024-03-21T14:06:26+00:00",
+  "date" : "2024-03-25T16:25:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -650,9 +650,9 @@
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/gestionnaire-esms"
+        "reference" : "CapabilityStatement/gestionnaire-sdo"
       },
-      "name" : "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-ESMS",
+      "name" : "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO",
       "description" : "Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.\n   Il correspond au SI-SDO.",
       "exampleBoolean" : false
     },
@@ -677,7 +677,7 @@
         "reference" : "StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
       },
       "name" : "ESMSBundleResultatRechercheDecisionEvaluation",
-      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une décision d'évaluation",
+      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une décision d'orientation ou d'une évaluation",
       "exampleBoolean" : false
     },
     {
@@ -710,10 +710,10 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/id-exemple-bundle-resultat-recherche-decision-evaluation"
+        "reference" : "Bundle/exemple-bundle-resultat-recherche-decision-evaluation"
       },
-      "name" : "id-exemple-bundle-resultat-recherche-decision-evaluation",
-      "exampleBoolean" : false
+      "name" : "exemple-bundle-resultat-recherche-decision-evaluation",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
     },
     {
       "extension" : [{
@@ -721,10 +721,10 @@
         "valueString" : "Consent"
       }],
       "reference" : {
-        "reference" : "Consent/id-exemple-consent"
+        "reference" : "Consent/exemple-consent"
       },
-      "name" : "id-exemple-consent",
-      "exampleBoolean" : false
+      "name" : "exemple-consent",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"
     },
     {
       "extension" : [{
@@ -732,10 +732,10 @@
         "valueString" : "DocumentReference"
       }],
       "reference" : {
-        "reference" : "DocumentReference/id-exemple-esms-document-reference"
+        "reference" : "DocumentReference/exemple-esms-document-reference"
       },
-      "name" : "id-exemple-esms-document-reference",
-      "exampleBoolean" : false
+      "name" : "exemple-esms-document-reference",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"
     },
     {
       "extension" : [{
@@ -743,10 +743,10 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/id-exemple-sdo-bundle-resultat-recherche-notifications-esms"
+        "reference" : "Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms"
       },
-      "name" : "id-exemple-sdo-bundle-resultat-recherche-notifications-esms",
-      "exampleBoolean" : false
+      "name" : "exemple-sdo-bundle-resultat-recherche-notifications-esms",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"
     },
     {
       "extension" : [{
@@ -754,10 +754,10 @@
         "valueString" : "DocumentReference"
       }],
       "reference" : {
-        "reference" : "DocumentReference/id-exemple-sdo-document-reference"
+        "reference" : "DocumentReference/exemple-sdo-document-reference"
       },
-      "name" : "id-exemple-sdo-document-reference",
-      "exampleBoolean" : false
+      "name" : "exemple-sdo-document-reference",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
     },
     {
       "extension" : [{
@@ -765,10 +765,10 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/id-exemple-sdo-task"
+        "reference" : "Task/exemple-sdo-task"
       },
-      "name" : "id-exemple-sdo-task",
-      "exampleBoolean" : false
+      "name" : "exemple-sdo-task",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
     },
     {
       "extension" : [{
@@ -780,30 +780,6 @@
       },
       "name" : "InputTaskSDOCodeSystem",
       "description" : "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/MDPHConsommateur"
-      },
-      "name" : "MDPH Consommateur",
-      "description" : "Le rôle de consommateur est de recueillir et suivre les informations sur les entrées et sorties des personnes orientées.\n   Il correspond au SI-MDPH.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/MDPHProducteur"
-      },
-      "name" : "MDPH Producteur",
-      "description" : "Le rôle de producteur est de créer et transmettre les décisions d’orientations des personnes en situation de handicap.Il peut également modifier et transmettre des informations concernant des personnes orientées. \n   Il correspond au SI-MDPH.",
       "exampleBoolean" : false
     },
     {

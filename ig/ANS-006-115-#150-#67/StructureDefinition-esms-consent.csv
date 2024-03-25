@@ -80,7 +80,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier","CX / EI (occasionally, more often EI maps to a resource id or a URL)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".id","FiveWs.identifier"
 "Consent.status","Consent.status","","","",1,1,"","Y","Y","code {[]} {[]}
-","draft | proposed | active | rejected | inactive | entered-in-error","Indicates the current state of this consent.","This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the Consent as not currently valid.","The Consent Directive that is pointed to might be in various lifecycle states, e.g., a revoked Consent Directive.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""active""/>","","","",,"required","Indicates the state of the consent.","http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1","",,,,"Consent.status",1,1,"ele-1
+","draft | proposed | active | rejected | inactive | entered-in-error","Indicates the current state of this consent.","This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the Consent as not currently valid.","The Consent Directive that is pointed to might be in various lifecycle states, e.g., a revoked Consent Directive.","","","","","","","",,"required","Indicates the state of the consent.","http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1","",,,,"Consent.status",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","HL7 Table 0498 - Consent Status","n/a",".statusCode","FiveWs.status"
 "Consent.scope","Consent.scope","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
@@ -98,7 +98,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <coding>
     <system value=""http://loinc.org""/>
     <code value=""59284-0""/>
-    <display value=""Consent""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","A classification of the type of consents found in a consent statement.","http://hl7.org/fhir/ValueSet/consent-category","",,,,"Consent.category",1,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -108,7 +107,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","Event.subject","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)","Role","FiveWs.subject[x]","FiveWs.subject"
 "Consent.dateTime","Consent.dateTime","","","",1,1,"","","Y","dateTime {[]} {[]}
-","Date de recueil de l'accord de la personne orientée par l’ESMS.","When this  Consent was issued / created / indexed.","This is not the time of the original consent, but the time that this statement was made or derived.","","","","","","","","",,,,,"",,,,"Consent.dateTime",0,1,"ele-1
+","date de recueil par l'ESMS de l'accord de la personne orientée","When this  Consent was issued / created / indexed.","This is not the time of the original consent, but the time that this statement was made or derived.","","","","","","","","",,,,,"",,,,"Consent.dateTime",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]","Field 13/ Consent Decision Date","n/a","FinancialConsent effectiveTime","FiveWs.recorded"
 "Consent.performer","Consent.performer","","consentor
