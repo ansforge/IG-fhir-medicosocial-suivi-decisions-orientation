@@ -2,17 +2,13 @@ Profile: ESMSConsent
 Parent: Consent
 Id: esms-consent
 Description: "Profil pour la définition de l'accord"
-* ^version = "2.3"
-* ^status = #active
-* ^date = "2024-01-19T09:51:35+02:00"
 * meta 1..
 * meta.source 1..
 * meta.source ^short = "Identifiant de l’ESMS créant la ressource (=idNat_Struct). Il s’agit de la structure bénéficiant de l’accord."
-* status = #active 
 * scope = $consentscope#patient-privacy "Privacy Consent" 
-* category = $loinc#59284-0 "Consent" 
+* category = $loinc#59284-0
 * dateTime 1..
-* dateTime ^short = "Date de recueil de l'accord de la personne orientée par l’ESMS."
+* dateTime ^short = "date de recueil par l'ESMS de l'accord de la personne orientée"
 * provision 1..
 * provision.data 1..1
 * provision.data.meaning = #related 

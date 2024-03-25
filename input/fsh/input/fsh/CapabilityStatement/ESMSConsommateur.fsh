@@ -12,7 +12,6 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* format[+] = #application/fhir+rdf
 * implementationGuide = "https://interop.esante.gouv.fr/ig/fhir/sdo"
 * rest.mode = #client
 * rest.documentation = "Recherche des dossiers de PO et évaluation (Flux 1 et 3) et suivi des statuts (Flux 5)"

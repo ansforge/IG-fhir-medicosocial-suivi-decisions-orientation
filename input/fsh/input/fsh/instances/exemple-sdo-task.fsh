@@ -1,7 +1,7 @@
-Instance: id-exemple-sdo-task
+Instance: exemple-sdo-task
 InstanceOf: SDOTask
-Title: "id-exemple-sdo-task"
-Usage: #definition
+Title: "exemple-sdo-task"
+Usage: #example
 * meta.lastUpdated = "2017-01-01T00:00:00.000Z"
 * status = #completed
 * intent = #plan

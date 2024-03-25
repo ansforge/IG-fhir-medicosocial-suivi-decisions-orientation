@@ -1,8 +1,8 @@
-Instance: gestionnaire-esms
+Instance: gestionnaire-sdo
 InstanceOf: CapabilityStatement
 Usage: #definition
 * name = "gestionnaire-esms"
-* title = "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-ESMS"
+* title = "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO"
 * status = #active
 * experimental = false
 * date = "2023-06-27T15:51:35+02:00"
@@ -22,8 +22,7 @@ Usage: #definition
 * rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"
 * rest.resource[=].interaction.code = #create
 * rest.resource[+].type = #DocumentReference
-* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"
-* rest.resource[=].supportedProfile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
+* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #create

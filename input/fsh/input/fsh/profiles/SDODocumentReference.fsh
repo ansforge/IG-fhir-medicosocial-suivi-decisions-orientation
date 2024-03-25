@@ -2,10 +2,6 @@ Profile: SDODocumentReference
 Parent: DocumentReference
 Id: sdo-document-reference
 Description: "Profil pour définir le dossier SDO"
-* ^version = "2.2"
-* ^status = #active
-* ^date = "2024-01-19T09:51:35+02:00"
-* ^publisher = "ANS"
 * obeys regle-Contenu
 * identifier 1..
 * identifier ^short = "Première occurence : identifiant de la décision unique au sein de la MDPH ayant créé la décision (idDecision) Identifier.use = « usual ». Deuxième occurence :  identifiant technique national de la décision, généré par le SI-SDO (idNat_Decision) Identifier.use = « official »"

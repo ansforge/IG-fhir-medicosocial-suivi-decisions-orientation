@@ -1,7 +1,7 @@
-Instance: id-exemple-sdo-document-reference
+Instance: exemple-sdo-document-reference
 InstanceOf: SDODocumentReference
-Title: "id-exemple-sdo-document-reference"
-Usage: #definition
+Title: "exemple-sdo-document-reference"
+Usage: #example
 * identifier.use = #usual
 * identifier.value = "idDecision"
 * status = #current

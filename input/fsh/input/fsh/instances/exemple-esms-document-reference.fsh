@@ -1,7 +1,7 @@
-Instance: id-exemple-esms-document-reference
+Instance: exemple-esms-document-reference
 InstanceOf: ESMSDocumentReference
-Title: "id-exemple-esms-document-reference"
-Usage: #definition
+Title: "exemple-esms-document-reference"
+Usage: #example
 * identifier[0].use = #usual
 * identifier[=].value = "idDecision"
 * identifier[+].use = #official

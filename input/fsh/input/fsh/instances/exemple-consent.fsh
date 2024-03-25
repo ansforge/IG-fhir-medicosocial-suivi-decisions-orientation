@@ -1,7 +1,7 @@
-Instance: id-exemple-consent
+Instance: exemple-consent
 InstanceOf: ESMSConsent
-Title: "id-exemple-consent"
-Usage: #definition
+Title: "exemple-consent"
+Usage: #example
 * meta.source = "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7"
 * status = #active
 * scope = $consentscope#patient-privacy "Privacy Consent"
