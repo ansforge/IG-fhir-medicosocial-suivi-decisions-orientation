@@ -24,4 +24,3 @@ Usage: #definition
 * rest.resource[+].type = #Task
 * rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
 * rest.resource[=].interaction[0].code = #create
-* rest.resource[=].interaction[+].code = #update
