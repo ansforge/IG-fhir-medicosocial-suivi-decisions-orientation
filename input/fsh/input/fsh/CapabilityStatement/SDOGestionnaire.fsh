@@ -22,15 +22,13 @@ Usage: #definition
 * rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"
 * rest.resource[=].interaction.code = #create
 * rest.resource[+].type = #DocumentReference
-* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
+* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #create
-* rest.resource[=].interaction[+].code = #patch
 * rest.resource[+].type = #Task
 * rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
 * rest.resource[=].interaction[0].code = #create
-* rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.interaction[0].code = #transaction
