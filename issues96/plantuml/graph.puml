@@ -1,0 +1,152 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class ESMSBundleResultatRechercheDecisionEvaluation{
+
+             Bundle.type => [None..None]
+             Bundle.entry.resource => [1..None]
+        } 
+
+        class ESMSConsent{
+
+             Consent.meta => [1..None]
+             Consent.meta.source => [1..None]
+             Consent.scope => [None..None]
+             Consent.category => [None..None]
+             Consent.dateTime => [1..None]
+             Consent.provision => [1..None]
+             Consent.provision.data => [1..1]
+             Consent.provision.data.meaning => [None..None]
+             Consent.provision.data.reference => [None..None]
+             Consent.provision.data.reference.identifier => [1..None]
+             Consent.provision.data.reference.identifier.use => [1..None]
+             Consent.provision.data.reference.identifier.value => [1..None]
+        } 
+
+        class ESMSDocumentReference{
+
+             DocumentReference => [None..None]
+             DocumentReference.identifier => [2..None]
+             DocumentReference.type => [1..None]
+             DocumentReference.content.attachment.title => [None..None]
+        } 
+
+        class SDOBundleResultatRechercheNotificationESMS{
+
+             Bundle.type => [None..None]
+             Bundle.entry.resource => [1..None]
+        } 
+
+        class SDODocumentReference{
+
+             DocumentReference.identifier => [1..2]
+             DocumentReference.identifier:idDecision => [1..1]
+             DocumentReference.identifier:idDecision.use => [1..None]
+             DocumentReference.identifier:idDecision.value => [None..None]
+             DocumentReference.identifier:idNat_Decision => [0..1]
+             DocumentReference.identifier:idNat_Decision.use => [1..None]
+             DocumentReference.identifier:idNat_Decision.value => [None..None]
+             DocumentReference.content => [None..1]
+             DocumentReference.content.attachment.title => [1..None]
+        } 
+
+        class SDOTask{
+
+             Task.meta.lastUpdated => [1..None]
+             Task.intent => [None..None]
+             Task.input => [5..None]
+             Task.input:idNat_Struct => [1..1]
+             Task.input:idNat_Struct.type => [None..None]
+             Task.input:idNat_Struct.value[x] => [None..None]
+             Task.input:nomESMS => [1..1]
+             Task.input:nomESMS.type => [None..None]
+             Task.input:nomESMS.value[x] => [None..None]
+             Task.input:statutESMS => [0..1]
+             Task.input:statutESMS.type => [None..None]
+             Task.input:statutESMS.value[x] => [None..None]
+             Task.input:motifESMS => [0..1]
+             Task.input:motifESMS.type => [None..None]
+             Task.input:motifESMS.value[x] => [None..None]
+             Task.input:dateStatutESMS => [0..1]
+             Task.input:dateStatutESMS.type => [None..None]
+             Task.input:dateStatutESMS.value[x] => [None..None]
+             Task.input:idUnite => [0..1]
+             Task.input:idUnite.type => [None..None]
+             Task.input:idUnite.value[x] => [None..None]
+             Task.input:nomUnite => [0..1]
+             Task.input:nomUnite.type => [None..None]
+             Task.input:nomUnite.value[x] => [None..None]
+             Task.input:categorieOrganisation => [0..1]
+             Task.input:categorieOrganisation.type => [None..None]
+             Task.input:categorieOrganisation.value[x] => [None..None]
+             Task.input:temporaliteAccueil => [0..1]
+             Task.input:temporaliteAccueil.type => [None..None]
+             Task.input:temporaliteAccueil.value[x] => [None..None]
+             Task.input:accueilSequentiel => [0..1]
+             Task.input:accueilSequentiel.type => [None..None]
+             Task.input:accueilSequentiel.value[x] => [None..None]
+             Task.input:modePriseCharge => [0..1]
+             Task.input:modePriseCharge.type => [None..None]
+             Task.input:modePriseCharge.value[x] => [None..None]
+             Task.input:statutUnite => [0..1]
+             Task.input:statutUnite.type => [None..None]
+             Task.input:statutUnite.value[x] => [None..None]
+             Task.input:dateStatutUnite => [0..1]
+             Task.input:dateStatutUnite.type => [None..None]
+             Task.input:dateStatutUnite.value[x] => [None..None]
+             Task.input:motifUnite => [0..1]
+             Task.input:motifUnite.type => [None..None]
+             Task.input:motifUnite.value[x] => [None..None]
+             Task.input:typeDroitPrestation => [1..1]
+             Task.input:typeDroitPrestation.type => [None..None]
+             Task.input:typeDroitPrestation.value[x] => [None..None]
+             Task.input:idDecision => [1..1]
+             Task.input:idDecision.type => [None..None]
+             Task.input:idDecision.value[x] => [None..None]
+             Task.input:idNat_Decision => [1..1]
+             Task.input:idNat_Decision.type => [None..None]
+             Task.input:idNat_Decision.value[x] => [None..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+
+         }
+     }
+     package valueset #PaleVioletRed{
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Bundle" as  class94c51f19c37f96ed231f5a0ae512b2a8 
+
+    class94c51f19c37f96ed231f5a0ae512b2a8 --> ESMSBundleResultatRechercheDecisionEvaluation
+
+ class "Consent" as  class1bbdf136f897ea2075a786bd05152095 
+
+    class1bbdf136f897ea2075a786bd05152095 --> ESMSConsent
+
+ class "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference" as  class6534e5d642a42f518f12b0cbd52c7fcd 
+
+    class6534e5d642a42f518f12b0cbd52c7fcd --> ESMSDocumentReference
+
+ class "Bundle" as  class94c51f19c37f96ed231f5a0ae512b2a8 
+
+    class94c51f19c37f96ed231f5a0ae512b2a8 --> SDOBundleResultatRechercheNotificationESMS
+
+ class "DocumentReference" as  classabc067272ee1964cc2c74c1c1a1854f5 
+
+    classabc067272ee1964cc2c74c1c1a1854f5 --> SDODocumentReference
+
+ class "Task" as  classeaeb30f9f18e0c50b178676f3eaef45f 
+
+    classeaeb30f9f18e0c50b178676f3eaef45f --> SDOTask
+}
+@enduml
