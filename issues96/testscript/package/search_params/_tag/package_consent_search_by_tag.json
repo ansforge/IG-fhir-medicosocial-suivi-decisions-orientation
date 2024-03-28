@@ -6,7 +6,7 @@
   "title": "package consent search_by tag",
   "status": "draft",
   "experimental": true,
-  "date": "2024-03-26T11:12:22+00:00",
+  "date": "2024-03-28T15:32:53+00:00",
   "publisher": "The MITRE Corporation",
   "fixture": [
     {
@@ -20,9 +20,9 @@
   ],
   "variable": [
     {
-      "name": "rekvIUNKh4srRHGD",
+      "name": "k82eY3R9BS0rgV47",
       "expression": "Consent.meta.tag",
-      "sourceId": "BwznMqiSwk18SQla"
+      "sourceId": "tQykNNt4XsxktpjJ"
     }
   ],
   "setup": {
@@ -35,7 +35,7 @@
           },
           "label": "Operation_1",
           "encodeRequestUrl": false,
-          "responseId": "BwznMqiSwk18SQla",
+          "responseId": "tQykNNt4XsxktpjJ",
           "sourceId": "example_consent"
         }
       }
@@ -54,7 +54,7 @@
             "resource": "Consent",
             "label": "Operation_2",
             "encodeRequestUrl": false,
-            "params": "?_tag=${rekvIUNKh4srRHGD}"
+            "params": "?_tag=${k82eY3R9BS0rgV47}"
           }
         }
       ]
@@ -71,7 +71,7 @@
           "resource": "Consent",
           "label": "Operation_3",
           "encodeRequestUrl": false,
-          "params": "/${rekvIUNKh4srRHGD}"
+          "params": "/${k82eY3R9BS0rgV47}"
         }
       }
     ]

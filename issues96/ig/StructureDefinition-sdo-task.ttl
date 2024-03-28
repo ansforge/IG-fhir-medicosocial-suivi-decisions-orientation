@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "4.0.2-ballot-2"] ; # 
   fhir:name [ fhir:v "SDOTask"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-03-26T11:08:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-28T15:28:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -143,7 +143,7 @@
          fhir:key [ fhir:v "regle-StatutUnite" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si statut unite est rempli alors les éléments suivants sont attendus :idUnite,nomUnite, categorieOrganisation, modePriseCharge, dateStatutUnite" ] ;
-         fhir:expression [ fhir:v "(input.type.where(text='idUnite').exists()) implies (input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() and input.type.where(text='statutUnite').exists())" ] ;
+         fhir:expression [ fhir:v "(input.type.where(text='statutUnite').exists()) implies (input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() and input.type.where(text='idUnite').exists())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task>
@@ -8022,7 +8022,7 @@
          fhir:key [ fhir:v "regle-StatutUnite" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Si statut unite est rempli alors les éléments suivants sont attendus :idUnite,nomUnite, categorieOrganisation, modePriseCharge, dateStatutUnite" ] ;
-         fhir:expression [ fhir:v "(input.type.where(text='idUnite').exists()) implies (input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() and input.type.where(text='statutUnite').exists())" ] ;
+         fhir:expression [ fhir:v "(input.type.where(text='statutUnite').exists()) implies (input.type.where(text='nomUnite').exists() and input.type.where(text='categorieOrganisation').exists() and input.type.where(text='modePriseCharge').exists() and input.type.where(text='dateStatutUnite').exists() and input.type.where(text='idUnite').exists())" ] ;
          fhir:source [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"^^xsd:anyURI ;
            fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task>
