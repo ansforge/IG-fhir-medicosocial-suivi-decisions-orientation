@@ -73,7 +73,7 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
 * input[dateStatutUnite] ^short = "Permet de définir la date d'entrée renseignée par l'utilisateur pour les statuts"
 * input[dateStatutUnite].type = InputTaskSDOCodeSystem#dateStatutUnite
 * input[dateStatutUnite].value[x] only date
-* input[motifUnite] ^short = "Permet de définir le motif de sortie ou d’admission impossible"
+* input[motifUnite] ^short = "Permet de définir le motif associé au statut de l’usager dans l'unité"
 * input[motifUnite].type = InputTaskSDOCodeSystem#motifUnite
 * input[motifUnite].value[x] only CodeableConcept
 * input[motifUnite].value[x] from $JDV-J250-MotifStatutPersonnePriseChargeUnite (required)

@@ -15,3 +15,4 @@ Alias: $JDV_JXX-ModePriseEnCharge = https://mos.esante.gouv.fr/NOS/JDV_JXX-ModeP
 Alias: $JDV-J253-StatutPersonnePriseChargeUnite = https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite/FHIR/JDV-J253-StatutPersonnePriseChargeUnite
 Alias: $JDV-J250-MotifStatutPersonnePriseChargeUnite = https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/FHIR/JDV-J250-MotifStatutPersonnePriseChargeUnite
 Alias: $JDV_JXX-typeDroitPrestation = https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation
+Alias: $DocumentType = http://hl7.org/fhir/ValueSet/c80-doc-typecodes
