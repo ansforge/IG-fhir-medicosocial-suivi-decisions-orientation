@@ -2,7 +2,7 @@ Profile: SDOTask
 Parent: Task
 Id: sdo-task
 Description: "Profil utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation"
-* obeys regle-StatutUnite and regle-ModePriseEnCharge
+* obeys regle-StatutUnite
 * meta.lastUpdated 1..
 * intent = #plan 
 * input ^slicing.discriminator.type = #pattern
@@ -36,10 +36,11 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
 * input[statutESMS].type = InputTaskSDOCodeSystem#statutESMS
 * input[statutESMS].value[x] only CodeableConcept
 * input[statutESMS].value[x] from $JDV-J252-StatutPersonnePriseChargeESMS (required)
-* input[motifESMS] ^short = "Permet de définir le motif associé au statut de l’usager dans l’ESMS. Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
+* input[motifESMS] ^short = "Permet de définir le motif associé au statut de l’usager dans l’ESMS."
 * input[motifESMS].type = InputTaskSDOCodeSystem#motifESMS
 * input[motifESMS].value[x] only CodeableConcept
 * input[motifESMS].value[x] from $JDV-J251-MotifStatutPersonnePriseChargeESMS (required)
+* input[motifESMS].value[x] ^short = " Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
 * input[dateStatutESMS] ^short = "Permet de définir la date d'entrée dans le statut"
 * input[dateStatutESMS].type = InputTaskSDOCodeSystem#dateStatutESMS
 * input[dateStatutESMS].value[x] only date
@@ -61,6 +62,7 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
 * input[accueilSequentiel].type = InputTaskSDOCodeSystem#accueilSequentiel
 * input[accueilSequentiel].value[x] only boolean
 * input[modePriseCharge] ^short = "Permet de définir le mode de prise en charge"
+* input[modePriseCharge] obeys regle-ModePriseEnCharge
 * input[modePriseCharge].type = InputTaskSDOCodeSystem#modePriseCharge
 * input[modePriseCharge].value[x] only CodeableConcept
 * input[modePriseCharge].value[x] from $JDV_JXX-ModePriseEnCharge (required)

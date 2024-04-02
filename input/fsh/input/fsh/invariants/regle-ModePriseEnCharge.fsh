@@ -1,4 +1,4 @@
 Invariant: regle-ModePriseEnCharge
-Description: "Les codes possibles pour le mode de prise en charge sont : Code 46 « Hébergement (accueil jour et nuit) » = Internat (1),Code 47 « Accueil de jour » = externat (2), semi-internat (3) ou accueil de jour (6),Code 48 Accueil de nuit » = Accueil de nuit (4)"
+Description: "Les codes possibles pour le mode de prise en charge sont : 46 (Hébergement (accueil jour et nuit)) ; 47 (Accueil de jour); 48 (Accueil de nuit)"
 Severity: #error
-Expression: "input.where(type.text='modePriseCharge').value.coding.code='48' or input.where(type.text='modePriseCharge').value.coding.code='47'  or input.where(type.text='modePriseCharge').value.coding.code='46' or input.where(type.text='modePriseCharge').exists().not() "
+Expression: "value.coding.code='48' or value.coding.code='47' or value.coding.code='46'"
