@@ -698,7 +698,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","n/a","???"
 "Task.input:motifUnite","Task.input","motifUnite","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
-","Permet de définir le motif de sortie ou d’admission impossible","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"ele-1
+","Permet de définir le motif associé au statut de l’usager dans l'unité","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","???"
 "Task.input:motifUnite.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}

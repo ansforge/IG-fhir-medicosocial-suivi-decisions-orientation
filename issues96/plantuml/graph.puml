@@ -48,10 +48,10 @@ package IG #DDDDDD{
              DocumentReference.identifier => [1..2]
              DocumentReference.identifier:idDecision => [1..1]
              DocumentReference.identifier:idDecision.use => [1..None]
-             DocumentReference.identifier:idDecision.value => [None..None]
+             DocumentReference.identifier:idDecision.value => [1..None]
              DocumentReference.identifier:idNat_Decision => [0..1]
              DocumentReference.identifier:idNat_Decision.use => [1..None]
-             DocumentReference.identifier:idNat_Decision.value => [None..None]
+             DocumentReference.identifier:idNat_Decision.value => [1..None]
              DocumentReference.content => [None..1]
              DocumentReference.content.attachment.title => [1..None]
         } 

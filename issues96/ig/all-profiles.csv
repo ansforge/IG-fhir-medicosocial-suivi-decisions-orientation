@@ -625,7 +625,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "esms-document-reference","DocumentReference.identifier","DocumentReference.identifier","","","",2,2,"","","Y","Identifier {[]} {[]}
-","identifiant métier (idDecision) et technique (idNat_decision) de la décision d'orientation","Other identifiers associated with the document, including version independent identifiers.","","","","","","","","","",,,,,"","value:use}
+","identifiants métier (idDecision) et technique (idNat_decision) de la décision d'orientation","Other identifiers associated with the document, including version independent identifiers.","","","","","","","","","",,,,,"","value:use}
 ","",,"open","DocumentReference.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -653,7 +653,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"esms-document-reference","DocumentReference.identifier:idDecision.value","DocumentReference.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+"esms-document-reference","DocumentReference.identifier:idDecision.value","DocumentReference.identifier.value","","","",1,1,"","","Y","string {[]} {[]}
 ","identifiant de la décision unique au sein de la MDPH ayant créé la décision (idDecision)","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -691,7 +691,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"esms-document-reference","DocumentReference.identifier:idNat_Decision.value","DocumentReference.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+"esms-document-reference","DocumentReference.identifier:idNat_Decision.value","DocumentReference.identifier.value","","","",1,1,"","","Y","string {[]} {[]}
 ","identifiant technique national de la décision, généré par le SI-SDO (idNat_Decision)","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -716,9 +716,9 @@ This element is labeled as a modifier because the status contains the codes that
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "esms-document-reference","DocumentReference.type","DocumentReference.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Si la ressource contient le document CDA portant les données de individu et la décision : Code =  « 57830-2 » de la nomenclature LOINC docTypeCodes, Display = Admission request Document. Si la ressource contient le document CDA portant l'évaluation : Code = « 51848-0 » de la nomenclature LOINC docTypeCodes, Display = « Evaluation note","Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced.","Key metadata element describing the document that describes he exact type of document. Helps humans to assess whether the document is of interest when viewing a list of documents.","","","","","","","","",,"preferred","Precise type of clinical document.","http://hl7.org/fhir/ValueSet/c80-doc-typecodes","",,,,"DocumentReference.type",0,1,"ele-1
+","Code identifiant le type de document CDA véhiculé dans la ressource (Individu et Décision ou Evaluation)","Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced.","Key metadata element describing the document that describes he exact type of document. Helps humans to assess whether the document is of interest when viewing a list of documents.","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/c80-doc-typecodes","",,,,"DocumentReference.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+regle-Type:Code = « 57830-2 » (Admission request Document) pour un document CDA Individu et Décision. Code = « 51848-0 » (Evaluation note) pour un document CDA portant l'Evaluation {(coding.code='57830-2') or (coding.code='51848-0')}"
 "esms-document-reference","DocumentReference.category","DocumentReference.category","","claxs
 ","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Categorization of document","A categorization for the type of document referenced - helps for indexing and searching. This may be implied by or derived from the code specified in the DocumentReference.type.","Key metadata element describing the the category or classification of the document. This is a broader perspective that groups similar documents based on how they would be used. This is a primary key used in searching.","","","","","","","","",,"example","High-level kind of a clinical document at a macro level.","http://hl7.org/fhir/ValueSet/document-classcodes","",,,,"DocumentReference.category",0,*,"ele-1
@@ -1162,7 +1162,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "sdo-document-reference","DocumentReference.identifier","DocumentReference.identifier","","","",1,2,"","","Y","Identifier {[]} {[]}
-","identifiant métier (idDecision) et technique (idNat_decision) de la décision d'orientation","Other identifiers associated with the document, including version independent identifiers.","","","","","","","","","",,,,,"","value:use}
+","identifiants métier (idDecision) et technique (idNat_decision) de la décision d'orientation","Other identifiers associated with the document, including version independent identifiers.","","","","","","","","","",,,,,"","value:use}
 ","",,"open","DocumentReference.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1190,7 +1190,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sdo-document-reference","DocumentReference.identifier:idDecision.value","DocumentReference.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+"sdo-document-reference","DocumentReference.identifier:idDecision.value","DocumentReference.identifier.value","","","",1,1,"","","Y","string {[]} {[]}
 ","identifiant de la décision unique au sein de la MDPH ayant créé la décision (idDecision)","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1228,7 +1228,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sdo-document-reference","DocumentReference.identifier:idNat_Decision.value","DocumentReference.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+"sdo-document-reference","DocumentReference.identifier:idNat_Decision.value","DocumentReference.identifier.value","","","",1,1,"","","Y","string {[]} {[]}
 ","identifiant technique national de la décision, généré par le SI-SDO (idNat_Decision)","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2134,7 +2134,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "sdo-task","Task.input:motifUnite","Task.input","motifUnite","Supporting Information
 ","",0,1,"","","","BackboneElement {[]} {[]}
-","Permet de définir le motif de sortie ou d’admission impossible","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"ele-1
+","Permet de définir le motif associé au statut de l’usager dans l'unité","Additional information that may be needed in the execution of the task.","","Resources and data used to perform the task.  This data is used in the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.input",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "sdo-task","Task.input:motifUnite.id","Task.input.id","","","",0,1,"","","","string {[]} {[]}

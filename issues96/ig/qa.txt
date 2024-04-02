@@ -1,9 +1,9 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 0, warn = 41, info = 18
+err = 0, warn = 43, info = 18
 IG Publisher Version: 1.6.3
-Generated Tue Apr 02 07:27:21 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+Generated Tue Apr 02 14:02:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 27 / 9 / 0
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 4 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms : 0 / 5 / 5
@@ -17,7 +17,7 @@ Generated Tue Apr 02 07:27:21 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-consent : 0 / 0 / 7
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-document-reference : 0 / 6 / 4
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-document-reference : 0 / 8 / 4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-bundle-resultat-recherche-notification-esms : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference : 0 / 0 / 4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task : 0 / 9 / 3
@@ -106,6 +106,8 @@ WARNING: StructureDefinition/esms-document-reference: StructureDefinition.snapsh
 WARNING: StructureDefinition/esms-document-reference: StructureDefinition.snapshot.element[0].constraint[6]: regle-NomPieceJointe-type: The left side is inherently a collection, and so the expression 'type.coding.code = '57830-2'' may fail or return false if there is more than one item in the content being evaluated
 WARNING: StructureDefinition/esms-document-reference: StructureDefinition.snapshot.element[0].constraint[6]: regle-NomPieceJointe-type: The left side is inherently a collection, and so the expression 'content.attachment.title = 'Document évaluation'' may fail or return false if there is more than one item in the content being evaluated
 WARNING: StructureDefinition/esms-document-reference: StructureDefinition.snapshot.element[0].constraint[6]: regle-NomPieceJointe-type: The left side is inherently a collection, and so the expression 'type.coding.code = '51848-0'' may fail or return false if there is more than one item in the content being evaluated
+WARNING: StructureDefinition/esms-document-reference: StructureDefinition.snapshot.element[31].constraint[1]: regle-Type: The left side is inherently a collection, and so the expression 'coding.code = '57830-2'' may fail or return false if there is more than one item in the content being evaluated
+WARNING: StructureDefinition/esms-document-reference: StructureDefinition.snapshot.element[31].constraint[1]: regle-Type: The left side is inherently a collection, and so the expression 'coding.code = '51848-0'' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.json ==
 == fsh-generated/resources/StructureDefinition-sdo-document-reference.json ==
 INFORMATION: StructureDefinition/sdo-document-reference: StructureDefinition.snapshot.element[18].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
