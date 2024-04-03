@@ -27,8 +27,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.47"],
       "uses" : {
       },
-      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference"
+      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -72,8 +71,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
+      "StructureDefinition-sdo-task.html" : "SDOTask"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -312,9 +311,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
       "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -328,9 +327,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
       "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -344,11 +343,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html" : "ESMSBundleResultatRechercheDecisionEvaluation",
-      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-sdo-task.html" : "SDOTask",
-      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
       "StructureDefinition-esms-consent.html" : "ESMSConsent",
+      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
+      "StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html" : "ESMSBundleResultatRechercheDecisionEvaluation",
+      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
+      "StructureDefinition-sdo-task.html" : "SDOTask",
       "StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html" : "SDOBundleResultatRechercheNotificationESMS"
     },
     {
@@ -441,10 +440,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
       "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-sdo-task.html" : "SDOTask",
       "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-sdo-task.html" : "SDOTask"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -539,6 +538,18 @@
       "uses" : {
       },
       "StructureDefinition-esms-consent.html" : "ESMSConsent"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
+      "version" : "4.0.2-ballot-2",
+      "status" : "active",
+      "name" : "DocumentReferenceTypeESMSValueSet",
+      "title" : null,
+      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask",
+      "systems" : ["http://hl7.org/fhir/ValueSet/c80-doc-typecodes"],
+      "uses" : {
+      },
+      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/FHIR/JDV-J250-MotifStatutPersonnePriseChargeUnite",

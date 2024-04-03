@@ -121,6 +121,10 @@ package IG #DDDDDD{
          }
      }
      package valueset #PaleVioletRed{
+
+        class DocumentReferenceTypeESMSValueSet  
+
+     ESMSDocumentReference -[#black,dotted,thickness=2]-> DocumentReferenceTypeESMSValueSet
        }
 
 package "Ressources de base" #palegreen {

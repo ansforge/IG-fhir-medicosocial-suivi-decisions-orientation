@@ -10,7 +10,7 @@
   <name value="SuiviDecisionsOrientation"/>
   <title value="Médicosocial - Suivi Décisions Orientation"/>
   <status value="active"/>
-  <date value="2024-04-03T07:12:34+00:00"/>
+  <date value="2024-04-03T15:04:53+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -490,6 +490,17 @@
       </reference>
       <name value="CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO"/>
       <description value="Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.&#xA;   Il correspond au SI-SDO."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/type-document-reference-esms-valueset"/>
+      </reference>
+      <name value="DocumentReferenceTypeESMSValueSet"/>
+      <description value="Code System pour la définition des éléments spécifiques de input dans ressource SDOTask"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

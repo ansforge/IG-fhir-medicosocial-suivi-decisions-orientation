@@ -1,18 +1,18 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 0, warn = 43, info = 18
+err = 3, warn = 48, info = 19
 IG Publisher Version: 1.6.3
-Generated Wed Apr 03 07:15:33 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+Generated Wed Apr 03 15:07:54 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 27 / 9 / 0
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 4 / 3
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 2 / 4 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms : 0 / 5 / 5
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSConsommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CodeSystem-input-task-sdo-codesystem : 0 / 3 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent : 0 / 0 / 2
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference : 1 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-sdo-document-reference : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation : 0 / 0 / 1
@@ -22,6 +22,7 @@ Generated Wed Apr 03 07:15:33 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference : 0 / 0 / 4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task : 0 / 9 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task : 0 / 2 / 2
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset : 0 / 5 / 2
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/exemple-bundle-resultat-recherche-decision-evaluation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -61,7 +62,9 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation.json ==
+ERROR: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[0].resource/*DocumentReference/exemple-esms-documentreference-1-in-bundle*/.type: None of the codings provided are in the value set 'DocumentReferenceTypeESMSValueSet' (https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset|4.0.2-ballot-2), and a coding from this value set is required) (codes = http://loinc.org#57830-2)
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[0].resource/*DocumentReference/exemple-esms-documentreference-1-in-bundle*/.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
+ERROR: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[1].resource/*DocumentReference/exemple-esms-documentreference-2-in-bundle*/.type: None of the codings provided are in the value set 'DocumentReferenceTypeESMSValueSet' (https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset|4.0.2-ballot-2), and a coding from this value set is required) (codes = http://loinc.org#57830-2)
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[1].resource/*DocumentReference/exemple-esms-documentreference-2-in-bundle*/.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle: SearchSet bundles should have search modes on the entries
@@ -84,6 +87,7 @@ WARNING: CodeSystem/input-task-sdo-codesystem: CodeSystem: Published code system
 == fsh-generated/resources/Consent-exemple-consent.json ==
 INFORMATION: Consent/exemple-consent: Consent.scope: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|4.0.1
 == fsh-generated/resources/DocumentReference-exemple-esms-document-reference.json ==
+ERROR: DocumentReference/exemple-esms-document-reference: DocumentReference.type: None of the codings provided are in the value set 'DocumentReferenceTypeESMSValueSet' (https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset|4.0.2-ballot-2), and a coding from this value set is required) (codes = http://loinc.org#57830-2)
 WARNING: DocumentReference/exemple-esms-document-reference: DocumentReference.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
 == fsh-generated/resources/DocumentReference-exemple-sdo-document-reference.json ==
 WARNING: DocumentReference/exemple-sdo-document-reference: DocumentReference.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
@@ -129,3 +133,10 @@ WARNING: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[118]
 WARNING: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
 INFORMATION: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
 WARNING: Task/exemple-sdo-task: Task.input[12].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-ModePriseEnCharge/FHIR/JDV_JXX-ModePriseEnCharge/' not found
+== fsh-generated/resources/ValueSet-type-document-reference-esms-valueset.json ==
+WARNING: ValueSet/type-document-reference-esms-valueset: ValueSet.compose.include[0].concept[0]: The code '57830-2' is not valid in the system http://hl7.org/fhir/ValueSet/c80-doc-typecodes (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/c80-doc-typecodes'))
+INFORMATION: ValueSet/type-document-reference-esms-valueset: ValueSet.compose.include[0].concept[0]: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/c80-doc-typecodes')
+WARNING: ValueSet/type-document-reference-esms-valueset: ValueSet.compose.include[0].concept[1]: The code '51848-0' is not valid in the system http://hl7.org/fhir/ValueSet/c80-doc-typecodes (The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/c80-doc-typecodes'))
+WARNING: ValueSet/type-document-reference-esms-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
+WARNING: ValueSet/type-document-reference-esms-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'type-document-reference-esms-valueset'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/c80-doc-typecodes
