@@ -1,8 +1,70 @@
 {
   "resourceType" : "Bundle",
-  "id" : "fe5639c7-6e93-4f03-9419-4a4f6598cfcd",
+  "id" : "5599f0a4-29f5-4577-8a8d-0796b91740f7",
   "meta" : {
-    "lastUpdated" : "2024-04-03T15:04:53.967+00:00"
+    "lastUpdated" : "2024-04-04T12:58:54.685+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.77</p><p>This value set contains 2 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-57830-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/57830-2/\">57830-2</a></td><td>http://loinc.org</td><td>Admission request Document</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-51848-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/51848-0/\">51848-0</a></td><td>http://loinc.org</td><td>Evaluation note</td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
+      "version" : "4.0.2-ballot-2",
+      "name" : "DocumentReferenceTypeESMSValueSet",
+      "status" : "active",
+      "date" : "2024-04-04T12:58:54+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "FRANCE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:14a74eff-8dfc-4454-bca0-a409f1b528ab",
+        "timestamp" : "2024-04-04T12:59:19+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.77"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.77"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "57830-2",
+          "display" : "Admission request Document"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "51848-0",
+          "display" : "Evaluation note"
+        }]
+      }
+    }
+  }]
 }

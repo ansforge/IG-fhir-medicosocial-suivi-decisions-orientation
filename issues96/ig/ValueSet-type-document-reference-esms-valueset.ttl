@@ -10,13 +10,13 @@
   fhir:id [ fhir:v "type-document-reference-esms-valueset"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/c80-doc-typecodes</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>57830-2</td><td>Admission request Document</td></tr><tr><td>51848-0</td><td>Assessment note</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/57830-2/\">57830-2</a></td><td style=\"color: #cccccc\">Admission request Document</td></tr><tr><td><a href=\"https://loinc.org/51848-0/\">51848-0</a></td><td style=\"color: #cccccc\">Evaluation note</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "4.0.2-ballot-2"] ; # 
   fhir:name [ fhir:v "DocumentReferenceTypeESMSValueSet"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-03T15:04:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-04T12:58:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -35,13 +35,11 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/ValueSet/c80-doc-typecodes"^^xsd:anyURI ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:concept ( [
-         fhir:code [ fhir:v "57830-2" ] ;
-         fhir:display [ fhir:v "Admission request Document" ]
+         fhir:code [ fhir:v "57830-2" ]
        ] [
-         fhir:code [ fhir:v "51848-0" ] ;
-         fhir:display [ fhir:v "Assessment note" ]
+         fhir:code [ fhir:v "51848-0" ]
        ] )
      ] )
   ] . # 

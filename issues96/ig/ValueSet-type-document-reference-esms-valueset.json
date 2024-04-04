@@ -3,13 +3,13 @@
   "id" : "type-document-reference-esms-valueset",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/c80-doc-typecodes</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>57830-2</td><td>Admission request Document</td></tr><tr><td>51848-0</td><td>Assessment note</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/57830-2/\">57830-2</a></td><td style=\"color: #cccccc\">Admission request Document</td></tr><tr><td><a href=\"https://loinc.org/51848-0/\">51848-0</a></td><td style=\"color: #cccccc\">Evaluation note</td></tr></table></li></ul></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
   "version" : "4.0.2-ballot-2",
   "name" : "DocumentReferenceTypeESMSValueSet",
   "status" : "active",
-  "date" : "2024-04-03T15:04:53+00:00",
+  "date" : "2024-04-04T12:58:54+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -28,14 +28,12 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
+      "system" : "http://loinc.org",
       "concept" : [{
-        "code" : "57830-2",
-        "display" : "Admission request Document"
+        "code" : "57830-2"
       },
       {
-        "code" : "51848-0",
-        "display" : "Assessment note"
+        "code" : "51848-0"
       }]
     }]
   }
