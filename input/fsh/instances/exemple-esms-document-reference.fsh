@@ -7,8 +7,8 @@ Usage: #example
 * identifier[idNat_Decision].use = #official
 * identifier[idNat_Decision].value = "idNat_Decision"
 * status = #current
-* type = $loinc#57830-2 "Admission request Document"
+* type = $loinc#51848-0 "Evaluation note"
 * content.attachment.contentType = #text/plain
 * content.attachment.language = #fr
-* content.attachment.title = "Document Individu et décision"
+* content.attachment.title = "Document évaluation"
 * content.attachment.data = "SGVsbG8gd29ybGQ="
