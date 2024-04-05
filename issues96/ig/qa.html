@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 27, errors = 0, warn = 43, info = 18-->
+<!-- broken links = 27, errors = 0, warn = 42, info = 18-->
 <head>
   <title>SuiviDecisionsOrientation : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SuiviDecisionsOrientation</h1>
- <p>Generated Thu Apr 04 13:01:52 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Apr 05 07:51:29 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-2 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.4</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.sdo, Canonical = https://interop.esante.gouv.fr/ig/fhir/sdo</td></tr>
@@ -75,8 +75,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-scope.html">ConsentScopeCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-category.html">ConsentCategoryCodes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
- (41 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (50 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
  (17 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
  (11 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (8 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
@@ -85,8 +85,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-policy.html">ConsentPolicyRuleCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-provision-type.html">ConsentProvisionType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
- (12 uses),     <a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
@@ -98,6 +97,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/person.html">Person</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/task.html">Task</a>
@@ -108,8 +108,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a>
  (1 uses)
   </li>
   <li>
@@ -126,7 +128,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
  <tr><td>Previous Version Comparison:</td><td> </td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 43, info = 18, broken links = 27</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 42, info = 18, broken links = 27</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -187,7 +189,7 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Task-exemple-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_ValueSet-type-document-reference-esms-valueset"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_ValueSet-type-document-reference-esms-valueset"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -481,16 +483,16 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c72342)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c109365)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c109348)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c127335)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c127316)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[75]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c156352)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[75]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c156331)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c160276)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|1.0.0</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c160250)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|1.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
@@ -509,16 +511,16 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[6]&#8203;.expression (l1&#8203;/c20709)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' (type.coding.code='57830-2' implies (content.attachment.title='Document Individu et décision')) and (type.coding.code='51848-0' implies (content.attachment.title='Document évaluation'))'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c48180)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c48183)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c61848)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c61849)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c127786)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c127745)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.constraint[0]&#8203;.expression (l1&#8203;/c136398)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' (type.coding.code='57830-2' implies (content.attachment.title='Document Individu et décision')) and (type.coding.code='51848-0' implies (content.attachment.title='Document évaluation'))'</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.constraint[0]&#8203;.expression (l1&#8203;/c136347)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' (type.coding.code='57830-2' implies (content.attachment.title='Document Individu et décision')) and (type.coding.code='51848-0' implies (content.attachment.title='Document évaluation'))'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[6] (l1&#8203;/c20808)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>regle-NomPieceJointe-type: The left side is inherently a collection, and so the expression 'type.coding.code = '57830-2'' may fail or return false if there is more than one item in the content being evaluated</b></td>
@@ -553,13 +555,13 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c57098)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c57101)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c70766)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c70767)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c136756)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c136715)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -572,37 +574,37 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c265828)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c265806)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[50]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c292405)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[50]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c292356)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.short (l1&#8203;/c304253)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET '</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58]&#8203;.short (l1&#8203;/c304199)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET '</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[81]&#8203;.short (l1&#8203;/c337518)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf'</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[81]&#8203;.short (l1&#8203;/c337464)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[142]&#8203;.short (l1&#8203;/c424532)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Permet de définir le type de droit et prestation caractérisant la décision d'orientation. '</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[142]&#8203;.short (l1&#8203;/c424478)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Permet de définir le type de droit et prestation caractérisant la décision d'orientation. '</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.short (l1&#8203;/c460628)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET '</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.short (l1&#8203;/c460574)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET '</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.short (l1&#8203;/c462644)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf'</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.short (l1&#8203;/c462590)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace ' Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[46]&#8203;.short (l1&#8203;/c469630)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Permet de définir le type de droit et prestation caractérisant la décision d'orientation. '</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[46]&#8203;.short (l1&#8203;/c469576)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Permet de définir le type de droit et prestation caractérisant la décision d'orientation. '</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.constraint[1] (l1&#8203;/c390655)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>regle-ModePriseEnCharge: The left side is inherently a collection, and so the expression 'value.coding.code = '48'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.constraint[1] (l1&#8203;/c390601)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>regle-ModePriseEnCharge: The left side is inherently a collection, and so the expression 'value.coding.code = '48'' may fail or return false if there is more than one item in the content being evaluated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.constraint[1] (l1&#8203;/c390655)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>regle-ModePriseEnCharge: The left side is inherently a collection, and so the expression 'value.coding.code = '47'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.constraint[1] (l1&#8203;/c390601)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>regle-ModePriseEnCharge: The left side is inherently a collection, and so the expression 'value.coding.code = '47'' may fail or return false if there is more than one item in the content being evaluated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.constraint[1] (l1&#8203;/c390655)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>regle-ModePriseEnCharge: The left side is inherently a collection, and so the expression 'value.coding.code = '46'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.constraint[1] (l1&#8203;/c390601)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>regle-ModePriseEnCharge: The left side is inherently a collection, and so the expression 'value.coding.code = '46'' may fail or return false if there is more than one item in the content being evaluated</b></td>
    </tr>
 </table>
 <hr/>
@@ -627,17 +629,14 @@ hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSyst
 <hr/>
 <a name="_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_ValueSet-type-document-reference-esms-valueset"> </a>
 <h2><a href="ValueSet-type-document-reference-esms-valueset.html">fsh-generated/resources/ValueSet-type-document-reference-esms-valueset.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1263)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1263)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+     <td><b>ValueSet (l1/c1365)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>

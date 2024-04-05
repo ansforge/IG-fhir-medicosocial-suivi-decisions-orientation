@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5599f0a4-29f5-4577-8a8d-0796b91740f7"/>
+  <id value="0cbf511c-596a-4a89-b4cf-95502c381301"/>
   <meta>
-    <lastUpdated value="2024-04-04T12:58:54.685+00:00"/>
+    <lastUpdated value="2024-04-05T07:48:28.690+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
     <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -50,7 +53,8 @@
         <version value="4.0.2-ballot-2"/>
         <name value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
-        <date value="2024-04-04T12:58:54+00:00"/>
+        <experimental value="false"/>
+        <date value="2024-04-05T07:48:28+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -59,8 +63,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:14a74eff-8dfc-4454-bca0-a409f1b528ab"/>
-          <timestamp value="2024-04-04T12:59:19+00:00"/>
+          <identifier value="urn:uuid:7f24d1d5-a365-4e40-b31c-b8694b89535e"/>
+          <timestamp value="2024-04-05T07:48:55+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

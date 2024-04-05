@@ -1,6 +1,9 @@
 {
   "resourceType" : "ValueSet",
   "id" : "type-document-reference-esms-valueset",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
   "text" : {
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/57830-2/\">57830-2</a></td><td style=\"color: #cccccc\">Admission request Document</td></tr><tr><td><a href=\"https://loinc.org/51848-0/\">51848-0</a></td><td style=\"color: #cccccc\">Evaluation note</td></tr></table></li></ul></div>"
@@ -9,7 +12,8 @@
   "version" : "4.0.2-ballot-2",
   "name" : "DocumentReferenceTypeESMSValueSet",
   "status" : "active",
-  "date" : "2024-04-04T12:58:54+00:00",
+  "experimental" : false,
+  "date" : "2024-04-05T07:48:28+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

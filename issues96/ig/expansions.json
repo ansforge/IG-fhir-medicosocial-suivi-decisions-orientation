@@ -1,14 +1,17 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5599f0a4-29f5-4577-8a8d-0796b91740f7",
+  "id" : "0cbf511c-596a-4a89-b4cf-95502c381301",
   "meta" : {
-    "lastUpdated" : "2024-04-04T12:58:54.685+00:00"
+    "lastUpdated" : "2024-04-05T07:48:28.690+00:00"
   },
   "type" : "collection",
   "entry" : [{
     "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.77</p><p>This value set contains 2 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-57830-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/57830-2/\">57830-2</a></td><td>http://loinc.org</td><td>Admission request Document</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-51848-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/51848-0/\">51848-0</a></td><td>http://loinc.org</td><td>Evaluation note</td></tr></table></div>"
@@ -17,7 +20,8 @@
       "version" : "4.0.2-ballot-2",
       "name" : "DocumentReferenceTypeESMSValueSet",
       "status" : "active",
-      "date" : "2024-04-04T12:58:54+00:00",
+      "experimental" : false,
+      "date" : "2024-04-05T07:48:28+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -26,8 +30,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:14a74eff-8dfc-4454-bca0-a409f1b528ab",
-        "timestamp" : "2024-04-04T12:59:19+00:00",
+        "identifier" : "urn:uuid:7f24d1d5-a365-4e40-b31c-b8694b89535e",
+        "timestamp" : "2024-04-05T07:48:55+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
