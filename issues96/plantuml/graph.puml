@@ -34,6 +34,7 @@ package IG #DDDDDD{
              DocumentReference => [None..None]
              DocumentReference.identifier => [2..None]
              DocumentReference.type => [1..None]
+             DocumentReference.type.coding => [1..1]
              DocumentReference.content.attachment.title => [None..None]
         } 
 
@@ -94,6 +95,7 @@ package IG #DDDDDD{
              Task.input:modePriseCharge => [0..1]
              Task.input:modePriseCharge.type => [None..None]
              Task.input:modePriseCharge.value[x] => [None..None]
+             Task.input:modePriseCharge.value[x].coding => [1..1]
              Task.input:statutUnite => [0..1]
              Task.input:statutUnite.type => [None..None]
              Task.input:statutUnite.value[x] => [None..None]

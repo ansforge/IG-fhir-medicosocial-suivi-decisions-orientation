@@ -10,7 +10,7 @@
   <name value="SuiviDecisionsOrientation"/>
   <title value="Médicosocial - Suivi Décisions Orientation"/>
   <status value="active"/>
-  <date value="2024-04-05T07:48:28+00:00"/>
+  <date value="2024-04-08T12:44:22+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -555,6 +555,7 @@
         <reference value="Bundle/exemple-bundle-resultat-recherche-decision-evaluation"/>
       </reference>
       <name value="exemple-bundle-resultat-recherche-decision-evaluation"/>
+      <description value="Exemple de ressource Bundle suivant le profil ESMSBundleResultatRechercheDecisionEvaluation"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"/>
     </resource>
     <resource>
@@ -565,6 +566,7 @@
         <reference value="Consent/exemple-consent"/>
       </reference>
       <name value="exemple-consent"/>
+      <description value="Exemple de ressource Consent suivant le profil ESMSConsent"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"/>
     </resource>
     <resource>
@@ -575,6 +577,7 @@
         <reference value="DocumentReference/exemple-esms-document-reference"/>
       </reference>
       <name value="exemple-esms-document-reference"/>
+      <description value="Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"/>
     </resource>
     <resource>
@@ -585,6 +588,7 @@
         <reference value="Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms"/>
       </reference>
       <name value="exemple-sdo-bundle-resultat-recherche-notifications-esms"/>
+      <description value="Exemple de ressource DocumentReference suivant le profil SDODocumentReference"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"/>
     </resource>
     <resource>
@@ -595,6 +599,7 @@
         <reference value="DocumentReference/exemple-sdo-document-reference"/>
       </reference>
       <name value="exemple-sdo-document-reference"/>
+      <description value="Exemple de ressource DocumentReference suivant le profil SDODocumentReference"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"/>
     </resource>
     <resource>
@@ -605,6 +610,7 @@
         <reference value="Task/exemple-sdo-task"/>
       </reference>
       <name value="exemple-sdo-task"/>
+      <description value="Exemple de ressource DocumentReference suivant le profil SDODocumentReference"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"/>
     </resource>
     <resource>
