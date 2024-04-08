@@ -1,10 +1,13 @@
 CodeSystem: InputTaskSDOCodeSystem
 Id: input-task-sdo-codesystem
+Title: "InputTaskSDOCodeSystem"
 Description: "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^caseSensitive = true 
 * ^compositional = false
 * ^content = #complete
-* #idNat_Struct "idNat_Struct" "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET "
+* ^experimental = false
+* #idNat_Struct "idNat_Struct" "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET"
 * #nomESMS "nomESMS" "Permet de définir le nom de l’ESMS"
 * #statutESMS "statutESMS" "Statut de l’usager dans l'ESMS"
 * #motifESMS "motifESMS" "Permet de définir le motif associé au statut de l’usager dans l’ESMS. Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"

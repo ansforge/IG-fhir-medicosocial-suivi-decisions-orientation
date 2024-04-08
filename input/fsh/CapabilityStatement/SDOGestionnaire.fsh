@@ -1,7 +1,7 @@
 Instance: gestionnaire-sdo
 InstanceOf: CapabilityStatement
 Usage: #definition
-* name = "gestionnaire-esms"
+* name = "SDOgestionnaire"
 * title = "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO"
 * status = #active
 * experimental = false

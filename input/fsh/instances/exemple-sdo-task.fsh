@@ -2,6 +2,7 @@ Instance: exemple-sdo-task
 InstanceOf: SDOTask
 Title: "exemple-sdo-task"
 Usage: #example
+Description: "Exemple de ressource DocumentReference suivant le profil SDODocumentReference"
 * meta.lastUpdated = "2017-01-01T00:00:00.000Z"
 * status = #completed
 * intent = #plan
