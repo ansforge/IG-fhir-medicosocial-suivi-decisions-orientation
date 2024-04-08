@@ -5,7 +5,7 @@ Description: "Profil pour la définition de l'accord"
 * meta 1..
 * meta.source 1..
 * meta.source ^short = "Identifiant de l’ESMS créant la ressource (=idNat_Struct). Il s’agit de la structure bénéficiant de l’accord."
-* scope = $consentscope#patient-privacy "Privacy Consent" 
+* scope = $consentscope#patient-privacy "Privacy Consent"
 * category = $loinc#59284-0
 * dateTime 1..
 * dateTime ^short = "date de recueil par l'ESMS de l'accord de la personne orientée"

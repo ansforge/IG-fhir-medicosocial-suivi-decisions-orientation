@@ -26,7 +26,7 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
     typeDroitPrestation 1..1 and
     idDecision 1..1 and
     idNat_Decision 1..1
-* input[idNat_Struct] ^short = "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET "
+* input[idNat_Struct] ^short = "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET"
 * input[idNat_Struct].type = InputTaskSDOCodeSystem#idNat_Struct
 * input[idNat_Struct].value[x] only Identifier
 * input[nomESMS] ^short = "Permet de définir le nom de l’ESMS"
@@ -40,7 +40,7 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
 * input[motifESMS].type = InputTaskSDOCodeSystem#motifESMS
 * input[motifESMS].value[x] only CodeableConcept
 * input[motifESMS].value[x] from $JDV-J251-MotifStatutPersonnePriseChargeESMS (required)
-* input[motifESMS].value[x] ^short = " Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
+* input[motifESMS].value[x] ^short = "Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
 * input[dateStatutESMS] ^short = "Permet de définir la date d'entrée dans le statut"
 * input[dateStatutESMS].type = InputTaskSDOCodeSystem#dateStatutESMS
 * input[dateStatutESMS].value[x] only date
@@ -66,6 +66,7 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
 * input[modePriseCharge].type = InputTaskSDOCodeSystem#modePriseCharge
 * input[modePriseCharge].value[x] only CodeableConcept
 * input[modePriseCharge].value[x] from $JDV_JXX-ModePriseEnCharge (required)
+* input[modePriseCharge].valueCodeableConcept.coding 1..1
 * input[statutUnite] ^short = "Statut de la personne orientée au niveau de l’unité, définis dans le cadre fonctionnel du système d'information de suivi des orientations de la CNSA"
 * input[statutUnite].type = InputTaskSDOCodeSystem#statutUnite
 * input[statutUnite].value[x] only CodeableConcept
@@ -78,7 +79,7 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
 * input[motifUnite].value[x] only CodeableConcept
 * input[motifUnite].value[x] from $JDV-J250-MotifStatutPersonnePriseChargeUnite (required)
 * input[motifUnite].value[x] ^short = "Motifs obligatoires pour certains statut suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
-* input[typeDroitPrestation] ^short = "Permet de définir le type de droit et prestation caractérisant la décision d'orientation. "
+* input[typeDroitPrestation] ^short = "Permet de définir le type de droit et prestation caractérisant la décision d'orientation."
 * input[typeDroitPrestation].type = InputTaskSDOCodeSystem#typeDroitPrestation 
 * input[typeDroitPrestation].value[x] only CodeableConcept
 * input[typeDroitPrestation].value[x] from $JDV_JXX-typeDroitPrestation (required)

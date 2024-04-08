@@ -1,6 +1,7 @@
 Instance: exemple-esms-document-reference
 InstanceOf: ESMSDocumentReference
 Title: "exemple-esms-document-reference"
+Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #example
 * identifier[idDecision].use = #usual
 * identifier[idDecision].value = "idDecision"

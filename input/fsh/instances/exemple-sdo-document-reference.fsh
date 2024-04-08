@@ -1,6 +1,7 @@
 Instance: exemple-sdo-document-reference
 InstanceOf: SDODocumentReference
 Title: "exemple-sdo-document-reference"
+Description: "Exemple de ressource DocumentReference suivant le profil SDODocumentReference"
 Usage: #example
 * identifier.use = #usual
 * identifier.value = "idDecision"

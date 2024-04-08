@@ -1,6 +1,7 @@
 Instance: exemple-bundle-resultat-recherche-decision-evaluation
 InstanceOf: ESMSBundleResultatRechercheDecisionEvaluation
 Title: "exemple-bundle-resultat-recherche-decision-evaluation"
+Description: "Exemple de ressource Bundle suivant le profil ESMSBundleResultatRechercheDecisionEvaluation "
 Usage: #example
 * type = #searchset
 * entry[0].fullUrl = "https://example.com/base/DocumentReference/exemple-esms-documentreference-1-in-bundle"
@@ -10,6 +11,7 @@ Usage: #example
 
 Instance: exemple-esms-documentreference-1-in-bundle
 InstanceOf: ESMSDocumentReference
+Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #inline
 * meta.lastUpdated = "2023-01-26T16:46:48.054+00:00"
 * identifier[0].use = #usual
@@ -25,6 +27,7 @@ Usage: #inline
 
 Instance: exemple-esms-documentreference-2-in-bundle
 InstanceOf: ESMSDocumentReference
+Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #inline
 * meta.lastUpdated = "2019-12-08T10:07:46.748+00:00"
 * identifier[0].use = #usual
