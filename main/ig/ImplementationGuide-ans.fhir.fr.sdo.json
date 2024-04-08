@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2024-03-26T08:45:42+00:00",
+  "date" : "2024-04-08T13:54:50+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -659,6 +659,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/type-document-reference-esms-valueset"
+      },
+      "name" : "DocumentReferenceTypeESMSValueSet",
+      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -713,6 +725,7 @@
         "reference" : "Bundle/exemple-bundle-resultat-recherche-decision-evaluation"
       },
       "name" : "exemple-bundle-resultat-recherche-decision-evaluation",
+      "description" : "Exemple de ressource Bundle suivant le profil ESMSBundleResultatRechercheDecisionEvaluation",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
     },
     {
@@ -724,6 +737,7 @@
         "reference" : "Consent/exemple-consent"
       },
       "name" : "exemple-consent",
+      "description" : "Exemple de ressource Consent suivant le profil ESMSConsent",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"
     },
     {
@@ -735,6 +749,7 @@
         "reference" : "DocumentReference/exemple-esms-document-reference"
       },
       "name" : "exemple-esms-document-reference",
+      "description" : "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference"
     },
     {
@@ -746,6 +761,7 @@
         "reference" : "Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms"
       },
       "name" : "exemple-sdo-bundle-resultat-recherche-notifications-esms",
+      "description" : "Exemple de ressource DocumentReference suivant le profil SDODocumentReference",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"
     },
     {
@@ -757,6 +773,7 @@
         "reference" : "DocumentReference/exemple-sdo-document-reference"
       },
       "name" : "exemple-sdo-document-reference",
+      "description" : "Exemple de ressource DocumentReference suivant le profil SDODocumentReference",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference"
     },
     {
@@ -768,6 +785,7 @@
         "reference" : "Task/exemple-sdo-task"
       },
       "name" : "exemple-sdo-task",
+      "description" : "Exemple de ressource DocumentReference suivant le profil SDODocumentReference",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
     },
     {

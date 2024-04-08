@@ -31,9 +31,10 @@ package IG #DDDDDD{
 
         class ESMSDocumentReference{
 
+             DocumentReference => [None..None]
              DocumentReference.identifier => [2..None]
              DocumentReference.type => [1..None]
-             DocumentReference.content.attachment => [None..None]
+             DocumentReference.type.coding => [1..1]
              DocumentReference.content.attachment.title => [None..None]
         } 
 
@@ -45,7 +46,13 @@ package IG #DDDDDD{
 
         class SDODocumentReference{
 
-             DocumentReference.identifier => [1..None]
+             DocumentReference.identifier => [1..2]
+             DocumentReference.identifier:idDecision => [1..1]
+             DocumentReference.identifier:idDecision.use => [1..None]
+             DocumentReference.identifier:idDecision.value => [1..None]
+             DocumentReference.identifier:idNat_Decision => [0..1]
+             DocumentReference.identifier:idNat_Decision.use => [1..None]
+             DocumentReference.identifier:idNat_Decision.value => [1..None]
              DocumentReference.content => [None..1]
              DocumentReference.content.attachment.title => [1..None]
         } 
@@ -88,6 +95,7 @@ package IG #DDDDDD{
              Task.input:modePriseCharge => [0..1]
              Task.input:modePriseCharge.type => [None..None]
              Task.input:modePriseCharge.value[x] => [None..None]
+             Task.input:modePriseCharge.value[x].coding => [1..1]
              Task.input:statutUnite => [0..1]
              Task.input:statutUnite.type => [None..None]
              Task.input:statutUnite.value[x] => [None..None]
@@ -115,6 +123,10 @@ package IG #DDDDDD{
          }
      }
      package valueset #PaleVioletRed{
+
+        class DocumentReferenceTypeESMSValueSet  
+
+     ESMSDocumentReference -[#black,dotted,thickness=2]-> DocumentReferenceTypeESMSValueSet
        }
 
 package "Ressources de base" #palegreen {
