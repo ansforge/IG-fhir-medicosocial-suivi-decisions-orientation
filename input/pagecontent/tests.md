@@ -1,6 +1,6 @@
 ### Validateurs
 
-La liste des validateurs présent sur la pleteforme https://interop.esante.gouv.fr/evs et les ressources de conformité associées :
+La liste des validateurs présent sur la plateforme [https://interop.esante.gouv.fr/evs](https://interop.esante.gouv.fr/evs) et les ressources de conformité associées :
 
 | Nom Validateur                                      | Ressource testée  | url profil                                                                                                        |
 | --------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -19,4 +19,4 @@ La liste des validateurs présent sur la pleteforme https://interop.esante.gouv.
 ### Simulateurs
 [Mode opératoire ESMS](ESMS_Mode_Operatoire_GWT_V1.0.pdf)
 ### Guide ANS
-Le guide d'implémentation de l'ANS décrit sur [cette page le fonctionnement des tests sur la plateforme Gazelle](new-tab https://interop.esante.gouv.fr/ig/documentation/tests.html).
+Le guide d'implémentation de l'ANS décrit sur [cette page le fonctionnement des tests sur la plateforme Gazelle](https://interop.esante.gouv.fr/ig/documentation/tests.html).
