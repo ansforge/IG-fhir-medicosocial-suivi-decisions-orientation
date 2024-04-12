@@ -14,15 +14,15 @@ Liste des profils génériques définissant les contraintes appliquées sur les 
 
 Liste des profils applicatifs, héritant des profils génériques définis ci-dessus.
 
-| CapabilityStatement  | Volet utilisant le profil | Description |
+| Profil  | Volet utilisant le profil | Description |
 | --- | --- | --- |
 | [ESMSDocumentReference](StructureDefinition-esms-document-reference.html) | ESMS | Profil applicatif créé à partir du profil générique SDODocumentReference pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluaton dauns un document CDA.|
 | [ESMSBundleResultatRechercheDecisionEvaluation](StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html) | ESMS | Profil applicatif créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d'évaluation. Il repose sur le profil applicatif ESMSDocumentReference.|
 
 ### CapabilityStatement
-Liste des CapabilityStatement définis dans ce guide d'implémentation : 
+Liste des CapabilityStatement définis dans le volet SI-ESMS de ce guide d'implémentation :
 
-| Profil  |  Description |
+| CapabilityStatement  |  Description |
 | --- |  --- |
 | [ESMSConsommateur](CapabilityStatement-ESMSConsommateur.html) |  CapabilityStatement du consommateur ESMS.|
 | [ESMSProducteur](CapabilityStatement-ESMSProducteur.html) |  CapabilityStatement du producteur ESMS|
