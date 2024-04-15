@@ -5,11 +5,11 @@ Description: "Exemple de ressource Bundle suivant le profil ESMSBundleResultatRe
 Usage: #example
 * type = #searchset
 * entry[0].fullUrl = "https://example.com/base/DocumentReference/exemple-esms-documentreference-1-in-bundle-elements"
-* entry[=].resource = exemple-esms-documentreference-elements-1-in-bundle-elements
+* entry[=].resource = exemple-esms-documentreference-1-in-bundle-elements
 * entry[+].fullUrl = "https://example.com/base/DocumentReference/exemple-esms-documentreference-2-in-bundle-elements"
-* entry[=].resource = exemple-esms-documentreference-elements-2-in-bundle-elements
+* entry[=].resource = exemple-esms-documentreference-2-in-bundle-elements
 
-Instance: exemple-esms-documentreference-elements-1-in-bundle-elements
+Instance: exemple-esms-documentreference-1-in-bundle-elements
 InstanceOf: ESMSDocumentReference
 Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #inline
@@ -20,7 +20,7 @@ Usage: #inline
 * type = $loinc#57830-2 "Admission request Document"
 * content.attachment.title = "Document Individu et décision"
 
-Instance: exemple-esms-documentreference-elements-2-in-bundle-elements
+Instance: exemple-esms-documentreference-2-in-bundle-elements
 InstanceOf: ESMSDocumentReference
 Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #inline
