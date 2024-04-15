@@ -134,15 +134,8 @@
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tests
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="tests.html">Tests</a>
-      </li>
-    </ul>
+  <li>
+    <a href="tests.html">Tests</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
@@ -248,73 +241,106 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#validateurs" id="markdown-toc-validateurs">Validateurs</a></li>
+  <li><a href="#validateurs-fhir" id="markdown-toc-validateurs-fhir">Validateurs FHIR</a></li>
+  <li><a href="#validateurs-cda" id="markdown-toc-validateurs-cda">Validateurs CDA</a></li>
   <li><a href="#simulateurs" id="markdown-toc-simulateurs">Simulateurs</a></li>
   <li><a href="#guide-ans" id="markdown-toc-guide-ans">Guide ANS</a></li>
 </ul>
 
 </div>
-<h3 id="validateurs">Validateurs</h3>
+<h3 id="validateurs-fhir">Validateurs FHIR</h3>
 
-<p>La liste des validateurs présent sur la plateforme <a href="https://interop.esante.gouv.fr/evs">https://interop.esante.gouv.fr/evs</a> et les ressources de conformité associées :</p>
+<p>La liste des validateurs FHIR présents sur la plateforme <a href="https://interop.esante.gouv.fr/evs">EVSClient</a> et les ressources de conformité associées :</p>
 
 <table>
   <thead>
     <tr>
       <th>Nom Validateur</th>
       <th>Ressource testée</th>
-      <th>url profil</th>
+      <th>Flux impliqué(s)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>MS-R4-ESMSBundleResultatRechercheDecisionEvaluation</td>
-      <td>Bundle</td>
-      <td>https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation</td>
+      <td><a href="StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html">ESMSBundleResultatRechercheDecisionEvaluation</a></td>
+      <td>1.2/3.2</td>
     </tr>
     <tr>
       <td>MS-R4-ESMSConsent</td>
-      <td>Consent</td>
-      <td>https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent</td>
+      <td><a href="StructureDefinition-esms-consent.html">ESMSConsent</a></td>
+      <td>2</td>
     </tr>
     <tr>
       <td>MS-R4-ESMSDocumentReference</td>
-      <td>DocumentReference</td>
-      <td>https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference</td>
+      <td><a href="StructureDefinition-esms-document-reference.html">ESMSDocumentReference</a></td>
+      <td>1.4</td>
     </tr>
     <tr>
       <td>MS-R4-SDOBundleResultatRechercheNotificationESMS</td>
-      <td>Bundle</td>
-      <td>https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms</td>
+      <td><a href="StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html">SDOBundleResultatRechercheNotification</a></td>
+      <td>5.2</td>
     </tr>
     <tr>
       <td>MS-R4-SDODocumentReference</td>
-      <td>DocumentReference</td>
-      <td>https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference</td>
+      <td><a href="StructureDefinition-sdo-document-reference.html">SDODocumentReference</a></td>
+      <td>N/A</td>
     </tr>
     <tr>
       <td>MS-R4-SDOTask</td>
-      <td>Task</td>
-      <td>https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task</td>
+      <td><a href="StructureDefinition-sdo-task.html">SDOTask</a></td>
+      <td>4/5.4</td>
     </tr>
     <tr>
       <td>MS-R4-ESMS_Flux1.1-RechercheDeDecision (URL)</td>
-      <td> </td>
-      <td> </td>
+      <td>N/A</td>
+      <td>1.1</td>
     </tr>
     <tr>
       <td>MS-R4-ESMS_Flux3.1-RechercheEvaluation (URL)</td>
-      <td> </td>
-      <td> </td>
+      <td>N/A</td>
+      <td>3.1</td>
     </tr>
   </tbody>
 </table>
 
-<p><a href="20231121_SI-ESMS_Validateurs.pdf">Présentation des validateurs</a></p>
+<h3 id="validateurs-cda">Validateurs CDA</h3>
+<p>Liste des validateurs CDA présents sur la plateforme de test <a href="https://interop.esante.gouv.fr/evs">EVSClient</a>”</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom Validateur</th>
+      <th>Document testé</th>
+      <th>Flux associé</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CNSA_ESMS-Decision_2024-03</td>
+      <td>Document CDA portant les information relatives à l’individu et à la décision d’orientation en ESMS</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>CNSA_ESMS-Evaluation_2024-03</td>
+      <td>Document CDA portant l’évaluation de l’individu</td>
+      <td>3.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://gazelle.ihe.net/gazelle-documentation/EVS-Client/user.html">Documentation de l’outil EVS</a></p>
 <h3 id="simulateurs">Simulateurs</h3>
+
+<p>Un outillage permettant de tester et simuler des messages clients (SI-ESMS) et serveur (SI-SDO) est mis à disposition sur la plateforme <a href="https://interop.esante.gouv.fr/gazelle-webservice-tester/project/projectList.seam?cid=103">Gazelle Web Service Tester</a></p>
+
 <p><a href="ESMS_Mode_Operatoire_GWT_V1.0.pdf">Mode opératoire ESMS</a></p>
+
+<p><a href="https://gazelle.ihe.net/gazelle-documentation/Gazelle-Webservice-Tester/user.html">Documentation de l’outil GWT</a></p>
+
 <h3 id="guide-ans">Guide ANS</h3>
-<p>Le guide d’implémentation de l’ANS décrit sur <a href="https://interop.esante.gouv.fr/ig/documentation/tests.html">cette page le fonctionnement des tests sur la plateforme Gazelle</a>.</p>
+
+<p>Le guide d’implémentation de l’ANS décrit sur <a href="https://interop.esante.gouv.fr/ig/documentation/tests.html">cette page</a> les différents outils de tests à disposition.</p>
 
 
 
@@ -362,7 +388,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2-ballot-2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 11, 2024 13:39+0000">2024-04-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2-ballot-2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 15, 2024 10:46+0000">2024-04-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
