@@ -1,22 +1,35 @@
-### Validateurs
+### Validateurs FHIR
 
-La liste des validateurs présent sur la plateforme [https://interop.esante.gouv.fr/evs](https://interop.esante.gouv.fr/evs) et les ressources de conformité associées :
+La liste des validateurs FHIR présents sur la plateforme [EVSClient](https://interop.esante.gouv.fr/evs) et les ressources de conformité associées :
 
-| Nom Validateur                                      | Ressource testée  | url profil                                                                                                        |
+| Nom Validateur                                      | Ressource testée  | Flux impliqué(s) |
+| --------------------------------------------------- | ----------------- | ------------- |
+| MS-R4-ESMSBundleResultatRechercheDecisionEvaluation | [ESMSBundleResultatRechercheDecisionEvaluation](StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html)            | 1.2/3.2 |
+| MS-R4-ESMSConsent                                   | [ESMSConsent](StructureDefinition-esms-consent.html)           | 2 |
+| MS-R4-ESMSDocumentReference                         | [ESMSDocumentReference](StructureDefinition-esms-document-reference.html) | 1.4 |
+| MS-R4-SDOBundleResultatRechercheNotificationESMS    | [SDOBundleResultatRechercheNotification](StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html)           | 5.2 |
+| MS-R4-SDODocumentReference                          | [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | N/A |
+| MS-R4-SDOTask                                       | [SDOTask](StructureDefinition-sdo-task.html)             | 4/5.4 |
+| MS-R4-ESMS_Flux1.1-RechercheDeDecision (URL)        |          N/A      | 1.1 |
+| MS-R4-ESMS_Flux3.1-RechercheEvaluation (URL)        |            N/A    | 3.1 |
+
+### Validateurs CDA
+Liste des validateurs CDA présents sur la plateforme de test [EVSClient](https://interop.esante.gouv.fr/evs)"
+
+| Nom Validateur | Document testé | Flux associé |
 | --------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------- |
-| MS-R4-ESMSBundleResultatRechercheDecisionEvaluation | Bundle            | https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation |
-| MS-R4-ESMSConsent                                   | Consent           | https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent                                       |
-| MS-R4-ESMSDocumentReference                         | DocumentReference | https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference                            |
-| MS-R4-SDOBundleResultatRechercheNotificationESMS    | Bundle            | https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms    |
-| MS-R4-SDODocumentReference                          | DocumentReference | https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference                             |
-| MS-R4-SDOTask                                       | Task              | https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task                                           |
-| MS-R4-ESMS_Flux1.1-RechercheDeDecision (URL)        |                   |                                                                                                                   |
-| MS-R4-ESMS_Flux3.1-RechercheEvaluation (URL)        |                   |                                                                                                                   |
+| CNSA_ESMS-Decision_2024-03 | Document CDA portant les information relatives à l'individu et à la décision d'orientation en ESMS | 1.4 |
+| CNSA_ESMS-Evaluation_2024-03 | Document CDA portant l'évaluation de l'individu | 3.2 |
 
-
-
-[Présentation des validateurs](20231121_SI-ESMS_Validateurs.pdf)
+[Documentation de l'outil EVS](https://gazelle.ihe.net/gazelle-documentation/EVS-Client/user.html)
 ### Simulateurs
+
+Un outillage permettant de tester et simuler des messages clients (SI-ESMS) et serveur (SI-SDO) est mis à disposition sur la plateforme [Gazelle Web Service Tester](https://interop.esante.gouv.fr/gazelle-webservice-tester/project/projectList.seam?cid=103)
+
 [Mode opératoire ESMS](ESMS_Mode_Operatoire_GWT_V1.0.pdf)
+
+[Documentation de l'outil GWT](https://gazelle.ihe.net/gazelle-documentation/Gazelle-Webservice-Tester/user.html)
+
 ### Guide ANS
-Le guide d'implémentation de l'ANS décrit sur [cette page le fonctionnement des tests sur la plateforme Gazelle](https://interop.esante.gouv.fr/ig/documentation/tests.html).
+
+Le guide d'implémentation de l'ANS décrit sur [cette page](https://interop.esante.gouv.fr/ig/documentation/tests.html) les différents outils de tests à disposition.
