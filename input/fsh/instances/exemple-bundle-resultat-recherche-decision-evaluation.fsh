@@ -14,10 +14,8 @@ InstanceOf: ESMSDocumentReference
 Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #inline
 * meta.lastUpdated = "2023-01-26T16:46:48.054+00:00"
-* identifier[0].use = #usual
-* identifier[=].value = "idDecision1"
-* identifier[+].use = #official
-* identifier[=].value = "idNat_Decision1"
+* identifier[idDecision].value = "idDecision1"
+* identifier[idNat_Decision].value = "idNat_Decision1"
 * status = #current
 * type = $loinc#57830-2 "Admission request Document"
 * content.attachment.contentType = #text/plain
@@ -30,10 +28,8 @@ InstanceOf: ESMSDocumentReference
 Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #inline
 * meta.lastUpdated = "2019-12-08T10:07:46.748+00:00"
-* identifier[0].use = #usual
-* identifier[=].value = "idDecision2"
-* identifier[+].use = #official
-* identifier[=].value = "idNat_Decision2"
+* identifier[idDecision].value = "idDecision2"
+* identifier[idNat_Decision].value = "idNat_Decision2"
 * status = #current
 * type = $loinc#57830-2 "Admission request Document"
 * content.attachment.contentType = #text/plain
