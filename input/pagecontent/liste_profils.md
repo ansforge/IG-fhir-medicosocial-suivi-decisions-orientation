@@ -22,4 +22,4 @@ Liste des profils applicatifs, héritant des profils génériques définis ci-de
 ### CapabilityStatement
 Liste des CapabilityStatement définis dans le volet SI-ESMS de ce guide d'implémentation :
 
-{% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'CapabilityStatement' %}
+{% sql SELECT '[' || Title ||'](CapabilityStatement-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'CapabilityStatement' %}
