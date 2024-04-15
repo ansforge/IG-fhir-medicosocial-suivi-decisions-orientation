@@ -22,7 +22,7 @@ Usage: #inline
 * type = $loinc#57830-2 "Admission request Document"
 * content.attachment.title = "Document Individu et décision"
 
-Instance: exemple-esms-documentreference-elemens-2-in-bundle
+Instance: exemple-esms-documentreference-elements-2-in-bundle
 InstanceOf: ESMSDocumentReference
 Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 Usage: #inline
