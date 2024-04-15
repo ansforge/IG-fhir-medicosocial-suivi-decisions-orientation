@@ -2,7 +2,7 @@ Instance: ESMSConsommateur
 InstanceOf: CapabilityStatement
 Usage: #definition
 * name = "ESMSConsommateur"
-* title = "ESMS Consommateur"
+* title = "SI-ESMS-Consommateur"
 * status = #active
 * experimental = false
 * date = "2023-06-27T09:51:35+02:00"
