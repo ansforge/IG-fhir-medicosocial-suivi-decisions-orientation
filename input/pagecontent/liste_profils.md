@@ -22,8 +22,4 @@ Liste des profils applicatifs, héritant des profils génériques définis ci-de
 ### CapabilityStatement
 Liste des CapabilityStatement définis dans le volet SI-ESMS de ce guide d'implémentation :
 
-| CapabilityStatement  |  Description |
-| --- |  --- |
-| [ESMSConsommateur](CapabilityStatement-ESMSConsommateur.html) |  CapabilityStatement du consommateur ESMS.|
-| [ESMSProducteur](CapabilityStatement-ESMSProducteur.html) |  CapabilityStatement du producteur ESMS|
-| [SDOGestionnaire](CapabilityStatement-gestionnaire-sdo.html) |  CapabilityStatement du gestionnaire SDO|
+{% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'CapabilityStatement' %}
