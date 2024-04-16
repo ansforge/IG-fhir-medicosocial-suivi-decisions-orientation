@@ -4,6 +4,18 @@
  xmlns:sch="http://www.ascc.net/xml/schematron"
  xmlns="urn:hl7-org:v3"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- 
+      **********************************************************************************************************
+      Document : Dossier de décision d'orientation en ESMS (CNSA_ESMS-Decision)
+      Auteur : ANS / KER
+      **********************************************************************************************************
+      format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
+      **********************************************************************************************************
+      Historique:
+      16/04/2024:   administrativeGenderCode pointé vers le JDV_J143-AdministrativeGender-CISIS
+                    valeur du préfix remplacée par le code plutôt que le display du JDV_J245-Civilite-CISIS
+      **********************************************************************************************************
+   -->
     <realmCode code="FR"/>
     <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
     <templateId root="1.2.250.1.213.1.1.1.4.8"/>
@@ -56,7 +68,7 @@
                     <!-- Prénom utilisé : Elément obligatoire pour l'identité INS -->
                     <given qualifier="CL">Marie</given>
                 </name>
-                <administrativeGenderCode code="F" displayName="Féminin" codeSystem="1.2.250.1.213.2.53"/>
+                <administrativeGenderCode code="F" displayName="Féminin" codeSystem="2.16.840.1.113883.5.1"/>
                 <birthTime value="19960531"/>
                 
                 <!-- Mesure de protection  -->
@@ -114,7 +126,7 @@
             <cnsaSDO:autoriteParentale value="true"></cnsaSDO:autoriteParentale> 
             <relatedPerson>
                 <name>
-                    <prefix>Madame</prefix>
+                    <prefix>MME</prefix>
                     <family>Lafayette</family>
                     <given>Elise</given>
                  </name>
