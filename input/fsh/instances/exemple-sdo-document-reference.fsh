@@ -3,8 +3,7 @@ InstanceOf: SDODocumentReference
 Title: "exemple-sdo-document-reference"
 Description: "Exemple de ressource DocumentReference suivant le profil SDODocumentReference"
 Usage: #example
-* identifier.use = #usual
-* identifier.value = "idDecision"
+* identifier[idDecision].value = "idDecision"
 * status = #current
 * content.attachment.contentType = #text/plain
 * content.attachment.language = #fr
