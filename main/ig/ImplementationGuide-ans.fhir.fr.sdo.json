@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2024-04-15T07:06:55+00:00",
+  "date" : "2024-04-16T07:58:07+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -726,6 +726,18 @@
       },
       "name" : "exemple-bundle-resultat-recherche-decision-evaluation",
       "description" : "Exemple de ressource Bundle suivant le profil ESMSBundleResultatRechercheDecisionEvaluation",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/exemple-bundle-resultat-recherche-decision-evaluation-elements"
+      },
+      "name" : "exemple-bundle-resultat-recherche-decision-evaluation-elements",
+      "description" : "Exemple de ressource Bundle suivant le profil ESMSBundleResultatRechercheDecisionEvaluation et modifié par une requête utilisant le paramètre _elements",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
     },
     {
