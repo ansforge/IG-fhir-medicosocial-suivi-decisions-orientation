@@ -2,7 +2,7 @@ Instance: ESMSProducteur
 InstanceOf: CapabilityStatement
 Usage: #definition
 * name = "ESMSProducteur"
-* title = "CI-SIS - Suivi-Des-Orientations - Producteur - SI-ESMS"
+* title = "SI-ESMS-Producteur"
 * status = #active
 * experimental = false
 * date = "2023-06-27T15:51:35+02:00"

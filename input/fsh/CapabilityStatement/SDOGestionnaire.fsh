@@ -2,7 +2,7 @@ Instance: gestionnaire-sdo
 InstanceOf: CapabilityStatement
 Usage: #definition
 * name = "SDOgestionnaire"
-* title = "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO"
+* title = "SI-SdO-Gestionnaire"
 * status = #active
 * experimental = false
 * date = "2023-06-27T15:51:35+02:00"
