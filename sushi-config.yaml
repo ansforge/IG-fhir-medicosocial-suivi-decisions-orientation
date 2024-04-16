@@ -60,7 +60,8 @@ pages:
         title: OID MDPH associés à la spécification
     annexes_Diagramme.md:
         title: Diagramme de Séquence SI-MDPH / SI-SDO / SI-ESMS
-    
+    tests.md:
+        title: Solutions de tests
 menu:
     Accueil: index.html
     Contenu du dossier : contenu_dossier.html
@@ -75,6 +76,7 @@ menu:
     Ressources de conformité:
         Ressource FHIR : liste_profils.html
         Ressource CDA : ressource_cda.html
+    Tests: tests.html
     Annexes: 
         Glossaire: annexes_Glossaire.html
         Nomenclatures de référence:  annexes_Nomenclature.html
@@ -86,4 +88,5 @@ menu:
         Téléchargements et usage: downloads.html
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
-    Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
+        "Documentation": new-tab https://interop.esante.gouv.fr/ig/documentation/
+   
