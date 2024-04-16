@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-16T07:58:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-16T08:04:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -545,30 +545,6 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/ESMSProducteur> ;
-         fhir:reference [ fhir:v "CapabilityStatement/ESMSProducteur" ]
-       ] ;
-       fhir:name [ fhir:v "CI-SIS - Suivi-Des-Orientations - Producteur - SI-ESMS" ] ;
-       fhir:description [ fhir:v "Le rôle du producteur est de créer et transmettre l'accord de la personne en situation de handicap pour pouvoir accéder à son évaluation. Le producteur transmets également les statuts de la personne orientée en fonction de son avancée dans le processus d’orientations. \n   Il correspond au SI-ESMS." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/gestionnaire-sdo> ;
-         fhir:reference [ fhir:v "CapabilityStatement/gestionnaire-sdo" ]
-       ] ;
-       fhir:name [ fhir:v "CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO" ] ;
-       fhir:description [ fhir:v "Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.\n   Il correspond au SI-SDO." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -577,18 +553,6 @@
        ] ;
        fhir:name [ fhir:v "DocumentReferenceTypeESMSValueSet" ] ;
        fhir:description [ fhir:v "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/ESMSConsommateur> ;
-         fhir:reference [ fhir:v "CapabilityStatement/ESMSConsommateur" ]
-       ] ;
-       fhir:name [ fhir:v "ESMS Consommateur" ] ;
-       fhir:description [ fhir:v "Le rôle du consommateur est de recueillir le dossier d'une personne orientée pour l'examiner, ainsi que son évaluation par la CDAPH. \n   Le consommateur suit également les entrées des personnes orientées dans d'autres structures ainsi que la prise en compte d'une admission impossible par la MDPH.\n   Il correspond au SI-ESMS." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -778,6 +742,42 @@
        ] ;
        fhir:name [ fhir:v "SDOTask" ] ;
        fhir:description [ fhir:v "Profil utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/ESMSConsommateur> ;
+         fhir:reference [ fhir:v "CapabilityStatement/ESMSConsommateur" ]
+       ] ;
+       fhir:name [ fhir:v "SI-ESMS-Consommateur" ] ;
+       fhir:description [ fhir:v "Le rôle du consommateur est de recueillir le dossier d'une personne orientée pour l'examiner, ainsi que son évaluation par la CDAPH. \n   Le consommateur suit également les entrées des personnes orientées dans d'autres structures ainsi que la prise en compte d'une admission impossible par la MDPH.\n   Il correspond au SI-ESMS." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/ESMSProducteur> ;
+         fhir:reference [ fhir:v "CapabilityStatement/ESMSProducteur" ]
+       ] ;
+       fhir:name [ fhir:v "SI-ESMS-Producteur" ] ;
+       fhir:description [ fhir:v "Le rôle du producteur est de créer et transmettre l'accord de la personne en situation de handicap pour pouvoir accéder à son évaluation. Le producteur transmets également les statuts de la personne orientée en fonction de son avancée dans le processus d’orientations. \n   Il correspond au SI-ESMS." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/gestionnaire-sdo> ;
+         fhir:reference [ fhir:v "CapabilityStatement/gestionnaire-sdo" ]
+       ] ;
+       fhir:name [ fhir:v "SI-SdO-Gestionnaire" ] ;
+       fhir:description [ fhir:v "Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.\n   Il correspond au SI-SDO." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

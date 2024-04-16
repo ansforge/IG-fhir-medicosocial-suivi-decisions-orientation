@@ -10,7 +10,7 @@
   <name value="SuiviDecisionsOrientation"/>
   <title value="Médicosocial - Suivi Décisions Orientation"/>
   <status value="active"/>
-  <date value="2024-04-16T07:58:07+00:00"/>
+  <date value="2024-04-16T08:04:57+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -472,28 +472,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/ESMSProducteur"/>
-      </reference>
-      <name value="CI-SIS - Suivi-Des-Orientations - Producteur - SI-ESMS"/>
-      <description value="Le rôle du producteur est de créer et transmettre l'accord de la personne en situation de handicap pour pouvoir accéder à son évaluation. Le producteur transmets également les statuts de la personne orientée en fonction de son avancée dans le processus d’orientations. &#xA;   Il correspond au SI-ESMS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/gestionnaire-sdo"/>
-      </reference>
-      <name value="CI-SIS Suivi_Des_Orientations - Gestionnaire - SI-SDO"/>
-      <description value="Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.&#xA;   Il correspond au SI-SDO."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -501,17 +479,6 @@
       </reference>
       <name value="DocumentReferenceTypeESMSValueSet"/>
       <description value="Code System pour la définition des éléments spécifiques de input dans ressource SDOTask"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/ESMSConsommateur"/>
-      </reference>
-      <name value="ESMS Consommateur"/>
-      <description value="Le rôle du consommateur est de recueillir le dossier d'une personne orientée pour l'examiner, ainsi que son évaluation par la CDAPH. &#xA;   Le consommateur suit également les entrées des personnes orientées dans d'autres structures ainsi que la prise en compte d'une admission impossible par la MDPH.&#xA;   Il correspond au SI-ESMS."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -666,6 +633,39 @@
       </reference>
       <name value="SDOTask"/>
       <description value="Profil utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ESMSConsommateur"/>
+      </reference>
+      <name value="SI-ESMS-Consommateur"/>
+      <description value="Le rôle du consommateur est de recueillir le dossier d'une personne orientée pour l'examiner, ainsi que son évaluation par la CDAPH. &#xA;   Le consommateur suit également les entrées des personnes orientées dans d'autres structures ainsi que la prise en compte d'une admission impossible par la MDPH.&#xA;   Il correspond au SI-ESMS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ESMSProducteur"/>
+      </reference>
+      <name value="SI-ESMS-Producteur"/>
+      <description value="Le rôle du producteur est de créer et transmettre l'accord de la personne en situation de handicap pour pouvoir accéder à son évaluation. Le producteur transmets également les statuts de la personne orientée en fonction de son avancée dans le processus d’orientations. &#xA;   Il correspond au SI-ESMS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/gestionnaire-sdo"/>
+      </reference>
+      <name value="SI-SdO-Gestionnaire"/>
+      <description value="Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.&#xA;   Il correspond au SI-SDO."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
