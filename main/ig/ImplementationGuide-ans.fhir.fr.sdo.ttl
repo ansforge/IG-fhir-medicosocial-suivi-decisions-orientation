@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-16T08:04:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-16T08:07:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -939,6 +939,14 @@
          ] ) ;
          fhir:name [ fhir:v "annexes_Diagramme.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Diagramme de Séquence SI-MDPH / SI-SDO / SI-ESMS" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "tests.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "tests.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Solutions de tests" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
