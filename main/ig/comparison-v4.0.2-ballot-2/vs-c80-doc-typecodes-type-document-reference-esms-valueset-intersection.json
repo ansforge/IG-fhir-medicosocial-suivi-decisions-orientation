@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "532439d6-a7a0-481f-9a44-5bbaa241b1de-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/532439d6-a7a0-481f-9a44-5bbaa241b1de-9",
+  "name" : "IntersectionDocumentTypeValueSetAndDocumentReferenceTypeESMSValueSet",
+  "title" : "Intersection of Document Type Value Set And DocumentReferenceTypeESMSValueSet",
+  "status" : "active",
+  "date" : "2024-04-18T09:01:18+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "57830-2",
+        "display" : "Admission request Document"
+      },
+      {
+        "code" : "51848-0",
+        "display" : "Assessment note"
+      }]
+    }]
+  }
+}
