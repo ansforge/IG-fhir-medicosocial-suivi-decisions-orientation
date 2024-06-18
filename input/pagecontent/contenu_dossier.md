@@ -1195,7 +1195,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">A renseigner uniquement si l&rsquo;&eacute;l&eacute;ment use de l&rsquo;adresse prend la valeur PST</span></p>
             </td>
         </tr>
-        <tr>
+        <!--tr>
             <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">2</span></p>
             </td>
@@ -1211,8 +1211,8 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">El&eacute;ment regroupant les sous-&eacute;l&eacute;ments permettant de d&eacute;finir les dates d&rsquo;emm&eacute;nagement et de d&eacute;m&eacute;nagement.</span></p>
             </td>
-        </tr>
-        <tr>
+        </tr-->
+        <!--tr>
             <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">3</span></p>
             </td>
@@ -1229,8 +1229,8 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Date d&rsquo;emm&eacute;nagement au&nbsp;</span><span style="color:#C00000;">format aaaammjj</span></p>
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">A renseigner uniquement s&rsquo;il y a eu un transfert.</span></p>
             </td>
-        </tr>
-        <tr>
+        </tr-->
+        <!--tr>
             <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">3</span></p>
             </td>
@@ -1247,7 +1247,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Date de d&eacute;m&eacute;nagement au&nbsp;</span><span style="color:#C00000;">format aaaammjj</span></p>
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">A renseigner uniquement s&rsquo;il y a eu un transfert.</span></p>
             </td>
-        </tr>
+        </tr-->
         <tr>
             <td rowspan="2" style="width:35.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
