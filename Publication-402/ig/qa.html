@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 27, errors = 0, warn = 22, info = 91-->
+<!-- broken links = 27, errors = 0, warn = 22, info = 18-->
 <head>
   <title>SuiviDecisionsOrientation : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,18 +36,35 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SuiviDecisionsOrientation</h1>
- <p>Generated Wed Jun 19 08:39:51 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-3 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Jun 19 09:41:55 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.sdo, Canonical = https://interop.esante.gouv.fr/ig/fhir/sdo</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li>Version 4.0.2-ballot-3 has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
-<li>Publication Request is for version v4.0.2-ballot-3 which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>ans.fhir.fr.sdo</td></tr>
+ <tr><td>version</d><td>4.0.2</td></tr>
+ <tr><td>path</d><td>https://interop.esante.gouv.fr/ig/fhir/sdo/4.0.2</td></tr>
+ <tr><td>Pub-Mode</d><td>milestone</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>Release-Label</d><td>trial-use</td></tr>
+ <tr><td>sequence</d><td>trial-use</td></tr>
+ <tr><td>desc</d><td>Ce document présente les spécifications techniques du volet « SI-ESMS » (ST SI-ESMS). Ces dernières spécifient les échanges d’information entre le Système d’Information de Suivi des Orientations (SI-SdO) et le Système d'Information des Etablissements et Services Médico-Sociaux (SI-ESMS) suite à une notification de décision d’orientation prise par la Commission des Droits et de l’Autonomie des Personnes Handicapées (CDAPH).</td></tr>
+ <tr><td>descmd</d><td><p>Release de l'Implementation Guide FHIR du volet « SI-ESMS ».</p>
+<ul>
+<li><a href="https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/207">Mise à jour SDOTask.fsh : ajout du JDV J264-ModePriseEnCharge-MDPH dans le profil SDOtask</a>
+-<a href="https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/208">Mise à jour document CDA : ContenuDossier - supprimer les éléments useablePeriod</a>
+-<a href="https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/209">Mise à jour du fichier XSD</a></li>
+</ul>
+</td></tr>
+</table>
+<ul><li>descmd cannot contain a ' <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request ci-build found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">19 Suppressed Issues</a>
 </td></tr>
- <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.sdo</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.2-ballot-3</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/sdo</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fhir.fr.sdo</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.2</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/fhir/sdo</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.5.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.5.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> ans.fr.nos</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/nos</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://interop.esante.gouv.fr/ig/nos/1.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 1.2.0</td></tr>
@@ -69,8 +86,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-scope.html">ConsentScopeCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-category.html">ConsentCategoryCodes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
- (41 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ (50 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
  (17 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
  (11 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (8 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
@@ -79,8 +96,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-policy.html">ConsentPolicyRuleCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-consent-provision-type.html">ConsentProvisionType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
- (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
@@ -91,7 +107,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/task.html">Task</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
@@ -102,7 +119,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a>
  (1 uses)
@@ -118,10 +134,10 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> </td></tr>
+ <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v4.0.2-ballot-3/index.html">Comparison with version 4.0.2-ballot-3</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 22, info = 91, broken links = 27</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 22, info = 18, broken links = 27</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -137,7 +153,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>25</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_CapabilityStatement-ESMSConsommateur"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSConsommateur</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -179,10 +195,10 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>36</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Task-exemple-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>17</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Task-exemple-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_ValueSet-type-document-reference-esms-valueset"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -343,89 +359,20 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[0]&#8203;.type (l25&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[1]&#8203;.type (l38&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[2]&#8203;.type (l49&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[2]&#8203;.value&#8203;.ofType(CodeableConcept) (l57&#8203;/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[2]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l57&#8203;/c14)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[3]&#8203;.type (l68&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[4]&#8203;.type (l81&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[5]&#8203;.type (l94&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[6]&#8203;.type (l113&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[7]&#8203;.type (l124&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[8]&#8203;.type (l137&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[9]&#8203;.type (l148&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[10]&#8203;.type (l167&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[11]&#8203;.type (l186&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[12]&#8203;.type (l197&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[12]&#8203;.value&#8203;.ofType(CodeableConcept) (l205&#8203;/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_J264-ModePriseEnCharge-MDPH/FHIR/JDV_J264-ModePriseEnCharge-MDPH/' not found</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[13]&#8203;.type (l216&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[14]&#8203;.type (l235&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-1-in-bundle*&#8203;/&#8203;.input[15]&#8203;.type (l246&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[0]&#8203;.type (l282&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[1]&#8203;.type (l295&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[2]&#8203;.type (l306&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[2]&#8203;.value&#8203;.ofType(CodeableConcept) (l314&#8203;/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[2]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l314&#8203;/c14)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[3]&#8203;.type (l325&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[4]&#8203;.type (l338&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[5]&#8203;.type (l351&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Task&#8203;/exemple-sdo-task-2-in-bundle*&#8203;/&#8203;.input[6]&#8203;.type (l370&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td title="BUNDLE_SEARCH_NOSELF"><b>SearchSet Bundles should have a self link that specifies what the search was</b></td>
@@ -543,19 +490,19 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c70551)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c70522)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c107621)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c107528)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c125610)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c125496)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[75]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c154660)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[75]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c154511)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c158556)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c158402)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
@@ -571,13 +518,13 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c49963)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c49932)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c63643)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c63598)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[72]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c135130)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[72]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c134989)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -600,13 +547,13 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c57125)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c57094)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c70805)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c70760)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c136849)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c136715)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -619,112 +566,10 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c267777)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c267721)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[50]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c294373)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[62]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c313030)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c321425)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[74]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c329828)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[80]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c338436)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[86]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c347204)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[92]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c355803)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[98]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c364180)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[104]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c372754)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[110]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c381432)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[116]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c390057)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[122]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c398954)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[132]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c413182)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[138]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c421846)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[144]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c430294)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[150]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c439139)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[156]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c447744)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[162]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c456351)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c468693)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c469134)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c469574)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c470222)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c471063)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[20]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c471708)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c472128)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c472706)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c473397)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[32]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c474038)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[35]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c474972)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[39]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c475805)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[42]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c476491)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[45]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c476976)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[48]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c477879)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[51]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c478521)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[54]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c479153)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[50]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c294271)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -736,62 +581,14 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[0].type (l13/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[1].type (l26/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[2].type (l37/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Task&#8203;.input[2]&#8203;.value&#8203;.ofType(CodeableConcept) (l45&#8203;/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Task&#8203;.input[2]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l45&#8203;/c8)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>)</td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[3].type (l56/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[4].type (l69/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[5].type (l82/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[6].type (l101/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[7].type (l112/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[8].type (l125/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[9].type (l136/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[10].type (l155/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[11].type (l174/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[12].type (l185/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Task&#8203;.input[12]&#8203;.value&#8203;.ofType(CodeableConcept) (l193&#8203;/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_J264-ModePriseEnCharge-MDPH/FHIR/JDV_J264-ModePriseEnCharge-MDPH/' not found</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[13].type (l204/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[14].type (l223/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Task.input[15].type (l234/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
    </tr>
 </table>
 <hr/>
@@ -876,75 +673,6 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
 <h2>MSG_DRAFT</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.html">fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
      <td><a href="Consent-exemple-consent.html">fsh-generated/resources/Consent-exemple-consent.json</a></td><td><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|4.0.1</b></td>
    </tr>
    <tr style="background-color: #fffff2">
@@ -952,156 +680,6 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-esms-consent.html">fsh-generated/resources/StructureDefinition-esms-consent.json</a></td><td><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Task-exemple-sdo-task.html">fsh-generated/resources/Task-exemple-sdo-task.json</a></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem|4.0.2-ballot-3</b></td>
    </tr>
 </table>
 <hr/>
