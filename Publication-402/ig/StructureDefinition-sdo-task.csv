@@ -557,7 +557,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","???","CE/CNE/CWE"
 "Task.input:temporaliteAccueil.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAcJDV_J264-ModeEtCentreDePriseEnCharge-MDPHcueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR","",,,,"Task.input.value[x]",1,1,"ele-1
+","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR","",,,,"Task.input.value[x]",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","???"
 "Task.input:accueilSequentiel","Task.input","accueilSequentiel","Supporting Information
@@ -625,7 +625,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","???","CE/CNE/CWE"
 "Task.input:modePriseCharge.value[x]","Task.input.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS//FHIR/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/","",,,,"Task.input.value[x]",1,1,"ele-1
+","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/FHIR/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH","",,,,"Task.input.value[x]",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","???"
 "Task.input:modePriseCharge.value[x].id","Task.input.value[x].id","","","",0,1,"","","","string {[]} {[]}
