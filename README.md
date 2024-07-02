@@ -124,7 +124,7 @@ Les workflows associés à ce repository (.github/workflows) permettent :
 
 * D'executer Sushi pour vérifier la grammaire
 * De faire les tests avec le validator_cli
-* De publier les pages : https://ansforge.github.io/IG-fhir-medicosocial-suivi-decisions-orientation/ig/{nom de la branche} (ex : https://ansforge.github.io/IG-fhir-medicosocial-suivi-decisions-orientation/ig/main)
+* De publier les pages : https://ansforge.github.io/IG-fhir-medicosocial-suivi-decisions-orientation/{nom de la branche}/ig (ex : https://ansforge.github.io/IG-fhir-medicosocial-suivi-decisions-orientation/main/ig)
 
 # Notes
 
