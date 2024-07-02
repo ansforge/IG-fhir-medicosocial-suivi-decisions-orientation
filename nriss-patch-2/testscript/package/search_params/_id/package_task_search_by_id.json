@@ -1,0 +1,80 @@
+{
+  "id": "Package-Task-Search_by-Id",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Package_Task_Search_by_Id",
+  "title": "package task search_by id",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-07-02T09:52:42+00:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_task",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_task.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "S6wMCvqMzj9Z35iI",
+      "expression": "Task.id",
+      "sourceId": "KxQ0OzYxhwgaguwP"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "KxQ0OzYxhwgaguwP",
+          "sourceId": "example_task"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "Task",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_id=${S6wMCvqMzj9Z35iI}"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "Task",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${S6wMCvqMzj9Z35iI}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}
