@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ESMSConsent - Médicosocial - Suivi Décisions Orientation v4.0.2-ballot-3</title>
+    <title>ESMSConsent - Médicosocial - Suivi Décisions Orientation v4.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,7 +60,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Médicosocial - Suivi Décisions Orientation</span>
             <br/>
-            <span style="display:inline-block;">4.0.2-ballot-3 - trial-use
+            <span style="display:inline-block;">4.0.2 - trial-use
 
 
 
@@ -220,7 +220,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Suivi Décisions Orientation - Local Development build (v4.0.2-ballot-3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Suivi Décisions Orientation - Local Development build (v4.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -304,13 +304,13 @@
 
   </h2>
 
-  <table class="colsd">
+  <table class="colsi">
 
     <tr>
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">4.0.2-ballot-3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent|4.0.2-ballot-3"/></span>
+      <span class="copy-text">4.0.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent|4.0.2"/></span>
       </td>
     </tr>
 
@@ -324,9 +324,9 @@
 
       <td colspan="4">
         
-          Draft
+          Active
           
-            as of 2024-06-18
+            as of 2024-07-02
           
         
       </td>
@@ -725,7 +725,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Consent.modifierExtension, Consent.provision.modifierExtension, Consent.provision.data.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
 <tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
 <tr><td>ppc-3</td><td>error</td><td>Consent</td><td>IF Scope=research, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</td><td></td></tr>
@@ -1434,7 +1434,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Consent.meta.extension, Consent.extension, Consent.modifierExtension, Consent.policy.extension, Consent.policy.modifierExtension, Consent.verification.extension, Consent.verification.modifierExtension, Consent.provision.extension, Consent.provision.modifierExtension, Consent.provision.actor.extension, Consent.provision.actor.modifierExtension, Consent.provision.data.extension, Consent.provision.data.modifierExtension, Consent.provision.data.reference.extension, Consent.provision.data.reference.identifier.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Consent.provision.period, Consent.provision.dataPeriod, Consent.provision.data.reference.identifier.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
 <tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
@@ -1913,7 +1913,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Consent.modifierExtension, Consent.provision.modifierExtension, Consent.provision.data.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
 <tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
 <tr><td>ppc-3</td><td>error</td><td>Consent</td><td>IF Scope=research, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</td><td></td></tr>
@@ -2622,7 +2622,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Consent.meta.extension, Consent.extension, Consent.modifierExtension, Consent.policy.extension, Consent.policy.modifierExtension, Consent.verification.extension, Consent.verification.modifierExtension, Consent.provision.extension, Consent.provision.modifierExtension, Consent.provision.actor.extension, Consent.provision.actor.modifierExtension, Consent.provision.data.extension, Consent.provision.data.modifierExtension, Consent.provision.data.reference.extension, Consent.provision.data.reference.identifier.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Consent.provision.period, Consent.provision.dataPeriod, Consent.provision.data.reference.identifier.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
 <tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
@@ -2822,7 +2822,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2-ballot-3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 18, 2024 17:21+0000">2024-06-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 2, 2024 09:49+0000">2024-07-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
