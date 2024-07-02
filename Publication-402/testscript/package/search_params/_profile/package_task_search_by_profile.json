@@ -6,7 +6,7 @@
   "title": "package task search_by profile",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-02T09:47:56+00:00",
+  "date": "2024-07-02T13:04:41+00:00",
   "publisher": "The MITRE Corporation",
   "fixture": [
     {
@@ -20,9 +20,9 @@
   ],
   "variable": [
     {
-      "name": "1CH9mpaACq8bwDMp",
+      "name": "bvAfmhkGCNvfvngO",
       "expression": "Task.meta.profile",
-      "sourceId": "w8Lfi8aCvoki4MXU"
+      "sourceId": "nj3GhR1ltAXChS6C"
     }
   ],
   "setup": {
@@ -35,7 +35,7 @@
           },
           "label": "Operation_1",
           "encodeRequestUrl": false,
-          "responseId": "w8Lfi8aCvoki4MXU",
+          "responseId": "nj3GhR1ltAXChS6C",
           "sourceId": "example_task"
         }
       }
@@ -54,7 +54,7 @@
             "resource": "Task",
             "label": "Operation_2",
             "encodeRequestUrl": false,
-            "params": "?_profile=${1CH9mpaACq8bwDMp}"
+            "params": "?_profile=${bvAfmhkGCNvfvngO}"
           }
         }
       ]
@@ -71,7 +71,7 @@
           "resource": "Task",
           "label": "Operation_3",
           "encodeRequestUrl": false,
-          "params": "/${1CH9mpaACq8bwDMp}"
+          "params": "/${bvAfmhkGCNvfvngO}"
         }
       }
     ]
