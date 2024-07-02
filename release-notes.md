@@ -6,3 +6,4 @@
 * Mise à jour document CDA : ContenuDossier - supprimer les éléments useablePeriod [208]](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/208)
 * Mise à jour du fichier XSD [209](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/209)
 * Préparation de la publication 4.0.2 [210] (https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/210)
+* MAJ IG [214] (https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/214)
