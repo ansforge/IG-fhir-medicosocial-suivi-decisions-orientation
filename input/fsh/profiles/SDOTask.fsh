@@ -65,7 +65,7 @@ Description: "Profil utilisé pour véhiculer les informations sur la position d
 * input[modePriseCharge] obeys regle-ModePriseEnCharge
 * input[modePriseCharge].type = InputTaskSDOCodeSystem#modePriseCharge
 * input[modePriseCharge].value[x] only CodeableConcept
-* input[modePriseCharge].value[x] from $JDV_J264-ModePriseEnCharge-MDPH (required)
+* input[modePriseCharge].value[x] from $JDV_J264-ModeEtCentreDePriseEnCharge-MDPH (required)
 * input[modePriseCharge].valueCodeableConcept.coding 1..1
 * input[statutUnite] ^short = "Statut de la personne orientée au niveau de l’unité, définis dans le cadre fonctionnel du système d'information de suivi des orientations de la CNSA"
 * input[statutUnite].type = InputTaskSDOCodeSystem#statutUnite

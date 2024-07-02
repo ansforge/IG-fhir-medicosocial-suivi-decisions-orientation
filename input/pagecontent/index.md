@@ -3,6 +3,7 @@
 This document presents the technical specifications of the “SI-ESMS” section. which specify the exchanges of information between the Orientation Monitoring Information System (SI-SdO) and the Information System for Medical-Social Establishments and Services (SI-ESMS) following notification of an orientation decision
 </p>
 
+<!--
 <blockquote class="stu-note">
 <p>
   <b>Attention !</b>
@@ -10,6 +11,7 @@ This document presents the technical specifications of the “SI-ESMS” section
  Cet Implementation Guide est actuellement en concertation.
 </p>
 </blockquote>
+-->
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">

@@ -1,11 +1,11 @@
 {
     "package-id" : "ans.fhir.fr.sdo",
-    "version" : "4.0.2-ballot-3",
-    "path" : "https://interop.esante.gouv.fr/ig/fhir/sdo/4.0.2-ballot-3",
+    "version" : "4.0.2",
+    "path" : "https://interop.esante.gouv.fr/ig/fhir/sdo/4.0.2",
     "mode" : "milestone",
     "status" : "release",
     "sequence" : "trial-use",
     "desc" : "Ce document présente les spécifications techniques du volet « SI-ESMS » (ST SI-ESMS). Ces dernières spécifient les échanges d’information entre le Système d’Information de Suivi des Orientations (SI-SdO) et le Système d'Information des Etablissements et Services Médico-Sociaux (SI-ESMS) suite à une notification de décision d’orientation prise par la Commission des Droits et de l’Autonomie des Personnes Handicapées (CDAPH).",
-    "descmd" : "Release de l'Implementation Guide FHIR du volet « SI-ESMS ».\n - [Passage des RC et exemples en FSH + création des CS](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/166)\n - [MAJ des règles de gestion sur les SD](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/172)\n - [Mise à jour de la l'annexe nomenclatures de référence](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/182)\n - [Création menu test + modif structure IG](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/183)\n - [Création nouvel exemple Bundle + MAJ des exemples existants](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/184)\n - [Ajout des CapabilityStatement dans la liste des ressources FHIR ](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/185)\n - [Corectifs contenuDossier](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/188)",
+    "descmd" : "@release-notes.md",
     "ci-build" : "https://ansforge.github.io/IG-fhir-medicosocial-suivi-decisions-orientation/main/ig"
   }
