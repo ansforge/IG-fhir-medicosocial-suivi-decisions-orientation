@@ -21,7 +21,7 @@ activate ESMS
 
 
 ESMS-[#black]> SDO : Flux 1.1 **RecherchePersonneOrienteeDecision** \n <color #FireBrick>GET [base]/DocumentReference?type=57830-2&_lastUpdated=gt[dateDernièreRecherche]&_elements=id</color>
-SDO-[#black]-> ESMS: Flux 1.2 **ResultatRecherchePersonneOrienteeDecision** \n <color #FireBrick>OK 200 (+ ressource "Bundle")</color>
+SDO-[#black]-> ESMS: Flux 1.2 **ResultatRecherchePersonneOrienteeDecision** \n <color #FireBrick>OK 200 (+ ressource "Bundle" suivant le profil "ESMSBundleResultatRechercheDecisionEvaluation")</color>
 
 note left
 Liste des identifiants des ressources 
@@ -31,7 +31,7 @@ end note
 loop
 
 ESMS-[#black]> SDO : Flux 1.3 **ConsultationPersonneOrienteeDecision** \n <color #FireBrick>GET [base]/DocumentReference/id</color>
-SDO-[#black]-> ESMS: Flux 1.4 **ResultatConsultationPersonneOrienteeDecision** \n <color #FireBrick>OK 200 (+ ressource "DocumentReference")</color>
+SDO-[#black]-> ESMS: Flux 1.4 **ResultatConsultationPersonneOrienteeDecision** \n <color #FireBrick>OK 200 (+ ressource "DocumentReference" suivant le profil "ESMSDocumentReference")</color>
 
 note left
 La ressource DocumentReference contient 
