@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5a2ba5a2-7908-4491-ac16-42ddacb6f297"/>
+  <id value="1528683b-5b41-4bfc-9848-b6fae3fd4dbe"/>
   <meta>
-    <lastUpdated value="2024-07-03T12:52:21.183+00:00"/>
+    <lastUpdated value="2024-09-27T09:57:43.126+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -19,7 +19,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.77</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
@@ -35,7 +35,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="null-x-http---loinc.org-57830-2"> </a>  
+                  <a name="x-http://loinc.org-57830-2"> </a>  
                   <a href="https://loinc.org/57830-2/">57830-2</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -43,7 +43,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="null-x-http---loinc.org-51848-0"> </a>  
+                  <a name="x-http://loinc.org-51848-0"> </a>  
                   <a href="https://loinc.org/51848-0/">51848-0</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -58,7 +58,7 @@
         <title value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-07-03T12:52:21+00:00"/>
+        <date value="2024-09-27T09:57:43+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -67,8 +67,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:677cbddd-6eee-4292-9c48-e4a64794cc33"/>
-          <timestamp value="2024-07-03T12:52:57+00:00"/>
+          <identifier value="urn:uuid:fe9757ed-5352-4355-87e5-424dab17fae5"/>
+          <timestamp value="2024-09-27T09:58:13+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -89,11 +89,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.77"/>
+            <valueUri value="http://loinc.org|2.78"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.77"/>
+            <valueUri value="http://loinc.org|2.78"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
