@@ -6,7 +6,7 @@
   "title": "package documentreference search_by id",
   "status": "draft",
   "experimental": true,
-  "date": "2024-09-27T08:51:42+00:00",
+  "date": "2024-09-27T09:13:24+00:00",
   "publisher": "The MITRE Corporation",
   "fixture": [
     {
@@ -20,9 +20,9 @@
   ],
   "variable": [
     {
-      "name": "TvQrGgoFoXOyNAyI",
+      "name": "xrpr6rn2KvaXHVQL",
       "expression": "DocumentReference.id",
-      "sourceId": "eAhSqEtTlvBdW9wP"
+      "sourceId": "W7vY3ONqZvDwWBeB"
     }
   ],
   "setup": {
@@ -35,7 +35,7 @@
           },
           "label": "Operation_1",
           "encodeRequestUrl": false,
-          "responseId": "eAhSqEtTlvBdW9wP",
+          "responseId": "W7vY3ONqZvDwWBeB",
           "sourceId": "example_documentreference"
         }
       }
@@ -54,7 +54,7 @@
             "resource": "DocumentReference",
             "label": "Operation_2",
             "encodeRequestUrl": false,
-            "params": "?_id=${TvQrGgoFoXOyNAyI}"
+            "params": "?_id=${xrpr6rn2KvaXHVQL}"
           }
         }
       ]
@@ -71,7 +71,7 @@
           "resource": "DocumentReference",
           "label": "Operation_3",
           "encodeRequestUrl": false,
-          "params": "/${TvQrGgoFoXOyNAyI}"
+          "params": "/${xrpr6rn2KvaXHVQL}"
         }
       }
     ]
