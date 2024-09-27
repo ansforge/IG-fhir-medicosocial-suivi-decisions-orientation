@@ -1,13 +1,13 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 0, warn = 26, info = 13
+err = 0, warn = 24, info = 13
 IG Publisher Version: 1.6.28
-Generated Fri Sep 27 16:27:17 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+Generated Fri Sep 27 16:53:59 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 27 / 3 / 0
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 4 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements : 0 / 6 / 3
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms : 0 / 7 / 3
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms : 0 / 6 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSConsommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 0 / 1
@@ -22,7 +22,7 @@ Generated Fri Sep 27 16:27:17 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-bundle-resultat-recherche-notification-esms : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference : 0 / 0 / 4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task : 0 / 0 / 3
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task : 0 / 3 / 1
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task : 0 / 2 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset : 0 / 0 / 1
 </table>
 == n/a ==
@@ -71,7 +71,6 @@ WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation-elements: 
 == fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json ==
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0].resource/*Task/exemple-sdo-task-1-in-bundle*/.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0].resource/*Task/exemple-sdo-task-1-in-bundle*/.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
-WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0].resource/*Task/exemple-sdo-task-1-in-bundle*/.input[12].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH' not found
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[1].resource/*Task/exemple-sdo-task-2-in-bundle*/.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[1].resource/*Task/exemple-sdo-task-2-in-bundle*/.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet Bundles should have a self link that specifies what the search was
@@ -109,5 +108,4 @@ INFORMATION: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[
 == fsh-generated/resources/Task-exemple-sdo-task.json ==
 WARNING: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
 WARNING: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
-WARNING: Task/exemple-sdo-task: Task.input[12].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH' not found
 == fsh-generated/resources/ValueSet-type-document-reference-esms-valueset.json ==
