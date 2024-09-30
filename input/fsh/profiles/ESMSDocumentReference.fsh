@@ -1,7 +1,7 @@
 Profile: ESMSDocumentReference
 Parent: SDODocumentReference
 Id: esms-document-reference
-Description: "Profil pour définir le dossier ESMS"
+Description: "Profil ESMS pour définir le dossier ESMS"
 * obeys regle-NomPieceJointe-type
 * identifier 2..
 * type 1..

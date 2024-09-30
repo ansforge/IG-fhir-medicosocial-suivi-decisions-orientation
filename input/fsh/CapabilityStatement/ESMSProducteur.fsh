@@ -1,5 +1,6 @@
 Instance: ESMSProducteur
 InstanceOf: CapabilityStatement
+Description: "CapabilityStatement du producteur ESMS"
 Usage: #definition
 * name = "ESMSProducteur"
 * title = "SI-ESMS-Producteur"

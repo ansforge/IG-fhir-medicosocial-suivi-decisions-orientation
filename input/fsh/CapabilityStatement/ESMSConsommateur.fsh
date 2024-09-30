@@ -1,5 +1,6 @@
 Instance: ESMSConsommateur
 InstanceOf: CapabilityStatement
+Description: "CapabilityStatement du consommateur ESMS"
 Usage: #definition
 * name = "ESMSConsommateur"
 * title = "SI-ESMS-Consommateur"
