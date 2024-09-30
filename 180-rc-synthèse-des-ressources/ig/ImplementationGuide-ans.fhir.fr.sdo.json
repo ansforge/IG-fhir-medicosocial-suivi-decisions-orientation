@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2024-09-30T09:02:08+00:00",
+  "date" : "2024-09-30T11:49:20+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -653,7 +653,7 @@
         "reference" : "StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
       },
       "name" : "ESMSBundleResultatRechercheDecisionEvaluation",
-      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une décision d'orientation ou d'une évaluation",
+      "description" : "Profil ESMS pour la définition du Bundle de réponse à la recherche d'une décision d'orientation ou d'une évaluation",
       "exampleBoolean" : false
     },
     {
@@ -665,7 +665,7 @@
         "reference" : "StructureDefinition/esms-consent"
       },
       "name" : "ESMSConsent",
-      "description" : "Profil pour la définition de l'accord",
+      "description" : "Profil ESMS pour la définition de l'accord",
       "exampleBoolean" : false
     },
     {
@@ -677,7 +677,7 @@
         "reference" : "StructureDefinition/esms-document-reference"
       },
       "name" : "ESMSDocumentReference",
-      "description" : "Profil pour définir le dossier ESMS",
+      "description" : "Profil ESMS pour définir le dossier ESMS",
       "exampleBoolean" : false
     },
     {
@@ -785,7 +785,7 @@
         "reference" : "StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"
       },
       "name" : "SDOBundleResultatRechercheNotificationESMS",
-      "description" : "Profil pour la définition du Bundle de réponse à la recherche d'une notification",
+      "description" : "Profil SDO pour la définition du Bundle de réponse à la recherche d'une notification",
       "exampleBoolean" : false
     },
     {
@@ -797,7 +797,7 @@
         "reference" : "StructureDefinition/sdo-document-reference"
       },
       "name" : "SDODocumentReference",
-      "description" : "Profil pour définir le dossier SDO",
+      "description" : "Profil SDO pour définir le dossier SDO",
       "exampleBoolean" : false
     },
     {
@@ -809,7 +809,7 @@
         "reference" : "StructureDefinition/sdo-task"
       },
       "name" : "SDOTask",
-      "description" : "Profil utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation",
+      "description" : "Profil ESMS-SDO utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation",
       "exampleBoolean" : false
     },
     {
@@ -821,7 +821,7 @@
         "reference" : "CapabilityStatement/ESMSConsommateur"
       },
       "name" : "SI-ESMS-Consommateur",
-      "description" : "Le rôle du consommateur est de recueillir le dossier d'une personne orientée pour l'examiner, ainsi que son évaluation par la CDAPH. \n   Le consommateur suit également les entrées des personnes orientées dans d'autres structures ainsi que la prise en compte d'une admission impossible par la MDPH.\n   Il correspond au SI-ESMS.",
+      "description" : "CapabilityStatement du consommateur ESMS",
       "exampleBoolean" : false
     },
     {
@@ -833,7 +833,7 @@
         "reference" : "CapabilityStatement/ESMSProducteur"
       },
       "name" : "SI-ESMS-Producteur",
-      "description" : "Le rôle du producteur est de créer et transmettre l'accord de la personne en situation de handicap pour pouvoir accéder à son évaluation. Le producteur transmets également les statuts de la personne orientée en fonction de son avancée dans le processus d’orientations. \n   Il correspond au SI-ESMS.",
+      "description" : "CapabilityStatement du producteur ESMS",
       "exampleBoolean" : false
     },
     {
@@ -845,7 +845,7 @@
         "reference" : "CapabilityStatement/gestionnaire-sdo"
       },
       "name" : "SI-SdO-Gestionnaire",
-      "description" : "Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orientées et leurs statuts.\n   Il correspond au SI-SDO.",
+      "description" : "CapabilityStatement du gestionnaire SDO",
       "exampleBoolean" : false
     }],
     "page" : {
