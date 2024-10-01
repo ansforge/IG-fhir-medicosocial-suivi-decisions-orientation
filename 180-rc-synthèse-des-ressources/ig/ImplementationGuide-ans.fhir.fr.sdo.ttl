@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-09-30T12:00:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-01T07:24:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -717,7 +717,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sdo-bundle-resultat-recherche-notification-esms" ]
        ] ;
        fhir:name [ fhir:v "SDOBundleResultatRechercheNotificationESMS" ] ;
-       fhir:description [ fhir:v "Profil SDO pour la définition du Bundle de réponse à la recherche d'une notification" ] ;
+       fhir:description [ fhir:v "Profil ESMS-SDO pour la définition du Bundle de réponse à la recherche d'une notification" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
