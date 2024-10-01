@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-01T07:24:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-01T08:28:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -564,7 +564,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation" ]
        ] ;
        fhir:name [ fhir:v "ESMSBundleResultatRechercheDecisionEvaluation" ] ;
-       fhir:description [ fhir:v "Profil ESMS pour la définition du Bundle de réponse à la recherche d'une décision d'orientation ou d'une évaluation" ] ;
+       fhir:description [ fhir:v "Profil ESMS créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d’évaluation. Il repose sur le profil ESMSDocumentReference." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -576,7 +576,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-consent" ]
        ] ;
        fhir:name [ fhir:v "ESMSConsent" ] ;
-       fhir:description [ fhir:v "Profil ESMS pour la définition de l'accord" ] ;
+       fhir:description [ fhir:v "Profil ESMS créé dans le contexte du suivi des orientations pour transporter la définition de l’accord." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -588,7 +588,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-document-reference" ]
        ] ;
        fhir:name [ fhir:v "ESMSDocumentReference" ] ;
-       fhir:description [ fhir:v "Profil ESMS pour définir le dossier ESMS" ] ;
+       fhir:description [ fhir:v "Profil ESMS héritant du profil SDODocumentReference. Profil utilisé pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -717,7 +717,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sdo-bundle-resultat-recherche-notification-esms" ]
        ] ;
        fhir:name [ fhir:v "SDOBundleResultatRechercheNotificationESMS" ] ;
-       fhir:description [ fhir:v "Profil ESMS-SDO pour la définition du Bundle de réponse à la recherche d'une notification" ] ;
+       fhir:description [ fhir:v "Profil ESMS-SDO créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -729,7 +729,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sdo-document-reference" ]
        ] ;
        fhir:name [ fhir:v "SDODocumentReference" ] ;
-       fhir:description [ fhir:v "Profil SDO pour définir le dossier SDO" ] ;
+       fhir:description [ fhir:v "Profil SDO utilisé pour véhiculer les données de l’individu, la décision et l’évaluation contenus dans le document CDA" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -741,7 +741,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sdo-task" ]
        ] ;
        fhir:name [ fhir:v "SDOTask" ] ;
-       fhir:description [ fhir:v "Profil ESMS-SDO utilisé pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation" ] ;
+       fhir:description [ fhir:v "Profil ESMS-SDO créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
