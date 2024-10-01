@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-01T08:28:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-01T09:52:34+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -564,7 +564,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation" ]
        ] ;
        fhir:name [ fhir:v "ESMSBundleResultatRechercheDecisionEvaluation" ] ;
-       fhir:description [ fhir:v "Profil ESMS créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d’évaluation. Il repose sur le profil ESMSDocumentReference." ] ;
+       fhir:description [ fhir:v "Profil ESMS créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d’évaluation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
