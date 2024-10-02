@@ -6,7 +6,7 @@
   "title": "package task search_by security",
   "status": "draft",
   "experimental": true,
-  "date": "2024-10-01T09:54:24+00:00",
+  "date": "2024-10-02T07:50:25+00:00",
   "publisher": "The MITRE Corporation",
   "fixture": [
     {
@@ -20,9 +20,9 @@
   ],
   "variable": [
     {
-      "name": "ihc8CT9PuJRohjYo",
+      "name": "CCnsCLV73W9700nL",
       "expression": "Task.meta.security",
-      "sourceId": "H5lCwolFo4mOGdbt"
+      "sourceId": "0Yna49jw29ngfMZ4"
     }
   ],
   "setup": {
@@ -35,7 +35,7 @@
           },
           "label": "Operation_1",
           "encodeRequestUrl": false,
-          "responseId": "H5lCwolFo4mOGdbt",
+          "responseId": "0Yna49jw29ngfMZ4",
           "sourceId": "example_task"
         }
       }
@@ -54,7 +54,7 @@
             "resource": "Task",
             "label": "Operation_2",
             "encodeRequestUrl": false,
-            "params": "?_security=${ihc8CT9PuJRohjYo}"
+            "params": "?_security=${CCnsCLV73W9700nL}"
           }
         }
       ]
@@ -71,7 +71,7 @@
           "resource": "Task",
           "label": "Operation_3",
           "encodeRequestUrl": false,
-          "params": "/${ihc8CT9PuJRohjYo}"
+          "params": "/${CCnsCLV73W9700nL}"
         }
       }
     ]
