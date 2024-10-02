@@ -14,19 +14,19 @@ Liste des profils définissant les contraintes appliquées sur les ressources FH
 ### CapabilityStatement
 
 Liste des CapabilityStatement définis dans le volet SI-ESMS de ce guide d'implémentation :
-{% sql SELECT '[' || Title ||'](CapabilityStatement-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'CapabilityStatement' %}
+{% sql SELECT '[' || Title ||'](CapabilityStatement-' || id || '.html)' as "Titre du CapabilityStatement", Description FROM Resources WHERE Type = 'CapabilityStatement' %}
 
 ### CodeSystem
 
 Liste des CodeSystem définis dans le volet SI-ESMS de ce guide d'implémentation :
-{% sql SELECT '[' || Title ||'](CodeSystem-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'CodeSystem' %}
+{% sql SELECT '[' || Title ||'](CodeSystem-' || id || '.html)' as "Titre du CodeSystem", Description FROM Resources WHERE Type = 'CodeSystem' %}
 
 ### ValueSet
 
 Liste des ValueSet définis dans le volet SI-ESMS de ce guide d'implémentation :
-{% sql SELECT '[' || Title ||'](ValueSet-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'ValueSet' %}
+{% sql SELECT '[' || Title ||'](ValueSet-' || id || '.html)' as "Titre du ValueSet", Description FROM Resources WHERE Type = 'ValueSet' %}
 
 ### Instances
 
-Liste des instances de ressources définis dans le volet SI-ESMS de ce guide d'implémentation :
-{% sql SELECT Id as "Titre du profil", Description FROM Resources WHERE Description like 'Exemple de%' %}
+Liste des instances de ressources définies dans le volet SI-ESMS de ce guide d'implémentation :
+{% sql SELECT Id as " Id de l'instance" FROM Resources WHERE Id like 'exemple-%' %}
