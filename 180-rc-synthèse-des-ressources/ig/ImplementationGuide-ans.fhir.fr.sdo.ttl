@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-02T07:48:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-02T12:24:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -799,10 +799,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "liste_profils.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "ressource_fhir.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "liste_profils.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Liste des profils" ] ;
+         fhir:name [ fhir:v "ressource_fhir.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Ressources FHIR" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
