@@ -127,7 +127,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="liste_profils.html">Ressource FHIR</a>
+        <a href="ressource_fhir.html">Ressource FHIR</a>
       </li>
       <li>
         <a href="ressource_cda.html">Ressource CDA</a>
@@ -201,7 +201,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="liste_profils.html">next&gt;</a>
+          | <a href="ressource_fhir.html">next&gt;</a>
 
           </span>
 
@@ -254,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2024-10-02
+            as of 2024-10-03
           
         
       </td>
@@ -405,55 +405,18 @@ This document presents the technical specifications of the “SI-ESMS” section
 <h4 id="ressources-fhir-profilées">Ressources FHIR profilées</h4>
 
 <p>Ce guide d’implémentation repose sur l’utilisation de profils génériques définis dans le cadre des volets de suivi des orientations (SDO et ESMS), mais également de profils applicatifs, héritant des profils génériques. La liste des profils utilisés est la suivante :</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Ressources de base</th>
-      <th>Profil</th>
-      <th>Volet utilisant ce profil</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></td>
-      <td><a href="StructureDefinition-sdo-document-reference.html">SDODocumentReference</a></td>
-      <td>SDO</td>
-      <td>Profil générique créé dans le contexte du suivi des orientations pour véhiculer les données de l’individu, la décision et l’évaluation contenus dans un document CDA</td>
-    </tr>
-    <tr>
-      <td><a href="https://hl7.org/fhir/R4/task.html">Task</a></td>
-      <td><a href="StructureDefinition-sdo-task.html">SDOTask</a></td>
-      <td>SDO, ESMS</td>
-      <td>Profil générique créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation</td>
-    </tr>
-    <tr>
-      <td><a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-      <td><a href="StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html">SDOBundleResultatRechercheNotificationESMS</a></td>
-      <td>SDO, ESMS</td>
-      <td>Profil générique créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification</td>
-    </tr>
-    <tr>
-      <td><a href="https://hl7.org/fhir/R4/consent.html">Consent</a></td>
-      <td><a href="StructureDefinition-esms-consent.html">ESMSConsent</a></td>
-      <td>ESMS</td>
-      <td>Profil applicatif créé dans le contexte du suivi des orientations pour transporter la définition de l’accord</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-sdo-document-reference.html">SDODocumentReference</a></td>
-      <td><a href="StructureDefinition-esms-document-reference.html">ESMSDocumentReference</a></td>
-      <td>ESMS</td>
-      <td>Profil applicatif créé à partir du profil générique SDODocumentReference pour véhiculer les données de l’individu et de la décision, ou les données de l’évaluaton dauns un document CDA</td>
-    </tr>
-    <tr>
-      <td><a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a></td>
-      <td><a href="StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html">ESMSBundleResultatRechercheDecisionEvaluation	</a></td>
-      <td>ESMS</td>
-      <td>Profil applicatif créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d’évaluation. Il repose sur le profil applicatif ESMSDocumentReference</td>
-    </tr>
-  </tbody>
-</table>
+<h5 id="profils-utilisés-pour-le-volet-si-esms">Profils utilisés pour le volet SI-ESMS</h5>
+<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html">ESMSBundleResultatRechercheDecisionEvaluation</a></p>
+</div></td><td>Profil ESMS créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d’évaluation.</td></tr><tr><td><div><p><a href="StructureDefinition-esms-consent.html">ESMSConsent</a></p>
+</div></td><td>Profil ESMS créé dans le contexte du suivi des orientations pour transporter la définition de l’accord.</td></tr><tr><td><div><p><a href="StructureDefinition-esms-document-reference.html">ESMSDocumentReference</a></p>
+</div></td><td>Profil ESMS héritant du profil SDODocumentReference. Profil utilisé pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA</td></tr><tr><td><div><p><a href="StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html">SDOBundleResultatRechercheNotificationESMS</a></p>
+</div></td><td>Profil ESMS-SDO créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification.</td></tr><tr><td><div><p><a href="StructureDefinition-sdo-task.html">SDOTask</a></p>
+</div></td><td>Profil ESMS-SDO créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation.</td></tr></table>
+<h5 id="profils-utilisés-pour-le-volet-si-sdo">Profils utilisés pour le volet SI-SDO</h5>
+<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html">SDOBundleResultatRechercheNotificationESMS</a></p>
+</div></td><td>Profil ESMS-SDO créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification.</td></tr><tr><td><div><p><a href="StructureDefinition-sdo-document-reference.html">SDODocumentReference</a></p>
+</div></td><td>Profil SDO utilisé pour véhiculer les données de l’individu, la décision et l’évaluation contenus dans le document CDA</td></tr><tr><td><div><p><a href="StructureDefinition-sdo-task.html">SDOTask</a></p>
+</div></td><td>Profil ESMS-SDO créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation.</td></tr></table>
 
 <h3 id="interactions-fhir">Interactions FHIR</h3>
 
@@ -521,7 +484,7 @@ Différents niveaux d’interactions sont possibles :</p>
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="liste_profils.html">next&gt;</a>
+                <a href="ressource_fhir.html">next&gt;</a>
 
               </td>
             </tr>
@@ -531,7 +494,7 @@ Différents niveaux d’interactions sont possibles :</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 2, 2024 20:14+0000">2024-10-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 3, 2024 12:27+0000">2024-10-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
