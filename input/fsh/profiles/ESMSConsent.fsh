@@ -1,7 +1,7 @@
 Profile: ESMSConsent
 Parent: Consent
 Id: esms-consent
-Description: "Profil pour la définition de l'accord"
+Description: "Profil ESMS créé dans le contexte du suivi des orientations pour transporter la définition de l’accord."
 * meta 1..
 * meta.source 1..
 * meta.source ^short = "Identifiant de l’ESMS créant la ressource (=idNat_Struct). Il s’agit de la structure bénéficiant de l’accord."

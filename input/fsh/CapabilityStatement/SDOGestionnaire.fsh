@@ -1,5 +1,7 @@
 Instance: gestionnaire-sdo
 InstanceOf: CapabilityStatement
+Description: "CapabilityStatement du gestionnaire SDO"
+
 Usage: #definition
 * name = "SDOgestionnaire"
 * title = "SI-SdO-Gestionnaire"

@@ -1,7 +1,7 @@
 Profile: ESMSDocumentReference
 Parent: SDODocumentReference
 Id: esms-document-reference
-Description: "Profil pour définir le dossier ESMS"
+Description: "Profil ESMS héritant du profil SDODocumentReference. Profil utilisé pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA"
 * obeys regle-NomPieceJointe-type
 * identifier 2..
 * type 1..

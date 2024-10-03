@@ -1,7 +1,7 @@
 Profile: SDODocumentReference
 Parent: DocumentReference
 Id: sdo-document-reference
-Description: "Profil pour définir le dossier SDO"
+Description: "Profil SDO utilisé pour véhiculer les données de l’individu, la décision et l’évaluation contenus dans le document CDA"
 * obeys regle-Contenu
 * identifier 1..2
 * identifier ^short = "identifiants métier (idDecision) et technique (idNat_decision) de la décision d'orientation"

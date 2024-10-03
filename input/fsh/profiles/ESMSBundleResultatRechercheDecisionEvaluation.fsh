@@ -1,7 +1,7 @@
 Profile: ESMSBundleResultatRechercheDecisionEvaluation
 Parent: Bundle
 Id: esms-bundle-resultat-recherche-decision-evaluation
-Description: "Profil pour la définition du Bundle de réponse à la recherche d'une décision d'orientation ou d'une évaluation"
+Description: "Profil ESMS créé dans le contexte du suivi des orientations pour transporter les documents répondant à une recherche de decision ou d’évaluation."
 * type = #searchset 
 * entry.resource 1..
 * entry.resource only ESMSDocumentReference
