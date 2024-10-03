@@ -83,7 +83,7 @@ Cette recherche sera envoyée au SI-SDO en utilisant la requête HTTPS GET suiva
 Où :
 
 * [base] est le point de contact FHIR 
-* [dateDernièreRecherche] est au format Année-Mois-Jour
+* [dateDernièreRecherche] est au format Année-Mois-Jour-Heure
 
 ### Flux 1.2 - ResultatRecherchePersonneOrienteeDecision
 
