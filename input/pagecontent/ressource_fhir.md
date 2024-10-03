@@ -29,4 +29,4 @@ Liste des ValueSet définis dans le volet SI-ESMS de ce guide d'implémentation 
 ### Instances
 
 Liste des instances de ressources définies dans le volet SI-ESMS de ce guide d'implémentation :
-{% sql SELECT Id as " Id de l'instance" FROM Resources WHERE Id like 'exemple-%' %}
+{% sql SELECT '[' || Id ||'](' ||Type|| '-' || id || '.html)' as " Id de l'instance" FROM Resources WHERE Id like 'exemple-%' %}
