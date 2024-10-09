@@ -20,8 +20,8 @@ activate SDO
 activate ESMS
 
 
-ESMS-[#black]> SDO : Flux 3.1 **RechercheEvaluation** \n <color #FireBrick>GET [base]/DocumentReference?identifier=[idNat-Decision]&type=51848-0&elements=id</color>
-SDO-[#black]-> ESMS: Flux 3.2 **ResultatEvaluation** \n <color #FireBrick>OK 200 (+ ressource "Bundle"  suivant le profil "ESMSBundleResultatRechercheDecisionEvaluation")</color>
+ESMS-[#black]> SDO : Flux 3.1 **ConsultationEvaluation** \n <color #FireBrick>GET [base]/DocumentReference?identifier=[idNat-Decision]&type=51848-0</color>
+SDO-[#black]-> ESMS: Flux 3.2 **ResultatConsultationEvaluation** \n <color #FireBrick>OK 200 (+ ressource "Bundle"  suivant le profil "ESMSBundleResultatRechercheDecisionEvaluation")</color>
 
 note left
 identifiants de la ressource 

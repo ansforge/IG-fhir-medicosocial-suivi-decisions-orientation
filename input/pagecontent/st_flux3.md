@@ -1,7 +1,7 @@
 
-### Flux 3.1 - RechercheEvaluation
+### Flux 3.1 - ConsultationEvaluation
 
-Ce flux permet à l’ESMS de rechercher les informations d’évaluation d’une personne orientée. Cette recherche est ainsi formulée par le SI-ESMS auprès du SI-SDO sur une décision précise précédemment reçue via le flux 1.4. 
+Ce flux permet à l’ESMS de consulter les informations d’évaluation d’une personne orientée. Cette recherche est ainsi formulée par le SI-ESMS auprès du SI-SDO sur une décision précise précédemment reçue via le flux 1.4. 
 
 ### diagramme de séquence 
 
@@ -69,9 +69,9 @@ Où
 -	[idNat-Decision] est l’identifiant technique national de la décision généré par le SI-SDO
 
 
-### Flux 3.2 - ResultatEvaluation
+### Flux 3.2 - ResultatConsultationEvaluation
 
-Ce flux contient le résultat de la recherche des informations d’évaluation d’une personne orientée. Cette réponse est retournée par le SI-SDO au SI-ESMS.
+Ce flux contient le résultat de la consultation des informations d’évaluation d’une personne orientée. Cette réponse est retournée par le SI-SDO au SI-ESMS.
 Il s’agit d’un flux qui permet de retourner la ressource « DocumentReference » répondant aux critères de recherche. La ressource est retournée uniquement si l’ESMS ayant effectué la requête est autorisé à accéder à ces informations. Le SI-SDO s’appuie sur les informations du token d’authentification pour effectuer cette vérification.
 
 

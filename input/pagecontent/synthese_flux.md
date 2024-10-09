@@ -51,7 +51,7 @@
             </td>
             <td style="width:489.05pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                     <ul>
-                        <li>Flux 3.1 &ndash; RechercheEvaluation / Flux 3.2 &ndash; ResultatRechercheEvaluation</li>
+                        <li>Flux 3.1 &ndash; ConsultationEvaluation / Flux 3.2 &ndash; ResultatConsultationEvaluation</li>
                             <ul>
                             <li>Op&eacute;ration &laquo;&nbsp;search&nbsp;&raquo; de l&rsquo;API FHIR assur&eacute;e par une requ&ecirc;te HTTP GET adressant la ressource DocumentReference.</li>
                             </ul> 
