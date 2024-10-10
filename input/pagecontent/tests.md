@@ -11,7 +11,7 @@ Liste des validateurs FHIR présents sur la plateforme de test [EVSClient](https
 | MS-R4-SDODocumentReference                          | [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | N/A |
 | MS-R4-SDOTask                                       | [SDOTask](StructureDefinition-sdo-task.html)             | 4 / 5.4 |
 | MS-R4-ESMS_Flux1.1-RechercheDeDecision (URL)        |          N/A      | 1.1 |
-| MS-R4-ESMS_Flux3.1-RechercheEvaluation (URL)        |            N/A    | 3.1 |
+| MS-R4-ESMS_Flux3.1-ConsultationEvaluation (URL)        |            N/A    | 3.1 |
 
 ### Validateurs CDA
 
