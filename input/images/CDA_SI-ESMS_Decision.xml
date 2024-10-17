@@ -25,17 +25,18 @@
     <title>Exemple ESMS Décision</title>
     <effectiveTime value="20230110"/>
     <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normal"/>
+    <languageCode code="fr-FR" />
     <setId root="492BB602-B08C-11EE-A506-0242AC120002" extension="01"/>
 	<!-- Deuxième version du document -->
 	<versionNumber value="2"/>
-	<languageCode code="fr-FR" />
+
     
     <!-- Identité de l'individu et mesure de protection  -->
     <recordTarget>
         <patientRole>
             <!-- INS-NIR de production : 1.2.250.1.213.1.4.8 -->
-            <id extension="idDossierIndividu" root="1.2.250.1.213.7.14"/>
             <id extension="276059205062865" root="1.2.250.1.213.1.4.8"/>
+            <id extension="idDossierIndividu" root="1.2.250.1.213.7.14"/>
 			<!-- Adresse -->
             <addr use="PHYS">
                 <streetAddressLine>17 AV de Bruxelles</streetAddressLine>
