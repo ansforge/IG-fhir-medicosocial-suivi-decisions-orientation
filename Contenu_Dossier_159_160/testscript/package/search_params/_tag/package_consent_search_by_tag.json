@@ -1,0 +1,80 @@
+{
+  "id": "Package-Consent-Search_by-Tag",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Package_Consent_Search_by_Tag",
+  "title": "package consent search_by tag",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-10-17T13:57:36+00:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_consent",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_consent.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "WcIOpRqQlxgavAiq",
+      "expression": "Consent.meta.tag",
+      "sourceId": "Hy9gn3gtbcS20bcn"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "Hy9gn3gtbcS20bcn",
+          "sourceId": "example_consent"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "Consent",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_tag=${WcIOpRqQlxgavAiq}"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "Consent",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${WcIOpRqQlxgavAiq}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}
