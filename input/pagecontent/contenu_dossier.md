@@ -150,9 +150,8 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">Attribut nullFlavor interdit.</span></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root (obligatoire) =&nbsp;</span><span style="color:black;">valeur d&rsquo;un OID propre &agrave; l&rsquo;emetteur. L&rsquo;OID form&eacute; doit &ecirc;tre complet et permettra d&rsquo;identifier l&rsquo;instance du document. <br></li>
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur de l&rsquo;idNat_Decision.</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">valeur d&rsquo;un OID propre &agrave; l&rsquo;emetteur. L&rsquo;OID form&eacute; doit &ecirc;tre complet et permettra d&rsquo;identifier l&rsquo;instance du document. <br>
-                        Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a>. L'OID obtenu devra être converti en majuscule afin de se conformer aux spécifications HL7</li>
                     </ul>
                 </div>
             </td>
@@ -543,13 +542,12 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;"></span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Identifiant unique du document</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Identifiant unique du document.</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:#C00000;">Attribut nullFlavor interdit.</span></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur d&rsquo;un identifiant unique attribu&eacute; par le syst&egrave;me d&rsquo;information &eacute;metteur. Il permet d&rsquo;identifier chaque instance et version des documents.</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice. <br>
-                        Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a>. L'OID obtenu devra être converti en majuscule afin de se conformer aux spécifications HL7
-                        </li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root (obligatoire) =&nbsp;</span><span style="color:black;">valeur d&rsquo;un OID propre &agrave; l&rsquo;emetteur. L&rsquo;OID form&eacute; doit &ecirc;tre complet et permettra d&rsquo;identifier l&rsquo;instance du document. <br></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur de l&rsquo;idNat_Decision.</span></li>
                     </ul>
                 </div>
             </td>
@@ -1003,7 +1001,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
 #### RecordTarget
 
 ##### Contraintes spécifiques au document portant la Décision ou l'Evaluation
-Le tableau de contraintes présenté ci-dessous offre une vue d'ensemble des exigences spécifiques à respecter pour chaque type de document, qu'il s'agisse d'une Décision ou d'une Évaluation :
+<p>Le tableau de contraintes pr&eacute;sent&eacute; ci-dessous offre une vue d&rsquo;ensemble des exigences sp&eacute;cifiques &agrave; respecter pour chaque type de document, qu&rsquo;il s&rsquo;agisse d&rsquo;une D&eacute;cision ou d&rsquo;une &Eacute;valuation :</p>
 
 <table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
     <tbody>
@@ -1033,7 +1031,7 @@ Le tableau de contraintes présenté ci-dessous offre une vue d'ensemble des exi
 </table>
 
 ##### Contenu des éléments du Recordtarget
-Le détail du contenu des éléments associés au RecordTarget est spécifié dans le tableau ci-dessous :
+<p>Le détail du contenu des &eacute;l&eacute;ments associ&eacute;s au RecordTarget est sp&eacute;cifi&eacute; dans le tableau ci-dessous :</p>
 
 <table style="width: 5.6e+2pt;margin-left:-14.45pt;border-collapse:collapse;border:none;">
     <thead>
