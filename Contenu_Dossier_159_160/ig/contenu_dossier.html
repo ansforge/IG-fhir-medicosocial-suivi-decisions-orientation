@@ -243,6 +243,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#standard-utilisé" id="markdown-toc-standard-utilisé">Standard utilisé</a></li>
   <li><a href="#structure-des-documents-cda" id="markdown-toc-structure-des-documents-cda">Structure des documents CDA</a></li>
+  <li><a href="#en-tête-du-document" id="markdown-toc-en-tête-du-document">En-tête du document</a></li>
+  <li><a href="#corps-du-document" id="markdown-toc-corps-du-document">Corps du document</a></li>
+  <li><a href="#types-de-données-essentiels" id="markdown-toc-types-de-données-essentiels">Types de données essentiels</a></li>
 </ul>
 
 </div>
@@ -260,7 +263,7 @@ Dans cette section, une mise en correspondance est faite entre :</p>
 
 <ul>
   <li>Les éléments XML proposés par CDA,</li>
-  <li><a name="l452">​</a>Les données structurées décrites dans les <a href="CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf">SFE SI-ESMS</a>.</li>
+  <li><a name="l464">​</a>Les données structurées décrites dans les <a href="CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf">SFE SI-ESMS</a>.</li>
 </ul>
 
 <p>Les éléments apparaissant en gras de couleur bleu correspondent à des extensions définies dans le cadre de cette spécifique technique afin de couvrir le besoin.
@@ -400,12 +403,12 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Attribut nullFlavor interdit.</span></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
-                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root (obligatoire) =&nbsp;</span><span style="color:black;">valeur d’un OID propre à l’emetteur. L’OID formé doit être complet et permettra d’identifier l’instance du document. <br/>&lt;/li&gt;
-                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@extension = valeur de l’idNat_Decision.</span></li>
-                    &lt;/ul&gt;
-                &lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
+                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root (obligatoire) = valeur d'un OID propre à l'emetteur. L'OID formé doit être complet et permettra d'identifier l'instance du document. </span></li>
+                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@extension (obligatoire) = valeur de l'idNat_Decision.</span></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
         <tr>
             <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">1</span></p>
@@ -521,7 +524,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">1</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">.<span style="color:black;"><a name="l1038">​</a><a href="#_RecordTarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">.<span style="color:black;"><a name="l1051">​</a><a href="#_RecordTarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">[1..1]</span></p>
@@ -530,7 +533,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Classe Individu, Identité et MesureProtection</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1063">​</a><a href="#_RecordTarget_1">2.1.2.3 RecordTarget</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1076">​</a><a href="#_RecordTarget_1">2.1.2.3 RecordTarget</a></span></p>
             </td>
         </tr>
         <tr>
@@ -547,7 +550,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1106">​</a><a href="#_Author">2.1.2.1 Author</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1119">​</a><a href="#_Author">2.1.2.1 Author</a></span></p>
             </td>
         </tr>
         <tr>
@@ -564,7 +567,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Classe Parent</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1148">​</a><a href="#_Informant">2.1.2.4 Informant</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1161">​</a><a href="#_Informant">2.1.2.4 Informant</a></span></p>
             </td>
         </tr>
         <tr>
@@ -581,7 +584,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1189">​</a><a href="#_Custodian">2.1.2.2 Custodian</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1202">​</a><a href="#_Custodian">2.1.2.2 Custodian</a></span></p>
             </td>
         </tr>
         <tr>
@@ -598,7 +601,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1230">​</a><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1243">​</a><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
             </td>
         </tr>
         <tr>
@@ -627,7 +630,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">2</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">..<span style="color:black;"><a name="l1298">​</a><a href="#_Component"><span style="color:windowtext;">structuredBody</span></a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">..<span style="color:black;"><a name="l1311">​</a><a href="#_Component"><span style="color:windowtext;">structuredBody</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">[1..1]</span></p>
@@ -647,7 +650,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Classe Identité, éléments liés au décès</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1345">​</a><a href="#_Section_repr%C3%A9sentant_l%E2%80%99organisme">2.1.3.1 Section représentant les informations sur le décès de l'individu</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1358">​</a><a href="#_Section_repr%C3%A9sentant_l%E2%80%99organisme">2.1.3.1 Section représentant les informations sur le décès de l'individu</a></span></p>
             </td>
         </tr>
         <tr>
@@ -664,15 +667,15 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Classes Decision, DroitPrestation, DetailPrestation, PriseCharge, Quantification, Caractérisation&nbsp;</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">Extension réexploitée du volet SI-SDO décrites dans la partie</span></strong> <span style="color:black;"><a name="l1386">​</a><a href="#_Extension_repr%C3%A9sentant_les_1">2.1.3.2. Extension représentant les informations sur la décision de l’individu</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">Extension réexploitée du volet SI-SDO décrites dans la partie</span></strong> <span style="color:black;"><a name="l1399">​</a><a href="#_Extension_repr%C3%A9sentant_les_1">2.1.3.2. Extension représentant les informations sur la décision de l’individu</a></span></p>
             </td>
         </tr>
-    &lt;/tbody&gt;
-   &lt;/table&gt;
+    </tbody>
+   </table>
 
-#### Flux 3 : Le document CDA portant l'évaluation
+<h4 id="flux-3--le-document-cda-portant-lévaluation">Flux 3 : Le document CDA portant l’évaluation</h4>
 
-  <table style="width: 5.7e+2pt;margin-left:-21.3pt;border-collapse:collapse;border:none;">
+<table style="width: 5.7e+2pt;margin-left:-21.3pt;border-collapse:collapse;border:none;">
     <thead>
         <tr>
             <td style="width: 49.65pt;border-width: medium 1pt medium medium;border-style: none solid none none;border-color: currentcolor windowtext currentcolor currentcolor;border-image: none;background: white;padding: 0cm 5.4pt;vertical-align: top;">
@@ -796,12 +799,12 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Attribut nullFlavor interdit.</span></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
-                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root (obligatoire) =&nbsp;</span><span style="color:black;">valeur d’un OID propre à l’emetteur. L’OID formé doit être complet et permettra d’identifier l’instance du document. <br/>&lt;/li&gt;
-                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@extension = valeur de l’idNat_Decision.</span></li>
-                    &lt;/ul&gt;
-                &lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
+                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root (obligatoire) = valeur d'un OID propre à l'emetteur. L'OID formé doit être complet et permettra d'identifier l'instance du document.</span></li>
+                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@extension (obligatoire) = valeur de l'idNat_Decision.</span></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
         <tr>
             <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">1</span></p>
@@ -917,7 +920,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">1</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">.<span style="color:black;"><a name="l1956">​</a><a href="#_RecordTarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">.<span style="color:black;"><a name="l1975">​</a><a href="#_RecordTarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">[1..1]</span></p>
@@ -926,7 +929,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Classe Individu et Identité</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l1981">​</a><a href="#_RecordTarget_1">2.1.2.3 RecordTarget</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2000">​</a><a href="#_RecordTarget_1">2.1.2.3 RecordTarget</a></span></p>
             </td>
         </tr>
         <tr>
@@ -943,7 +946,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2024">​</a><a href="#_Author">2.1.2.1 Author</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2043">​</a><a href="#_Author">2.1.2.1 Author</a></span></p>
             </td>
         </tr>
         <tr>
@@ -960,7 +963,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2065">​</a><a href="#_Custodian">2.1.2.2 Custodian</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2084">​</a><a href="#_Custodian">2.1.2.2 Custodian</a></span></p>
             </td>
         </tr>
         <tr>
@@ -977,7 +980,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2106">​</a><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2125">​</a><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
             </td>
         </tr>
         <tr>
@@ -1006,7 +1009,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">2</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">..<span style="color:black;"><a name="l2174">​</a><a href="#_Component"><span style="color:windowtext;">structuredBody</span></a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">..<span style="color:black;"><a name="l2193">​</a><a href="#_Component"><span style="color:windowtext;">structuredBody</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">[1..1]</span></p>
@@ -1026,17 +1029,17 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Classes Evaluation, ElementsEnvironnementaux, ElementMedicaux, ElementsScolairesProfessionnels et EvolutionBesoin</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2221">​</a><a href="#_Section_repr%C3%A9sentant_l%E2%80%99organisme">2.1.3.3 Section représentant l'évaluation de l'individu</a></span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Le contenu de l’élément est décrit dans la partie&nbsp;</span><span style="color:black;"><a name="l2240">​</a><a href="#_Section_repr%C3%A9sentant_l%E2%80%99organisme">2.1.3.3 Section représentant l'évaluation de l'individu</a></span></p>
             </td>
         </tr>
-    &lt;/tbody&gt;
-   &lt;/table&gt;
+    </tbody>
+   </table>
 
-### En-tête du document
+<h3 id="en-tête-du-document">En-tête du document</h3>
 
-Cette section présente le contenu de l'en-tête du document CDA. On y retrouve différentes parties :
+<p>Cette section présente le contenu de l’en-tête du document CDA. On y retrouve différentes parties :</p>
 
-#### Author
+<h4 id="author">Author</h4>
 <table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -1142,7 +1145,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-#### Custodian
+<h4 id="custodian">Custodian</h4>
 <table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -1248,39 +1251,29 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-#### RecordTarget
+<h4 id="recordtarget">RecordTarget</h4>
 
-##### Contraintes spécifiques au document portant la Décision ou l'Evaluation
-<p>Le tableau de contraintes présenté ci-dessous offre une vue d’ensemble des exigences spécifiques à respecter pour chaque type de document, qu’il s’agisse d’une Décision ou d’une Évaluation :</p>
+<h5 id="contraintes-spécifiques-au-document-portant-la-décision-ou-levaluation">Contraintes spécifiques au document portant la Décision ou l’Evaluation</h5>
+<p>Le tableau de contraintes présenté ci-dessous offre une vue d’ensemble des exigences spéifiques à respecter pour chaque type de document, qu’il s’agisse d’une Décision ou d’une Evaluation :</p>
 
-<table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
-    <tbody>
-        <tr>
-            <td style="width:43.6pt;border:solid windowtext 1.0pt;background:#7B7B7B;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:white;">Elément XML</span></strong></p>
-            </td>
-            <td style="width:43.6pt;border:solid windowtext 1.0pt;border-left:  none;background:#7B7B7B;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:white;">Décision</span></strong></p>
-            </td>
-            <td style="width: 43.6pt;border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: windowtext windowtext windowtext currentcolor;border-image: none;background: rgb(123, 123, 123);padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:white;">Evaluation</span></strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width:43.6pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">recordTarget.patientRole.patient</span></p>
-            </td>
-            <td style="width:43.6pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Obligatoire [1..1]</span></p>
-            </td>
-            <td style="width:43.6pt;border-top:none;border-left:none;border-bottom:  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Facultatif [0..1]</span></p>
-            </td>
-        </tr>
-    </tbody>
+<table>
+  <thead>
+    <tr>
+      <th>Eléments XML</th>
+      <th>Décision</th>
+      <th>Evaluation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>recordTarget.patientRole.patient</td>
+      <td>Obligatoire [1..1]</td>
+      <td>Facultatif [0..1]</td>
+    </tr>
+  </tbody>
 </table>
 
-##### Contenu des éléments du Recordtarget
+<h5 id="contenu-des-éléments-du-recordtarget">Contenu des éléments du Recordtarget</h5>
 <p>Le détail du contenu des éléments associés au RecordTarget est spécifié dans le tableau ci-dessous :</p>
 
 <table style="width: 5.6e+2pt;margin-left:-14.45pt;border-collapse:collapse;border:none;">
@@ -2204,7 +2197,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-#### Informant
+<h4 id="informant">Informant</h4>
 <table style="width:545.5pt;border-collapse:collapse;border:none;">
     <thead>
         <tr>
@@ -2471,7 +2464,7 @@ Cette section présente le contenu de l'en-tête du document CDA. On y retrouve 
     </tbody>
 </table>
 
-#### RelatedDocument
+<h4 id="relateddocument">RelatedDocument</h4>
 <table style="width: 5.5e+2pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -2573,11 +2566,11 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
     </tbody>
 </table>
 
-### Corps du document
+<h3 id="corps-du-document">Corps du document</h3>
 
-Cette section présente le contenu du corps du document CDA. On y retrouve différentes sections :
+<p>Cette section présente le contenu du corps du document CDA. On y retrouve différentes sections :</p>
 
-#### Section représentant les informations sur le décès d'un individu :
+<h4 id="section-représentant-les-informations-sur-le-décès-dun-individu-">Section représentant les informations sur le décès d’un individu :</h4>
 <table style="width:548.15pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -2807,7 +2800,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
     </tbody>
 </table>
 
-#### Extension représentant les informations sur la décision de l'individu :
+<h4 id="extension-représentant-les-informations-sur-la-décision-de-lindividu-">Extension représentant les informations sur la décision de l’individu :</h4>
 <table style="width: 5.6e+2pt;margin-left:-14.45pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -2916,7 +2909,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                     </ul>
                     <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root : OID&nbsp;</span>de la MDPH émettrice de l’identifiant de décision<span style="color:black;"><a name="l6486">​</a>&nbsp;(<a href="#Annexe1">Annexe&nbsp;</a></span><span style="color:blue;text-decoration:underline;">5</span><span style="color:black;">)</span></li>
+                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root : OID&nbsp;</span>de la MDPH émettrice de l’identifiant de décision<span style="color:black;"><a name="l6522">​</a>&nbsp;(<a href="#Annexe1">Annexe&nbsp;</a></span><span style="color:blue;text-decoration:underline;">5</span><span style="color:black;">)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -2996,7 +2989,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                     </ul>
                     <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;"><a name="l6676">​</a>@root&nbsp;: OID de la MDPH émettrice de l’identifiant (<a href="#Annexe1">Annexe 1</a>)</span></li>
+                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;"><a name="l6712">​</a>@root&nbsp;: OID de la MDPH émettrice de l’identifiant (<a href="#Annexe1">Annexe 1</a>)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -3681,7 +3674,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
     </tbody>
 </table>
 
-#### Section représentant l'évaluation d'un individu : 
+<h4 id="section-représentant-lévaluation-dun-individu-">Section représentant l’évaluation d’un individu :</h4>
 
 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="background:white;">L’évaluation d’un individu est identique à la section « Evaluation d’un individu », d’identifiant&nbsp;</span><span style="line-height:115%;">1.2.250.1.213.7.1.3,</span><span style="background:white;">&nbsp;mise en place dans le cadre du volet « Transfert de dossiers entre MDPH ». Elle se divise en 4 sous-sections représentant les éléments environnementaux, les éléments personnels, les éléments scolaires ou professionnels et les évolutions/besoins.&nbsp;</span></p>
 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="background:white;">&nbsp;</span></p>
@@ -4594,7 +4587,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10498">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10537">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4708,7 +4701,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10772">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10811">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4822,7 +4815,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11044">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11083">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4936,7 +4929,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11318">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Déficience principale</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11357">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Déficience principale</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -5050,7 +5043,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11592">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien veres le glossaire"><span style="color:black;text-decoration:  none;">Déficience secondaire</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11631">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien veres le glossaire"><span style="color:black;text-decoration:  none;">Déficience secondaire</span></a></span></p>
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6542,7 +6535,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15142">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Besoins de compensation identifiés</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15181">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Besoins de compensation identifiés</span></a></span></p>
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6637,7 +6630,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;"><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
             </td>
             <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15369">​</a>Evolution et Besoins.<a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">besoins de compensation identifiés</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15408">​</a>Evolution et Besoins.<a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">besoins de compensation identifiés</span></a></span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:#C00000;">No_Besoin_compensation&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.94)</span></p>
@@ -6648,9 +6641,9 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 <p style="margin-right:0cm;margin-left:72.0pt;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="background:white;">&nbsp;</span></p>
 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;">&nbsp;</p>
 
-### Types de données essentiels
+<h3 id="types-de-données-essentiels">Types de données essentiels</h3>
 
-#### Type de donnée "II",Instance Identifier, possède la structure suivante
+<h4 id="type-de-donnée-iiinstance-identifier-possède-la-structure-suivante">Type de donnée “II”,Instance Identifier, possède la structure suivante</h4>
 
 <table border="1" cellpadding="0" cellspacing="0" width="718">
     <tbody>
@@ -6782,29 +6775,33 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
     </tbody>
 </table>
 
-L’identifiant est dans tous les cas un identifiant globalement unique. Il est composé a minima d’une combinaison des attributs root et extension
+<p>L’identifiant est dans tous les cas un identifiant globalement unique. Il est composé a minima d’une combinaison des attributs root et extension</p>
 
-#### Type de données Codées "CS", "CV", "CE", "CD"
+<h4 id="type-de-données-codées-cs-cv-ce-cd">Type de données Codées “CS”, “CV”, “CE”, “CD”</h4>
 
 <div style="text-align:center;"> 
 <img src="type_donnee.png" alt="Type de données"/>
 </div>
 
-Un élément codé représente un concept. Quatre types de données sont disponibles pour coder les concepts, avec une richesse d’expression progressive.
-Les éléments du standard qui sont de type "CS" sont renseignés avec un simple code.
-Les éléments de type "CV", "CE" ou "CD" doivent respecter les contraintes suivantes :
+<p>Un élément codé représente un concept. Quatre types de données sont disponibles pour coder les concepts, avec une richesse d’expression progressive.
+Les éléments du standard qui sont de type “CS” sont renseignés avec un simple code.
+Les éléments de type “CV”, “CE” ou “CD” doivent respecter les contraintes suivantes :</p>
 
-* si un concept est disponible pour l’élément, renseigner au minimum le triplet d’attributs suivants, les autres attributs étant optionnels en l'absence de spécification complémentaire :
-  
-    * code, code associé au concept,
-    * displayName, libellé court associé au code, exprimé dans la langue applicable au contexte de l’élément courant ;
-    * codeSystem, OID de la terminologie source du code et du libellé associé,
+<ul>
+  <li>
+    <p>si un concept est disponible pour l’élément, renseigner au minimum le triplet d’attributs suivants, les autres attributs étant optionnels en l’absence de spécification complémentaire :</p>
 
-* si aucun concept codé n’a été trouvé pour répondre à la situation, l’élément fils originalText doit alors être renseigné sous la forme d'un texte libre
-* si l’information répondant à l’élément n’est pas connue ou n’est pas divulgable et si cette situation est admise pour cet élément, renseigner alors l’attribut nullFlavor avec le motif approprié
-* l'élément qualifier n'est pas utilisé car non supporté par la version ultérieure des types de données HL7 V3
+    <ul>
+      <li>code, code associé au concept,</li>
+      <li>displayName, libellé court associé au code, exprimé dans la langue applicable au contexte de l’élément courant ;</li>
+      <li>codeSystem, OID de la terminologie source du code et du libellé associé,</li>
+    </ul>
+  </li>
+  <li>si aucun concept codé n’a été trouvé pour répondre à la situation, l’élément fils originalText doit alors être renseigné sous la forme d’un texte libre</li>
+  <li>si l’information répondant à l’élément n’est pas connue ou n’est pas divulgable et si cette situation est admise pour cet élément, renseigner alors l’attribut nullFlavor avec le motif approprié</li>
+  <li>l’élément qualifier n’est pas utilisé car non supporté par la version ultérieure des types de données HL7 V3</li>
+</ul>
 
-</span></li></ul></div></td></tr></tbody></table></span></li></ul></div></td></tr></tbody></table>
 
 
 
@@ -6846,7 +6843,7 @@ Les éléments de type "CV", "CE" ou "CD" doivent respecter les contraintes suiv
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 21, 2024 11:18+0000">2024-10-21</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 21, 2024 13:52+0000">2024-10-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
