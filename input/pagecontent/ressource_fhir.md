@@ -11,8 +11,8 @@ Liste des profils définissant les contraintes appliquées sur les ressources FH
     "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like "Profil ESMS%" ",
     "class" : "lines",
     "columns" : [
-        { "name" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
-        { "name" : "Description", "type" : "markdown", "source" : "Description"}
+        { "type" : "link", "source" : "Name", "target" : "Web"},
+        { "type" : "markdown", "source" : "Description"}
     ]
 } %}
 
