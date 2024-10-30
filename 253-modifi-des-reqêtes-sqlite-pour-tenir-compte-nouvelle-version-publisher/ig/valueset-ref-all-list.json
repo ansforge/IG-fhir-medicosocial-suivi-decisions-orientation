@@ -71,8 +71,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
+      "StructureDefinition-sdo-task.html" : "SDOTask"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -312,8 +312,8 @@
       "uses" : {
       },
       "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
-      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
+      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -328,8 +328,8 @@
       "uses" : {
       },
       "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
-      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
+      "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -343,12 +343,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html" : "SDOBundleResultatRechercheNotificationESMS",
       "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
+      "StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html" : "SDOBundleResultatRechercheNotificationESMS",
       "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
       "StructureDefinition-sdo-task.html" : "SDOTask",
-      "StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html" : "ESMSBundleResultatRechercheDecisionEvaluation",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html" : "ESMSBundleResultatRechercheDecisionEvaluation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
@@ -441,9 +441,9 @@
       "uses" : {
       },
       "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference",
+      "StructureDefinition-esms-consent.html" : "ESMSConsent",
       "StructureDefinition-sdo-document-reference.html" : "SDODocumentReference",
-      "StructureDefinition-sdo-task.html" : "SDOTask",
-      "StructureDefinition-esms-consent.html" : "ESMSConsent"
+      "StructureDefinition-sdo-task.html" : "SDOTask"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
