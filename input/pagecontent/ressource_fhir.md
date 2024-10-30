@@ -24,8 +24,8 @@ Liste des profils définissant les contraintes appliquées sur les ressources FH
     "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like 'Profil SDO%' OR Description like 'Profil ESMS-%' ",
     "class" : "lines",
     "columns" : [
-        { "name" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
-        { "name" : "Description", "type" : "markdown", "source" : "Description"}
+        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Description", "type" : "markdown", "source" : "Description"}
     ]
 } %}
 
@@ -38,8 +38,8 @@ Liste des CapabilityStatement définis dans le volet SI-ESMS de ce guide d'impl�
     "query" : " select title as Title, Description, Web from Resources WHERE Type = 'CapabilityStatement' ",
     "class" : "lines",
     "columns" : [
-        { "name" : "Titre du CapabilityStatement", "type" : "link", "source" : "Title", "target" : "Web"},
-        { "name" : "Description", "type" : "markdown", "source" : "Description"}
+        { "title" : "Titre du CapabilityStatement", "type" : "link", "source" : "Title", "target" : "Web"},
+        { "title" : "Description", "type" : "markdown", "source" : "Description"}
     ]
 } %}
 
