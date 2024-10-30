@@ -1,0 +1,80 @@
+{
+  "id": "Package-Task-Search_by-Security",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Package_Task_Search_by_Security",
+  "title": "package task search_by security",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-10-30T12:20:32+00:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_task",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_task.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "s4lqAc3NYCkdvXVf",
+      "expression": "Task.meta.security",
+      "sourceId": "u4noClbJn2q5LW2W"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "u4noClbJn2q5LW2W",
+          "sourceId": "example_task"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "Task",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_security=${s4lqAc3NYCkdvXVf}"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "Task",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${s4lqAc3NYCkdvXVf}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}
