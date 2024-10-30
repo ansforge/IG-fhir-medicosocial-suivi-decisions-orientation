@@ -8,7 +8,7 @@ Liste des profils définissant les contraintes appliquées sur les ressources FH
 {% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Description like 'Profil ESMS%' %}
 
 {% sql {
-    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like "Profil ESMS%" ",
+    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like 'Profil ESMS%' ",
     "class" : "lines",
     "columns" : [
         { "name" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
