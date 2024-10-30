@@ -32,8 +32,16 @@ Liste des profils définissant les contraintes appliquées sur les ressources FH
 ### CapabilityStatement
 
 Liste des CapabilityStatement définis dans le volet SI-ESMS de ce guide d'implémentation :
-{% sql SELECT '[' || Title ||'](CapabilityStatement-' || id || '.html)' as "Titre du CapabilityStatement", Description FROM Resources WHERE Type = 'CapabilityStatement' %}
+<!-- {% sql SELECT '[' || Title ||'](CapabilityStatement-' || id || '.html)' as "Titre du CapabilityStatement", Description FROM Resources WHERE Type = 'CapabilityStatement' %} -->
 
+{% sql {
+    "query" : " select title as Title, Description, Web from Resources WHERE Type = 'CapabilityStatement' ",
+    "class" : "lines",
+    "columns" : [
+        { "name" : "Titre du CapabilityStatement", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "name" : "Description", "type" : "markdown", "source" : "Description"}
+    ]
+} %}
 
 ### CodeSystem
 
