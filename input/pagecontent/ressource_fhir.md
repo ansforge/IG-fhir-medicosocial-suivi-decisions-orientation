@@ -38,7 +38,7 @@ Liste des CapabilityStatement d√©finis dans le volet SI-ESMS de ce guide d'impl√
     "query" : " select title as Title, Description, Web from Resources WHERE Type = 'CapabilityStatement' ",
     "class" : "lines",
     "columns" : [
-        { "name" : "Titre du CapabilityStatement", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "name" : "Titre du CapabilityStatement", "type" : "link", "source" : "Title", "target" : "Web"},
         { "name" : "Description", "type" : "markdown", "source" : "Description"}
     ]
 } %}
