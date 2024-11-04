@@ -66,9 +66,26 @@ Les templates de document CDA créés dans le cadre de ce guide d’implémentat
 
 Ce guide d'implémentation repose sur l'utilisation de profils génériques définis dans le cadre des volets de suivi des orientations (SDO et ESMS), mais également de profils applicatifs, héritant des profils génériques. La liste des profils utilisés est la suivante : 
 ##### Profils utilisés pour le volet SI-ESMS
-{% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil ESMS%" %}
+
+{% sql {
+    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like 'Profil ESMS%' ",
+    "class" : "lines",
+    "columns" : [
+        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Description", "type" : "markdown", "source" : "Description"}
+    ]
+} %}
+
 ##### Profils utilisés pour le volet SI-SDO
-{% sql SELECT '[' || Name ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil SDO%" OR Description like "Profil ESMS-%" %}
+
+{% sql {
+    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like 'Profil SDO%' OR Description like 'Profil ESMS-%' ",
+    "class" : "lines",
+    "columns" : [
+        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Description", "type" : "markdown", "source" : "Description"}
+    ]
+} %}
 
 ### Interactions FHIR
 
