@@ -305,7 +305,7 @@ Cette recherche est formulée par le SI-ESMS auprès du SI-SDO.</p>
 <p>Où</p>
 <ul>
   <li>[base] est le point de contact FHIR</li>
-  <li>[dateDernièreRecherche] est au format <a href="https://www.hl7.org/fhir/R4/datatypes.html#instant">Instant</a>. Pour respecter les normes d’écritures d’url, il est nécessaire d’échapper le caractère “+” en le remplacant par “%2B”. Exemple de valeur : 2015-02-07T13:28:17.239%2B02:00</li>
+  <li>[dateDernièreRecherche] est au format <a href="https://www.hl7.org/fhir/R4/datatypes.html#instant">Instant</a>. Le caractère “+” du fuseau horaire doit être échappé (%2B) dans l’URL de la requête. Exemple de valeur : 2015-02-07T13:28:17.239%2B02:00</li>
 </ul>
 
 <h3 id="flux-52---resultatstatut">Flux 5.2 - ResultatStatut</h3>
@@ -364,7 +364,7 @@ En cas d’échec, le SI-SDO doit répondre avec le code HTTPS approprié tel qu
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 22, 2024 14:20+0000">2024-11-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 22, 2024 17:29+0000">2024-11-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

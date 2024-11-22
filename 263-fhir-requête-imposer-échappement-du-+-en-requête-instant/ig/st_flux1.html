@@ -340,10 +340,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>[base] est le point de contact FHIR</li>
-  <li>[dateDernièreRecherche] est au format <a href="https://www.hl7.org/fhir/R4/datatypes.html#instant">Instant</a>. Pour respecter les normes d’écritures d’url, il est nécessaire d’échapper le caractère “+” en le remplacant par “%2B”. Exemple de valeur : 2015-02-07T13:28:17.239%2B02:00
-    <h3 id="flux-12---resultatrecherchepersonneorienteedecision">Flux 1.2 - ResultatRecherchePersonneOrienteeDecision</h3>
-  </li>
+  <li>[dateDernièreRecherche] est au format <a href="https://www.hl7.org/fhir/R4/datatypes.html#instant">Instant</a>. Le caractère “+” du fuseau horaire doit être échappé (%2B) dans l’URL de la requête. Exemple de valeur : 2015-02-07T13:28:17.239%2B02:00</li>
 </ul>
+
+<h3 id="flux-12---resultatrecherchepersonneorienteedecision">Flux 1.2 - ResultatRecherchePersonneOrienteeDecision</h3>
 
 <p>Ce flux contient le résultat de la recherche de dossiers de nouvelles personnes ayant été orientées vers un ESMS ou de dossiers mis à jour les concernant. Cette réponse est retournée par le SI-SDO au SI-ESMS.
 Il s’agit d’un flux qui permet de lister les nouveaux dossiers ou les mises à jour qui concerne uniquement l’ESMS à l’origine de la requête. Le SI-SDO s’appuie sur les informations du token d’authentification pour filtrer les dossier.</p>
@@ -440,7 +440,7 @@ Il s’agit d’un flux qui permet de lister les nouveaux dossiers ou les mises 
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 22, 2024 14:20+0000">2024-11-22</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 22, 2024 17:29+0000">2024-11-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
