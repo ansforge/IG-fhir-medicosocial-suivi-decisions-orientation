@@ -97,7 +97,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","Event.partOf","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)",".inboundRelationship[typeCode=COMP].source[moodCode=INT]"
 "Task.status","Task.status","","","",1,1,"","Y","Y","code {[]} {[]}
-","draft | requested | received | accepted | +","The current status of the task.","Note that FHIR strings SHALL NOT exceed 1MB in size","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"ele-1
+","draft | requested | received | accepted | +","The current status of the task.","Note that FHIR strings SHALL NOT exceed 1MB in size","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""completed""/>","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.status, Event.status","n/a",".statusCode","FiveWs.status"
 "Task.statusReason","Task.statusReason","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
