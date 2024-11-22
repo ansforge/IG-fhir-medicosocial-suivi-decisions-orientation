@@ -58,8 +58,7 @@ Cette recherche sera envoyée au SI-SDO en utilisant la requête HTTPS GET suiva
 
 Où 
 -	[base] est le point de contact FHIR 
--	[dateDernièreRecherche] est au format [Instant](https://www.hl7.org/fhir/R4/datatypes.html#instant)
-
+-	[dateDernièreRecherche] est au format [Instant](https://www.hl7.org/fhir/R4/datatypes.html#instant). Pour respecter les normes d'écritures d'url, il est nécessaire d'échapper le caractère "+" en le remplacant par "%2B". Exemple de valeur : 2017-01-01T00:00:00Z
 
 ### Flux 5.2 - ResultatStatut
 
