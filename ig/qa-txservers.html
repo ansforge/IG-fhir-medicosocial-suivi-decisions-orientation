@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for SuiviDecisionsOrientation</h1>
- <p>Generated Tue Apr 30 08:43:34 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2-ballot-3 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>))</p>
+ <p>Generated Fri Nov 22 13:35:15 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -21,11 +21,259 @@
   </li>
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
-<ul>
-  <li>Request for system [https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-</ul>
+<table class="grid">
+  <tr>
+    <td>
+      <b>Message</b>
+    </td>
+    <td>
+      <b>Server</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Systems</b>
+    </td>
+    <td>
+      <b>Choices</b>
+    </td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>urn:uuid:eddff69c-bd4b-426e-ac11-dbd07ca70621</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>urn:uuid:4fd03428-2445-4ed8-b325-17ae515c5f6f</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>urn:uuid:ed24ed33-a6ee-41e3-8b80-7f4a93254a91</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset--0|4.0.2</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>urn:uuid:d17f7337-788a-4a5b-88b7-8f7dcc703234</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
+    <td>urn:ietf:bcp:13</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/consentscope</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/consent-category--2|4.0.1</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset--0|4.0.2</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+</table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 34. Code Systems used: </p>
+<a href="http://tx.fhir.org/r4"></a>
+<p>Use Count: 31. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -42,19 +290,17 @@
     </th>
   </tr>
   <tr>
-    <td>http://loinc.org</td>
-    <td>2</td>
-    <td>13</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://terminology.hl7.org/CodeSystem/consentcategorycodes</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
     <td>0</td>
     <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://loinc.org</td>
+    <td>2</td>
+    <td>10</td>
     <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-consentcategorycodes.html">Consent Category Codes</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
   <tr>
@@ -62,21 +308,13 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-consentscope.html">Consent Scope Codes</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html">ActCode</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-consentscope.html">Consent Scope Codes</a>
     </td>
   </tr>
   <tr>
     <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>0</td>
-    <td>1</td>
+    <td>2</td>
     <td></td>
   </tr>
   <tr>
@@ -88,23 +326,31 @@
   <tr>
     <td>urn:ietf:bcp:13</td>
     <td>0</td>
-    <td>8</td>
+    <td>9</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>urn:ietf:bcp:47</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>
+    </td>
   </tr>
   <tr>
     <td>urn:iso:std:iso:3166</td>
     <td>3</td>
-    <td>5</td>
+    <td>2</td>
     <td>
-      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
   </tr>
   <tr>
     <td>urn:iso:std:iso:3166:-2</td>
     <td>1</td>
-    <td>1</td>
+    <td>2</td>
     <td>
-      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-iso3166-2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
     </td>
   </tr>
 </table>
