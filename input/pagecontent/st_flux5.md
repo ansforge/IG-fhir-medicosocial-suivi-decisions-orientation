@@ -58,8 +58,7 @@ Cette recherche sera envoyée au SI-SDO en utilisant la requête HTTPS GET suiva
 
 Où 
 -	[base] est le point de contact FHIR 
--	[dateDernièreRecherche] est au format [Instant](https://www.hl7.org/fhir/R4/datatypes.html#instant)
-
+-	[dateDernièreRecherche] est au format [Instant](https://www.hl7.org/fhir/R4/datatypes.html#instant). Le caractère "+" du fuseau horaire doit être échappé (%2B) dans l'URL de la requête. Exemple de valeur : 2015-02-07T13:28:17.239%2B02:00
 
 ### Flux 5.2 - ResultatStatut
 
