@@ -5,6 +5,7 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
 * obeys regle-StatutUnite
 * meta.lastUpdated 1..
 * intent = #plan 
+* status = #completed
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "type"
 * input ^slicing.rules = #open
