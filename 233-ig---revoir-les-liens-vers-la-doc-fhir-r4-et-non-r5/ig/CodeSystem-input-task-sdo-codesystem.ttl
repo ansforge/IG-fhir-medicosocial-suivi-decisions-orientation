@@ -10,8 +10,8 @@
   fhir:id [ fhir:v "input-task-sdo-codesystem"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+       fhir:v "https://hl7.org/fhir/R4/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <https://hl7.org/fhir/R4/StructureDefinition/shareablecodesystem>
      ] )
   ] ; # 
   fhir:text [
@@ -24,7 +24,7 @@
   fhir:title [ fhir:v "InputTaskSDOCodeSystem"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-12-04T09:50:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-04T12:34:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
