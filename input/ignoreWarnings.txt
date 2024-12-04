@@ -5,15 +5,15 @@
 # (And include comments like this justifying why)
 
 # We expect that all of the 'structural' resources will only be validated against their respective 'core' resource definitions
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+Validate resource against profile https://hl7.org/fhir/R4/StructureDefinition/ImplementationGuide
+Validate resource against profile https://hl7.org/fhir/R4/StructureDefinition/Library
+Validate resource against profile https://hl7.org/fhir/R4/StructureDefinition/ValueSet
+Validate resource against profile https://hl7.org/fhir/R4/StructureDefinition/StructureDefinition
 
 # Have verified that these examples are being checked against the expected profiles/resources.
-INFORMATION: Binary/example: Binary: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary
-INFORMATION: Bundle/h1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
-INFORMATION: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Binary/example: Binary: Validate resource against profile https://hl7.org/fhir/R4/StructureDefinition/Binary
+INFORMATION: Bundle/h1: Bundle: Validate resource against profile https://hl7.org/fhir/R4/StructureDefinition/Bundle
+INFORMATION: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile https://hl7.org/fhir/R4/StructureDefinition/Provenance
 INFORMATION: Patient/example: Patient: Validate resource against profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
 
 # This is inherited from the base resource
