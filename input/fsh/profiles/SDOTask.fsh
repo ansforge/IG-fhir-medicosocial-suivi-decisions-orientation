@@ -24,7 +24,6 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
     statutUnite 0..1 and
     dateStatutUnite 0..1 and
     motifUnite 0..1 and
-    typeDroitPrestation 1..1 and
     idDecision 1..1 and
     idNat_Decision 1..1
 * input[idNat_Struct] ^short = "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET"
@@ -80,10 +79,6 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
 * input[motifUnite].value[x] only CodeableConcept
 * input[motifUnite].value[x] from $JDV-J250-MotifStatutPersonnePriseChargeUnite (required)
 * input[motifUnite].value[x] ^short = "Motifs obligatoires pour certains statut suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
-* input[typeDroitPrestation] ^short = "Permet de définir le type de droit et prestation caractérisant la décision d'orientation."
-* input[typeDroitPrestation].type = InputTaskSDOCodeSystem#typeDroitPrestation 
-* input[typeDroitPrestation].value[x] only CodeableConcept
-* input[typeDroitPrestation].value[x] from $JDV_JXX-typeDroitPrestation (required)
 * input[idDecision] ^short = "Permet de définir l’identifiant de la décision unique au sein de la MDPH"
 * input[idDecision].type = InputTaskSDOCodeSystem#idDecision
 * input[idDecision].value[x] only Identifier
