@@ -15,4 +15,4 @@ Alias: $JDV_J264-ModeEtCentreDePriseEnCharge-MDPH = https://mos.esante.gouv.fr/N
 Alias: $JDV-J253-StatutPersonnePriseChargeUnite = https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite/FHIR/JDV-J253-StatutPersonnePriseChargeUnite
 Alias: $JDV-J250-MotifStatutPersonnePriseChargeUnite = https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/FHIR/JDV-J250-MotifStatutPersonnePriseChargeUnite
 Alias: $JDV_JXX-typeDroitPrestation = https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation
-Alias: $DocumentType = https://hl7.org/fhir/R4/ValueSet/c80-doc-typecodes
+Alias: $DocumentType = https://hl7.org/fhir/ValueSet/c80-doc-typecodes
