@@ -1,9 +1,9 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 0, warn = 27, info = 14
+err = 0, warn = 25, info = 14
 IG Publisher Version: 1.8.1
-Generated Wed Dec 11 08:47:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+Generated Wed Dec 11 11:05:45 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.2 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 27 / 4 / 0
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 4 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements : 0 / 6 / 3
@@ -11,7 +11,7 @@ Generated Wed Dec 11 08:47:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSConsommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CodeSystem-input-task-sdo-codesystem : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CodeSystem-input-task-sdo-codesystem : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-sdo-document-reference : 0 / 1 / 1
@@ -23,7 +23,7 @@ Generated Wed Dec 11 08:47:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sdo#4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference : 0 / 0 / 4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task : 0 / 0 / 5
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task : 0 / 2 / 1
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset : 0 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset : 0 / 0 / 1
 </table>
 == n/a ==
 ERROR: /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/output/contenu_dossier.html#/html/body/div/div/div/div/div/ul/li/a at Line 271, column 50: The link 'CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf' for "SFE SI-ESMS" cannot be resolved
@@ -80,7 +80,6 @@ WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle
 == fsh-generated/resources/CapabilityStatement-ESMSProducteur.json ==
 == fsh-generated/resources/CapabilityStatement-gestionnaire-sdo.json ==
 == fsh-generated/resources/CodeSystem-input-task-sdo-codesystem.json ==
-WARNING: CodeSystem/input-task-sdo-codesystem: CodeSystem.meta.profile[0]: Profile reference 'https://hl7.org/fhir/StructureDefinition/shareablecodesystem' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/Consent-exemple-consent.json ==
 == fsh-generated/resources/DocumentReference-exemple-esms-document-reference.json ==
 WARNING: DocumentReference/exemple-esms-document-reference: DocumentReference.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
@@ -112,4 +111,3 @@ INFORMATION: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[
 WARNING: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
 WARNING: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
 == fsh-generated/resources/ValueSet-type-document-reference-esms-valueset.json ==
-WARNING: ValueSet/type-document-reference-esms-valueset: ValueSet.meta.profile[0]: Profile reference 'https://hl7.org/fhir/StructureDefinition/shareablevalueset' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
