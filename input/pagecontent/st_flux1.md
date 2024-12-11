@@ -60,7 +60,7 @@ Le flux 1.1 est basé sur l’opération « search » de l’API REST FHIR. La r
             </tr>
             <tr>
                 <td style="width:0cm;border:solid gray 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                    <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;"><a href="https://www.https://hl7.org/fhir/R4/search.html#elements">_elements</a><a href="#_ftn1" name="_ftnref1" title=""><span style="vertical-align:super;"><span style="vertical-align:super;"><span style='font-size:12px;line-height:115%;font-family:"Arial",sans-serif;color:black;'></span></span></span></a></span></p>
+                    <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;"><a href="https://hl7.org/fhir/R4/search.html#elements">_elements</a><a href="#_ftn1" name="_ftnref1" title=""><span style="vertical-align:super;"><span style="vertical-align:super;"><span style='font-size:12px;line-height:115%;font-family:"Arial",sans-serif;color:black;'></span></span></span></a></span></p>
                 </td>
                 <td style="width:5.0cm;border-top:none;border-left:none;border-bottom:  solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                     <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'><span style="color:black;">Le param&egrave;tre &eacute;l&eacute;ment liste les attributs de la ressource &agrave; retourner par le serveur</span></p>
@@ -83,7 +83,7 @@ Cette recherche sera envoyée au SI-SDO en utilisant la requête HTTPS GET suiva
 Où :
 
 * [base] est le point de contact FHIR 
-* [dateDernièreRecherche] est au format [Instant](https://www.https://hl7.org/fhir/R4/datatypes.html#instant). Le caractère "+" du fuseau horaire doit être échappé (%2B) dans l'URL de la requête. Exemple de valeur : 2015-02-07T13:28:17.239%2B02:00
+* [dateDernièreRecherche] est au format [Instant](https://hl7.org/fhir/R4/datatypes.html#instant). Le caractère "+" du fuseau horaire doit être échappé (%2B) dans l'URL de la requête. Exemple de valeur : 2015-02-07T13:28:17.239%2B02:00
 
 ### Flux 1.2 - ResultatRecherchePersonneOrienteeDecision
 
