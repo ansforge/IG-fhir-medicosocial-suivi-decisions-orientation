@@ -2,7 +2,7 @@ CodeSystem: InputTaskSDOCodeSystem
 Id: input-task-sdo-codesystem
 Title: "InputTaskSDOCodeSystem"
 Description: "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask"
-* ^meta.profile = "https://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^caseSensitive = true 
 * ^compositional = false
 * ^content = #complete
