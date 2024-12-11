@@ -1332,6 +1332,10 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#1F4E79;">Extension pour les volets m&eacute;dico-sociaux d&eacute;signant le num&eacute;ro de s&eacute;curit&eacute; sociale de l&rsquo;ouvrant droit.</span></strong></p>
+                <ul style="margin-bottom:0cm;list-style-type: disc;">                
+                    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>@extension = identifiant du numéro de sécurité sociale</li>
+                    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>@root = OID de l'autorité d'affectation (1.2.250.1.213.1.4.13 pour les NIR utilisé en tant que numéro de sécurité sociale, 1.2.250.1.213.1.4.14 pour les NIA utilisé en tant que numéro de sécurité sociale)</li>
+                </ul>                
             </td>
         </tr>
         <tr>
