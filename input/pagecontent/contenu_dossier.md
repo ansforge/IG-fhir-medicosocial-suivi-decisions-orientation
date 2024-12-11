@@ -1049,13 +1049,13 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
         </tr>
         <tr>
-            <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
+            <td rowspan="2" style="width:35.5pt;border:solid windowtext 1.0pt;border-top: none;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
-            <td style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+            <td rowspan="2" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">.Id</span></p>
             </td>
-            <td style="width:42.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+            <td rowspan="2" style="width:42.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><em><span style="color:black;">[1..*]</span></em></p>
             </td>
             <td style="width: 127.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
@@ -1063,7 +1063,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Identifiant NIR ou NIA de l&rsquo;individu.&nbsp;</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">AttributnullFlavor interdit</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">Obligatoire s'il s'agit de l'identité INS (Attribut nullFlavor interdit)</span><strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:13px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = matricule&nbsp;</span><span style="color:#C00000;">(Identifiant sur 13 caract&egrave;res + cl&eacute; sur 2 caract&egrave;res)</span></li>
@@ -1077,21 +1077,12 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
         </tr>
         <tr>
-            <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">&nbsp;</span></p>
-            </td>
-            <td style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">&nbsp;</span></p>
-            </td>
-            <td style="width:42.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">&nbsp;</span></p>
-            </td>
             <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Individu.idIndividu</span></p>
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Identifiant initial de l&rsquo;individu au sein de la MDPH ayant cr&eacute;&eacute; le dossier individu</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">Obligatoire</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">Obligatoire</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:13.350000000000001px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension =&nbsp;</span>identifiant de l&rsquo;Individu</li>
@@ -1150,7 +1141,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Concat&eacute;nation de num&eacute;ro de voie, libell&eacute; type de voie, libell&eacute; de voie, compl&eacute;ment_1 adresse, compl&eacute;ment-2 adresse, mentions sp&eacute;ciales de distribution</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">Obligatoire si use fix&eacute; &agrave; &laquo;&nbsp;PHYS&nbsp;&raquo;</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">Obligatoire si use fix&eacute; &agrave; &laquo;&nbsp;PHYS&nbsp;&raquo;</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -1185,7 +1176,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width: 233.9pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Localit&eacute;&nbsp;</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">Obligatoire si use fix&eacute; &agrave; &laquo;&nbsp;PHYS&nbsp;&raquo;</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">Obligatoire si use fix&eacute; &agrave; &laquo;&nbsp;PHYS&nbsp;&raquo;</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -1203,7 +1194,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Nom de l&rsquo;organisme de domiciliation&nbsp;</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">A renseigner uniquement si l&rsquo;&eacute;l&eacute;ment use de l&rsquo;adresse prend la valeur PST</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">A renseigner uniquement si l&rsquo;&eacute;l&eacute;ment use de l&rsquo;adresse prend la valeur PST</span></strong></p>
             </td>
         </tr>
         <!--
@@ -1334,7 +1325,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#1F4E79;">Extension pour les volets m&eacute;dico-sociaux d&eacute;signant le num&eacute;ro de s&eacute;curit&eacute; sociale de l&rsquo;ouvrant droit.</span></strong></p>
                 <ul style="margin-bottom:0cm;list-style-type: disc;">                
                     <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>@extension = identifiant du numéro de sécurité sociale</li>
-                    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>@root = OID de l'autorité d'affectation (1.2.250.1.213.1.4.13 pour les NIR utilisé en tant que numéro de sécurité sociale, 1.2.250.1.213.1.4.14 pour les NIA utilisé en tant que numéro de sécurité sociale)</li>
+                    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>@root = OID de l'autorité d'affectation <span style="color:#C00000;">(1.2.250.1.213.1.4.13 pour les NIR utilisé en tant que numéro de sécurité sociale, 1.2.250.1.213.1.4.14 pour les NIA utilisé en tant que numéro de sécurité sociale)</span></li>
                 </ul>                
             </td>
         </tr>
@@ -1395,7 +1386,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#1F4E79;">Extension pour le volet ESMS d&eacute;signant l&rsquo;identifiant de la MDPH en charge du dossier de l&rsquo;individu</span></strong></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">A ne renseigner qu&rsquo;en cas de transfert de dossier en cours</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">A ne renseigner qu&rsquo;en cas de transfert de dossier en cours</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir annexe 5)</span></li>
@@ -1437,7 +1428,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">El&eacute;ment regroupant plusieurs sous-&eacute;l&eacute;ments permettant de d&eacute;finir le nom de l&rsquo;individu</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;">AttributnullFlavor interdit</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">Attribut nullFlavor interdit</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -1456,7 +1447,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Nom de naissance</span><span style="color:#C00000;">&nbsp;</span></p>
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#C00000;">Obligatoire s'il s'agit de l'identité INS (Attribut nullFlavor interdit)</strong></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#C00000;">Obligatoire s'il s'agit de l'identité INS (Attribut nullFlavor interdit)</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@qualifier = &laquo; BR &raquo;&nbsp;</span></li>
