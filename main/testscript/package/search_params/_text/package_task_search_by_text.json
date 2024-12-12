@@ -6,7 +6,7 @@
   "title": "package task search_by text",
   "status": "draft",
   "experimental": true,
-  "date": "2024-12-12T09:56:42+00:00",
+  "date": "2024-12-12T16:13:46+00:00",
   "publisher": "The MITRE Corporation",
   "fixture": [
     {
@@ -20,9 +20,9 @@
   ],
   "variable": [
     {
-      "name": "a0rtvOihPqaOZAjO",
+      "name": "l7jA459kiSBFQmEO",
       "expression": "Task.id",
-      "sourceId": "G0FyK5yCaqLnKNSp"
+      "sourceId": "u8DPFplJlsyeuecZ"
     }
   ],
   "setup": {
@@ -35,7 +35,7 @@
           },
           "label": "Operation_1",
           "encodeRequestUrl": false,
-          "responseId": "G0FyK5yCaqLnKNSp",
+          "responseId": "u8DPFplJlsyeuecZ",
           "sourceId": "example_task"
         }
       }
@@ -71,7 +71,7 @@
           "resource": "Task",
           "label": "Operation_3",
           "encodeRequestUrl": false,
-          "params": "/${a0rtvOihPqaOZAjO}"
+          "params": "/${l7jA459kiSBFQmEO}"
         }
       }
     ]
