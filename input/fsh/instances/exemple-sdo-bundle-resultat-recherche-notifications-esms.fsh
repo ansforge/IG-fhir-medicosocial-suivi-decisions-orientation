@@ -29,7 +29,6 @@ Description: "Exemple de ressource DocumentReference suivant le profil SDODocume
 * input[statutUnite].valueCodeableConcept = $TRE-R357-StatutPersonnePriseCharge#188 "Fin de prise en charge"
 * input[dateStatutUnite].valueDate = "2021-10-25"
 * input[motifUnite].valueCodeableConcept = $TRE-R358-MotifStatutPersonnePriseCharge#89 "L'usager ne souhaite plus être pris en charge par l'ESMS"
-* input[typeDroitPrestation].valueCodeableConcept = $TRE-RXXX-typeDroitPrestation#1.1 "AAH L.821-1"
 * input[idDecision].valueIdentifier.value = "idDecision"
 * input[idNat_Decision].valueIdentifier.value = "idNat_Decision"
 
@@ -44,6 +43,5 @@ Description: "Exemple de ressource DocumentReference suivant le profil SDODocume
 * input[nomESMS].valueString = "value nomESMS"
 * input[statutESMS].valueCodeableConcept = $TRE-R357-StatutPersonnePriseCharge#41 "Contact effectué"
 * input[motifESMS].valueCodeableConcept = $TRE-R358-MotifStatutPersonnePriseCharge#152 "L'usager a visité l'ESMS"
-* input[typeDroitPrestation].valueCodeableConcept = $TRE-RXXX-typeDroitPrestation#1.1 "AAH L.821-1"
 * input[idDecision].valueIdentifier.value = "idDecision"
 * input[idNat_Decision].valueIdentifier.value = "idNat_Decision"
