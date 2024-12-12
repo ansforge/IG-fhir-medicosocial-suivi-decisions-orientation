@@ -376,17 +376,6 @@ Pour chaque objet métier, le tableau ci-dessous reprend l’ensemble des élém
             </td>
         </tr>
         <tr>
-            <td style="width: 142.4pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>DroitPrestation</p>
-            </td>
-            <td style="width: 162.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>typeDroitPrestation&nbsp;: [1..1] Code</p>
-            </td>
-            <td style="width: 163.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191) currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>input [0..*]&nbsp;: BackboneElement</p>
-            </td>
-        </tr>
-        <tr>
             <td rowspan="2" style="width: 142.4pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor rgb(191, 191, 191) rgb(191, 191, 191);border-image: none;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:12px;font-family:"Arial",sans-serif;'>Decision</p>
             </td>
