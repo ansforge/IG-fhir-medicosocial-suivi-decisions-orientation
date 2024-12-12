@@ -20,7 +20,7 @@ La production de ce document est basée sur :
 
 * [Les Spécifications Fonctionnelles des Echanges du volet « SI-ESMS » (SFE SI-ESMS),](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.4.pdf)
 * [Le standard Clinical Document Architecture R2  (CDA) porté par HL7 pour représenter les données présentées dans les SFE SI-ESMS,](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7)
-* [Le standard HL7 FHIR v4.0.1  pour le transport.](https://www.hl7.org/fhir/)
+* [Le standard HL7 FHIR v4.0.1  pour le transport.](https://hl7.org/fhir/R4)
 
 Les ressources FHIR utilisées sont :
 <table style="width:559.95pt;margin-left:-14.6pt;border-collapse:collapse;border: none;">
