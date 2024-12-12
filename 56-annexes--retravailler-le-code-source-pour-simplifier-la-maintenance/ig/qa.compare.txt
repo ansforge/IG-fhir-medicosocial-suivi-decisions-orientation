@@ -1,7 +1,7 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 0, warn = 25, info = 15
+err = 0, warn = 25, info = 14
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.sdo#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 27 / 4 / 0
@@ -12,7 +12,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.sdo#$-- (canonical = https://int
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CodeSystem-input-task-sdo-codesystem : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent : 0 / 0 / 2
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-sdo-document-reference : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo : 0 / 0 / 1
@@ -81,7 +81,6 @@ WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle
 == fsh-generated/resources/CapabilityStatement-gestionnaire-sdo.json ==
 == fsh-generated/resources/CodeSystem-input-task-sdo-codesystem.json ==
 == fsh-generated/resources/Consent-exemple-consent.json ==
-INFORMATION: Consent/exemple-consent: Consent.scope: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|4.0.1 from hl7.fhir.r4.core#4.0.1
 == fsh-generated/resources/DocumentReference-exemple-esms-document-reference.json ==
 WARNING: DocumentReference/exemple-esms-document-reference: DocumentReference.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
 == fsh-generated/resources/DocumentReference-exemple-sdo-document-reference.json ==
