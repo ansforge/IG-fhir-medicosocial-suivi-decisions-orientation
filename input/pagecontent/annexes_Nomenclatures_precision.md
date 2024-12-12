@@ -24,7 +24,7 @@
 | 14.0 Orientation vers un Pôle de compétences et de Prestations Externalisées (PCPE)                                    | pas de précision                            |
 | 11.1 Orientation en établissement ou service de réadaptation professionnelle (ESRP)                                    | pas de précision                            |
 | 11.2 Orientation en Etablissement ou service de préorientation (ESPO)                                                  | pas de précision                            |
-| 11.3 Orientation vers l'unité d'évaluation, de réentraînement et d'orientation sociale et socioprofessionnelle (UEROS) | pas de précision                            |
+| 11.3 Orientation vers l'unité d'évaluation, de réentraînement et d'orientation sociale et socioprofessionnelle pour personnes cérébro-lésées (UEROS) | pas de précision                            |
 | 11.4 Orientation professionnelle vers le marché du travail                                                             | pas de précision                            |
 | 11.5 Orientation en Etablissement et service d'aide par le travail (ESAT)                                              | pas de précision                            |
 | 11.6 Orientation vers un dispositif d'emploi accompagné                                                                | pas de précision                            |
