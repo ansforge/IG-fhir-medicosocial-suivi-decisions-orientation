@@ -1,13 +1,13 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 0, warn = 25, info = 14
+err = 0, warn = 19, info = 14
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.sdo#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 27 / 4 / 0
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 4 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements : 0 / 6 / 3
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms : 0 / 6 / 3
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms : 0 / 2 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSConsommateur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 0 / 1
@@ -22,7 +22,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.sdo#$-- (canonical = https://int
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-bundle-resultat-recherche-notification-esms : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference : 0 / 0 / 4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task : 0 / 0 / 5
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task : 0 / 2 / 1
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ValueSet-type-document-reference-esms-valueset : 0 / 0 / 1
 </table>
 == n/a ==
@@ -70,10 +70,6 @@ WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation-elements: 
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation-elements: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation-elements: Bundle: SearchSet bundles should have search modes on the entries
 == fsh-generated/resources/Bundle-exemple-sdo-bundle-resultat-recherche-notifications-esms.json ==
-WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0].resource/*Task/exemple-sdo-task-1-in-bundle*/.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
-WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[0].resource/*Task/exemple-sdo-task-1-in-bundle*/.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
-WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[1].resource/*Task/exemple-sdo-task-2-in-bundle*/.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
-WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle.entry[1].resource/*Task/exemple-sdo-task-2-in-bundle*/.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet bundles should have search modes on the entries
 == fsh-generated/resources/CapabilityStatement-ESMSConsommateur.json ==
@@ -108,6 +104,4 @@ INFORMATION: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[
 INFORMATION: StructureDefinition/sdo-task: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/Task-exemple-sdo-task.json ==
-WARNING: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept): ValueSet 'https://mos.esante.gouv.fr/NOS/JDV_JXX-typeDroitPrestation/FHIR/JDV_JXX-typeDroitPrestation' not found
-WARNING: Task/exemple-sdo-task: Task.input[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_XXX-typeDroitPrestation/FHIR/TRE-RXXX-typeDroitPrestation' could not be found, so the code cannot be validated
 == fsh-generated/resources/ValueSet-type-document-reference-esms-valueset.json ==
