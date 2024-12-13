@@ -1062,15 +1062,15 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Individu.NIR</span></p>
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Identifiant NIR ou NIA de l&rsquo;individu.&nbsp;</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Identifiant NIR-INS ou NIA-INS de l&rsquo;individu.&nbsp;</span></p>
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">Obligatoire s'il s'agit de l'identité INS (Attribut nullFlavor interdit)</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:13px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = matricule&nbsp;</span><span style="color:#C00000;">(Identifiant sur 13 caract&egrave;res + cl&eacute; sur 2 caract&egrave;res)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = matricule INS &nbsp;</span><span style="color:#C00000;">(Identifiant sur 13 caract&egrave;res + cl&eacute; sur 2 caract&egrave;res)</span></li>
                     </ul>
                     <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:11.3px;">
-                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root = OID de l&rsquo;autorit&eacute; d&rsquo;affectation&nbsp;</span><span style="color:#C00000;">(1.2.250.1.213.1.4.8 pour les NIR, 1.2.250.1.213.1.4.9 pour les NIA)</span></li>
+                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root = OID de l&rsquo;autorit&eacute; d&rsquo;affectation&nbsp;</span><span style="color:#C00000;">(1.2.250.1.213.1.4.8 pour les NIR-INS, 1.2.250.1.213.1.4.9 pour les NIA-INS)</span></li>
                         </ul>
                     </div>
                 </div>
