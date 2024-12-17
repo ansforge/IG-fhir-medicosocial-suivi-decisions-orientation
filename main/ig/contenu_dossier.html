@@ -405,7 +405,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Identifiant unique du document.</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Attribut nullFlavor interdit.</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Attribut nullFlavor interdit</span></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
                         <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root (obligatoire) = valeur d'un OID propre à l'emetteur. L'OID formé doit être complet et permettra d'identifier l'instance du document. </span></li>
@@ -1320,48 +1320,40 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
         </tr>
         <tr>
-            <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
+            <td rowspan="2" style="width:35.5pt;border:solid windowtext 1.0pt;border-top: none;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">1</span></p>
             </td>
-            <td style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+            <td rowspan="2" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">.Id</span></p>
             </td>
-            <td style="width:42.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+            <td rowspan="2" style="width:42.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><em><span style="color:black;">[1..*]</span></em></p>
             </td>
             <td style="width: 127.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Individu.NIR</span></p>
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Identifiant NIR ou NIA de l’individu.&nbsp;</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Identifiant NIR-INS ou NIA-INS de l’individu.&nbsp;</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:  #C00000;">Obligatoire s'il s'agit de l'identité INS (Attribut nullFlavor interdit)</span></strong></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:13px;">
-                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@extension = matricule&nbsp;</span><span style="color:#C00000;">(Identifiant sur 13 caractères + clé sur 2 caractères)</span></li>
+                        <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@extension = matricule INS &nbsp;</span><span style="color:#C00000;">(Identifiant sur 13 caractères + clé sur 2 caractères)</span></li>
                     </ul>
                     <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:11.3px;">
-                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root = OID de l’autorité d’affectation&nbsp;</span><span style="color:#C00000;">(1.2.250.1.213.1.4.8 pour les NIR, 1.2.250.1.213.1.4.9 pour les NIA)</span></li>
+                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root = OID de l’autorité d’affectation&nbsp;</span><span style="color:#C00000;">(1.2.250.1.213.1.4.8 pour les NIR-INS, 1.2.250.1.213.1.4.9 pour les NIA-INS)</span></li>
                         </ul>
                     </div>
                 </div>
             </td>
         </tr>
         <tr>
-            <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">&nbsp;</span></p>
-            </td>
-            <td style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">&nbsp;</span></p>
-            </td>
-            <td style="width:42.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">&nbsp;</span></p>
-            </td>
             <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Individu.idIndividu</span></p>
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Identifiant initial de l’individu au sein de la MDPH ayant créé le dossier individu</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  #C00000;">Obligatoire</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:  #C00000;">Obligatoire</span></strong></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:13.350000000000001px;">
                         <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@extension =&nbsp;</span>identifiant de l’Individu</li>
@@ -1420,7 +1412,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Concaténation de numéro de voie, libellé type de voie, libellé de voie, complément_1 adresse, complément-2 adresse, mentions spéciales de distribution</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  #C00000;">Obligatoire si use fixé à «&nbsp;PHYS&nbsp;»</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:  #C00000;">Obligatoire si use fixé à «&nbsp;PHYS&nbsp;»</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -1455,7 +1447,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width: 233.9pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Localité&nbsp;</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  #C00000;">Obligatoire si use fixé à «&nbsp;PHYS&nbsp;»</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:  #C00000;">Obligatoire si use fixé à «&nbsp;PHYS&nbsp;»</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -1473,7 +1465,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Nom de l’organisme de domiciliation&nbsp;</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  #C00000;">A renseigner uniquement si l’élément use de l’adresse prend la valeur PST</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:  #C00000;">A renseigner uniquement si l’élément use de l’adresse prend la valeur PST</span></strong></p>
             </td>
         </tr>
           <!-- <tr>
@@ -1590,7 +1582,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">1</span></strong></p>
             </td>
             <td style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">.numSecuriteSocialeOuvrantDroit&nbsp;: string</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">.numSecuriteSocialeOuvrantDroit&nbsp;: identifiant</span></strong></p>
             </td>
             <td style="width: 42.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">[0..1]</span></strong></p>
@@ -1600,6 +1592,10 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">Extension pour les volets médico-sociaux désignant le numéro de sécurité sociale de l’ouvrant droit.</span></strong></p>
+                <ul style="margin-bottom:0cm;list-style-type: disc;">                
+                    <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">@extension = identifiant du numéro de sécurité sociale</li>
+                    <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">@root = OID de l'autorité d'affectation <span style="color:#C00000;">(1.2.250.1.213.1.4.13 pour les NIR utilisé en tant que numéro de sécurité sociale, 1.2.250.1.213.1.4.14 pour les NIA utilisé en tant que numéro de sécurité sociale)</span></li>
+                </ul>                
             </td>
         </tr>
         <tr>
@@ -1617,7 +1613,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">Extension pour les volets médico-sociaux désignant la date de transfert du dossier suite à un déménagement de l’individu</span></strong></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:red;">Au format&nbsp;</span></strong><span style="color:red;">aaaammjj</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Au format : aaaammjj</span></p>
             </td>
         </tr>
         <tr>
@@ -1659,7 +1655,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#1F4E79;">Extension pour le volet ESMS désignant l’identifiant de la MDPH en charge du dossier de l’individu</span></strong></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  #C00000;">A ne renseigner qu’en cas de transfert de dossier en cours</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:  #C00000;">A ne renseigner qu’en cas de transfert de dossier en cours</span></strong></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
                         <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@ extension&nbsp;: valeur de l’identifiant de la MDPH accueillant le dossier lors d’un transfert (voir annexe 5)</span></li>
@@ -1701,6 +1697,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Elément regroupant plusieurs sous-éléments permettant de définir le nom de l’individu</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:  #C00000;">Attribut nullFlavor interdit</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -1719,7 +1716,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Nom de naissance</span><span style="color:#C00000;">&nbsp;</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s'il s'agit de l'identité INS (Attribut nullFlavor interdit)</span></strong></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;">
                         <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@qualifier = « BR »&nbsp;</span></li>
@@ -1732,8 +1729,8 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Identite.nomUsage&nbsp;</span></p>
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Nom d’usage (information de l’INS)</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Nom d’usage</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">S'il s'agit de l'identité INS, obligatoire lorsqu'il est différent du nom de naissance (attribut nullFlavor interdit)</span></strong></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;">
                         <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@qualifier = « CL »&nbsp;</span></li>
@@ -1756,13 +1753,14 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Prénoms de l’acte de naissance</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS (Attribut nullFlavor interdit)</span></strong></p>
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">L’attribut qualifier n’est pas renseigné.&nbsp;</span></p>
             </td>
         </tr>
         <tr>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Premier prénom de l’acte de naissance</span><span style="color:black;">&nbsp;</span><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">Premier prénom de l'acte de naissance</p>
+                <p><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS (Attribut nullFlavor interdit)</span></strong></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;">
                         <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@qualifier = «&nbsp;BR&nbsp;»</span></li>
@@ -1773,12 +1771,30 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
         <tr>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Prénom utilisé</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">S'il s'agit de l'identité INS, obligatoire lorsqu'il est différent du premier prénom de naissance (attribut nullFlavor interdit)</span></strong></p>
                 <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                     <ul style="margin-bottom:0cm;list-style-type: disc;">
                         <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@qualifier = «&nbsp;CL »</span></li>
                     </ul>
                 </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:35.5pt;border:solid windowtext 1.0pt;border-top:  none;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">3</span></p>
+            </td>
+            <td style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">...prefix</span></p>
+            </td>
+            <td style="width: 42.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><em><u><span style="color:black;">[0..1]</span></u></em></p>
+            </td>
+            <td style="width: 127.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Identite.civilite&nbsp;</span></p>
+            </td>
+            <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Civilité de l’individu</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">JDV_J143_AdministrativeGender_CISIS</span> ( 1.2.250.1.213.1.1.5.590)</p>
             </td>
         </tr>
         <tr>
@@ -1795,7 +1811,8 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Identite.sexe&nbsp;</span></p>
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Sexe de l’individu</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Sexe de l’individu</span></p>                
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s'il s'agit de l'identité INS (attribut nullFlavor interdit)</span></strong></p>
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">JDV_J143-AdministrativeGender-CISIS&nbsp;</span><span style="color:black;">(1.2.250.1.213.1.1.5.590)</span></p>
             </td>
         </tr>
@@ -1814,12 +1831,12 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width:233.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Date de naissance &nbsp;</span><span style="color:#C00000;">au format aaaammjj</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s'il s'agit de l'identité INS (attribut nullFlavor interdit)</span></strong></p>
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">avec possibilité d’avoir JJ=00 ou MMJJ=0000</span></p>
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Si jour inconnu : aaaamm01&nbsp;</span></p>
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Si mois inconnu&nbsp;: aaaa01jj</span></p>
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">Si jour et mois inconnu&nbsp;: aaaa1231</span></p>
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:#C00000;">&nbsp;</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -2126,7 +2143,7 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
             </td>
             <td style="width: 233.9pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:  black;">Eléments et sous-éléments permettant de définir le lieu de naissance</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s'il s'agit de l'identité INS (attribut nullFlavor interdit)</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -2177,9 +2194,9 @@ Les éléments imposés par CDA sont indiqués par « X » dans la colonne « El
                 <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Identite.lieuNaissance&nbsp;</span></p>
             </td>
             <td style="width: 233.9pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Commune de naissance. (information de l’INS)</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Elément de type «&nbsp;ST&nbsp;» (chaîne de caractères) s’appuyant sur les codes issues de la TRE_R13-CommuneOM.</span></p>
-                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s’il s’agit de l’identité INS</span></strong></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Commune de naissance.</span></p>
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">Elément de type «&nbsp;ST&nbsp;» (chaîne de caractères) s’appuyant sur les codes issues de la TRE_R13-CommuneOM.</span></p>                
+                <p style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><strong><span style="color:#C00000;">Obligatoire s'il s'agit de l'identité INS (attribut nullFlavor interdit)</span></strong></p>
             </td>
         </tr>
         <tr>
@@ -2914,7 +2931,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                     </ul>
                     <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root : OID&nbsp;</span>de la MDPH émettrice de l’identifiant de décision<span style="color:black;"><a name="l6528">​</a>&nbsp;(<a href="#Annexe1">Annexe&nbsp;</a></span><span style="color:blue;text-decoration:underline;">5</span><span style="color:black;">)</span></li>
+                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;">@root : OID&nbsp;</span>de la MDPH émettrice de l’identifiant de décision<span style="color:black;"><a name="l6579">​</a>&nbsp;(<a href="#Annexe1">Annexe&nbsp;</a></span><span style="color:blue;text-decoration:underline;">5</span><span style="color:black;">)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -2994,7 +3011,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                     </ul>
                     <div style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;">
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;"><a name="l6718">​</a>@root&nbsp;: OID de la MDPH émettrice de l’identifiant (<a href="#Annexe1">Annexe 1</a>)</span></li>
+                            <li style="margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;"><span style="color:black;"><a name="l6769">​</a>@root&nbsp;: OID de la MDPH émettrice de l’identifiant (<a href="#Annexe1">Annexe 1</a>)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -4592,7 +4609,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10543">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10594">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4706,7 +4723,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10817">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l10868">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4820,7 +4837,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11089">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11140">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4934,7 +4951,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11363">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Déficience principale</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11414">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Déficience principale</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -5048,7 +5065,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11637">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien veres le glossaire"><span style="color:black;text-decoration:  none;">Déficience secondaire</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l11688">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien veres le glossaire"><span style="color:black;text-decoration:  none;">Déficience secondaire</span></a></span></p>
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6540,7 +6557,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15187">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Besoins de compensation identifiés</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15238">​</a><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Besoins de compensation identifiés</span></a></span></p>
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6635,7 +6652,7 @@ Il est recommandé de générer une racine d’OID pour chaque structure, à par
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;"><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
             </td>
             <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15414">​</a>Evolution et Besoins.<a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">besoins de compensation identifiés</span></a></span></p>
+                <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:black;"><a name="l15465">​</a>Evolution et Besoins.<a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">besoins de compensation identifiés</span></a></span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style="margin-right:0cm;margin-left:0cm;font-size:13px;font-family:&quot;Arial&quot;,sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;"><span style="line-height:115%;color:#C00000;">No_Besoin_compensation&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.94)</span></p>
@@ -6848,7 +6865,7 @@ Les éléments de type “CV”, “CE” ou “CD” doivent respecter les cont
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 13, 2024 09:00+0000">2024-12-13</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 17, 2024 10:42+0000">2024-12-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
