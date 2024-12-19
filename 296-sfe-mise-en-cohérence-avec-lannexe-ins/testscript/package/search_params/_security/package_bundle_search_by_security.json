@@ -1,0 +1,80 @@
+{
+  "id": "Package-Bundle-Search_by-Security",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Package_Bundle_Search_by_Security",
+  "title": "package bundle search_by security",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-12-19T09:31:00+00:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_bundle",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_bundle.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "q3TR9RTgo1xsU7xM",
+      "expression": "Bundle.meta.security",
+      "sourceId": "T130Kd8ARU3tqQzu"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "T130Kd8ARU3tqQzu",
+          "sourceId": "example_bundle"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "Bundle",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_security=${q3TR9RTgo1xsU7xM}"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "Bundle",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${q3TR9RTgo1xsU7xM}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}
