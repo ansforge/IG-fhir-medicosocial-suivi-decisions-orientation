@@ -6,7 +6,7 @@
   "title": "package bundle search_by source",
   "status": "draft",
   "experimental": true,
-  "date": "2025-01-06T13:18:06+00:00",
+  "date": "2025-01-06T13:21:58+00:00",
   "publisher": "The MITRE Corporation",
   "fixture": [
     {
@@ -20,9 +20,9 @@
   ],
   "variable": [
     {
-      "name": "oPIK4lcPE0kpHck6",
+      "name": "IEfLPLG15xNUwG3d",
       "expression": "Bundle.meta.source",
-      "sourceId": "40WeYTMbAgcJ6l71"
+      "sourceId": "UV8L4AoQlc2VsXTf"
     }
   ],
   "setup": {
@@ -35,7 +35,7 @@
           },
           "label": "Operation_1",
           "encodeRequestUrl": false,
-          "responseId": "40WeYTMbAgcJ6l71",
+          "responseId": "UV8L4AoQlc2VsXTf",
           "sourceId": "example_bundle"
         }
       }
@@ -54,7 +54,7 @@
             "resource": "Bundle",
             "label": "Operation_2",
             "encodeRequestUrl": false,
-            "params": "?_source=${oPIK4lcPE0kpHck6}"
+            "params": "?_source=${IEfLPLG15xNUwG3d}"
           }
         }
       ]
@@ -71,7 +71,7 @@
           "resource": "Bundle",
           "label": "Operation_3",
           "encodeRequestUrl": false,
-          "params": "/${oPIK4lcPE0kpHck6}"
+          "params": "/${IEfLPLG15xNUwG3d}"
         }
       }
     ]
