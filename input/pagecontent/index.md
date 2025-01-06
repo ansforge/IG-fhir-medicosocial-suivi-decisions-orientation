@@ -3,11 +3,15 @@
 This document presents the technical specifications of the “SI-ESMS” section. which specify the exchanges of information between the Orientation Monitoring Information System (SI-SdO) and the Information System for Medical-Social Establishments and Services (SI-ESMS) following notification of an orientation decision
 </p>
 
+{% if site.data.info.releaselabel == 'ci-build' %}
+<div style="width: 65%">
 <blockquote class="stu-note">
 <p>
   <b>Attention !</b> Cette version de l'Implementation Guide est en intégration continue et est soumise à des changements réguliers. La version officielle est accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/sdo</b>
 </p>
 </blockquote>
+</div>
+{% endif %}
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
