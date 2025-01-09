@@ -1,0 +1,70 @@
+{
+  "id": "79d7f139b181d37e24deaa841384365afd347b7ba28adcc96fac37142c469411",
+  "url": "https://github.com/fhir-crucible/testscript-generator/79d7f139b181d37e24deaa841384365afd347b7ba28adcc96fac37142c469411",
+  "version": "0.0",
+  "name": "PackageESMSConsentReadProfile",
+  "title": "IG: package; Profile: ESMSConsent; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-01-09T09:34:05+00:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileESMSConsent",
+      "reference": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdESMSConsent",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile ESMSConsent.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the ESMSConsent profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Consent",
+            "label": "Read_Consent_Instance",
+            "description": "Read Consent Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdESMSConsent}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Consent_Returned",
+            "description": "Assert Consent Returned",
+            "resource": "Consent",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_ESMSConsent_Profile",
+            "description": "Assert returned instance conforms to the ESMSConsent Profile",
+            "validateProfileId": "targetProfileESMSConsent",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}
