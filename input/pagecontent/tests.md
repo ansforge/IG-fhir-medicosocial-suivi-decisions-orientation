@@ -20,8 +20,8 @@ Liste des validateurs CDA présents sur la plateforme de test [EVSClient](https:
 
 | Nom Validateur | Document testé | Flux associé |
 | --------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------- |
-| CNSA_ESMS-Decision_2024-03 | Document CDA portant les information relatives à l'individu et à la décision d'orientation en ESMS | 1.4 |
-| CNSA_ESMS-Evaluation_2024-03 | Document CDA portant l'évaluation de l'individu | 3.2 |
+| CNSA_ESMS-Decision_2025-01 | Document CDA portant les information relatives à l'individu et à la décision d'orientation en ESMS | 1.4 |
+| CNSA_ESMS-Evaluation_2025-01 | Document CDA portant l'évaluation de l'individu | 3.2 |
 
 [Documentation de l'outil EVS](https://gazelle.ihe.net/gazelle-documentation/EVS-Client/user.html)
 
