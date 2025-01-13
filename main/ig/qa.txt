@@ -1,9 +1,9 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 0, warn = 19, info = 14
-IG Publisher Version: 1.8.6
-Generated Thu Jan 09 09:32:51 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.3-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+err = 0, warn = 18, info = 14
+IG Publisher Version: 1.8.7
+Generated Mon Jan 13 14:45:18 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.3-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 27 / 4 / 0
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 4 / 3
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements : 0 / 6 / 3
@@ -17,7 +17,7 @@ Generated Thu Jan 09 09:32:51 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-sdo-document-reference : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-consent : 0 / 1 / 5
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-consent : 0 / 0 / 5
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-document-reference : 0 / 0 / 4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-bundle-resultat-recherche-notification-esms : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference : 0 / 0 / 4
@@ -88,7 +88,6 @@ INFORMATION: StructureDefinition/esms-consent: StructureDefinition.snapshot.elem
 INFORMATION: StructureDefinition/esms-consent: StructureDefinition.snapshot.element[57].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/esms-consent: StructureDefinition.snapshot.element[75].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/esms-consent: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/esms-consent: StructureDefinition.snapshot.element[56].binding: The definition for the element 'Consent.provision.code' binds to the value set 'http://hl7.org/fhir/ValueSet/consent-content-code' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-esms-document-reference.json ==
 INFORMATION: StructureDefinition/esms-document-reference: StructureDefinition.snapshot.element[18].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/esms-document-reference: StructureDefinition.snapshot.element[27].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
