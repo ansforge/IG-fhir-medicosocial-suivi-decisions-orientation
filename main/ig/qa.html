@@ -1,12 +1,16 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 27, errors = 0, warn = 18, info = 14-->
+<!-- broken links = 27, errors = 0, warn = 14, info = 3-->
 <head>
   <title>SuiviDecisionsOrientation : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
     span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
     span.toggle  { font-size: 10px }
   </style>
   <script>
@@ -32,13 +36,19 @@
         span.innerHTML = 'Show Validation Information';
       }
     }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SuiviDecisionsOrientation</h1>
- <p>Generated Mon Jan 13 14:45:18 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.3-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Jan 22 13:26:08 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.3-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sdo">https://interop.esante.gouv.fr/ig/fhir/sdo</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.7</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.8</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.sdo, Canonical = https://interop.esante.gouv.fr/ig/fhir/sdo</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
@@ -90,7 +100,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/task.html">Task</a>
@@ -118,7 +127,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 18, info = 14, broken links = 27</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 14, info = 3, broken links = 27.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -128,7 +137,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>27</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Bundle-exemple-bundle-resultat-recherche-decision-evaluation"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Bundle-exemple-bundle-resultat-recherche-decision-evaluation"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
@@ -152,10 +161,10 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Consent-exemple-consent"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_DocumentReference-exemple-esms-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_DocumentReference-exemple-esms-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_DocumentReference-exemple-sdo-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-sdo-document-reference</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_DocumentReference-exemple-sdo-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-sdo-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_ImplementationGuide-ans.fhir.fr.sdo"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -164,19 +173,19 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-esms-consent"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-consent</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-esms-consent"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-consent</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-esms-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-esms-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-bundle-resultat-recherche-notification-esms"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-bundle-resultat-recherche-notification-esms</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-document-reference"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_StructureDefinition-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-sdo-task</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-medicosocial-suivi-decisions-orientation_IG-fhir-medicosocial-suivi-decisions-orientation_igSource_fsh-generated_resources_Task-exemple-sdo-task"><b>/home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Task-exemple-sdo-task</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -191,97 +200,97 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l470">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 271, column 50</a></b></td><td><b>error</b></td><td><b>The link 'CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf' for &quot;SFE SI-ESMS&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l470">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 271, column 50</a></b></td><td><b>error</b></td><td><b>The link 'CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf' for &quot;SFE SI-ESMS&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1057">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 532, column 218</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget' for &quot;recordTarget&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1057">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 532, column 218</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget' for &quot;recordTarget&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1082">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 541, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget_1' for &quot;2.1.2.3 RecordTarget&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1082">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 541, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget_1' for &quot;2.1.2.3 RecordTarget&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1125">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 558, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Author' for &quot;2.1.2.1 Author&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1125">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 558, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Author' for &quot;2.1.2.1 Author&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1167">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 575, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Informant' for &quot;2.1.2.4 Informant&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1167">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 575, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Informant' for &quot;2.1.2.4 Informant&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1208">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 592, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Custodian' for &quot;2.1.2.2 Custodian&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1208">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 592, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Custodian' for &quot;2.1.2.2 Custodian&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1249">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 609, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RelatedDocument' for &quot;2.1.2.5 RelatedDocument&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1249">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 609, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RelatedDocument' for &quot;2.1.2.5 RelatedDocument&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1317">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 638, column 219</a></b></td><td><b>error</b></td><td><b>The link '#_Component' for &quot;structuredBody&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1317">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 638, column 219</a></b></td><td><b>error</b></td><td><b>The link '#_Component' for &quot;structuredBody&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1364">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 658, column 333</a></b></td><td><b>error</b></td><td><b>The link '#_Section_repr%C3%A9sentant_l%E2%80%99organisme' for &quot;2.1.3.1 Section représentant les informations sur le décès de l'individu&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1364">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 658, column 333</a></b></td><td><b>error</b></td><td><b>The link '#_Section_repr%C3%A9sentant_l%E2%80%99organisme' for &quot;2.1.3.1 Section représentant les informations sur le décès de l'individu&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1405">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 675, column 353</a></b></td><td><b>error</b></td><td><b>The link '#_Extension_repr%C3%A9sentant_les_1' for &quot;2.1.3.2. Extension représentant les informations sur la décision de l’individu&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1405">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 675, column 353</a></b></td><td><b>error</b></td><td><b>The link '#_Extension_repr%C3%A9sentant_les_1' for &quot;2.1.3.2. Extension représentant les informations sur la décision de l’individu&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l1981">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 928, column 218</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget' for &quot;recordTarget&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l1981">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 928, column 218</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget' for &quot;recordTarget&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l2006">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 937, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget_1' for &quot;2.1.2.3 RecordTarget&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l2006">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 937, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RecordTarget_1' for &quot;2.1.2.3 RecordTarget&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l2049">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 954, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Author' for &quot;2.1.2.1 Author&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l2049">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 954, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Author' for &quot;2.1.2.1 Author&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l2090">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 971, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Custodian' for &quot;2.1.2.2 Custodian&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l2090">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 971, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_Custodian' for &quot;2.1.2.2 Custodian&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l2131">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 988, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RelatedDocument' for &quot;2.1.2.5 RelatedDocument&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l2131">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 988, column 332</a></b></td><td><b>error</b></td><td><b>The link '#_RelatedDocument' for &quot;2.1.2.5 RelatedDocument&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l2199">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 1017, column 219</a></b></td><td><b>error</b></td><td><b>The link '#_Component' for &quot;structuredBody&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l2199">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 1017, column 219</a></b></td><td><b>error</b></td><td><b>The link '#_Component' for &quot;structuredBody&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l2246">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 1037, column 333</a></b></td><td><b>error</b></td><td><b>The link '#_Section_repr%C3%A9sentant_l%E2%80%99organisme' for &quot;2.1.3.3 Section représentant l'évaluation de l'individu&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l2246">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 1037, column 333</a></b></td><td><b>error</b></td><td><b>The link '#_Section_repr%C3%A9sentant_l%E2%80%99organisme' for &quot;2.1.3.3 Section représentant l'évaluation de l'individu&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l6579">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/span&#8203;/a at Line 2936, column 357</a></b></td><td><b>error</b></td><td><b>The link '#Annexe1' for &quot;Annexe &quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l6575">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/span&#8203;/a at Line 2935, column 357</a></b></td><td><b>error</b></td><td><b>The link '#Annexe1' for &quot;Annexe &quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l6769">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/span&#8203;/a at Line 3016, column 299</a></b></td><td><b>error</b></td><td><b>The link '#Annexe1' for &quot;Annexe 1&quot; cannot be resolved (valid targets: 50 targets)</b></td>
+     <td><b><a href="contenu_dossier.html#l6765">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/span&#8203;/a at Line 3015, column 299</a></b></td><td><b>error</b></td><td><b>The link '#Annexe1' for &quot;Annexe 1&quot; cannot be resolved (valid targets: 50 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l10594">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4614, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie' for &quot;Pathologie secondaire&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l10590">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4613, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie' for &quot;Pathologie secondaire&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l10868">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4728, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare' for &quot;Maladie rare&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l10864">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4727, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare' for &quot;Maladie rare&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l11140">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4842, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare' for &quot;Handicap rare&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l11136">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4841, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare' for &quot;Handicap rare&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l11414">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4956, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience' for &quot;Déficience principale&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l11410">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 4955, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience' for &quot;Déficience principale&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l11688">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 5070, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience' for &quot;Déficience secondaire&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l11684">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 5069, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience' for &quot;Déficience secondaire&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l15238">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 6562, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9' for &quot;Besoins de compensation identifiés&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l15234">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 6561, column 234</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9' for &quot;Besoins de compensation identifiés&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="contenu_dossier.html#l15465">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 6657, column 255</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9' for &quot;besoins de compensation identifiés&quot; cannot be resolved</b></td>
+     <td><b><a href="contenu_dossier.html#l15461">output&#8203;/contenu_dossier&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 6656, column 255</a></b></td><td><b>error</b></td><td><b>The link 'file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9' for &quot;besoins de compensation identifiés&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/searchform&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/p&#8203;/img&#8203;/footer&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/a&#8203;/img&#8203;/script at Line 255, column 7</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '$( document ).ready('... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>output&#8203;/searchform&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/p&#8203;/img&#8203;/footer&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/a&#8203;/img&#8203;/div&#8203;/a&#8203;/img&#8203;/script at Line 255, column 7</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '$( document ).ready('... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="st_flux1.html#l692">output&#8203;/st_flux1&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 324, column 291</a></b></td><td><b>error</b></td><td><b>The link '#_ftn1' for &quot;&quot; cannot be resolved (valid targets: 47 targets)</b></td>
+     <td><b><a href="st_flux1.html#l692">output&#8203;/st_flux1&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/span&#8203;/a at Line 324, column 291</a></b></td><td><b>error</b></td><td><b>The link '#_ftn1' for &quot;&quot; cannot be resolved (valid targets: 47 targets)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
@@ -294,16 +303,10 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-1-in-bundle*&#8203;/&#8203;.content[0]&#8203;.attachment&#8203;.language (l46&#8203;/c31)</b></td><td><b>warning</b></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b> <span style="font-size: 8px; font-color: silver">TERMINOLOGY_TX_WARNING</span></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet Bundles should have a self link that specifies what the search was</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SEARCH_NOSELF</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-2-in-bundle*&#8203;/&#8203;.content[0]&#8203;.attachment&#8203;.language (l89&#8203;/c31)</b></td><td><b>warning</b></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b> <span style="font-size: 8px; font-color: silver">TERMINOLOGY_TX_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet Bundles should have a self link that specifies what the search was</b> <span style="font-size: 8px; font-color: silver">BUNDLE_SEARCH_NOSELF</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet bundles should have search modes on the entries</b> <span style="font-size: 8px; font-color: silver">BUNDLE_SEARCH_NO_MODE</span></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet bundles should have search modes on the entries</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SEARCH_NO_MODE</span></td>
    </tr>
 </table>
 <hr/>
@@ -316,22 +319,22 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-1-in-bundle-elements*&#8203;/&#8203;.content[0]&#8203;.attachment (l44&#8203;/c14)</b></td><td><b>warning</b></td><td><b>Attachments have data and/or url, or else SHOULD have either contentType and/or language</b> <span style="font-size: 8px; font-color: silver">TYPE_SPECIFIC_CHECKS_DT_ATT_NO_CONTENT</span></td>
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-1-in-bundle-elements*&#8203;/&#8203;.content[0]&#8203;.attachment (l44&#8203;/c14)</b></td><td><b>warning</b></td><td><b>Attachments have data and/or url, or else SHOULD have either contentType and/or language</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_ATT_NO_CONTENT</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-1-in-bundle-elements*&#8203;/ (l13&#8203;/c8)</b></td><td><b>warning</b></td><td><b>Constraint failed: regle-Contenu: 'Le transport des données devient obligatoire lorsque la ressource complète est transportée, le champs data doit alors être rempli' (defined in https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference)</b> <span style="font-size: 8px; font-color: silver">https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference#regle-Contenu</span></td>
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-1-in-bundle-elements*&#8203;/ (l13&#8203;/c8)</b></td><td><b>warning</b></td><td><b>Constraint failed: regle-Contenu: 'Le transport des données devient obligatoire lorsque la ressource complète est transportée, le champs data doit alors être rempli' (defined in https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference#regle-Contenu</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-2-in-bundle-elements*&#8203;/&#8203;.content[0]&#8203;.attachment (l84&#8203;/c14)</b></td><td><b>warning</b></td><td><b>Attachments have data and/or url, or else SHOULD have either contentType and/or language</b> <span style="font-size: 8px; font-color: silver">TYPE_SPECIFIC_CHECKS_DT_ATT_NO_CONTENT</span></td>
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-2-in-bundle-elements*&#8203;/&#8203;.content[0]&#8203;.attachment (l84&#8203;/c14)</b></td><td><b>warning</b></td><td><b>Attachments have data and/or url, or else SHOULD have either contentType and/or language</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_ATT_NO_CONTENT</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-2-in-bundle-elements*&#8203;/ (l53&#8203;/c8)</b></td><td><b>warning</b></td><td><b>Constraint failed: regle-Contenu: 'Le transport des données devient obligatoire lorsque la ressource complète est transportée, le champs data doit alors être rempli' (defined in https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference)</b> <span style="font-size: 8px; font-color: silver">https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference#regle-Contenu</span></td>
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*DocumentReference&#8203;/exemple-esms-documentreference-2-in-bundle-elements*&#8203;/ (l53&#8203;/c8)</b></td><td><b>warning</b></td><td><b>Constraint failed: regle-Contenu: 'Le transport des données devient obligatoire lorsque la ressource complète est transportée, le champs data doit alors être rempli' (defined in https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference#regle-Contenu</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet Bundles should have a self link that specifies what the search was</b> <span style="font-size: 8px; font-color: silver">BUNDLE_SEARCH_NOSELF</span></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet Bundles should have a self link that specifies what the search was</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SEARCH_NOSELF</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet bundles should have search modes on the entries</b> <span style="font-size: 8px; font-color: silver">BUNDLE_SEARCH_NO_MODE</span></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet bundles should have search modes on the entries</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SEARCH_NO_MODE</span></td>
    </tr>
 </table>
 <hr/>
@@ -344,10 +347,10 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet Bundles should have a self link that specifies what the search was</b> <span style="font-size: 8px; font-color: silver">BUNDLE_SEARCH_NOSELF</span></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet Bundles should have a self link that specifies what the search was</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SEARCH_NOSELF</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet bundles should have search modes on the entries</b> <span style="font-size: 8px; font-color: silver">BUNDLE_SEARCH_NO_MODE</span></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>warning</b></td><td><b>SearchSet bundles should have search modes on the entries</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SEARCH_NO_MODE</span></td>
    </tr>
 </table>
 <hr/>
@@ -407,10 +410,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>DocumentReference&#8203;.content[0]&#8203;.attachment&#8203;.language (l33&#8203;/c25)</b></td><td><b>warning</b></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b> <span style="font-size: 8px; font-color: silver">TERMINOLOGY_TX_WARNING</span></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -420,10 +420,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>DocumentReference&#8203;.content[0]&#8203;.attachment&#8203;.language (l20&#8203;/c25)</b></td><td><b>warning</b></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b> <span style="font-size: 8px; font-color: silver">TERMINOLOGY_TX_WARNING</span></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -456,16 +453,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c109903)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c127881)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[75]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c156920)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span style="font-size: 8px; font-color: silver"></span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
@@ -475,16 +463,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c50485)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c64154)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[72]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c135623)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -504,16 +483,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c57591)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c71260)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[68]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c137286)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -526,16 +496,10 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c258157)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c420062)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[50]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c284717)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span style="font-size: 8px; font-color: silver">SECURITY_STRING_CONTENT_WARNING</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c449732)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[52]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c286996)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[52]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c268784)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -634,61 +598,6 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
-<h2>SECURITY_STRING_CONTENT_WARNING</h2>
- <table class="grid">
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-esms-consent.html">fsh-generated/resources/StructureDefinition-esms-consent.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-esms-consent.html">fsh-generated/resources/StructureDefinition-esms-consent.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-esms-consent.html">fsh-generated/resources/StructureDefinition-esms-consent.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-esms-document-reference.html">fsh-generated/resources/StructureDefinition-esms-document-reference.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-esms-document-reference.html">fsh-generated/resources/StructureDefinition-esms-document-reference.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-esms-document-reference.html">fsh-generated/resources/StructureDefinition-esms-document-reference.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-document-reference.html">fsh-generated/resources/StructureDefinition-sdo-document-reference.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-document-reference.html">fsh-generated/resources/StructureDefinition-sdo-document-reference.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-document-reference.html">fsh-generated/resources/StructureDefinition-sdo-document-reference.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-sdo-task.html">fsh-generated/resources/StructureDefinition-sdo-task.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="TERMINOLOGY_TX_WARNING"> </a>
-<h2>TERMINOLOGY_TX_WARNING</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-exemple-bundle-resultat-recherche-decision-evaluation.html">fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation.json</a></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-exemple-bundle-resultat-recherche-decision-evaluation.html">fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation.json</a></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="DocumentReference-exemple-esms-document-reference.html">fsh-generated/resources/DocumentReference-exemple-esms-document-reference.json</a></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="DocumentReference-exemple-sdo-document-reference.html">fsh-generated/resources/DocumentReference-exemple-sdo-document-reference.json</a></td><td><b>Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct</b></td>
    </tr>
 </table>
 <hr/>
