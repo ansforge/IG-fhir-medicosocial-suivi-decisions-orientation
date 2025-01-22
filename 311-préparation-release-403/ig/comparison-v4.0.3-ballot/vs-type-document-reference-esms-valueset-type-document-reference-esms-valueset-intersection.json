@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "14226ce8-ec2d-4b9d-b3a1-e7219d7e63ed-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/14226ce8-ec2d-4b9d-b3a1-e7219d7e63ed-24",
+  "name" : "IntersectionDocumentReferenceTypeESMSValueSetAndDocumentReferenceTypeESMSValueSet",
+  "title" : "Intersection of DocumentReferenceTypeESMSValueSet And DocumentReferenceTypeESMSValueSet",
+  "status" : "active",
+  "date" : "2025-01-22T14:56:45+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "57830-2"
+      },
+      {
+        "code" : "51848-0"
+      }]
+    }]
+  }
+}
