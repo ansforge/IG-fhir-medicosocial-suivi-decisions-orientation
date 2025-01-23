@@ -4,7 +4,7 @@ Ces schémas permettent de vérifier la conformité d'un document aux spécifica
 
 | Nom  | description |
 | --- | --- |
-| [Ensemble des xsd](XSD_MS_20241009.zip) | Ensemble des XSD définissant le document CDA. |
+| [Ensemble des xsd](20250123_XSD_MS.zip) | Ensemble des XSD définissant le document CDA. |
 
 ### Exemples CDA
 
