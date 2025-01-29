@@ -12,21 +12,27 @@
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
       **********************************************************************************************************
       Historique:
-      16/04/2024:   administrativeGenderCode pointé vers le JDV_J143-AdministrativeGender-CISIS
+        16/04/2024: administrativeGenderCode pointé vers le JDV_J143-AdministrativeGender-CISIS
                     valeur du préfix remplacée par le code plutôt que le display du JDV_J245-Civilite-CISIS
+
+        29/01/2025  Suppression de l'idNat_Decision au niveau de l'id du document
+                    Mise à jour de l'id du document
+                    Mise à jour de l'élément setID pour y ajouter l'attribut extension qui porte l'idNat_Decision 
+                    Mise à jour du setID
+                    Mise à jour de l'id contenu dans RelatedDocument
       **********************************************************************************************************
    -->
     <realmCode code="FR"/>
     <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
     <templateId root="1.2.250.1.213.1.1.1.4.8"/>
 	<templateId root="2.16.840.1.113883.10.12.2"/>
-    <id root="492BB602-B08C-11EE-A506-0242AC120002" extension="idNat_Decision"/>
+    <id root="1.2.250.1.213.8.1.234.2"/>
     <code code="18825-0" codeSystem="2.16.840.1.113883.4.642.3.240" displayName="Medical social services attachment"/>
     <title>Exemple ESMS Décision</title>
     <effectiveTime value="20230110"/>
     <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normal"/>
     <languageCode code="fr-FR" />
-    <setId root="492BB602-B08C-11EE-A506-0242AC120002" extension="01"/>
+    <setId root="1.2.250.1.213.8.1.234" extension="idNat_Decision"/>
 	<!-- Deuxième version du document -->
 	<versionNumber value="2"/>
 
@@ -148,7 +154,7 @@
 	<!-- On renseigne ici l'identifiant du document remplacé en précisant qu'il s'agit d'un remplacement -->
 	<relatedDocument typeCode="RPLC">
 		<parentDocument>
-			<id root="492BB602-B08C-11EE-A506-0242AC120002" extension="001"/>
+			<id root="1.2.250.1.213.8.1.234.1"/>
 		</parentDocument>
 	</relatedDocument>
 
