@@ -237,8 +237,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension (obligatoire) = valeur de l'idNat_Decision.</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice. <br>
-                        Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a>. L'OID obtenu devra être converti en majuscule afin de se conformer aux spécifications HL7</li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice.</span></li>
                     </ul>
                 </div>
             </td>
@@ -632,8 +631,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:8px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension (obligatoire) = valeur de l'idNat_Decision.</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice.<br> 
-                        Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a>. L'OID obtenu devra être converti en majuscule afin de se conformer aux spécifications HL7</li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d’une structure émettrice.</span></li>
                     </ul>
                 </div>
             </td>
@@ -2307,8 +2305,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.9499999999999993px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension = valeur de l&rsquo;identifiant unique du document de r&eacute;f&eacute;rence remplac&eacute; par la nouvelle version.</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice. <br>
-Il est recommand&eacute; de g&eacute;n&eacute;rer une racine d&rsquo;OID pour chaque structure, &agrave; partir du g&eacute;n&eacute;rateur </span><a href="https://www.uuidgenerator.net/version1"><span style="color:#00B0F0;">https://www.uuidgenerator.net/version1</span></a>. L'OID obtenu devra être converti en majuscule afin de se conformer aux spécifications HL7</li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root =&nbsp;</span><span style="color:black;">racine d&rsquo;OID commune aux instances des documents d&rsquo;une structure &eacute;mettrice.</span></li>
                     </ul>
                 </div>
             </td>
