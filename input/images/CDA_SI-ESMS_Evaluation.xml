@@ -11,7 +11,12 @@
       **********************************************************************************************************
       format HL7 - CDA Release 2 - selon schéma XML (CDA.xsd) du standard ANSI/HL7 CDA, R2-2005 4/21/2005
       **********************************************************************************************************
-      Historique:
+      Historique:   
+      29/01/2025    Suppression de l'idNat_Decision au niveau de l'id du document
+                    Mise à jour de l'id du document
+                    Mise à jour de l'élément setID pour y ajouter l'attribut extension qui porte l'idNat_Decision 
+                    Mise à jour du setID
+                    Mise à jour de l'id contenu dans RelatedDocument
       **********************************************************************************************************
    -->   
     <realmCode code="FR"/>
