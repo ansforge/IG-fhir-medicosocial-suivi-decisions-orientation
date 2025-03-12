@@ -40,7 +40,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"12"}
     h3,h4,h5,h6{--heading-prefix:"12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -247,13 +248,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu’il convient de protéger.</p>
+<p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu'il convient de protéger.</p>
 
-<p>Cette section présente les éventuelles recommandations de sécurité qui s’appliquent à ce guide d’implémentation. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.</p>
+<p>Cette section présente les éventuelles recommandations de sécurité qui s'appliquent à ce guide d'implémentation. Il s'agit d'un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d'un système cible.</p>
 
-<p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
+<p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l'ANS fournissent des recommandations sur ce sujet.</p>
 
-<h3 id="authentification-et-droit-daccès">Authentification et droit d’accès</h3>
+<h3 id="authentification-et-droit-daccès">Authentification et droit d'accès</h3>
 <p>Le système client (DUI) hébergé par une structure ESMS, s’authentifie au SdO conformément au volet du CI-SIS « <a href="https://esante.gouv.fr/services/referentiels/ci-sis/espace-publication/couche-transport">Transport Synchrone pour API REST</a> » (paragraphe 6.6.2). Cette spécification décrit le mécanisme d’authentification en 2 temps :</p>
 <ul>
   <li>authentification mTLS avec un certificat client IGC Santé généré sur le FINESS EJ de la structure,</li>
@@ -308,7 +309,7 @@ La réponse du SdO au client DUI correspond à l’émission d’un access token
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 30, 2025 17:20+0000">2025-01-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 12, 2025 09:04+0000">2025-03-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

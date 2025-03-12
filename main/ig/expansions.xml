@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="60394cbb-2a28-4226-976a-757a93be0ad5"/>
+  <id value="55a81666-781b-45ea-8404-dc7779239cba"/>
   <meta>
-    <lastUpdated value="2025-01-30T17:20:03.592+00:00"/>
+    <lastUpdated value="2025-03-12T09:04:29.569+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -17,20 +17,20 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.78</p>
-            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
+            <p>Ce jeu de valeur (ValueSet) contient 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Système</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (fr-FR)</b>
                 </td>
               </tr>
               <tr>
@@ -58,7 +58,7 @@
         <title value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-01-30T17:20:03+00:00"/>
+        <date value="2025-03-12T09:03:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -67,10 +67,14 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cb81c55e-6d21-4030-9e9e-73d58fb6cbe2"/>
-          <timestamp value="2025-01-30T17:20:35+00:00"/>
+          <identifier value="urn:uuid:b20965df-3d06-464a-bd52-2961ef2ad563"/>
+          <timestamp value="2025-03-12T09:04:49+00:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr-FR"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -89,11 +93,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>

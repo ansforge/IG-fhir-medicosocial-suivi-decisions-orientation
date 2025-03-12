@@ -40,7 +40,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"17"}
     h3,h4,h5,h6{--heading-prefix:"17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -261,7 +262,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>7.2 Orientation vers un institut d’éducation motrice IEM</td>
+      <td>7.2 Orientation vers un institut d'éducation motrice IEM</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
@@ -285,27 +286,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>7.8 Orientation vers un Service d’éducation spéciale et de soins à domicile (SESSAD)</td>
+      <td>7.8 Orientation vers un Service d'éducation spéciale et de soins à domicile (SESSAD)</td>
       <td>No_ESMS_enfant_SESSAD</td>
     </tr>
     <tr>
-      <td>7.9 Orientation vers un Service d’accompagnement familial et d’éducation précoce (SAFEP)</td>
+      <td>7.9 Orientation vers un Service d'accompagnement familial et d'éducation précoce (SAFEP)</td>
       <td>No_ESMS_enfant_SAFEP</td>
     </tr>
     <tr>
-      <td>7.10 Orientation vers un Service de soutien à l’éducation familiale et à la scolarisation (SSEFS)</td>
+      <td>7.10 Orientation vers un Service de soutien à l'éducation familiale et à la scolarisation (SSEFS)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>7.11 Orientation vers un Service d’aide à l’acquisition de l’autonomie et à la scolarisation (SAAAS)</td>
+      <td>7.11 Orientation vers un Service d'aide à l'acquisition de l'autonomie et à la scolarisation (SAAAS)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>7.12 Orientation vers Service de soins et d’aide à domicile (SSAD)</td>
+      <td>7.12 Orientation vers Service de soins et d'aide à domicile (SSAD)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>7.13 Orientation vers un Institut d’éducation sensorielle (IES)</td>
+      <td>7.13 Orientation vers un Institut d'éducation sensorielle (IES)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
@@ -313,23 +314,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>13.1 Orientation vers un établissement d’accueil non médicalisé</td>
+      <td>13.1 Orientation vers un établissement d'accueil non médicalisé</td>
       <td>No_ESMS_adulte_non_méd</td>
     </tr>
     <tr>
-      <td>13.2 Orientation vers un établissement d’accueil médicalisé en tout ou partie</td>
+      <td>13.2 Orientation vers un établissement d'accueil médicalisé en tout ou partie</td>
       <td>No_ESMS_adulte_médicalisé</td>
     </tr>
     <tr>
-      <td>13.3 Orientation vers une Maison d’accueil spécialisée (MAS)</td>
+      <td>13.3 Orientation vers une Maison d'accueil spécialisée (MAS)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>13.4 Orientation vers un Service d’accompagnement à la vie sociale (SAVS)</td>
+      <td>13.4 Orientation vers un Service d'accompagnement à la vie sociale (SAVS)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>13.5 Orientation vers un service d’accompagnement médico-social pour adultes handicapés (SAMSAH)</td>
+      <td>13.5 Orientation vers un service d'accompagnement médico-social pour adultes handicapés (SAMSAH)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
@@ -349,7 +350,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>pas de précision</td>
     </tr>
     <tr>
-      <td>11.3 Orientation vers l’unité d’évaluation, de réentraînement et d’orientation sociale et socioprofessionnelle pour personnes cérébro-lésées (UEROS)</td>
+      <td>11.3 Orientation vers l'unité d'évaluation, de réentraînement et d'orientation sociale et socioprofessionnelle pour personnes cérébro-lésées (UEROS)</td>
       <td>pas de précision</td>
     </tr>
     <tr>
@@ -357,11 +358,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>pas de précision</td>
     </tr>
     <tr>
-      <td>11.5 Orientation en Etablissement et service d’aide par le travail (ESAT)</td>
+      <td>11.5 Orientation en Etablissement et service d'aide par le travail (ESAT)</td>
       <td>pas de précision</td>
     </tr>
     <tr>
-      <td>11.6 Orientation vers un dispositif d’emploi accompagné</td>
+      <td>11.6 Orientation vers un dispositif d'emploi accompagné</td>
       <td>pas de précision</td>
     </tr>
     <tr>
@@ -377,7 +378,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>No_Orientation_scolaire_adapt</td>
     </tr>
     <tr>
-      <td>8.4 Orientation en Unité localisée pour l’inclusion scolaire (ULIS)</td>
+      <td>8.4 Orientation en Unité localisée pour l'inclusion scolaire (ULIS)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
@@ -385,7 +386,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>8.6 Orientation en Unité d’enseignement</td>
+      <td>8.6 Orientation en Unité d'enseignement</td>
       <td>No_Orientation_scolaire_UE</td>
     </tr>
     <tr>
@@ -393,19 +394,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>8.8 Orientation vers une Unité d’enseignement et une scolarisation en ULIS à temps partagé</td>
+      <td>8.8 Orientation vers une Unité d'enseignement et une scolarisation en ULIS à temps partagé</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>8.9 Orientation vers un Pôle d’enseignement jeune sourd (PEJS)</td>
+      <td>8.9 Orientation vers un Pôle d'enseignement jeune sourd (PEJS)</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>8.10 Orientation vers une unité d’enseignement et une scolarisation en enseignement adapté à temps partagé</td>
+      <td>8.10 Orientation vers une unité d'enseignement et une scolarisation en enseignement adapté à temps partagé</td>
       <td>Nomenclature locale ou texte libre</td>
     </tr>
     <tr>
-      <td>8.11 Orientation vers un dispositif d’autorégulation</td>
+      <td>8.11 Orientation vers un dispositif d'autorégulation</td>
       <td>pas de précision</td>
     </tr>
     <tr>
@@ -464,7 +465,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 30, 2025 17:20+0000">2025-01-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 12, 2025 09:04+0000">2025-03-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
