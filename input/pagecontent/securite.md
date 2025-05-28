@@ -6,9 +6,9 @@ Il est du ressort du responsable de traitement du système cible de mettre en œ
 
 ### Authentification et droit d'accès
 Le système client (DUI) hébergé par une structure ESMS, s’authentifie au SdO conformément au volet du CI-SIS « [Transport Synchrone pour API REST](https://esante.gouv.fr/services/referentiels/ci-sis/espace-publication/couche-transport) » 
-et plus précisément « [Sécurisation de la couche transport API REST Pro Santé Connectée] (https://interop.esante.gouv.fr/ig/securisation-transport/index.html) ».
+et plus précisément « [Sécurisation de la couche transport API REST Pro Santé Connectée](https://interop.esante.gouv.fr/ig/securisation-transport/index.html) ».
 
-Cette spécification décrit le mécanisme d’authentification en 2 temps conformément à la spécification d'authentification à ViaTrajectoire « [SI-SDO - Authentification] (https://industriels.esante.gouv.fr/sites/default/files/media/document/SPF_SI-SDO_ViaTrajectoire_Authentification_v1.2.pdf) »:
+Cette spécification décrit le mécanisme d’authentification en 2 temps conformément à la spécification d'authentification à ViaTrajectoire « [SI-SDO - Authentification](https://industriels.esante.gouv.fr/sites/default/files/media/document/SPF_SI-SDO_ViaTrajectoire_Authentification_v1.2.pdf) »:
 * authentification mTLS avec un certificat client IGC Santé généré sur le FINESS EJ de la structure,
 * authentification OAUTH2 avec un flux client credential grant avec un client-id/client-secret générique pour toutes les structures.
 La réponse du SdO au client DUI correspond à l’émission d’un access token contenant la liste des FINESS EG liés à l’EJ et avec un secteur d’activité ESMS. 
