@@ -1,17 +1,9 @@
-<blockquote class="stu-note">
-<p>
-  <b>Information</b>
-  <br>
- Le formatage de cette page est en cours de construction
-</p>
-</blockquote>
-
 ### Standard utilisé
 Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. 
 Dans cette section, une mise en correspondance est faite entre :
 
 * Les éléments XML proposés par CDA,
-* Les données structurées décrites dans les [SFE SI-ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf).
+* Les données structurées décrites dans les [SFE SI-ESMS](CISIS-SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.8.pdf).
 
 Les éléments apparaissant en gras de couleur bleu correspondent à des extensions définies dans le cadre de cette spécifique technique afin de couvrir le besoin.
 Les éléments apparaissant en rouge correspondent aux règles spécifiques à mettre en place. 
@@ -4335,7 +4327,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4449,7 +4441,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4563,7 +4555,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4677,7 +4669,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">D&eacute;ficience principale</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">D&eacute;ficience principale</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4791,7 +4783,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien veres le glossaire"><span style="color:black;text-decoration:  none;">D&eacute;ficience secondaire</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien veres les Nomenclatures CNSA"><span style="color:black;text-decoration:  none;">D&eacute;ficience secondaire</span></a></span></p>
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6283,7 +6275,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Besoins de compensation identifi&eacute;s</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Besoins de compensation identifi&eacute;s</span></a></span></p>
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6378,7 +6370,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
             </td>
             <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins.<a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">besoins de compensation identifi&eacute;s</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins.<a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">besoins de compensation identifi&eacute;s</span></a></span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Besoin_compensation&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.94)</span></p>
