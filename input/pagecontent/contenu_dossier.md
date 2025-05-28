@@ -270,7 +270,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Classe Individu, Identit&eacute; et MesureProtection</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RecordTarget_1">4.1.3.3 RecordTarget</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#contenu-des-éléments-du-recordtarget">4.1.3.3 RecordTarget</a></span></p>
             </td>
         </tr>
         <tr>
