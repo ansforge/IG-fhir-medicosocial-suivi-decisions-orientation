@@ -1,9 +1,9 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 1, warn = 17, info = 9
-IG Publisher Version: 1.8.26
-Generated Wed May 28 15:30:33 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.3 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+err = 1, warn = 16, info = 10
+IG Publisher Version: 2.0.3
+Generated Mon Jun 02 14:23:49 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.3 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 3 / 3 / 0
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 2 / 5
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements : 0 / 6 / 5
@@ -12,7 +12,7 @@ Generated Wed May 28 15:30:33 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 1 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CodeSystem-input-task-sdo-codesystem : 0 / 0 / 1
- /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent : 1 / 1 / 1
+ /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent : 1 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference : 0 / 0 / 2
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-sdo-document-reference : 0 / 0 / 1
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo : 0 / 0 / 1
@@ -50,14 +50,14 @@ WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation-elements: 
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/exemple-sdo-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet bundles should have search modes on the entries
 == fsh-generated/resources/CapabilityStatement-ESMSConsommateur.json ==
-WARNING: CapabilityStatement/ESMSConsommateur: CapabilityStatement.implementationGuide[0]: Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo' does not resolve
+WARNING: CapabilityStatement/ESMSConsommateur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo'
 == fsh-generated/resources/CapabilityStatement-ESMSProducteur.json ==
-WARNING: CapabilityStatement/ESMSProducteur: CapabilityStatement.implementationGuide[0]: Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo' does not resolve
+WARNING: CapabilityStatement/ESMSProducteur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo'
 == fsh-generated/resources/CapabilityStatement-gestionnaire-sdo.json ==
-WARNING: CapabilityStatement/gestionnaire-sdo: CapabilityStatement.implementationGuide[0]: Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo' does not resolve
+WARNING: CapabilityStatement/gestionnaire-sdo: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo'
 == fsh-generated/resources/CodeSystem-input-task-sdo-codesystem.json ==
 == fsh-generated/resources/Consent-exemple-consent.json ==
-WARNING: Consent/exemple-consent: Consent.meta.source: URL value 'urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7' does not resolve
+INFORMATION: Consent/exemple-consent: Consent.meta.source: No definition could be found for URL value 'urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7'
 ERROR: Consent/exemple-consent: Consent.category[0].coding[0].display: Wrong Display Name 'Consent' for http://loinc.org#59284-0. There are no valid display names found for language(s) 'fr-FR'. Default display is 'Consent Document'
 == fsh-generated/resources/DocumentReference-exemple-esms-document-reference.json ==
 INFORMATION: DocumentReference/exemple-esms-document-reference: DocumentReference.type.coding[0].display: There are no valid display names found for the code http://loinc.org#51848-0 for language(s) 'fr-FR'. The display is 'Evaluation note' the default language display
