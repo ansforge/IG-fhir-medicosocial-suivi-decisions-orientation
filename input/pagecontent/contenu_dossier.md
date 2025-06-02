@@ -3,7 +3,7 @@ Cette section présente les informations à transférer entre le SI-ESMS et le S
 Dans cette section, une mise en correspondance est faite entre :
 
 * Les éléments XML proposés par CDA,
-* Les données structurées décrites dans les [SFE SI-ESMS](CISIS-SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.8.pdf).
+* Les données structurées décrites dans les [SFE SI-ESMS](https://esante.gouv.fr/sites/default/files/media_entity/documents/cisis-specifications_fonctionnelles_si-esms_v2.8.pdf).
 
 Les éléments apparaissant en gras de couleur bleu correspondent à des extensions définies dans le cadre de cette spécifique technique afin de couvrir le besoin.
 Les éléments apparaissant en rouge correspondent aux règles spécifiques à mettre en place. 
