@@ -43,7 +43,7 @@ Les ressources FHIR utilisées sont :
             <td style="width:216.2pt;border-top:none;border-left:none;border-bottom:solid gray 1.0pt;border-right:solid gray 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul>
-                        <li>Contrainte sur l'élèment intent à plan</li>
+                        <li>Contrainte sur l'élèment intent à la valeur "plan"</li>
                         <li>Slicing de l'élèment multivalué input en 5 élèments distincts.</li>
                     </ul>
                 </div>
