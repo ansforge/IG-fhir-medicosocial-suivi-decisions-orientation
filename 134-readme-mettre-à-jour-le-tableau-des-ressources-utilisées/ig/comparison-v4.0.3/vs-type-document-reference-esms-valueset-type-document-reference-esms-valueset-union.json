@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "36097978-eff3-43cc-92f0-01260f77862f-23",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/36097978-eff3-43cc-92f0-01260f77862f-23",
+  "name" : "UnionDocumentReferenceTypeESMSValueSetAndDocumentReferenceTypeESMSValueSet",
+  "title" : "Union of DocumentReferenceTypeESMSValueSet And DocumentReferenceTypeESMSValueSet",
+  "status" : "active",
+  "date" : "2025-06-04T08:08:26+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "57830-2"
+      },
+      {
+        "code" : "51848-0"
+      }]
+    }]
+  }
+}
