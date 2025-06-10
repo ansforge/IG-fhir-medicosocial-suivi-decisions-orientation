@@ -229,7 +229,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Suivi Décisions Orientation - Local Development build (v4.0.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Médicosocial - Suivi Décisions Orientation - Local Development build (v4.0.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/sdo/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Sécurité</h2>
   
 
@@ -255,7 +255,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l'ANS fournissent des recommandations sur ce sujet.</p>
 
 <h3 id="authentification-et-droit-daccès">Authentification et droit d'accès</h3>
-<p>Le système client (DUI) hébergé par une structure ESMS, s’authentifie au SdO conformément au volet du CI-SIS « <a href="https://esante.gouv.fr/services/referentiels/ci-sis/espace-publication/couche-transport">Transport Synchrone pour API REST</a> » (paragraphe 6.6.2). Cette spécification décrit le mécanisme d’authentification en 2 temps :</p>
+<p>Le système client (DUI) hébergé par une structure ESMS, s’authentifie au SdO conformément au volet du CI-SIS « <a href="https://esante.gouv.fr/services/referentiels/ci-sis/espace-publication/couche-transport">Transport Synchrone pour API REST</a> » 
+et plus précisément « <a href="https://interop.esante.gouv.fr/ig/securisation-transport/index.html">Sécurisation de la couche transport API REST Pro Santé Connectée</a> ».</p>
+
+<p>Cette spécification décrit le mécanisme d’authentification en 2 temps conformément à la spécification d'authentification à ViaTrajectoire « <a href="https://industriels.esante.gouv.fr/sites/default/files/media/document/SPF_SI-SDO_ViaTrajectoire_Authentification_v1.2.pdf">SI-SDO - Authentification</a> »:</p>
 <ul>
   <li>authentification mTLS avec un certificat client IGC Santé généré sur le FINESS EJ de la structure,</li>
   <li>authentification OAUTH2 avec un flux client credential grant avec un client-id/client-secret générique pour toutes les structures.
@@ -309,12 +312,13 @@ La réponse du SdO au client DUI correspond à l’émission d’un access token
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 12, 2025 09:04+0000">2025-03-12</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sdo#4.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 10, 2025 12:41+0000">2025-06-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">Historique des versions </a>
+            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/sdo/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/issues/new">New Issue</a>
 
           </span>
