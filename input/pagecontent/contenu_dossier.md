@@ -1074,7 +1074,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:13.350000000000001px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension =&nbsp;</span>identifiant de l&rsquo;Individu</li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root = OID de la MDPH ayant cr&eacute;&eacute; le dossier individu = MDPHIndividu (voir Annexe 5)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root = OID de la MDPH ayant cr&eacute;&eacute; le dossier individu = MDPHIndividu (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                     </ul>
                 </div>
             </td>
@@ -1352,8 +1352,8 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#1F4E79;">Extension pour le volet ESMS d&eacute;signant l&rsquo;identifiant de la MDPH en charge du dossier de l&rsquo;individu</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH responsable du dossier</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-size:15px;">&nbsp;</span></span><span style="color:black;">(voir annexe 5)</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-family:Calibri;font-size:11.0pt;color:windowtext;">&nbsp;</span></span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH responsable du dossier (voir annexe 5)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH responsable du dossier</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-size:15px;">&nbsp;</span></span><span style="color:black;">(voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-family:Calibri;font-size:11.0pt;color:windowtext;">&nbsp;</span></span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH responsable du dossier (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                     </ul>
                 </div>
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</p>
@@ -1377,8 +1377,8 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">A ne renseigner qu&rsquo;en cas de transfert de dossier en cours</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir annexe 5)</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir annexe 5)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                     </ul>
                 </div>
             </td>
@@ -2729,7 +2729,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                     </ul>
                     <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH &eacute;mettrice de l&rsquo;identifiant (<a href="#Annexe1">Annexe 1</a>)</span></li>
+                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH &eacute;mettrice de l&rsquo;identifiant (<a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -3099,7 +3099,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">DetailPrestation.precisionOrientation</span></p>
             </td>
             <td style="width: 185.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;height: 18.8pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature CNSA (voir annexe 7)</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature CNSA (voir <a href="annexes_Nomenclatures_precision.html">Nomenclature précisions de l'orientation</a>)</span></p>
             </td>
         </tr>
         <tr>
@@ -3116,7 +3116,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">DetailPrestation.precisionOrientationLocale&nbsp;</span></p>
             </td>
             <td style="width: 185.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;height: 18.8pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature locale ou d&rsquo;un texte libre (voir annexe 7).</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature locale ou d&rsquo;un texte libre (voir <a href="annexes_Nomenclatures_precision.html">Nomenclature précisions de l'orientation</a>).</span></p>
             </td>
         </tr>
         <tr>
@@ -6433,7 +6433,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p>
                     Dans le cas où la MDPH est à    l’origine de la création de
                     l’identifiant, l’OID à renseigner est à décrite    dans la
-                    liste des OID en Annexe 5.
+                    liste des OID en Annexe OID MDPH.
                 </p>
             </td>
         </tr>
