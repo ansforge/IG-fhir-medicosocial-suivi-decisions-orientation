@@ -2649,7 +2649,8 @@ Cette section pr√©sente le contenu du corps du document CDA. On y retrouve diff√
                     </ul>
                     <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root : OID&nbsp;</span>de la MDPH &eacute;mettrice de l&rsquo;identifiant de d&eacute;cision<span style="color:black;">&nbsp;(<a href="#Annexe1">Annexe&nbsp;</a></span><span style="color:blue;text-decoration:underline;">5</span><span style="color:black;">)</span></li>
+                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root : OID&nbsp;</span>de la MDPH &eacute;mettrice de l&rsquo;identifiant de d&eacute;cision<span style="color:black;">&nbsp;(voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>
+)</span></li>
                         </ul>
                     </div>
                 </div>
