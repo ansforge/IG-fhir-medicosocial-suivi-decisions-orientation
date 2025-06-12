@@ -25,6 +25,8 @@ Liste des validateurs CDA présents sur la plateforme de test [EVSClient](https:
 
 [Documentation de l'outil EVS](https://gazelle.ihe.net/gazelle-documentation/EVS-Client/user.html)
 
+<!-- les simulateurs n'ont pas été mis à jour par rapport à la version 4.0.3 de l'IG 
+
 ### Simulateurs
 
 Un outillage permettant de tester et simuler des messages clients (SI-ESMS) et serveur (SI-SDO) est mis à disposition sur la plateforme [Gazelle Web Service Tester](https://interop.esante.gouv.fr/gazelle-webservice-tester/project/projectList.seam?cid=103)
@@ -32,6 +34,7 @@ Un outillage permettant de tester et simuler des messages clients (SI-ESMS) et s
 [Mode opératoire ESMS](ESMS_Mode_Operatoire_GWT_V1.0.pdf)
 
 [Documentation de l'outil GWT](https://gazelle.ihe.net/gazelle-documentation/Gazelle-Webservice-Tester/user.html)
+-->
 
 ### Guide ANS
 
