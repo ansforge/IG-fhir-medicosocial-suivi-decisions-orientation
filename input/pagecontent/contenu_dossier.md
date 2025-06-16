@@ -1,17 +1,9 @@
-<blockquote class="stu-note">
-<p>
-  <b>Information</b>
-  <br>
- Le formatage de cette page est en cours de construction
-</p>
-</blockquote>
-
 ### Standard utilisé
 Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. 
 Dans cette section, une mise en correspondance est faite entre :
 
 * Les éléments XML proposés par CDA,
-* Les données structurées décrites dans les [SFE SI-ESMS](CISIS-TEC_SPECIFICATIONS_FONCTIONNELLES_SI-ESMS_v2.5.pdf).
+* Les données structurées décrites dans les [SFE SI-ESMS](https://esante.gouv.fr/sites/default/files/media_entity/documents/cisis-specifications_fonctionnelles_si-esms_v2.8.pdf).
 
 Les éléments apparaissant en gras de couleur bleu correspondent à des extensions définies dans le cadre de cette spécifique technique afin de couvrir le besoin.
 Les éléments apparaissant en rouge correspondent aux règles spécifiques à mettre en place. 
@@ -269,7 +261,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>.<span style="color:black;"><a href="#_RecordTarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>.<span style="color:black;"><a href="#recordtarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
@@ -278,7 +270,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Classe Individu, Identit&eacute; et MesureProtection</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RecordTarget_1">2.1.2.3 RecordTarget</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#contenu-des-éléments-du-recordtarget">Contenu du RecordTarget</a></span></p>
             </td>
         </tr>
         <tr>
@@ -295,7 +287,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Author">2.1.2.1 Author</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#author">Contenu de Author</a></span></p>
             </td>
         </tr>
         <tr>
@@ -312,7 +304,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Classe Parent</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Informant">2.1.2.4 Informant</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#informant">Contenu de Informant</a></span></p>
             </td>
         </tr>
         <tr>
@@ -329,7 +321,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Custodian">2.1.2.2 Custodian</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#custodian">Contenu de Custodian</a></span></p>
             </td>
         </tr>
         <tr>
@@ -346,7 +338,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#relateddocument">Contenu de RelatedDocument</a></span></p>
             </td>
         </tr>
         <tr>
@@ -375,7 +367,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">2</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>..<span style="color:black;"><a href="#_Component"><span style="color:windowtext;">structuredBody</span></a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>..<span style="color:black;"><a href="#corps-du-document"><span style="color:windowtext;">structuredBody</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
@@ -395,7 +387,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Classe Identit&eacute;, &eacute;l&eacute;ments li&eacute;s au d&eacute;c&egrave;s</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Section_repr%C3%A9sentant_l%E2%80%99organisme">2.1.3.1 Section repr&eacute;sentant les informations sur le d&eacute;c&egrave;s de l&apos;individu</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#section-représentant-les-informations-sur-le-décès-dun-individu-">Section repr&eacute;sentant les informations sur le d&eacute;c&egrave;s de l&apos;individu</a></span></p>
             </td>
         </tr>
         <tr>
@@ -412,7 +404,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Classes Decision, DroitPrestation, DetailPrestation, PriseCharge, Quantification, Caract&eacute;risation&nbsp;</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#1F4E79;">Extension r&eacute;exploit&eacute;e du volet SI-SDO d&eacute;crites dans la partie</span></strong> <span style="color:black;"><a href="#_Extension_repr%C3%A9sentant_les_1">2.1.3.2. Extension repr&eacute;sentant les informations sur la d&eacute;cision de l&rsquo;individu</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#1F4E79;">Extension r&eacute;exploit&eacute;e du volet SI-SDO d&eacute;crites dans la partie</span></strong> <span style="color:black;"><a href="#extension-représentant-les-informations-sur-la-décision-de-lindividu-">Extension repr&eacute;sentant les informations sur la d&eacute;cision de l&rsquo;individu</a></span></p>
             </td>
         </tr>
     </tbody>
@@ -663,7 +655,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">1</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>.<span style="color:black;"><a href="#_RecordTarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>.<span style="color:black;"><a href="#recordtarget"><span style="color:windowtext;">recordTarget</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
@@ -672,7 +664,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Classe Individu et Identit&eacute;</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RecordTarget_1">2.1.2.3 RecordTarget</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#contenu-des-éléments-du-recordtarget">Contenu de RecordTarget</a></span></p>
             </td>
         </tr>
         <tr>
@@ -689,7 +681,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Author">2.1.2.1 Author</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#author">Contenu de Author</a></span></p>
             </td>
         </tr>
         <tr>
@@ -706,7 +698,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Custodian">2.1.2.2 Custodian</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#custodian">Contenu de Custodian</a></span></p>
             </td>
         </tr>
         <tr>
@@ -723,7 +715,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_RelatedDocument">2.1.2.5 RelatedDocument</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#relateddocument">Contenu de RelatedDocument</a></span></p>
             </td>
         </tr>
         <tr>
@@ -752,7 +744,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">2</span></p>
             </td>
             <td style="width: 99.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>..<span style="color:black;"><a href="#_Component"><span style="color:windowtext;">structuredBody</span></a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>..<span style="color:black;"><a href="#corps-du-document"><span style="color:windowtext;">structuredBody</span></a></span></p>
             </td>
             <td style="width: 41.9pt;border-width: medium 1.5pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">[1..1]</span></p>
@@ -772,7 +764,7 @@ Ce volet décrit le contenu de 2 documents CDA différents :
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Classes Evaluation, ElementsEnvironnementaux, ElementMedicaux, ElementsScolairesProfessionnels et EvolutionBesoin</span></p>
             </td>
             <td style="width: 184.25pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#_Section_repr%C3%A9sentant_l%E2%80%99organisme">2.1.3.3 Section repr&eacute;sentant l&apos;&eacute;valuation de l&apos;individu</a></span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">Le contenu de l&rsquo;&eacute;l&eacute;ment est d&eacute;crit dans la partie&nbsp;</span><span style="color:black;"><a href="#section-représentant-lévaluation-dun-individu-">Section repr&eacute;sentant l&apos;&eacute;valuation de l&apos;individu</a></span></p>
             </td>
         </tr>
     </tbody>
@@ -1082,7 +1074,7 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:13.350000000000001px;">
                         <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@extension =&nbsp;</span>identifiant de l&rsquo;Individu</li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root = OID de la MDPH ayant cr&eacute;&eacute; le dossier individu = MDPHIndividu (voir Annexe 5)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root = OID de la MDPH ayant cr&eacute;&eacute; le dossier individu = MDPHIndividu (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                     </ul>
                 </div>
             </td>
@@ -1360,8 +1352,8 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:#1F4E79;">Extension pour le volet ESMS d&eacute;signant l&rsquo;identifiant de la MDPH en charge du dossier de l&rsquo;individu</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH responsable du dossier</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-size:15px;">&nbsp;</span></span><span style="color:black;">(voir annexe 5)</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-family:Calibri;font-size:11.0pt;color:windowtext;">&nbsp;</span></span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH responsable du dossier (voir annexe 5)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH responsable du dossier</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-size:15px;">&nbsp;</span></span><span style="color:black;">(voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span><span style="color:blue;text-decoration:underline;"><span style="line-height:115%;font-family:Calibri;font-size:11.0pt;color:windowtext;">&nbsp;</span></span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH responsable du dossier (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                     </ul>
                 </div>
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</p>
@@ -1385,8 +1377,8 @@ Le détail du contenu des éléments associés au RecordTarget est spécifié da
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><strong><span style="color:  #C00000;">A ne renseigner qu&rsquo;en cas de transfert de dossier en cours</span></strong></p>
                 <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                     <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:6.149999999999999px;">
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir annexe 5)</span></li>
-                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir annexe 5)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@ extension&nbsp;: valeur de l&rsquo;identifiant de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
+                        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH accueillant le dossier lors d&rsquo;un transfert (voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                     </ul>
                 </div>
             </td>
@@ -2657,7 +2649,8 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                     </ul>
                     <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root : OID&nbsp;</span>de la MDPH &eacute;mettrice de l&rsquo;identifiant de d&eacute;cision<span style="color:black;">&nbsp;(<a href="#Annexe1">Annexe&nbsp;</a></span><span style="color:blue;text-decoration:underline;">5</span><span style="color:black;">)</span></li>
+                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root : OID&nbsp;</span>de la MDPH &eacute;mettrice de l&rsquo;identifiant de d&eacute;cision<span style="color:black;">&nbsp;(voir <a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>
+)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -2737,7 +2730,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                     </ul>
                     <div style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'>
                         <ul style="margin-bottom:0cm;list-style-type: disc;margin-left:-0.3000000000000007px;">
-                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH &eacute;mettrice de l&rsquo;identifiant (<a href="#Annexe1">Annexe 1</a>)</span></li>
+                            <li style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">@root&nbsp;: OID de la MDPH &eacute;mettrice de l&rsquo;identifiant (<a href="annexes_OID_MDPH.html">Annexe OID MDPH</a>)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -3107,7 +3100,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">DetailPrestation.precisionOrientation</span></p>
             </td>
             <td style="width: 185.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;height: 18.8pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature CNSA (voir annexe 7)</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature CNSA (voir <a href="annexes_Nomenclatures_precision.html">Nomenclature précisions de l'orientation</a>)</span></p>
             </td>
         </tr>
         <tr>
@@ -3124,7 +3117,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">DetailPrestation.precisionOrientationLocale&nbsp;</span></p>
             </td>
             <td style="width: 185.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;height: 18.8pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature locale ou d&rsquo;un texte libre (voir annexe 7).</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Pr&eacute;cision de l&rsquo;orientation &agrave; renseigner en fonction du type de droit, s&rsquo;il s&rsquo;agit d&rsquo;une nomenclature locale ou d&rsquo;un texte libre (voir <a href="annexes_Nomenclatures_precision.html">Nomenclature précisions de l'orientation</a>).</span></p>
             </td>
         </tr>
         <tr>
@@ -4335,7 +4328,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#Pathologie" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Pathologie secondaire</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4449,7 +4442,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#MaladieRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Maladie rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4563,7 +4556,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#HandicapRare" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Handicap rare</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4677,7 +4670,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">D&eacute;ficience principale</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">D&eacute;ficience principale</span></a></span></p>
             </td>
         </tr>
         <tr>
@@ -4791,7 +4784,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#D%C3%A9ficience" title="Lien veres le glossaire"><span style="color:black;text-decoration:  none;">D&eacute;ficience secondaire</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien veres les Nomenclatures CNSA"><span style="color:black;text-decoration:  none;">D&eacute;ficience secondaire</span></a></span></p>
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6283,7 +6276,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">Besoins de compensation identifi&eacute;s</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;"><a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">Besoins de compensation identifi&eacute;s</span></a></span></p>
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">&nbsp;</span></p>
             </td>
         </tr>
@@ -6378,7 +6371,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:center;line-height:115%;'><em><u><span style="line-height:115%;color:black;">[1..1]</span></u></em></p>
             </td>
             <td style="width: 165.9pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins.<a href="file:///C%3A/Users/mlr/Documents/CNSA/TDD/ST/Entrants/CNSA_SI-MDPH_RF_Dictionnaires%20de%20Donn%C3%A9es_v2.1.3.xlsm#BesoinIdentifi%C3%A9" title="Lien vers le glossaire"><span style="color:black;text-decoration:none;">besoins de compensation identifi&eacute;s</span></a></span></p>
+                <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:black;">Evolution et Besoins.<a href="annexes_Nomenclature.html" title="Lien vers les Nomenclatures CNSA"><span style="color:black;text-decoration:none;">besoins de compensation identifi&eacute;s</span></a></span></p>
             </td>
             <td style="width: 225.45pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
                 <p style='margin-right:0cm;margin-left:0cm;font-size:13px;font-family:"Arial",sans-serif;margin-top:0cm;margin-bottom:6.0pt;text-align:justify;line-height:115%;'><span style="line-height:115%;color:#C00000;">No_Besoin_compensation&nbsp;</span><span style="line-height:115%;">(</span><span style="line-height:115%;">1.2.250.1.213.3.3.94)</span></p>
@@ -6441,7 +6434,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p>
                     Dans le cas où la MDPH est à    l’origine de la création de
                     l’identifiant, l’OID à renseigner est à décrite    dans la
-                    liste des OID en Annexe 5.
+                    liste des OID en Annexe OID MDPH.
                 </p>
             </td>
         </tr>
