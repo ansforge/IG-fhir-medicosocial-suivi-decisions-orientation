@@ -5,3 +5,4 @@
 * [Sécurité - Ajouter les spécifications VT #333](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/333)
 * [Simulateurs pas en phase avec la version 4.0.3 de l'IG #335](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/335)
 * [Liens morts dans l'IG page Contenu Dossier CDA #332](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/332)
+* [Mise à jour ReadMe tableau des ressources #261](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/261)
