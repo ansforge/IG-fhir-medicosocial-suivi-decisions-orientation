@@ -1,0 +1,129 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
+      "version" : "4.0.4",
+      "status" : "active",
+      "name" : "DocumentReferenceTypeESMSValueSet",
+      "title" : "DocumentReferenceTypeESMSValueSet",
+      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J250-MotifStatutPersonnePriseChargeUnite/FHIR/JDV-J250-MotifStatutPersonnePriseChargeUnite",
+      "version" : "20240126120000",
+      "status" : "active",
+      "name" : "JDV_J250_MotifStatutPersonnePriseChargeUnite",
+      "title" : null,
+      "description" : "Motif du statut de la personne prise en charge au sein d'une unité",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R358-MotifStatutPersonnePriseCharge/FHIR/TRE-R358-MotifStatutPersonnePriseCharge"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.114"],
+      "sources" : ["1.2.250.1.213.3.4.114"],
+      "uses" : {
+      },
+      "StructureDefinition-sdo-task.html" : "SDOTask"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J251-MotifStatutPersonnePriseChargeESMS/FHIR/JDV-J251-MotifStatutPersonnePriseChargeESMS",
+      "version" : "20230922120000",
+      "status" : "active",
+      "name" : "JDV_J251_MotifStatutPersonnePriseChargeESMS",
+      "title" : null,
+      "description" : "Motif du statut de la personne prise en charge au sein d'un ESMS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R358-MotifStatutPersonnePriseCharge/FHIR/TRE-R358-MotifStatutPersonnePriseCharge"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.115"],
+      "sources" : ["1.2.250.1.213.3.4.115"],
+      "uses" : {
+      },
+      "StructureDefinition-sdo-task.html" : "SDOTask"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/FHIR/JDV-J252-StatutPersonnePriseChargeESMS",
+      "version" : "20230922120000",
+      "status" : "active",
+      "name" : "JDV_J252_StatutPersonnePriseChargeESMS",
+      "title" : null,
+      "description" : "Statut de la personne prise en charge au sein d'un ESMS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R357-StatutPersonnePriseCharge/FHIR/TRE-R357-StatutPersonnePriseCharge"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.116"],
+      "sources" : ["1.2.250.1.213.3.4.116"],
+      "uses" : {
+      },
+      "StructureDefinition-sdo-task.html" : "SDOTask"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite/FHIR/JDV-J253-StatutPersonnePriseChargeUnite",
+      "version" : "20230922120000",
+      "status" : "active",
+      "name" : "JDV_J253_StatutPersonnePriseChargeUnite",
+      "title" : null,
+      "description" : "Statut de la personne prise en charge au sein d'une unité",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R357-StatutPersonnePriseCharge/FHIR/TRE-R357-StatutPersonnePriseCharge"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.117"],
+      "sources" : ["1.2.250.1.213.3.4.117"],
+      "uses" : {
+      },
+      "StructureDefinition-sdo-task.html" : "SDOTask"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH",
+      "version" : "20240628120000",
+      "status" : "active",
+      "name" : "JDV_J264_ModeEtCentreDePriseEnCharge_MDPH",
+      "title" : null,
+      "description" : "Les modes de prise en charge en établissements ESMS qui sont possibles pour l'usager est validées en commission par la CDAPH",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
+      ],
+      "oids" : ["1.2.250.1.213.3.4.105"],
+      "sources" : ["1.2.250.1.213.3.4.105"],
+      "uses" : {
+      },
+      "StructureDefinition-sdo-task.html" : "SDOTask"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR",
+      "version" : "20200424120000",
+      "status" : "active",
+      "name" : "JDV_J30_TemporaliteAccueil_ROR",
+      "title" : null,
+      "description" : "Temporalité accueil - ROR",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil"
+      ],
+      "oids" : ["1.2.250.1.213.3.3.32"],
+      "sources" : ["1.2.250.1.213.3.3.32"],
+      "uses" : {
+      },
+      "StructureDefinition-sdo-task.html" : "SDOTask"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR/FHIR/JDV-J34-CategorieOrganisation-ROR",
+      "version" : "20250723120000",
+      "status" : "active",
+      "name" : "JDV_J34_CategorieOrganisation_ROR",
+      "title" : null,
+      "description" : "Catégorie d'organisation - ROR",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation"
+      ],
+      "oids" : ["1.2.250.1.213.3.3.40"],
+      "sources" : ["1.2.250.1.213.3.3.40"],
+      "uses" : {
+      },
+      "StructureDefinition-sdo-task.html" : "SDOTask"
+    }
+  ]
+}
