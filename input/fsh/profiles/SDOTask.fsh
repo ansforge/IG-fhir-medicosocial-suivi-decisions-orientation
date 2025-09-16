@@ -41,7 +41,7 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
 * input[motifESMS].value[x] only CodeableConcept
 * input[motifESMS].value[x] from $JDV-J251-MotifStatutPersonnePriseChargeESMS (required)
 * input[motifESMS].value[x] ^short = "Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
-* input[dateStatutESMS] ^short = "Permet de définir la date d'entrée dans le statut"
+* input[dateStatutESMS] ^short = "Il s'agit de la date réelle d'entrée ou de sortie de l'établissement."
 * input[dateStatutESMS].type = InputTaskSDOCodeSystem#dateStatutESMS
 * input[dateStatutESMS].value[x] only date
 * input[idUnite] ^short = "Identifiant de l'unité qui correspond à l’identifiant de l'organisation interne, unique et persistant au niveau national, et généré par une instance régionale du ROR (pour plus de précision, voir la spécification « ANS ROR - Modèle Exposition"
@@ -71,7 +71,7 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
 * input[statutUnite].type = InputTaskSDOCodeSystem#statutUnite
 * input[statutUnite].value[x] only CodeableConcept
 * input[statutUnite].value[x] from $JDV-J253-StatutPersonnePriseChargeUnite (required)
-* input[dateStatutUnite] ^short = "Permet de définir la date d'entrée renseignée par l'utilisateur pour les statuts"
+* input[dateStatutUnite] ^short = "La spécification fonctionnelle des échanges (https://esante.gouv.fr/volet-si-esms-viatrajectoire-module-ph) donne la signification de cette date par rapport au statut de l’unité."
 * input[dateStatutUnite].type = InputTaskSDOCodeSystem#dateStatutUnite
 * input[dateStatutUnite].value[x] only date
 * input[motifUnite] ^short = "Permet de définir le motif associé au statut de l’usager dans l'unité"
