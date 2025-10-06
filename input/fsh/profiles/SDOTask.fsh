@@ -26,7 +26,7 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
     motifUnite 0..1 and
     idDecision 1..1 and
     idNat_Decision 1..1
-* description ^definition = "A utiliser pour transmettre les commentaires de la MDPH lors d’une annulation d’une notification ou d’un refus de l’admission impossible ou d’une réactivation d’une notification et/ou de l'usager lors d’une annulation d’une notification ou d’une réactivation une notification."
+* short ^short = "A utiliser pour transmettre les commentaires de la MDPH lors d’une annulation d’une notification ou d’un refus de l’admission impossible ou d’une réactivation d’une notification et/ou de l'usager lors d’une annulation d’une notification ou d’une réactivation une notification."
 * input[idNat_Struct] ^short = "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET"
 * input[idNat_Struct].type = InputTaskSDOCodeSystem#idNat_Struct
 * input[idNat_Struct].value[x] only Identifier
