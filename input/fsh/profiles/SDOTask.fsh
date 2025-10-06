@@ -26,6 +26,7 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
     motifUnite 0..1 and
     idDecision 1..1 and
     idNat_Decision 1..1
+* description ^definition = "A utiliser pour transmettre les commentaires de la MDPH lors d’une annulation d’une notification ou d’un refus de l’admission impossible ou d’une réactivation d’une notification et/ou de l'usager lors d’une annulation d’une notification ou d’une réactivation une notification."
 * input[idNat_Struct] ^short = "Identifiant de l'ESMS accueillant l'individu en situation de handicap. Cet identifiant est obtenu par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure: ** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 3 + N° SIRET"
 * input[idNat_Struct].type = InputTaskSDOCodeSystem#idNat_Struct
 * input[idNat_Struct].value[x] only Identifier
@@ -41,7 +42,7 @@ Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations 
 * input[motifESMS].value[x] only CodeableConcept
 * input[motifESMS].value[x] from $JDV-J251-MotifStatutPersonnePriseChargeESMS (required)
 * input[motifESMS].value[x] ^short = "Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
-* input[dateStatutESMS] ^short = "Il s'agit de la date réelle d'entrée ou de sortie de l'établissement."
+* input[dateStatutESMS] ^short = "La spécification fonctionnelle des échanges (https://esante.gouv.fr/volet-si-esms-viatrajectoire-module-ph) donne la signification de cette date par rapport au statut de l'ESMS."
 * input[dateStatutESMS].type = InputTaskSDOCodeSystem#dateStatutESMS
 * input[dateStatutESMS].value[x] only date
 * input[idUnite] ^short = "Identifiant de l'unité qui correspond à l’identifiant de l'organisation interne, unique et persistant au niveau national, et généré par une instance régionale du ROR (pour plus de précision, voir la spécification « ANS ROR - Modèle Exposition"
