@@ -2,8 +2,8 @@ SuiviDecisionsOrientation : Validation Results
 =========================================
 
 err = 1, warn = 20, info = 10
-IG Publisher Version: 2.0.16 Out of date - current version is 2.0.17
-Generated Tue Sep 16 14:48:18 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.4 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+IG Publisher Version: 2.0.16 Out of date - current version is 2.0.19
+Generated Mon Oct 06 13:07:53 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.4 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 1 / 3 / 0
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 2 / 5
  /home/runner/work/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements : 0 / 6 / 5
@@ -72,7 +72,7 @@ WARNING: StructureDefinition/esms-document-reference: StructureDefinition.snapsh
 == fsh-generated/resources/StructureDefinition-sdo-document-reference.json ==
 WARNING: StructureDefinition/sdo-document-reference: StructureDefinition.snapshot.element[67].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActCode' to 'http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0'
 == fsh-generated/resources/StructureDefinition-sdo-task.json ==
-INFORMATION: StructureDefinition/sdo-task: StructureDefinition.differential.element[4].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/sdo-task: StructureDefinition.differential.element[5].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/sdo-task: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/Task-exemple-sdo-task.json ==
 == fsh-generated/resources/ValueSet-type-document-reference-esms-valueset.json ==
