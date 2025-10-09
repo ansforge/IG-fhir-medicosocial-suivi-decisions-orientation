@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "542aeeea-7475-42f6-9ff9-305c1c84f677-17",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/542aeeea-7475-42f6-9ff9-305c1c84f677-17",
+  "name" : "UnionIdentifier Type CodesAndConsentProvisionType",
+  "title" : "Union of IdentifierType And ConsentProvisionType",
+  "status" : "active",
+  "date" : "2025-10-09T09:54:44+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "DL"
+      },
+      {
+        "code" : "PPN"
+      },
+      {
+        "code" : "BRN"
+      },
+      {
+        "code" : "MR"
+      },
+      {
+        "code" : "MCN"
+      },
+      {
+        "code" : "EN"
+      },
+      {
+        "code" : "TAX"
+      },
+      {
+        "code" : "NIIP"
+      },
+      {
+        "code" : "PRN"
+      },
+      {
+        "code" : "MD"
+      },
+      {
+        "code" : "DR"
+      },
+      {
+        "code" : "ACSN"
+      },
+      {
+        "code" : "UDI"
+      },
+      {
+        "code" : "SNO"
+      },
+      {
+        "code" : "SB"
+      },
+      {
+        "code" : "PLAC"
+      },
+      {
+        "code" : "FILL"
+      },
+      {
+        "code" : "JHN"
+      }]
+    }]
+  }
+}
