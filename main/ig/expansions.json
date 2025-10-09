@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "93927a34-5c33-45aa-a46e-2b9d13f8cc20",
+  "id" : "ddeeef87-0e79-42fb-bdc9-fd7a0e8e9a36",
   "meta" : {
-    "lastUpdated" : "2025-06-19T08:03:40.917+00:00"
+    "lastUpdated" : "2025-10-09T08:52:03.075+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -14,7 +14,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.80</p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Système</b></td><td><b>Display (fr-FR)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-57830-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/57830-2/\">57830-2</a></td><td>http://loinc.org</td><td>Admission request Document</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-51848-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/51848-0/\">51848-0</a></td><td>http://loinc.org</td><td>Evaluation note</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81</p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Système</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-57830-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/57830-2/\">57830-2</a></td><td>http://loinc.org</td><td>Admission request Document</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-51848-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/51848-0/\">51848-0</a></td><td>http://loinc.org</td><td>Evaluation note</td></tr></table></div>"
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
       "version" : "4.0.4",
@@ -22,7 +22,7 @@
       "title" : "DocumentReferenceTypeESMSValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-06-19T08:03:00+00:00",
+      "date" : "2025-10-09T08:51:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -31,15 +31,11 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d6f3837e-b6cb-4cd8-a56e-e5c43beebc25",
-        "timestamp" : "2025-06-19T08:04:28+00:00",
+        "identifier" : "urn:uuid:d3ec692c-ad8a-4d20-881d-bf87b04531f1",
+        "timestamp" : "2025-10-09T08:52:26+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "fr-FR"
-        },
-        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -57,11 +53,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://loinc.org|2.80"
+          "valueUri" : "http://loinc.org|2.81"
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.80"
+          "valueUri" : "http://loinc.org|2.81"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
