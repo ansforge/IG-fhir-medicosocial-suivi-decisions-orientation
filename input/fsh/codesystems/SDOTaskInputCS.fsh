@@ -11,7 +11,7 @@ Description: "Code System pour la définition des éléments spécifiques de inp
 * #nomESMS "nomESMS" "Permet de définir le nom de l’ESMS"
 * #statutESMS "statutESMS" "Statut de l’usager dans l'ESMS"
 * #motifESMS "motifESMS" "Permet de définir le motif associé au statut de l’usager dans l’ESMS. Motifs obligatoires pour certains statuts suivant la table : https://mos.esante.gouv.fr/NOS/ASS_A32-StatutMotifPersonnePriseCharge/ASS_A32-StatutMotifPersonnePriseCharge.pdf"
-* #dateStatutESMS "dateStatutESMS" "Il s'agit de la date réelle d'entrée ou de sortie de l'établissement"
+* #dateStatutESMS "dateStatutESMS" "La spécification fonctionnelle des échanges (https://esante.gouv.fr/volet-si-esms-viatrajectoire-module-ph) donne la signification de cette date par rapport au statut ESMS"
 * #idUnite "idUnite" "Identifiant de l'unité qui correspond à l’identifiant de l'organisation interne, unique et persistant au niveau national, et généré par une instance régionale du ROR (pour plus de précision, voir la spécification « ANS ROR - Modèle Exposition"
 * #nomUnite "nomUnite" "Nom de l'unité"
 * #categorieOrganisation "categorieOrganisation" "Permet de définir la catégorie d’organisation qui caractérise la nature particulière de l’offre de santé portée par l'unité"
