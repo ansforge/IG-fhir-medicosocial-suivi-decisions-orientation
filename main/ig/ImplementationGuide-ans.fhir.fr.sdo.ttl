@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.sdo</b></p><a name=\"ans.fhir.fr.sdo\"> </a><a name=\"hcans.fhir.fr.sdo\"> </a><h2>SuiviDecisionsOrientation</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "4.0.4"] ; # 
+  fhir:version [ fhir:v "4.0.5"] ; # 
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-09T08:51:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-13T12:40:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1461,6 +1461,20 @@
            fhir:v "annexes_Diagramme.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Diagramme de Séquence SI-MDPH / SI-SDO / SI-ESMS" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "changes.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "changes.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Historique des changements" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
