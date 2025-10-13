@@ -10,7 +10,7 @@
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2025-10-09T09:53:32+00:00",
+  "date" : "2025-10-13T09:38:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1016,6 +1016,15 @@
         }],
         "nameUrl" : "annexes_Diagramme.html",
         "title" : "Diagramme de Séquence SI-MDPH / SI-SDO / SI-ESMS",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "changes.html"
+        }],
+        "nameUrl" : "changes.html",
+        "title" : "Historique des changements",
         "generation" : "markdown"
       },
       {
