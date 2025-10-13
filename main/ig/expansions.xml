@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a7158e12-a53b-434b-ab00-ff139119e6ee"/>
+  <id value="7bb060e7-29f8-4231-a189-dfa7d7559743"/>
   <meta>
-    <lastUpdated value="2025-10-13T14:26:43.118+00:00"/>
+    <lastUpdated value="2025-10-13T14:37:14.828+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,9 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id"/>
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.81</p>
             <p>Ce jeu de valeur (ValueSet) contient 2 concepts</p>
             <table class="codes">
@@ -28,7 +30,7 @@
                   <b>Système</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (fr-FR)</b>
                 </td>
               </tr>
               <tr>
@@ -56,7 +58,7 @@
         <title value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-10-13T14:26:04+00:00"/>
+        <date value="2025-10-13T14:36:29+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -65,10 +67,14 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3d441da5-32d2-4fb6-9311-161f6f88e60a"/>
-          <timestamp value="2025-10-13T14:27:16+00:00"/>
+          <identifier value="urn:uuid:ef987d70-3dcc-4f9a-ba2b-95f2d326461e"/>
+          <timestamp value="2025-10-13T14:37:53+00:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr-FR"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
