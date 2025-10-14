@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.sdo",
-  "version": "4.0.3",
+  "version": "4.0.5",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [],
@@ -64,6 +64,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ]
   }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="39693d53-094f-4e2f-986e-a6fde3339633"/>
+  <id value="55304482-e54c-4d09-89a0-763ee66947b9"/>
   <meta>
-    <lastUpdated value="2025-01-30T16:13:12.592+00:00"/>
+    <lastUpdated value="2025-10-14T08:50:47.318+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,18 +16,16 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.78</p>
-            <p>This value set contains 2 concepts</p>
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.81</p>
+            <p>Ce jeu de valeur (ValueSet) contient 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Système</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -53,12 +51,12 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset"/>
-        <version value="4.0.3"/>
+        <version value="4.0.5"/>
         <name value="DocumentReferenceTypeESMSValueSet"/>
         <title value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-01-30T16:13:12+00:00"/>
+        <date value="2025-10-14T08:50:08+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -67,8 +65,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:364df915-ebd9-442d-b22c-19adb972c5ce"/>
-          <timestamp value="2025-01-30T16:13:44+00:00"/>
+          <identifier value="urn:uuid:60edc404-3807-478d-8910-1a151922d98b"/>
+          <timestamp value="2025-10-14T08:51:45+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -89,11 +87,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.81"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.81"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
