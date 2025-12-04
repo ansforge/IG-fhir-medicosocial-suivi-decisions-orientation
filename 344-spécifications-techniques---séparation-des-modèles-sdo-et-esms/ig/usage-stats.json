@@ -7,8 +7,12 @@
   "profiles": {
     "Bundle": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms",
-        "title": "SDOBundleResultatRechercheNotificationESMS"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation",
+        "title": "ESMSBundleResultatRechercheDecisionEvaluation"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-notification-esms",
+        "title": "ESMSBundleResultatRechercheNotificationESMS"
       }
     ],
     "Consent": [
@@ -19,14 +23,14 @@
     ],
     "DocumentReference": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
-        "title": "SDODocumentReference"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference",
+        "title": "ESMSDocumentReference"
       }
     ],
     "Task": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task",
-        "title": "SDOTask"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-task",
+        "title": "ESMSTask"
       }
     ]
   },

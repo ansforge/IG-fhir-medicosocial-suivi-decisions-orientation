@@ -42,6 +42,13 @@
     "name" : "ESMSBundleResultatRechercheDecisionEvaluation"
   },
   {
+    "id" : "esms-bundle-resultat-recherche-notification-esms",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-notification-esms",
+    "version" : "4.0.5",
+    "name" : "ESMSBundleResultatRechercheNotificationESMS"
+  },
+  {
     "id" : "esms-consent",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent",
@@ -56,25 +63,11 @@
     "name" : "ESMSDocumentReference"
   },
   {
-    "id" : "sdo-bundle-resultat-recherche-notification-esms",
+    "id" : "esms-task",
     "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-task",
     "version" : "4.0.5",
-    "name" : "SDOBundleResultatRechercheNotificationESMS"
-  },
-  {
-    "id" : "sdo-document-reference",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-document-reference",
-    "version" : "4.0.5",
-    "name" : "SDODocumentReference"
-  },
-  {
-    "id" : "sdo-task",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task",
-    "version" : "4.0.5",
-    "name" : "SDOTask"
+    "name" : "ESMSTask"
   },
   {
     "id" : "type-document-reference-esms-valueset",
