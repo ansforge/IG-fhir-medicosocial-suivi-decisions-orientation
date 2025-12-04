@@ -23,5 +23,5 @@ Usage: #definition
 * rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent"
 * rest.resource[=].interaction.code = #create
 * rest.resource[+].type = #Task
-* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
+* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-task"
 * rest.resource[=].interaction[0].code = #create

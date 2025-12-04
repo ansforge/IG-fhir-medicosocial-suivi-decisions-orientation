@@ -80,17 +80,6 @@ Ce guide d'implémentation repose sur l'utilisation de profils génériques déf
     ]
 } %}
 
-##### Profils utilisés pour le volet SI-SDO
-
-{% sql {
-    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like 'Profil SDO%' OR Description like 'Profil ESMS-%' ",
-    "class" : "lines",
-    "columns" : [
-        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
-        { "title" : "Description", "type" : "markdown", "source" : "Description"}
-    ]
-} %}
-
 ### Interactions FHIR
 
 Les interactions possibles entre les systèmes pour échanger et agir sur les ressources sont décrites en termes d’API REST.

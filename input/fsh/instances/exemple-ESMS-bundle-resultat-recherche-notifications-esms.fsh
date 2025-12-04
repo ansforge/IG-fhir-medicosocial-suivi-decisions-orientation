@@ -1,18 +1,18 @@
-Instance: exemple-sdo-bundle-resultat-recherche-notifications-esms
-InstanceOf: SDOBundleResultatRechercheNotificationESMS
-Title: "exemple-sdo-bundle-resultat-recherche-notifications-esms"
+Instance: exemple-esms-bundle-resultat-recherche-notifications-esms
+InstanceOf: ESMSBundleResultatRechercheNotificationESMS
+Title: "exemple-esms-bundle-resultat-recherche-notifications-esms"
 Usage: #example
-Description: "Exemple de ressource DocumentReference suivant le profil SDODocumentReference"
+Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 * type = #searchset
-* entry[0].fullUrl = "https://example.com/base/Task/exemple-sdo-task-1-in-bundle"
-* entry[=].resource = exemple-sdo-task-1-in-bundle
-* entry[+].fullUrl = "https://example.com/base/Task/exemple-sdo-task-2-in-bundle"
-* entry[=].resource = exemple-sdo-task-2-in-bundle
+* entry[0].fullUrl = "https://example.com/base/Task/exemple-esms-task-1-in-bundle"
+* entry[=].resource = exemple-esms-task-1-in-bundle
+* entry[+].fullUrl = "https://example.com/base/Task/exemple-esms-task-2-in-bundle"
+* entry[=].resource = exemple-esms-task-2-in-bundle
 
-Instance: exemple-sdo-task-1-in-bundle
-InstanceOf: SDOTask
+Instance: exemple-esms-task-1-in-bundle
+InstanceOf: ESMSTask
 Usage: #inline
-Description: "Exemple de ressource DocumentReference suivant le profil SDODocumentReference"
+Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 * meta.lastUpdated = "2019-09-26T16:46:48.054+00:00"
 * status = #completed
 * intent = #plan
@@ -32,10 +32,10 @@ Description: "Exemple de ressource DocumentReference suivant le profil SDODocume
 * input[idDecision].valueIdentifier.value = "idDecision"
 * input[idNat_Decision].valueIdentifier.value = "idNat_Decision"
 
-Instance: exemple-sdo-task-2-in-bundle
-InstanceOf: SDOTask
+Instance: exemple-esms-task-2-in-bundle
+InstanceOf: ESMSTask
 Usage: #inline
-Description: "Exemple de ressource DocumentReference suivant le profil SDODocumentReference"
+Description: "Exemple de ressource DocumentReference suivant le profil ESMSDocumentReference"
 * meta.lastUpdated = "2019-12-08T10:07:46.748+00:00"
 * status = #completed
 * intent = #plan
