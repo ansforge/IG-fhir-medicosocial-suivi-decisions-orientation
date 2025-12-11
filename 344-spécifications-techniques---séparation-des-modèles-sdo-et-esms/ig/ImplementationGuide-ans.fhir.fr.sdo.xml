@@ -10,7 +10,7 @@
   <name value="SuiviDecisionsOrientation"/>
   <title value="Médicosocial - Suivi Décisions Orientation"/>
   <status value="active"/>
-  <date value="2025-12-11T09:35:14+00:00"/>
+  <date value="2025-12-11T10:52:32+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -497,7 +497,7 @@
         <reference value="StructureDefinition/esms-bundle-resultat-recherche-notification-esms"/>
       </reference>
       <name value="ESMSBundleResultatRechercheNotificationESMS"/>
-      <description value="Profil ESMS-SDO créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification."/>
+      <description value="Profil ESMS créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -519,7 +519,7 @@
         <reference value="StructureDefinition/esms-document-reference"/>
       </reference>
       <name value="ESMSDocumentReference"/>
-      <description value="Profil ESMS héritant du profil ESMSDocumentReference. Profil utilisé pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA"/>
+      <description value="Profil ESMS créé dans le contexte du suivi des orientations pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -530,7 +530,7 @@
         <reference value="StructureDefinition/esms-task"/>
       </reference>
       <name value="ESMSTask"/>
-      <description value="Profil ESMS-SDO créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation."/>
+      <description value="Profil ESMS créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "SuiviDecisionsOrientation"] ; # 
   fhir:title [ fhir:v "Médicosocial - Suivi Décisions Orientation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-11T09:35:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-11T10:52:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -906,7 +906,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-bundle-resultat-recherche-notification-esms" ]
        ] ;
        fhir:name [ fhir:v "ESMSBundleResultatRechercheNotificationESMS" ] ;
-       fhir:description [ fhir:v "Profil ESMS-SDO créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification." ] ;
+       fhir:description [ fhir:v "Profil ESMS créé dans le contexte du suivi des orientations pour transporter les résultats d’une recherche de notification." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -942,7 +942,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-document-reference" ]
        ] ;
        fhir:name [ fhir:v "ESMSDocumentReference" ] ;
-       fhir:description [ fhir:v "Profil ESMS héritant du profil ESMSDocumentReference. Profil utilisé pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA" ] ;
+       fhir:description [ fhir:v "Profil ESMS créé dans le contexte du suivi des orientations pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -960,7 +960,7 @@
          fhir:reference [ fhir:v "StructureDefinition/esms-task" ]
        ] ;
        fhir:name [ fhir:v "ESMSTask" ] ;
-       fhir:description [ fhir:v "Profil ESMS-SDO créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation." ] ;
+       fhir:description [ fhir:v "Profil ESMS créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
