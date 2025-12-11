@@ -1,7 +1,7 @@
 Profile: ESMSTask
 Parent: Task
 Id: esms-task
-Description: "Profil ESMS-SDO créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation."
+Description: "Profil ESMS créé dans le contexte du suivi des orientations pour véhiculer les informations sur la position des ESMS et des unités opérationnelles vis-à-vis de la prestation."
 * obeys regle-StatutUnite
 * meta.lastUpdated 1..
 * intent = #plan 

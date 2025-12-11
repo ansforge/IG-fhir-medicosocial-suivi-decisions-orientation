@@ -49,7 +49,7 @@ Modifications apportées dans cette release [4.0.3-ballot](https://github.com/an
 
 Modifications apportées dans cette release [4.0.2](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pulls?q=is%3Apr+is%3Aclosed+milestone%3A4.0.2) :
 
-* [Mise à jour ESMSTask.fsh : ajout du JDV J264-ModePriseEnCharge-MDPH dans le profil ESMSTask](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/207)
+* [Mise à jour SDOTask.fsh : ajout du JDV J264-ModePriseEnCharge-MDPH dans le profil SDOTask](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/207)
 * [Mise à jour document CDA : ContenuDossier - supprimer les éléments useablePeriod](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/208)
 * [Mise à jour du fichier XSD](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/209)
 * [Préparation de la publication 4.0.2](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/210)

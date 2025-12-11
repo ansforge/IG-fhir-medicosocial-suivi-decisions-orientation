@@ -1,11 +1,11 @@
 Profile: ESMSDocumentReference
 Parent: DocumentReference
 Id: esms-document-reference
-Description: "Profil ESMS héritant du profil ESMSDocumentReference. Profil utilisé pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA"
+Description: "Profil ESMS créé dans le contexte du suivi des orientations pour véhiculer les données de l'individu et de la décision, ou les données de l'évaluation dans un document CDA"
 * obeys regle-NomPieceJointe-type
 * obeys regle-Contenu
 
-* identifier 2..
+* identifier 2..2
 * identifier ^short = "identifiants métier (idDecision) et technique (idNat_decision) de la décision d'orientation"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
