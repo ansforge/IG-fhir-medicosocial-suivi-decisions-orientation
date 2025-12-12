@@ -1,23 +1,10 @@
 
 ### Profils
 
-Liste des profils définissant les contraintes appliquées sur les ressources FHIR par les systèmes conformes à ce guide d'implémentation. Ces profils sont créés dans le cadre des volets de suivi des orientations (SDO et ESMS).
-
-#### Profils utilisés pour le volet SI-ESMS
+Liste des profils définissant les contraintes appliquées sur les ressources FHIR par les systèmes conformes à ce guide d'implémentation.
 
 {% sql {
     "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like 'Profil ESMS%' ",
-    "class" : "lines",
-    "columns" : [
-        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
-        { "title" : "Description", "type" : "markdown", "source" : "Description"}
-    ]
-} %}
-
-#### Profils utilisés pour le volet SI-SDO
-
-{% sql {
-    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Description like 'Profil SDO%' OR Description like 'Profil ESMS-%' ",
     "class" : "lines",
     "columns" : [
         { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},

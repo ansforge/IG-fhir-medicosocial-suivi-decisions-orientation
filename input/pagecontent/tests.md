@@ -1,18 +1,8 @@
 ### Validateurs FHIR
 
-Liste des validateurs FHIR présents sur la plateforme de test [EVSClient](https://interop.esante.gouv.fr/evs) :
+La plateforme de test [EVSClient](https://interop.esante.gouv.fr/evs/home.seam) propose un validateur FHIR par profil défini dans ce guide d'implémentation (cf onglet <a href="artifacts.html">Ressources de conformité</a>).
 
-| Nom Validateur                                      | Profil testé  | Flux associé(s) |
-| --------------------------------------------------- | ----------------- | ------------- |
-| MS-R4-ESMSBundleResultatRechercheDecisionEvaluation | [ESMSBundleResultatRechercheDecisionEvaluation](StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html)            | 1.2 / 3.2 |
-| MS-R4-ESMSConsent                                   | [ESMSConsent](StructureDefinition-esms-consent.html)           | 2 |
-| MS-R4-ESMSDocumentReference                         | [ESMSDocumentReference](StructureDefinition-esms-document-reference.html) | 1.4 |
-| MS-R4-SDOBundleResultatRechercheNotificationESMS    | [SDOBundleResultatRechercheNotification](StructureDefinition-sdo-bundle-resultat-recherche-notification-esms.html)           | 5.2 |
-| MS-R4-SDODocumentReference                          | [SDODocumentReference](StructureDefinition-sdo-document-reference.html) | N/A |
-| MS-R4-SDOTask                                       | [SDOTask](StructureDefinition-sdo-task.html)             | 4 / 5.2 |
-| MS-R4-ESMS_Flux1.1-RechercheDeDecision (URL)        |          N/A      | 1.1 |
-| MS-R4-ESMS_Flux3.1-RechercheEvaluation (URL)        |            N/A    | 3.1 |
-| MS-R4-ESMS_Flux5.1-RechercheStatut (URL)        |            N/A    | 5.1 |
+La documentation de l'outil EVSClient est accessible [ici](https://interop.esante.gouv.fr/gazelle-documentation/EVS-Client/user.html).
 
 ### Validateurs CDA
 

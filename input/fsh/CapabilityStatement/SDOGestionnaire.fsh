@@ -29,11 +29,11 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[+].type = #Task
-* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-task"
+* rest.resource[=].profile = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-task"
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.interaction[0].code = #transaction
 * rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation"
 * rest.interaction[+].code = #transaction
-* rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/sdo-bundle-resultat-recherche-notification-esms"
+* rest.interaction[=].documentation = "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-notification-esms"
