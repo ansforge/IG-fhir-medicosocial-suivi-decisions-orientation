@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="55304482-e54c-4d09-89a0-763ee66947b9"/>
+  <id value="79ec0743-007b-4699-a99b-7cc84ec220ce"/>
   <meta>
-    <lastUpdated value="2025-10-14T08:50:47.318+00:00"/>
+    <lastUpdated value="2025-12-15T14:50:36.421+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -51,12 +51,12 @@
           </div>
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset"/>
-        <version value="4.0.5"/>
+        <version value="4.0.6"/>
         <name value="DocumentReferenceTypeESMSValueSet"/>
         <title value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-10-14T08:50:08+00:00"/>
+        <date value="2025-12-15T14:49:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -65,8 +65,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:60edc404-3807-478d-8910-1a151922d98b"/>
-          <timestamp value="2025-10-14T08:51:45+00:00"/>
+          <identifier value="urn:uuid:18729134-c552-40d4-a454-356b618637a7"/>
+          <timestamp value="2025-12-15T14:51:17+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -87,10 +87,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.81"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://loinc.org|2.81"/>
           </parameter>
           <contains>

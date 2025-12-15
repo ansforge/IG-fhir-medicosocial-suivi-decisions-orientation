@@ -2,11 +2,11 @@
   "codeSystems" : [
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
-      "version" : "4.0.5",
+      "version" : "4.0.6",
       "status" : "active",
       "name" : "DocumentReferenceTypeESMSValueSet",
       "title" : "DocumentReferenceTypeESMSValueSet",
-      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource SDOTask",
+      "description" : "Code System pour la définition des éléments spécifiques de input dans ressource ESMSTask",
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
@@ -26,7 +26,7 @@
       "sources" : ["1.2.250.1.213.3.4.114"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask"
+      "StructureDefinition-esms-task.html" : "ESMSTask"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J251-MotifStatutPersonnePriseChargeESMS/FHIR/JDV-J251-MotifStatutPersonnePriseChargeESMS",
@@ -42,7 +42,7 @@
       "sources" : ["1.2.250.1.213.3.4.115"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask"
+      "StructureDefinition-esms-task.html" : "ESMSTask"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J252-StatutPersonnePriseChargeESMS/FHIR/JDV-J252-StatutPersonnePriseChargeESMS",
@@ -58,7 +58,7 @@
       "sources" : ["1.2.250.1.213.3.4.116"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask"
+      "StructureDefinition-esms-task.html" : "ESMSTask"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J253-StatutPersonnePriseChargeUnite/FHIR/JDV-J253-StatutPersonnePriseChargeUnite",
@@ -74,7 +74,7 @@
       "sources" : ["1.2.250.1.213.3.4.117"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask"
+      "StructureDefinition-esms-task.html" : "ESMSTask"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J264-ModeEtCentreDePriseEnCharge-MDPH/FHIR/JDV-J264-ModeEtCentreDePriseEnCharge-MDPH",
@@ -91,7 +91,7 @@
       "sources" : ["1.2.250.1.213.3.4.105"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask"
+      "StructureDefinition-esms-task.html" : "ESMSTask"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR",
@@ -107,11 +107,11 @@
       "sources" : ["1.2.250.1.213.3.3.32"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask"
+      "StructureDefinition-esms-task.html" : "ESMSTask"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR/FHIR/JDV-J34-CategorieOrganisation-ROR",
-      "version" : "20250723120000",
+      "version" : "20251017120000",
       "status" : "active",
       "name" : "JDV_J34_CategorieOrganisation_ROR",
       "title" : null,
@@ -123,7 +123,7 @@
       "sources" : ["1.2.250.1.213.3.3.40"],
       "uses" : {
       },
-      "StructureDefinition-sdo-task.html" : "SDOTask"
+      "StructureDefinition-esms-task.html" : "ESMSTask"
     }
   ]
 }
