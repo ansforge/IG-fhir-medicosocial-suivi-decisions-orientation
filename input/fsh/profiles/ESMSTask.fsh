@@ -63,7 +63,6 @@ Description: "Profil ESMS créé dans le contexte du suivi des orientations pour
 * input[accueilSequentiel].type = InputTaskSDOCodeSystem#accueilSequentiel
 * input[accueilSequentiel].value[x] only boolean
 * input[modePriseCharge] ^short = "Permet de définir le mode de prise en charge"
-* input[modePriseCharge] obeys regle-ModePriseEnCharge
 * input[modePriseCharge].type = InputTaskSDOCodeSystem#modePriseCharge
 * input[modePriseCharge].value[x] only CodeableConcept
 * input[modePriseCharge].value[x] from $JDV_J264-ModeEtCentreDePriseEnCharge-MDPH (required)
