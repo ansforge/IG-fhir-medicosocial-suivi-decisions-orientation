@@ -1,0 +1,62 @@
+# ans.fhir.fr.sdo#4.0.6: Médicosocial - Suivi Décisions Orientation(en)
+
+## Pages
+
+* [Accueil](en/index.md)
+* [OID MDPH associés à la spécification](en/annexes_OID_MDPH.md)
+* [Flux 4 - StatutPersonneOrientee](en/st_flux4.md)
+* [Téléchargements et usages](en/downloads.md)
+* [Flux 2 - Accord](en/st_flux2.md)
+* [Nomenclature précisions de l'orientation](en/annexes_Nomenclatures_precision.md)
+* [Diagramme de Séquence SI-MDPH / SI-SDO / SI-ESMS](en/annexes_Diagramme.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Sécurité](en/securite.md)
+* [Nomenclatures de référence associées aux spécifications](en/annexes_Nomenclature.md)
+* [Flux 5 - Recherche et résultats de statuts](en/st_flux5.md)
+* [Contenu du dossier](en/contenu_dossier.md)
+* [Solutions de tests](en/tests.md)
+* [Ressources FHIR](en/ressource_fhir.md)
+* [Ressources CDA](en/ressource_cda.md)
+* [Flux 1 - Recherche et consultation de personne orientée et décision](en/st_flux1.md)
+* [Flux 3 - Recherche et résultats d'évaluation](en/st_flux3.md)
+* [Historique des changements](en/changes.md)
+* [Glossaire associé à la spécification](en/annexes_Glossaire.md)
+* [Correspondance entre objets métier et ressources du standard HL7 FHIR](en/correspondance_objet.md)
+* [Synthèse des flux](en/synthese_flux.md)
+
+## Resources
+
+### CodeSystems
+
+* [InputTaskSDOCodeSystem](en/CodeSystem-input-task-sdo-codesystem.md)
+
+### ValueSets
+
+* [DocumentReferenceTypeESMSValueSet](en/ValueSet-type-document-reference-esms-valueset.md)
+
+### Resource Profiles
+
+* [ESMSBundleResultatRechercheDecisionEvaluation](en/StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.md)
+* [ESMSBundleResultatRechercheNotificationESMS](en/StructureDefinition-esms-bundle-resultat-recherche-notification-esms.md)
+* [ESMSConsent](en/StructureDefinition-esms-consent.md)
+* [ESMSDocumentReference](en/StructureDefinition-esms-document-reference.md)
+* [ESMSTask](en/StructureDefinition-esms-task.md)
+
+### CapabilityStatements
+
+* [SI-ESMS-Consommateur](en/CapabilityStatement-ESMSConsommateur.md)
+* [SI-ESMS-Producteur](en/CapabilityStatement-ESMSProducteur.md)
+* [SI-SdO-Gestionnaire](en/CapabilityStatement-gestionnaire-sdo.md)
+
+### ImplementationGuides
+
+* [Médicosocial - Suivi Décisions Orientation](en/ImplementationGuide-ans.fhir.fr.sdo.md)
+
+### Examples
+
+* [exemple-bundle-resultat-recherche-decision-evaluation-elements (Bundle)](en/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements.md)
+* [exemple-bundle-resultat-recherche-decision-evaluation (Bundle)](en/Bundle-exemple-bundle-resultat-recherche-decision-evaluation.md)
+* [exemple-esms-bundle-resultat-recherche-notifications-esms (Bundle)](en/Bundle-exemple-esms-bundle-resultat-recherche-notifications-esms.md)
+* [exemple-consent (Consent)](en/Consent-exemple-consent.md)
+* [exemple-esms-document-reference (DocumentReference)](en/DocumentReference-exemple-esms-document-reference.md)
+* [exemple-esms-task (Task)](en/Task-exemple-esms-task.md)
