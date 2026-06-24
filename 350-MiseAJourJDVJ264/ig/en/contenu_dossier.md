@@ -341,7 +341,7 @@ Cet identifiant est obtenu par la concaténation du type d'identifiant national 
 | 5 | …..modeEntreeDITEP : Code | [0..1] | DetailPrestation.ditep | Obligatoire si "Type de droit et prestation" = 7.7No_Mode_entree_DITEP (1.2.250.1.213.3.3.138)Code :   1 : SESSAD   2 : ITEP internat   3 : ITEP externat   4 : ITEP semi-internat |
 | 5 | …..nbJoursDerogationAccueilTemporaire : Numérique | [0..1] | DetailPrestation.joursDerogationAccueil | Nombre de joursValeur maximale : 90 |
 | 5 | …..priseEnCharge | [0..N] | X |   |
-| 6 | ……modePriseEnCharge : Code | [0..1] | PriseCharge.modePriseCharge |  JDV_J264_ModeEtCentreDePriseEnCharge_MDPH (1.2.250.1.213.3.3.13) |
+| 6 | ……modePriseEnCharge : Code | [0..1] | PriseCharge.modePriseCharge |  JDV_J264_ModeEtCentreDePriseEnCharge_MDPH (1.2.250.1.213.3.3.13) |
 | 6 | ……quantification | [0..1] | X | Quantification liée à la prise en charge. |
 | 7 | …….nombre : Texte | [1..1] | Quantification.quantificationNombre | Valeur de la quantification. |
 | 7 | …….unite : Code | [1..1] | Quantification.quantificationUnite | No_Unite (1.2.250.1.213.3.3.211) |
