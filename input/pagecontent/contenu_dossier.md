@@ -2541,6 +2541,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
 </table>
 
 #### Extension représentant les informations sur la décision de l'individu :
+
 <table style="width:559.95pt;margin-left:-14.45pt;border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -3339,7 +3340,7 @@ Cette section présente le contenu du corps du document CDA. On y retrouve diff�
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">PriseCharge.modePriseCharge</span></p>
             </td>
             <td style="width: 185.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;height: 19.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;"> JDV_J264_ModeEtCentreDePriseEnCharge_MDPH&nbsp;</span>(<span style="line-height:  115%;">1.2.250.1.213.3.3.13</span>)</p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  #C00000;"> JDV_J264_ModeEtCentreDePriseEnCharge_MDPH </span>(<span style="line-height:  115%;">1.2.250.1.213.3.3.13</span>)</p>
             </td>
         </tr>
         <tr>
