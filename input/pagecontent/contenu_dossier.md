@@ -3356,7 +3356,7 @@ Cette section pr√©sente le contenu du corps du document CDA. On y retrouve diff√
                 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:black;">X</span></p>
             </td>
             <td style="width: 185.05pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0cm 5.4pt;height: 19.4pt;vertical-align: top;">
-                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Quantification li&eacute;e &agrave; la prise en charge.</span></p>
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;text-align:left;line-height:115%;font-size:13px;font-family:"Arial",sans-serif;'><span style="color:  black;">Quantification li&eacute;e &agrave; la prise en charge. </span></p>
             </td>
         </tr>
         <tr>
