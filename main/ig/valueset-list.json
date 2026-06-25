@@ -6,6 +6,9 @@
     "name" : "DocumentReferenceTypeESMSValueSet",
     "title" : "DocumentReferenceTypeESMSValueSet",
     "description" : "Code System pour la définition des éléments spécifiques de input dans ressource ESMSTask",
-    "systems" : ["http://loinc.org"]
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-esms-document-reference.html" : "ESMSDocumentReference"
   }]
 }

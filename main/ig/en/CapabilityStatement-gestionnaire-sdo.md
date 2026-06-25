@@ -35,7 +35,7 @@ Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orien
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",

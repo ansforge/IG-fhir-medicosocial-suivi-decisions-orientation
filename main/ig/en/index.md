@@ -2,6 +2,9 @@
 
 ## Accueil
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
  **Brief description of this Implementation Guide**
  This document presents the technical specifications of the “SI-ESMS” section. which specify the exchanges of information between the Orientation Monitoring Information System (SI-SdO) and the Information System for Medical-Social Establishments and Services (SI-ESMS) following notification of an orientation decision 
 

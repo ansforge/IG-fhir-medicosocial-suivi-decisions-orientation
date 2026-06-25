@@ -2,6 +2,9 @@
 
 ## Ressources CDA
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Schémas XSD
 
 Ces schémas permettent de vérifier la conformité d'un document aux spécifications CDA. Ils incluent des extensions spécifiques au volet SI-ESMS

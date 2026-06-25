@@ -2,6 +2,9 @@
 
 ## Contenu du dossier
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Standard utilisé
 
 Cette section présente les informations à transférer entre le SI-ESMS et le SI-SDO. Ces données structurées sont spécifiées dans le format CDA R2 niveau 3. Dans cette section, une mise en correspondance est faite entre :

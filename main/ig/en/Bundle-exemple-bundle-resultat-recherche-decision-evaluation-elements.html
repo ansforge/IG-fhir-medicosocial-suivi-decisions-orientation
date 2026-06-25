@@ -44,7 +44,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"21.12"}
@@ -74,7 +76,7 @@
 
 
 
-  <img alt="France flag" src="../assets/images/fra.svg" height="16" title="France"/>
+  <img alt="France (la) flag" src="../assets/images/fra.svg" height="16" title="France (la)"/>
 
 
             </span>
@@ -204,6 +206,21 @@
 
               
 
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../fr/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
+
+  </div>
+</div>
+
+
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
       <!-- /HEADER CONTENT -->
@@ -235,6 +252,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <!-- layouts\layout-instance-base -->
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Médicosocial - Suivi Décisions Orientation - Local Development build (v4.0.6) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/sdo/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
@@ -299,7 +317,7 @@
 
 
 
-  <div data-fhir="generated"><p class="res-header-id"/><a name="exemple-bundle-resultat-recherche-decision-evaluation-elements"> </a><a name="hcexemple-bundle-resultat-recherche-decision-evaluation-elements"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html">ESMSBundleResultatRechercheDecisionEvaluation</a></p></div><p>Bundle exemple-bundle-resultat-recherche-decision-evaluation-elements of type searchset</p><a name="https-//example.com/base/DocumentReference/exemple-esms-documentreference-1-in-bundle-elements"> </a><a name="DocumentReference_exemple-esms-documentreference-1-in-bundle-elements"> </a><a name="hcDocumentReference_exemple-esms-documentreference-1-in-bundle-elements"> </a><hr/><p>Entry 1 - fullUrl = https://example.com/base/DocumentReference/exemple-esms-documentreference-1-in-bundle-elements</p><p>Resource DocumentReference:</p><blockquote><p class="res-header-id"/><a name="exemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-1-in-bundle-elements"> </a><a name="hcexemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-1-in-bundle-elements"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2023-01-26 16:46:48+0000; Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-esms-document-reference.html">ESMSDocumentReference</a></p></div><p><b>identifier</b>: idDecision1 (use: usual, ), idNat_Decision1 (use: official, )</p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 57830-2}">Admission request Document</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td>Document Individu et décision</td></tr></table></blockquote></blockquote><a name="https-//example.com/base/DocumentReference/exemple-esms-documentreference-2-in-bundle-elements"> </a><a name="DocumentReference_exemple-esms-documentreference-2-in-bundle-elements"> </a><a name="hcDocumentReference_exemple-esms-documentreference-2-in-bundle-elements"> </a><hr/><p>Entry 2 - fullUrl = https://example.com/base/DocumentReference/exemple-esms-documentreference-2-in-bundle-elements</p><p>Resource DocumentReference:</p><blockquote><p class="res-header-id"/><a name="exemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-2-in-bundle-elements"> </a><a name="hcexemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-2-in-bundle-elements"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2019-12-08 10:07:46+0000; Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-esms-document-reference.html">ESMSDocumentReference</a></p></div><p><b>identifier</b>: idDecision2 (use: usual, ), idNat_Decision2 (use: official, )</p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 57830-2}">Admission request Document</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td>Document Individu et décision</td></tr></table></blockquote></blockquote></div>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="exemple-bundle-resultat-recherche-decision-evaluation-elements"> </a><a name="hcexemple-bundle-resultat-recherche-decision-evaluation-elements"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : en</p><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation.html">ESMSBundleResultatRechercheDecisionEvaluation</a></p></div><p>Bundle exemple-bundle-resultat-recherche-decision-evaluation-elements de type searchset</p><a name="https-//example.com/base/DocumentReference/exemple-esms-documentreference-1-in-bundle-elements"> </a><a name="DocumentReference_exemple-esms-documentreference-1-in-bundle-elements"> </a><a name="hcDocumentReference_exemple-esms-documentreference-1-in-bundle-elements"> </a><hr/><p>Entrée 1 - fullUrl = https://example.com/base/DocumentReference/exemple-esms-documentreference-1-in-bundle-elements</p><p>Ressource DocumentReference :</p><blockquote><p class="res-header-id"/><a name="exemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-1-in-bundle-elements"> </a><a name="hcexemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-1-in-bundle-elements"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Dernière mise à jour : 2023-01-26 16:46:48+0000; Langue : en</p><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-esms-document-reference.html">ESMSDocumentReference</a></p></div><p><b>identifier</b>: idDecision1 (utilisation : usual, ), idNat_Decision1 (utilisation : official, )</p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes :{http://loinc.org 57830-2}">Admission request Document</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td>Document Individu et décision</td></tr></table></blockquote></blockquote><a name="https-//example.com/base/DocumentReference/exemple-esms-documentreference-2-in-bundle-elements"> </a><a name="DocumentReference_exemple-esms-documentreference-2-in-bundle-elements"> </a><a name="hcDocumentReference_exemple-esms-documentreference-2-in-bundle-elements"> </a><hr/><p>Entrée 2 - fullUrl = https://example.com/base/DocumentReference/exemple-esms-documentreference-2-in-bundle-elements</p><p>Ressource DocumentReference :</p><blockquote><p class="res-header-id"/><a name="exemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-2-in-bundle-elements"> </a><a name="hcexemple-bundle-resultat-recherche-decision-evaluation-elements/exemple-esms-documentreference-2-in-bundle-elements"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Dernière mise à jour : 2019-12-08 10:07:46+0000; Langue : en</p><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-esms-document-reference.html">ESMSDocumentReference</a></p></div><p><b>identifier</b>: idDecision2 (utilisation : usual, ), idNat_Decision2 (utilisation : official, )</p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes :{http://loinc.org 57830-2}">Admission request Document</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td>Document Individu et décision</td></tr></table></blockquote></blockquote></div>
 
   
 
@@ -354,8 +372,8 @@
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Package ans.fhir.fr.sdo#4.0.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-23 16:16:00 +0000">
-    2026-06-23
+  <span title="2026-06-25 13:33:00 +0000">
+    2026-06-25
   </span>
 
           <br/>

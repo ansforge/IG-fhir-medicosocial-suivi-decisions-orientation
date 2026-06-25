@@ -2,6 +2,9 @@
 
 ## Ressources FHIR
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Profils
 
 Liste des profils définissant les contraintes appliquées sur les ressources FHIR par les systèmes conformes à ce guide d'implémentation.

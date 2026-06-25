@@ -2,6 +2,12 @@
 
 ## Example DocumentReference: exemple-esms-document-reference
 
+-------
+
+**English**
+
+-------
+
 Profile: [ESMSDocumentReference](StructureDefinition-esms-document-reference.md)
 
 **identifier**: idDecision (use: usual, ), idNat_Decision (use: official, )
@@ -17,7 +23,7 @@ Profile: [ESMSDocumentReference](StructureDefinition-esms-document-reference.md)
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | - | **ContentType** | **Language** | **Data** | **Title** |
-| * | text/plain | French | `SGVsbG8gd29ybGQ=` | Document évaluation |
+| * | text/plain | Français | `SGVsbG8gd29ybGQ=` | Document évaluation |
 
 
 

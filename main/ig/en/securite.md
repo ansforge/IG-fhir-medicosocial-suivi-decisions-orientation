@@ -2,6 +2,9 @@
 
 ## Sécurité
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu'il convient de protéger.
 
 Cette section présente les éventuelles recommandations de sécurité qui s'appliquent à ce guide d'implémentation. Il s'agit d'un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d'un système cible.

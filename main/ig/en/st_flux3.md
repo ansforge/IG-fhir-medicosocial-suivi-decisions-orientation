@@ -2,6 +2,9 @@
 
 ## Flux 3 - Recherche et résultats d'évaluation
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Flux 3.1 - RechercheEvaluation
 
 Ce flux permet à l’ESMS de rechercher les informations d’évaluation d’une personne orientée. Cette recherche est ainsi formulée par le SI-ESMS auprès du SI-SDO sur une décision précise précédemment reçue via le flux 1.4.

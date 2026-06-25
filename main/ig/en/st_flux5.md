@@ -2,6 +2,9 @@
 
 ## Flux 5 - Recherche et résultats de statuts
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Flux 5.1 - RechercheStatut
 
 Ce flux permet à un ESMS de suivre, pour un dossier de personne orientée en cours d'instruction, les statuts d'entrées dans un autre ESMS. Il permet également à un ESMS de rechercher des statuts d'autres évènements liés à un dossier en cours d'instruction (admission impossible enterinée, annulation de notification,…) Cette recherche est formulée par le SI-ESMS auprès du SI-SDO.

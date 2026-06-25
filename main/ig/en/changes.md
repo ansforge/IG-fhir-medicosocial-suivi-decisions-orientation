@@ -2,6 +2,9 @@
 
 ## Historique des changements
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Release 4.0.6 de l'Implementation Guide du volet "SI-ESMS"
 
 odifications apportées dans cette release [4.0.6](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pulls?q=is%3Apr+is%3Aclosed+milestone%3A4.0.6) :

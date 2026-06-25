@@ -2,6 +2,9 @@
 
 ## OID MDPH associés à la spécification
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 | | | | |
 | :--- | :--- | :--- | :--- |
 | 1.2.250.1.213.7.1 | 01-AIN | 01 |   |

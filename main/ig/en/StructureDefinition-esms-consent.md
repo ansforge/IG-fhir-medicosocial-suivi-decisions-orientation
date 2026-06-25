@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-esms-consent.csv)
   "version" : "4.0.6",
   "name" : "ESMSConsent",
   "status" : "active",
-  "date" : "2026-06-23T16:16:52+00:00",
+  "date" : "2026-06-25T13:33:01+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-esms-consent.csv)
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

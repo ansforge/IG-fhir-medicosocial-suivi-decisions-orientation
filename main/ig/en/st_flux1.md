@@ -2,6 +2,9 @@
 
 ## Flux 1 - Recherche et consultation de personne orientée et décision
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Flux 1.1 RecherchePersonneOrienteeDecision
 
 Ce flux permet à l’ESMS de rechercher les dossiers de nouvelles personnes ayant été orientées vers leur établissement ou de dossiers mis à jour les concernant. Cette recherche est ainsi formulée par le SI-ESMS auprès du SI-SDO. Ce flux permet de récupérer la liste des nouvelles décisions d’orientation avant de les consulter une par une (voir flux 1.3).

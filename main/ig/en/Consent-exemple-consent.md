@@ -2,6 +2,12 @@
 
 ## Example Consent: exemple-consent
 
+-------
+
+**English**
+
+-------
+
 Information Source: urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7
 
 Profile: [ESMSConsent](StructureDefinition-esms-consent.md)

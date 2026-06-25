@@ -30,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "InputTaskSDOCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-23T16:16:52+00:00",
+  "date" : "2026-06-25T13:33:01+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -44,7 +44,7 @@ This Code system is referenced in the definition of the following value sets:
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "caseSensitive" : true,
