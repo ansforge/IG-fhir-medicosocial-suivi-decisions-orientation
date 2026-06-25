@@ -97,7 +97,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-esms-task.csv),
   "version" : "4.0.6",
   "name" : "ESMSTask",
   "status" : "active",
-  "date" : "2026-06-25T13:33:01+00:00",
+  "date" : "2026-06-25T13:36:54+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
