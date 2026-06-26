@@ -1,4 +1,4 @@
-# SI-SdO-Gestionnaire - Médicosocial - Suivi Décisions Orientation v4.0.6
+# SI-SdO-Gestionnaire - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## CapabilityStatement: SI-SdO-Gestionnaire 
 
@@ -16,7 +16,7 @@ Le rôle de gestionnaire est de gérer la liste des dossiers des personnes orien
   "resourceType" : "CapabilityStatement",
   "id" : "gestionnaire-sdo",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/gestionnaire-sdo",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "SDOgestionnaire",
   "title" : "SI-SdO-Gestionnaire",
   "status" : "active",

@@ -1,4 +1,4 @@
-# exemple-esms-document-reference - Médicosocial - Suivi Décisions Orientation v4.0.6
+# exemple-esms-document-reference - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Exemple DocumentReference: exemple-esms-document-reference
 

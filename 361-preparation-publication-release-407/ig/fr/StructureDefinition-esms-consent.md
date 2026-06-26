@@ -1,4 +1,4 @@
-# ESMSConsent - Médicosocial - Suivi Décisions Orientation v4.0.6
+# ESMSConsent - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Profil de ressource: ESMSConsent 
 
@@ -73,10 +73,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-esms-consent.cs
   "resourceType" : "StructureDefinition",
   "id" : "esms-consent",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-consent",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "ESMSConsent",
   "status" : "active",
-  "date" : "2026-06-26T16:13:39+00:00",
+  "date" : "2026-06-26T16:22:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

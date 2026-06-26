@@ -1,4 +1,4 @@
-# ESMSDocumentReference - Médicosocial - Suivi Décisions Orientation v4.0.6
+# ESMSDocumentReference - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Resource Profile: ESMSDocumentReference 
 
@@ -30,10 +30,10 @@ Other representations of profile: [CSV](../StructureDefinition-esms-document-ref
   "resourceType" : "StructureDefinition",
   "id" : "esms-document-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-document-reference",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "ESMSDocumentReference",
   "status" : "active",
-  "date" : "2026-06-26T16:13:39+00:00",
+  "date" : "2026-06-26T16:22:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

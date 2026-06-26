@@ -10,11 +10,11 @@
   "id" : "ans.fhir.fr.sdo",
   "language" : "fr",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ImplementationGuide/ans.fhir.fr.sdo",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "SuiviDecisionsOrientation",
   "title" : "Médicosocial - Suivi Décisions Orientation",
   "status" : "active",
-  "date" : "2026-06-26T16:13:39+00:00",
+  "date" : "2026-06-26T16:22:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

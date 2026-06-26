@@ -1,4 +1,4 @@
-# Glossaire associé à la spécification - Médicosocial - Suivi Décisions Orientation v4.0.6
+# Glossaire associé à la spécification - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Glossaire associé à la spécification
 

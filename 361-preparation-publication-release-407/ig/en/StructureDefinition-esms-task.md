@@ -1,4 +1,4 @@
-# ESMSTask - Médicosocial - Suivi Décisions Orientation v4.0.6
+# ESMSTask - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Resource Profile: ESMSTask 
 
@@ -30,10 +30,10 @@ Other representations of profile: [CSV](../StructureDefinition-esms-task.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "esms-task",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-task",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "ESMSTask",
   "status" : "active",
-  "date" : "2026-06-26T16:13:39+00:00",
+  "date" : "2026-06-26T16:22:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

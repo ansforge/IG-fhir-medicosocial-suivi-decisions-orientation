@@ -1,4 +1,4 @@
-# Flux 4 - StatutPersonneOrientee - Médicosocial - Suivi Décisions Orientation v4.0.6
+# Flux 4 - StatutPersonneOrientee - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Flux 4 - StatutPersonneOrientee
 

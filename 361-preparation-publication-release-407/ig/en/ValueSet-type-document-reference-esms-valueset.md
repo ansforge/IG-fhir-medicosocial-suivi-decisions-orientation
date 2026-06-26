@@ -1,4 +1,4 @@
-# DocumentReferenceTypeESMSValueSet - Médicosocial - Suivi Décisions Orientation v4.0.6
+# DocumentReferenceTypeESMSValueSet - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## ValueSet: DocumentReferenceTypeESMSValueSet 
 
@@ -31,12 +31,12 @@ Code System pour la définition des éléments spécifiques de input dans ressou
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "DocumentReferenceTypeESMSValueSet",
   "title" : "DocumentReferenceTypeESMSValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-26T16:13:39+00:00",
+  "date" : "2026-06-26T16:22:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

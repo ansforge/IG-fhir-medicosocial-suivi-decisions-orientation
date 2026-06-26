@@ -1,4 +1,4 @@
-# ESMSBundleResultatRechercheNotificationESMS - Médicosocial - Suivi Décisions Orientation v4.0.6
+# ESMSBundleResultatRechercheNotificationESMS - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Resource Profile: ESMSBundleResultatRechercheNotificationESMS 
 
@@ -28,10 +28,10 @@ Other representations of profile: [CSV](../StructureDefinition-esms-bundle-resul
   "resourceType" : "StructureDefinition",
   "id" : "esms-bundle-resultat-recherche-notification-esms",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-notification-esms",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "ESMSBundleResultatRechercheNotificationESMS",
   "status" : "active",
-  "date" : "2026-06-26T16:13:39+00:00",
+  "date" : "2026-06-26T16:22:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

@@ -1,4 +1,4 @@
-# SI-ESMS-Consommateur - Médicosocial - Suivi Décisions Orientation v4.0.6
+# SI-ESMS-Consommateur - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## CapabilityStatement: SI-ESMS-Consommateur 
 
@@ -16,7 +16,7 @@ Le rôle du consommateur est de recueillir le dossier d'une personne orientée p
   "resourceType" : "CapabilityStatement",
   "id" : "ESMSConsommateur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/ESMSConsommateur",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "ESMSConsommateur",
   "title" : "SI-ESMS-Consommateur",
   "status" : "active",

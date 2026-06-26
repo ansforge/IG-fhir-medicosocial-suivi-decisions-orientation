@@ -1,4 +1,4 @@
-# exemple-esms-task - Médicosocial - Suivi Décisions Orientation v4.0.6
+# exemple-esms-task - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Exemple Task: exemple-esms-task
 
