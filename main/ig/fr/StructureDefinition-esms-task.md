@@ -97,7 +97,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-esms-task.csv),
   "version" : "4.0.6",
   "name" : "ESMSTask",
   "status" : "active",
-  "date" : "2026-06-26T14:17:25+00:00",
+  "date" : "2026-06-26T14:37:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -457,14 +457,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-esms-task.csv),
       "sliceName" : "modePriseCharge",
       "short" : "Permet de définir le mode de prise en charge",
       "min" : 0,
-      "max" : "1",
-      "constraint" : [{
-        "key" : "regle-ModePriseEnCharge",
-        "severity" : "error",
-        "human" : "Les codes possibles pour le mode de prise en charge sont : 46 (Hébergement (accueil jour et nuit)) ; 47 (Accueil de jour); 48 (Accueil de nuit)",
-        "expression" : "(value.coding.where(code='48').exists()) or (value.coding.where(code='47').exists()) or (value.coding.where(code='46').exists())",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-task"
-      }]
+      "max" : "1"
     },
     {
       "id" : "Task.input:modePriseCharge.type",
