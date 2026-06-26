@@ -2,6 +2,9 @@
 
 ## Nomenclatures de référence associées aux spécifications
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 | | | |
 | :--- | :--- | :--- |
 | Nomenclatures CNSA | NO_* | [NomenclatureCNSA](NomenclatureCNSA_v2.11.xlsm) |

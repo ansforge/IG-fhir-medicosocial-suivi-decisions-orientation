@@ -35,7 +35,7 @@ Le rôle du producteur est de créer et transmettre l'accord de la personne en s
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",

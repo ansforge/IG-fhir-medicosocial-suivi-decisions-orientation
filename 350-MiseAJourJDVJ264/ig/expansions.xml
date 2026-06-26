@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d636b53c-fd40-4300-b8ed-196ebb8c0cb6"/>
+  <id value="cf6092f2-d93f-49bf-92a3-2dd4d7933bcb"/>
   <meta>
-    <lastUpdated value="2026-06-24T14:06:33.673+00:00"/>
+    <lastUpdated value="2026-06-26T14:31:02.145+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -17,22 +17,22 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de tx.fhir.org basée sur Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 2 concepts</p>
+            <p>Ce jeu de valeur (ValueSet) contient 2 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
-                  <b>System</b>
+                  <b>Système</b>
                 </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>Display (en)</b>
+                  <b>Affichage (fr)</b>
                 </td>
                 <td>
                   <b>JSON</b>
@@ -52,12 +52,12 @@
                 <td>Admission request Document</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;57830-2&quot;, &quot;display&quot;: &quot;Admission request Document&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;57830-2&quot;, &quot;display&quot;: &quot;Admission request Document&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;57830-2&quot;&gt;&lt;display value=&quot;Admission request Document&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;57830-2&quot;&gt;&lt;display value=&quot;Admission request Document&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -72,12 +72,12 @@
                 <td>Evaluation note</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;51848-0&quot;, &quot;display&quot;: &quot;Evaluation note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;51848-0&quot;, &quot;display&quot;: &quot;Evaluation note&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;51848-0&quot;&gt;&lt;display value=&quot;Evaluation note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;51848-0&quot;&gt;&lt;display value=&quot;Evaluation note&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -90,22 +90,22 @@
         <title value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-06-24T14:06:33+00:00"/>
+        <date value="2026-06-26T14:31:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="FR"/>
-            <display value="FRANCE"/>
+            <display value="France (la)"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9c3c4e11-a5dc-49b0-b224-821b800cf702"/>
-          <timestamp value="2026-06-24T14:07:55+00:00"/>
+          <identifier value="urn:uuid:692d6537-d22e-48d5-8e33-27c69e183299"/>
+          <timestamp value="2026-06-26T14:31:54+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
-            <valueCode value="en"/>
+            <valueCode value="fr"/>
           </parameter>
           <parameter>
             <name value="count"/>
@@ -122,6 +122,153 @@
           <parameter>
             <name value="used-valueset"/>
             <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr-FR"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.82"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="57830-2"/>
+            <display value="Admission request Document"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="51848-0"/>
+            <display value="Evaluation note"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de tx.fhir.org basée sur Loinc v2.82
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.82" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Ce jeu de valeur (ValueSet) contient 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-57830-2"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/57830-2/">57830-2</a>
+                </td>
+                <td>Admission request Document</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;57830-2&quot;, &quot;display&quot;: &quot;Admission request Document&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;57830-2&quot;&gt;&lt;display value=&quot;Admission request Document&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-51848-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/51848-0/">51848-0</a>
+                </td>
+                <td>Evaluation note</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;51848-0&quot;, &quot;display&quot;: &quot;Evaluation note&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;51848-0&quot;&gt;&lt;display value=&quot;Evaluation note&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sdo/ValueSet/type-document-reference-esms-valueset"/>
+        <version value="4.0.6"/>
+        <name value="DocumentReferenceTypeESMSValueSet"/>
+        <title value="DocumentReferenceTypeESMSValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-06-26T14:31:02+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France (la)"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:692d6537-d22e-48d5-8e33-27c69e183299"/>
+          <timestamp value="2026-06-26T14:31:54+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr-FR"/>
           </parameter>
           <parameter>
             <name value="includeDefinition"/>
@@ -229,17 +376,17 @@
         <title value="DocumentReferenceTypeESMSValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-06-24T14:06:33+00:00"/>
+        <date value="2026-06-26T14:31:02+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="FR"/>
-            <display value="FRANCE"/>
+            <display value="France (la)"/>
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9c3c4e11-a5dc-49b0-b224-821b800cf702"/>
-          <timestamp value="2026-06-24T14:07:55+00:00"/>
+          <identifier value="urn:uuid:0201c4db-78ce-4995-9540-85524bbc1f2f"/>
+          <timestamp value="2026-06-26T14:31:55+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -261,6 +408,10 @@
           <parameter>
             <name value="used-valueset"/>
             <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr-FR"/>
           </parameter>
           <parameter>
             <name value="includeDefinition"/>

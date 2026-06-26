@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-esms-document-ref
   "version" : "4.0.6",
   "name" : "ESMSDocumentReference",
   "status" : "active",
-  "date" : "2026-06-24T14:06:33+00:00",
+  "date" : "2026-06-26T14:31:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-esms-document-ref
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

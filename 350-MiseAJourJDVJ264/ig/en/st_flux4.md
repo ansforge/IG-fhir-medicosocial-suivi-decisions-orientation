@@ -2,6 +2,9 @@
 
 ## Flux 4 - StatutPersonneOrientee
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Flux 4 – StatutPersonneOrientee
 
 L’ESMS transmet au SI-SDO le statut de la personne orientée en fonction de son avancée dans le processus d'orientation

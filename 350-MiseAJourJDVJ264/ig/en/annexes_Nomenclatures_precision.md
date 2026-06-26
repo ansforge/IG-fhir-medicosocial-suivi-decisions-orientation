@@ -2,6 +2,9 @@
 
 ## Nomenclature précisions de l'orientation
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 | | |
 | :--- | :--- |
 | 7.1 Orientation vers un institut médico-éducatif IME | Nomenclature locale ou texte libre |

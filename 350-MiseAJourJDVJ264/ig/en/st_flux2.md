@@ -2,6 +2,9 @@
 
 ## Flux 2 - Accord
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 ### Flux 2 - Accord
 
 Ce flux contient le consentement de la personne orientée permettant à l’ESMS de récupérer les données de l’évaluation concernant une décision précédemment reçu via le flux 1.4.

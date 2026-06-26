@@ -35,7 +35,7 @@ Le rôle du consommateur est de recueillir le dossier d'une personne orientée p
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",

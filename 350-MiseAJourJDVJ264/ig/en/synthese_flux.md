@@ -2,6 +2,9 @@
 
 ## Synthèse des flux
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 | | |
 | :--- | :--- |
 | **Flux métiers (issus de la SFE)** | **Flux techniques (présentés dans cette partie)** |

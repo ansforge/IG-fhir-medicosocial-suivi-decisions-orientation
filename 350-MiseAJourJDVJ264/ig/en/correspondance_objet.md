@@ -2,6 +2,9 @@
 
 ## Correspondance entre objets métier et ressources du standard HL7 FHIR
 
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
 Dans cette section, la mise en correspondance est faite entre :
 
 * Les objets métier identifiés à l’issue des spécifications fonctionnelles des échanges,
