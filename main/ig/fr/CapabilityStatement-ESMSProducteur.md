@@ -1,4 +1,4 @@
-# SI-ESMS-Producteur - Médicosocial - Suivi Décisions Orientation v4.0.6
+# SI-ESMS-Producteur - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## CapabilityStatement: SI-ESMS-Producteur 
 
@@ -16,7 +16,7 @@ Le rôle du producteur est de créer et transmettre l'accord de la personne en s
   "resourceType" : "CapabilityStatement",
   "id" : "ESMSProducteur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CapabilityStatement/ESMSProducteur",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "ESMSProducteur",
   "title" : "SI-ESMS-Producteur",
   "status" : "active",

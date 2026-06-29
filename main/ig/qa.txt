@@ -1,19 +1,19 @@
 SuiviDecisionsOrientation : Validation Results
 =========================================
 
-err = 1, warn = 22, info = 20
+err = 1, warn = 24, info = 31
 IG Publisher Version: 2.2.10
-Generated Fri Jun 26 14:39:28 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.6 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
+Generated Mon Jun 29 07:14:23 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.sdo#4.0.7 (canonical = https://interop.esante.gouv.fr/ig/fhir/sdo)
  Build Errors : 1 / 4 / 0
- /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 2 / 5
+ /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation : 0 / 2 / 7
  /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements : 0 / 6 / 5
  /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Bundle-exemple-esms-bundle-resultat-recherche-notifications-esms : 0 / 2 / 3
- /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSConsommateur : 0 / 1 / 2
- /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 1 / 2
- /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 1 / 2
+ /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSConsommateur : 0 / 1 / 4
+ /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-ESMSProducteur : 0 / 2 / 5
+ /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CapabilityStatement-gestionnaire-sdo : 0 / 2 / 5
  /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/CodeSystem-input-task-sdo-codesystem : 0 / 1 / 1
  /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/Consent-exemple-consent : 1 / 0 / 2
- /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference : 0 / 0 / 2
+ /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/DocumentReference-exemple-esms-document-reference : 0 / 0 / 3
  /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo : 0 / 1 / 2
  /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-bundle-resultat-recherche-decision-evaluation : 0 / 0 / 3
  /__w/IG-fhir-medicosocial-suivi-decisions-orientation/IG-fhir-medicosocial-suivi-decisions-orientation/igSource/fsh-generated/resources/StructureDefinition-esms-bundle-resultat-recherche-notification-esms : 0 / 0 / 2
@@ -31,7 +31,9 @@ WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xh
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation.json ==
 INFORMATION: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[0].resource/*DocumentReference/exemple-esms-documentreference-1-in-bundle*/.type.coding[0].display: There are no valid display names found for the code http://loinc.org#57830-2 for language(s) 'fr-FR'. The display is 'Admission request Document' which is a valid display for the default language
+INFORMATION: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[0].resource/*DocumentReference/exemple-esms-documentreference-1-in-bundle*/.content[0].attachment.contentType: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
 INFORMATION: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[1].resource/*DocumentReference/exemple-esms-documentreference-2-in-bundle*/.type.coding[0].display: There are no valid display names found for the code http://loinc.org#57830-2 for language(s) 'fr-FR'. The display is 'Admission request Document' which is a valid display for the default language
+INFORMATION: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle.entry[1].resource/*DocumentReference/exemple-esms-documentreference-2-in-bundle*/.content[0].attachment.contentType: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation: Bundle: SearchSet bundles should have search modes on the entries
 == fsh-generated/resources/Bundle-exemple-bundle-resultat-recherche-decision-evaluation-elements.json ==
@@ -47,12 +49,22 @@ WARNING: Bundle/exemple-bundle-resultat-recherche-decision-evaluation-elements: 
 WARNING: Bundle/exemple-esms-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet Bundles should have a self link that specifies what the search was
 WARNING: Bundle/exemple-esms-bundle-resultat-recherche-notifications-esms: Bundle: SearchSet bundles should have search modes on the entries
 == fsh-generated/resources/CapabilityStatement-ESMSConsommateur.json ==
+INFORMATION: CapabilityStatement/ESMSConsommateur: CapabilityStatement.format[0]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
+INFORMATION: CapabilityStatement/ESMSConsommateur: CapabilityStatement.format[1]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
 WARNING: CapabilityStatement/ESMSConsommateur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo'
 INFORMATION: Resource: The resource CapabilityStatement/ESMSConsommateur could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CapabilityStatement-ESMSProducteur.json ==
+INFORMATION: CapabilityStatement/ESMSProducteur: CapabilityStatement.format[0]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
+INFORMATION: CapabilityStatement/ESMSProducteur: CapabilityStatement.format[1]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
+INFORMATION: CapabilityStatement/ESMSProducteur: CapabilityStatement.format[2]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
+WARNING: CapabilityStatement/ESMSProducteur: CapabilityStatement.format[2].code: Unknown Code 'application/fhir+rdf' in the CodeSystem 'urn:ietf:bcp:13' version '0.0.2' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 WARNING: CapabilityStatement/ESMSProducteur: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo'
 INFORMATION: Resource: The resource CapabilityStatement/ESMSProducteur could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CapabilityStatement-gestionnaire-sdo.json ==
+INFORMATION: CapabilityStatement/gestionnaire-sdo: CapabilityStatement.format[0]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
+INFORMATION: CapabilityStatement/gestionnaire-sdo: CapabilityStatement.format[1]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
+INFORMATION: CapabilityStatement/gestionnaire-sdo: CapabilityStatement.format[2]: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
+WARNING: CapabilityStatement/gestionnaire-sdo: CapabilityStatement.format[2].code: Unknown Code 'application/fhir+rdf' in the CodeSystem 'urn:ietf:bcp:13' version '0.0.2' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 WARNING: CapabilityStatement/gestionnaire-sdo: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/fhir/sdo'
 INFORMATION: Resource: The resource CapabilityStatement/gestionnaire-sdo could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-input-task-sdo-codesystem.json ==
@@ -62,6 +74,7 @@ INFORMATION: Consent/exemple-consent: Consent.meta.source: No definition could b
 ERROR: Consent/exemple-consent: Consent.category[0].coding[0].display: Wrong Display Name 'Consent' for http://loinc.org#59284-0. Valid display is 'Patient Consent' (for the language(s) 'fr-FR')
 == fsh-generated/resources/DocumentReference-exemple-esms-document-reference.json ==
 INFORMATION: DocumentReference/exemple-esms-document-reference: DocumentReference.type.coding[0].display: There are no valid display names found for the code http://loinc.org#51848-0 for language(s) 'fr-FR'. The display is 'Evaluation note' which is a valid display for the default language
+INFORMATION: DocumentReference/exemple-esms-document-reference: DocumentReference.content[0].attachment.contentType: Reference to experimental CodeSystem urn:ietf:bcp:13|0.0.2
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sdo.json ==
 WARNING: ImplementationGuide/ans.fhir.fr.sdo: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.uv.extensions.r4#5.2.0 released on 2025-02-10, but the most recent appropriate version is 5.3.0. This reference is getting old and the more recent version should be considered
 INFORMATION: Resource: The resource ImplementationGuide/ans.fhir.fr.sdo could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

@@ -1,4 +1,4 @@
-# ESMSBundleResultatRechercheDecisionEvaluation - Médicosocial - Suivi Décisions Orientation v4.0.6
+# ESMSBundleResultatRechercheDecisionEvaluation - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Profil de ressource: ESMSBundleResultatRechercheDecisionEvaluation 
 
@@ -84,10 +84,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-esms-bundle-res
   "resourceType" : "StructureDefinition",
   "id" : "esms-bundle-resultat-recherche-decision-evaluation",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/StructureDefinition/esms-bundle-resultat-recherche-decision-evaluation",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "ESMSBundleResultatRechercheDecisionEvaluation",
   "status" : "active",
-  "date" : "2026-06-26T14:37:44+00:00",
+  "date" : "2026-06-29T07:12:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

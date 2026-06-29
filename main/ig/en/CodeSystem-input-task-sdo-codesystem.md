@@ -1,4 +1,4 @@
-# InputTaskSDOCodeSystem - Médicosocial - Suivi Décisions Orientation v4.0.6
+# InputTaskSDOCodeSystem - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## CodeSystem: InputTaskSDOCodeSystem 
 
@@ -25,12 +25,12 @@ This Code system is referenced in the definition of the following value sets:
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sdo/CodeSystem/input-task-sdo-codesystem",
-  "version" : "4.0.6",
+  "version" : "4.0.7",
   "name" : "InputTaskSDOCodeSystem",
   "title" : "InputTaskSDOCodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-26T14:37:44+00:00",
+  "date" : "2026-06-29T07:12:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

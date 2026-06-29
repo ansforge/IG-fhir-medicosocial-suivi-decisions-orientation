@@ -1,4 +1,4 @@
-# exemple-esms-bundle-resultat-recherche-notifications-esms - Médicosocial - Suivi Décisions Orientation v4.0.6
+# exemple-esms-bundle-resultat-recherche-notifications-esms - Médicosocial - Suivi Décisions Orientation v4.0.7
 
 ## Example Bundle: exemple-esms-bundle-resultat-recherche-notifications-esms
 
