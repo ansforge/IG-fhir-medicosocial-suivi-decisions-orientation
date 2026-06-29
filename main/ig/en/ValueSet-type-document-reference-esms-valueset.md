@@ -36,7 +36,7 @@ Code System pour la définition des éléments spécifiques de input dans ressou
   "title" : "DocumentReferenceTypeESMSValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T08:11:30+00:00",
+  "date" : "2026-06-29T08:20:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

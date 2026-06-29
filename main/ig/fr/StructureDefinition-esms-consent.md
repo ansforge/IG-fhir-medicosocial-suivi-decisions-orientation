@@ -76,7 +76,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-esms-consent.cs
   "version" : "4.0.7",
   "name" : "ESMSConsent",
   "status" : "active",
-  "date" : "2026-06-29T08:11:30+00:00",
+  "date" : "2026-06-29T08:20:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
