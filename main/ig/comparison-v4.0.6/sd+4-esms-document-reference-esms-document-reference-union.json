@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6301f05e-272a-4d2e-96dc-aeee9eee623c-11",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6301f05e-272a-4d2e-96dc-aeee9eee623c-11",
+  "id" : "d93841c3-0e67-45eb-92be-0ecb3a8d3db0-11",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d93841c3-0e67-45eb-92be-0ecb3a8d3db0-11",
   "name" : "UnionESMSDocumentReferenceAndESMSDocumentReference",
   "title" : "Union of null And null",
   "status" : "active",
-  "date" : "2026-06-29T08:07:40+00:00",
+  "date" : "2026-06-29T08:12:23+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -216,7 +216,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d93841c3-0e67-45eb-92be-0ecb3a8d3db0-8"
       }
     },
     {
@@ -777,7 +777,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "High-level kind of a clinical document at a macro level.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d93841c3-0e67-45eb-92be-0ecb3a8d3db0-14"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1685,7 +1685,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d93841c3-0e67-45eb-92be-0ecb3a8d3db0-8"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1913,7 +1913,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Document Format Codes.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d93841c3-0e67-45eb-92be-0ecb3a8d3db0-17"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2219,7 +2219,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "XDS Facility Type.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-20"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d93841c3-0e67-45eb-92be-0ecb3a8d3db0-20"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2266,7 +2266,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Additional details about where the content was created (e.g. clinical specialty).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d93841c3-0e67-45eb-92be-0ecb3a8d3db0-23"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
