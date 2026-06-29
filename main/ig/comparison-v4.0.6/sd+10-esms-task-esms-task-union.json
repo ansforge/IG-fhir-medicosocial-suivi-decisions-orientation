@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7e7bae34-f971-49c9-8380-38158d5d1192-29",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7e7bae34-f971-49c9-8380-38158d5d1192-29",
+  "id" : "6301f05e-272a-4d2e-96dc-aeee9eee623c-29",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6301f05e-272a-4d2e-96dc-aeee9eee623c-29",
   "name" : "UnionESMSTaskAndESMSTask",
   "title" : "Union of null And null",
   "status" : "active",
-  "date" : "2026-06-29T08:06:34+00:00",
+  "date" : "2026-06-29T08:07:40+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -381,7 +381,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7e7bae34-f971-49c9-8380-38158d5d1192-32"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-32"
       }
     },
     {
@@ -436,7 +436,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7e7bae34-f971-49c9-8380-38158d5d1192-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-8"
       }
     },
     {
@@ -1002,7 +1002,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes to identify what the task involves.  These will typically be specific to a particular workflow.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7e7bae34-f971-49c9-8380-38158d5d1192-35"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-35"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1335,7 +1335,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "The type(s) of task performers allowed.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7e7bae34-f971-49c9-8380-38158d5d1192-38"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6301f05e-272a-4d2e-96dc-aeee9eee623c-38"
       },
       "mapping" : [{
         "identity" : "workflow",
