@@ -1,6 +1,13 @@
+### Release 4.0.7 de l'Implementation Guide du volet "SI-ESMS"
+
+Modifications apportées dans cette release [4.0.7](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pulls?q=is%3Apr+is%3Aclosed+milestone%3A4.0.7) :
+
+* [ANS-009-015 - Mise à jour du JDV_J264_ModeEtCentreDePriseEnCharge_MDPH](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/357)
+* [Passage au Template 2](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/359)
+
 ### Release 4.0.6 de l'Implementation Guide du volet "SI-ESMS"
 
-odifications apportées dans cette release [4.0.6](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pulls?q=is%3Apr+is%3Aclosed+milestone%3A4.0.6) :
+Modifications apportées dans cette release [4.0.6](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pulls?q=is%3Apr+is%3Aclosed+milestone%3A4.0.6) :
 
 * [ANS-006-156 - Séparation des modèles SDO et ESMS](https://github.com/ansforge/IG-fhir-medicosocial-suivi-decisions-orientation/pull/346)
 
